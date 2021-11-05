@@ -1,4 +1,4 @@
-# README #
+# HaasScript Lua Type Definitions Generator #
 This project generates Luanalysis Type Definitions for the HaasScript Language so code editors can autocomplete and type check your
 scripts. If you do not want to run the project, you can simply download the output here:
 https://github.com/FiretronP75/HaasScriptLuaTypes/releases
