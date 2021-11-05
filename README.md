@@ -1,5 +1,5 @@
 # README #
-This project generates Luanalysis Type Defintions for the HaasScript Language so code editors can autocomplete and type check your
+This project generates Luanalysis Type Definitions for the HaasScript Language so code editors can autocomplete and type check your
 scripts. If you do not want to run the project, you can simply download the output here:
 https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 
@@ -17,7 +17,13 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 4. Open a terminal in the project root.
 5. Run `yarn`.
 6. Run `yarn start`.
-7. Read and follow the help output in the console.
+7. Read and follow the help output in the console (pasted here for convenience):
+   * This script requires 4 parameters: environment, file extension, interface key, user id.
+   Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".
+   File extension may be anything, but "lua" or "hs" is recommended.
+   Interface key and user id can be copied from a web browser session that has not expired yet.
+   Example: yarn start prod lua 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48
+
 
 ### To find interface key and user id: ###
 1. Open Haas cloud server in a browser.
@@ -31,6 +37,6 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 9. Click on the only remaining network transaction.
 10. Select Headers tab if not already selected.
 11. Your key and id are at the bottom of the panel.
-* Note that they will expire when logged out.
-* Note that they are different in production and staging.
-* Note that most people do not have access to staging.
+    * Note that they will expire when logged out.
+    * Note that they are different in production and staging.
+    * Note that most people do not have access to staging.

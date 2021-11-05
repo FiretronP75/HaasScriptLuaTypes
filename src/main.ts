@@ -131,7 +131,7 @@ export class Main {
 
     if (process.argv.length < 6) {
       console.error('This script requires 4 parameters: environment, file extension, interface key, user id.');
-      console.error('Environment may be "production" or "staging". Anything other than "staging" (case insensitive) assumes "production".');
+      console.error('Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".');
       console.error('File extension may be anything, but "lua" or "hs" is recommended.');
       console.error('Interface key and user id can be copied from a web browser session that has not expired yet.');
       console.error('Example: yarn start prod lua 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48');
