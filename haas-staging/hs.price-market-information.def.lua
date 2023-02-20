@@ -100,6 +100,34 @@ function GetOrderbookAsk(market) end
 --- @overload fun(optionalParameters: OptionalParametersOf_GetOrderbookBid): any
 function GetOrderbookBid(market) end
 
+--- The optional parameters of LastBuyTradesCommand.
+--- @shape OptionalParametersOf_LastBuyTradesCommand
+--- @field Seconds_back number | nil 
+--- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
+
+--- Returns all last selling orders
+--- @param Seconds_back number Optional - . Suggestions: Input
+--- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @return number Returns the buying trading volume. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @overload fun(): number
+--- @overload fun(Seconds_back: number): number
+--- @overload fun(optionalParameters: OptionalParametersOf_LastBuyTradesCommand): number
+function LastBuyTradesCommand(Seconds_back, market) end
+
+--- The optional parameters of LastSellTradesCommand.
+--- @shape OptionalParametersOf_LastSellTradesCommand
+--- @field Seconds_back number | nil 
+--- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
+
+--- Returns all last selling orders
+--- @param Seconds_back number Optional - . Suggestions: Input
+--- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @return number Returns the selling trading volume. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @overload fun(): number
+--- @overload fun(Seconds_back: number): number
+--- @overload fun(optionalParameters: OptionalParametersOf_LastSellTradesCommand): number
+function LastSellTradesCommand(Seconds_back, market) end
+
 --- The optional parameters of LastTradesSentiment.
 --- @shape OptionalParametersOf_LastTradesSentiment
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
@@ -123,7 +151,7 @@ function LastTradesSentiment(market) end
 function OrderbookSentiment(market) end
 
 --- Determines the price level. For example. 123456 will return 10000. 123 will return 100.
---- @param price number Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the price level. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function PriceLevel(price) end
 

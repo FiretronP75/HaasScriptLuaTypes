@@ -112,7 +112,7 @@ function InputGroupHeader(label) end
 --- @param defaultValue number Optional - The default value for the field.
 --- @param tooltip string Optional - The tooltip text for the field.
 --- @param group string Optional - The group of the input field.
---- @return number Returns the selected interval in minutes. Output Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, GetVolume
+--- @return number Returns the selected interval in minutes. Output Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, GetVolume, GetBodyHighPrices, GetBodyLowPrices
 --- @overload fun(label: string): number
 --- @overload fun(label: string, defaultValue: number): number
 --- @overload fun(label: string, defaultValue: number, tooltip: string): number

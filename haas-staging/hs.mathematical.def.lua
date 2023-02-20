@@ -80,7 +80,7 @@ function Average2(input, period) end
 function Ceil(input) end
 
 --- Calculates the absolute price changes between the values.
---- @param prices number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param prices number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number[] Returns the new-old change of the values in an array. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function Change(prices) end
 
@@ -155,7 +155,7 @@ function Floor(input) end
 --- @field offset number | nil Number of records to skip.
 
 --- Gets the highest value.
---- @param prices number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param prices number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param depth number Number of records to include. Suggestions: Input
 --- @param offset number Optional - Number of records to skip. Suggestions: Input
 --- @return number Returns the highest value. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
@@ -164,7 +164,7 @@ function Floor(input) end
 function GetHigh(prices, depth, offset) end
 
 --- Gets the highest values within lookback period.
---- @param array number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param array number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param depth number Number of records to include. Suggestions: Input
 --- @return number[] Returns the highest values within lookback period. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function GetHighs(array, depth) end
@@ -174,7 +174,7 @@ function GetHighs(array, depth) end
 --- @field offset number | nil Number of records to skip.
 
 --- Gets the lowest value.
---- @param prices number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param prices number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param depth number Number of records to include. Suggestions: Input
 --- @param offset number Optional - Number of records to skip. Suggestions: Input
 --- @return number Returns the lowest value. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
@@ -183,7 +183,7 @@ function GetHighs(array, depth) end
 function GetLow(prices, depth, offset) end
 
 --- Gets the lowest values within lookback period.
---- @param array number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param array number[] Source data. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param depth number Number of records to include. Suggestions: Input
 --- @return number[] Returns the lowest values within lookback period. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function GetLows(array, depth) end

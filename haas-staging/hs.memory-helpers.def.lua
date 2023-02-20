@@ -1,5 +1,10 @@
 --- Memory Helpers
 
+--- Deletes a value on a specific key.
+--- @param key string Unique identifier.
+--- @return void
+function Delete(key) end
+
 --- The optional parameters of Load.
 --- @shape OptionalParametersOf_Load
 --- @field defaultValue any | nil Default value for when no data is saved on the key. Default is nil.
@@ -39,7 +44,7 @@ function LogWalletError(message) end
 --- @return void
 function LogWarning(message) end
 
---- Saves a value on a specific key. This value can be retrieved with Load()
+--- Saves a value on a specific key. This value can be retrieved with Load(). A maximum of 10.000 keys can be stored.
 --- @param key string Unique identifier.
 --- @param value any The value to store.
 --- @return void

@@ -103,7 +103,7 @@ function GetPositionMarket(positionId) end
 
 --- Gets the total realized plus unrealized profit of a specific position.
 --- @param positionId string Optional - Optional unique identifier. Required when the bot is trading multiple position at once. Suggestions: Load
---- @param targetPrice number Optional - Optional target price. Default is the best bid/ask. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param targetPrice number Optional - Optional target price. Default is the best bid/ask. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the total realized plus unrealized profit of a specific position. On spot/margin the result will be in the quote currency. For leverage its in the underlying currency. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number
 --- @overload fun(positionId: string): number
@@ -117,7 +117,7 @@ function GetPositionProfit(positionId, targetPrice) end
 
 --- Calculates the ROI based on used margin and unrealized + realized profits.
 --- @param positionId string Optional - Optional unique identifier. Required when the bot is trading multiple position at once. Suggestions: Load
---- @param targetPrice number Optional - Optional target price. Default is the best bid/ask. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param targetPrice number Optional - Optional target price. Default is the best bid/ask. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the ROI as a percentage. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number
 --- @overload fun(positionId: string): number

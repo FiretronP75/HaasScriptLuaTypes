@@ -86,7 +86,7 @@ function ContractValue(market) end
 
 --- Gets whether or not the trade amount is high enough for exchange limits.
 --- @param market string The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @param price number The price on which to check the trade amount. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number The price on which to check the trade amount. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param amount number The amount to check.
 --- @param logWarning boolean Optional - If true, a warning is logged.
 --- @return boolean Returns whether or not the trade amount is high enough for exchange limits. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
@@ -123,7 +123,7 @@ function MarketType(market) end
 
 --- Calculates the minimum trade amount on a certain price while keeping exchange specifications in consideration.
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @param price number Optional - The price on which to calculate the trade amount. By default the close price is used. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number Optional - The price on which to calculate the trade amount. By default the close price is used. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the minimum trade amount taking the decimal count, minimum amount and volume into account. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number
 --- @overload fun(market: string): number
@@ -132,25 +132,25 @@ function MinimumTradeAmount(market, price) end
 
 --- Parses the trade amount to exchange specifications.
 --- @param market string The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @param price number The price on which to parse the trade amount. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number The price on which to parse the trade amount. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param amount number The amount to parse.
 --- @return number Returns the trade amount adjusted for exchange specifications. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function ParseTradeAmount(market, price, amount) end
 
 --- Parses the trade price to exchange specifications.
 --- @param market string The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @param price number The price on which to check the trade amount. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number The price on which to check the trade amount. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the trade price adjusted for exchange specifications. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function ParseTradePrice(market, price) end
 
 --- The optional parameters of PriceDecimals.
 --- @shape OptionalParametersOf_PriceDecimals
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
---- @field price number | nil 
+--- @field price number | nil Specific price value. This can have an effect on the number of decimals.
 
 --- Returns a number of how many decimals is allowed for order prices.
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @param price number Optional - . Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number Optional - Specific price value. This can have an effect on the number of decimals. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the allowed decimal count. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number
 --- @overload fun(market: string): number
@@ -204,11 +204,11 @@ function QuoteCurrency(market) end
 --- The optional parameters of QuoteDecimals.
 --- @shape OptionalParametersOf_QuoteDecimals
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
---- @field price number | nil 
+--- @field price number | nil Specific price value. This can have an effect on the number of decimals.
 
 --- Returns a number of how many decimals is allowed for order prices.
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @param price number Optional - . Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number Optional - Specific price value. This can have an effect on the number of decimals. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the allowed decimal count. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number
 --- @overload fun(market: string): number
@@ -302,7 +302,7 @@ function UnderlyingAsset(market) end
 
 --- Calculates the used margin for a specific position.
 --- @param market string The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @param price number Position price. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param price number Position price. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param amount number Position amount.
 --- @param leverage number Leverage ratio. Use 0 for cross-margin. Suggestions: Input, Leverage
 --- @return number Returns the amount in the underlying currency value. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot

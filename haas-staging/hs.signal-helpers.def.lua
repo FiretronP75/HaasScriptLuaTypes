@@ -52,8 +52,8 @@ function GetBuySellLevelSignal(value, buyLevel, sellLevel) end
 function GetConsensusSignal(signals) end
 
 --- Determines the signal from a result with a crossover or -under level.
---- @param fast number | table The 'faster' value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
---- @param slow number | table The 'slower' value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param fast number | table The 'faster' value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
+--- @param slow number | table The 'slower' value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return Enum Returns SignalLong when the a crossover occurs, SignalShort when a crossunder occurs and SignalNone when non one those happened. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
 function GetCrossOverUnderSignal(fast, slow) end
 
@@ -69,8 +69,8 @@ function GetRemoteSignal(id) end
 --- @field sellLevel number | nil The sell level for 'Threshold' signal types. Used for indicators like RSI, MFI and STOCH.
 
 --- Returns a continuous trade signal with defined signal type and values.
---- @param indicatorValue number[] The 'faster' or indicator value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
---- @param signalValue number[] The 'slower' or signal value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices
+--- @param indicatorValue number[] The 'faster' or indicator value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
+--- @param signalValue number[] The 'slower' or signal value. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @param signalType Enum The signal type which defines how the inputs are interpreted. Suggestions: InputSignalTypes
 --- @param centerPosition number Optional - The center position for 'Zero Cross' signal types. 0 for indicators that oscillate below and above zero, 50 for indicators like RSI, MFI and STOCH. Suggestions: Input
 --- @param buyLevel number Optional - The buy level for 'Threshold' signal types. Used for indicators like RSI, MFI and STOCH. Suggestions: Input

@@ -94,13 +94,16 @@ function GetOrderType() end
 --- The optional parameters of GetPositionMode.
 --- @shape OptionalParametersOf_GetPositionMode
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
+--- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
 
 --- Gets the current position mode for current or specified market.
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
+--- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @return Enum Returns the position mode enum. Output Suggestions: Equals
 --- @overload fun(): Enum
+--- @overload fun(accountId: string): Enum
 --- @overload fun(optionalParameters: OptionalParametersOf_GetPositionMode): Enum
-function GetPositionMode(accountId) end
+function GetPositionMode(accountId, market) end
 
 --- Hides the 2 order settings fields.
 --- @return void
@@ -123,7 +126,7 @@ function IsEnterpriseVersion() end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 
 --- Checks if the specified margin mode is supported on current or specified market.
---- @param marginMode Enum . Suggestions: CrossMarginMode, IsolatedMarginMode
+--- @param marginMode Enum Request margin mode. CrossMarginMode or IsolatedMarginMode. Suggestions: CrossMarginMode, IsolatedMarginMode
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @return boolean Returns true if supported, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @overload fun(marginMode: Enum): boolean
@@ -135,7 +138,7 @@ function IsMarginModeSupported(marginMode, accountId) end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 
 --- Checks if specified position mode is supported on current or specified market.
---- @param positionMode Enum . Suggestions: OneWayPositionMode, HedgePositionMode
+--- @param positionMode Enum Request position mode. OneWayPositionMode or HedgePositionMode. Suggestions: OneWayPositionMode, HedgePositionMode
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @return boolean Returns true if supported, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @overload fun(positionMode: Enum): boolean
@@ -162,7 +165,7 @@ function ResumeBot() end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 
 --- Sets the leverage ratio for current or specified market.
---- @param leverage number . Suggestions: Input
+--- @param leverage number The amount of leverage to set. Suggestions: Input
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @return boolean Returns true if successfully set value, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
@@ -177,7 +180,7 @@ function SetLeverage(leverage, market, accountId) end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 
 --- Sets the margin mode for current or specific market. It is NOT possible to change margin mode while having an open position.
---- @param marginMode Enum . Suggestions: IsolatedMarginMode, CrossMarginMode
+--- @param marginMode Enum Request margin mode. CrossMarginMode or IsolatedMarginMode. Suggestions: IsolatedMarginMode, CrossMarginMode
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @return boolean Returns true if successfully set, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
@@ -187,19 +190,22 @@ function SetLeverage(leverage, market, accountId) end
 function SetMarginMode(marginMode, market, accountId) end
 
 --- Overwrites the order type with the given type. This can be used to execute different order types on managed trading.
---- @param type Enum Order type enum. Suggestions: MarketOrderType, LimitOrderType, MakerOrCancelOrderType, NoTimeOutOrderType, MakerOrCancelOrderType, StopLimitOrderType, StopMarketOrderType, TakeProfitLimitOrderType, TakeProfitMarketOrderType
+--- @param type Enum Order type enum. Suggestions: MarketOrderType, LimitOrderType, MakerOrCancelOrderType, NoTimeOutOrderType, StopLimitOrderType, StopMarketOrderType, TakeProfitLimitOrderType, TakeProfitMarketOrderType
 --- @return void
 function SetOrderType(type) end
 
 --- The optional parameters of SetPositionMode.
 --- @shape OptionalParametersOf_SetPositionMode
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
+--- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
 
 --- Sets the position mode for current or specified market. It is NOT possible to change position mode while having an open position.
---- @param positionMode Enum . Suggestions: OneWayPositionMode, HedgePositionMode
+--- @param positionMode Enum Request position mode. OneWayPositionMode or HedgePositionMode. Suggestions: OneWayPositionMode, HedgePositionMode
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
+--- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @return boolean Returns true if successfully set, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @overload fun(positionMode: Enum): boolean
+--- @overload fun(positionMode: Enum, accountId: string): boolean
 --- @overload fun(positionMode: Enum, optionalParameters: OptionalParametersOf_SetPositionMode): boolean
-function SetPositionMode(positionMode, accountId) end
+function SetPositionMode(positionMode, accountId, market) end
 

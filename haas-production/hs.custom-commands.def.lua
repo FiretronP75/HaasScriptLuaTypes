@@ -53,7 +53,7 @@ function CC_CryptoIndexSlot(coin, baseCoin, allocatedAmount, buyLevel, sellLevel
 --- @shape OptionalParametersOf_CC_CVOLB_LB
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- Lazy Bear - Colored Volume Bars. Buy the green or blue volume bars, use a 1% trailing stop, and stand aside on red or orange bars. 
+--- Lazy Bear - Colored Volume Bars. Buy the green or blue volume bars, use a 1% trailing stop, and stand aside on red or orange bars.
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -77,7 +77,7 @@ function CC_EasyAdaptiveRSI(chartIndex, interval) end
 --- @shape OptionalParametersOf_CC_EasyForceIndex
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- The Force Index is an indicator that uses price and volume to assess the power behind a move or identify possible turning points. 
+--- The Force Index is an indicator that uses price and volume to assess the power behind a move or identify possible turning points.
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -229,26 +229,6 @@ function CC_EMAMA_LB(chartIndex, interval) end
 --- @return void
 function CC_FlashCrashSlot(basePrice, index, amount, spread, startWithBuy) end
 
---- The optional parameters of CC_FractionGrab.
---- @shape OptionalParametersOf_CC_FractionGrab
---- @field list any[] | nil Array, List, or Table to grab a fractional range from.
---- @field index number | nil Which part to grab. Unlike a fraction numerator, previous parts are not included. In a fraction, 2 would mean 1st and 2nd parts combined. But here, 2 would mean the 2nd part without the 1st.
---- @field total number | nil How many parts to divide into. This is just like a fraction denominator.
---- @field sort boolean | nil Set to true to sort before dividing into parts.
-
---- Grabs a fractional range from an array, list, or table.
---- @param list any[] Optional - Array, List, or Table to grab a fractional range from. Suggestions: ClosePrices, Prices
---- @param index number Optional - Which part to grab. Unlike a fraction numerator, previous parts are not included. In a fraction, 2 would mean 1st and 2nd parts combined. But here, 2 would mean the 2nd part without the 1st. Suggestions: Input
---- @param total number Optional - How many parts to divide into. This is just like a fraction denominator. Suggestions: Input
---- @param sort boolean Optional - Set to true to sort before dividing into parts. Suggestions: Input
---- @return any[] The fractional range from the array, list, or table.
---- @overload fun(): any[]
---- @overload fun(list: any[]): any[]
---- @overload fun(list: any[], index: number): any[]
---- @overload fun(list: any[], index: number, total: number): any[]
---- @overload fun(optionalParameters: OptionalParametersOf_CC_FractionGrab): any[]
-function CC_FractionGrab(list, index, total, sort) end
-
 --- The optional parameters of CC_HullMA.
 --- @shape OptionalParametersOf_CC_HullMA
 --- @field Source number[] | nil The source data
@@ -260,23 +240,6 @@ function CC_FractionGrab(list, index, total, sort) end
 --- @overload fun(Length: number): number[]
 --- @overload fun(Length: number, optionalParameters: OptionalParametersOf_CC_HullMA): number[]
 function CC_HullMA(Length, Source) end
-
---- The optional parameters of CC_LogRule.
---- @shape OptionalParametersOf_CC_LogRule
---- @field characters string | nil The character(s) to repeat to form the rule.
---- @field repitition number | nil How many times to repeat the character(s).
---- @field color any | nil Color of the rule.
-
---- Logs a rule (horizontal line).
---- @param characters string Optional - The character(s) to repeat to form the rule. Suggestions: Input, Load
---- @param repitition number Optional - How many times to repeat the character(s). Suggestions: Input
---- @param color any Optional - Color of the rule.
---- @return void Nothing
---- @overload fun(): void
---- @overload fun(characters: string): void
---- @overload fun(characters: string, repitition: number): void
---- @overload fun(optionalParameters: OptionalParametersOf_CC_LogRule): void
-function CC_LogRule(characters, repitition, color) end
 
 --- The optional parameters of CC_MadHatterBBands.
 --- @shape OptionalParametersOf_CC_MadHatterBBands
@@ -348,24 +311,12 @@ function CC_MadHatterRSI(chartIndex, name, interval) end
 --- @overload fun(startLong: boolean, offset: number, amount: number, enterTimeout: number, exitTimeout: number, optionalParameters: OptionalParametersOf_CC_MarketMakingSlot): string
 function CC_MarketMakingSlot(startLong, offset, amount, enterTimeout, exitTimeout, stopLossPercentage, stopLossCoolDown, reset, note) end
 
---- The optional parameters of CC_Median.
---- @shape OptionalParametersOf_CC_Median
---- @field isSorted boolean | nil Set to true if the table is already sorted.
-
---- Finds the middle value of a table of values. If there is an even number of elements, takes the average of the 2 middle values.
---- @param table any[] Table of values to find the median value of. Suggestions: ClosePrices, Prices
---- @param isSorted boolean Optional - Set to true if the table is already sorted. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
---- @return number The median value of the table values.
---- @overload fun(table: any[]): number
---- @overload fun(table: any[], optionalParameters: OptionalParametersOf_CC_Median): number
-function CC_Median(table, isSorted) end
-
 --- The optional parameters of CC_MVO.
 --- @shape OptionalParametersOf_CC_MVO
---- @field high number[] | nil 
---- @field low number[] | nil 
---- @field close number[] | nil 
---- @field volume number[] | nil 
+--- @field high number[] | nil
+--- @field low number[] | nil
+--- @field close number[] | nil
+--- @field volume number[] | nil
 --- @field fastPeriod number | nil Fast Period
 --- @field fastMaType number | nil Fast MA Type
 --- @field slowPeriod number | nil Slow Period
@@ -405,7 +356,7 @@ function CC_MVO(high, low, close, volume, fastPeriod, fastMaType, slowPeriod, sl
 --- @shape OptionalParametersOf_CC_PRO_LB
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- Lazy Bear - This is a modified form of PSO (original idea by Lee Leibfarth), to use RSI as the input. 
+--- Lazy Bear - This is a modified form of PSO (original idea by Lee Leibfarth), to use RSI as the input.
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -475,36 +426,4 @@ function CC_STC(data, depth, longLength, shortLength) end
 --- @overload fun(chartIndex: number): Enum
 --- @overload fun(chartIndex: number, optionalParameters: OptionalParametersOf_CC_WRPC): Enum
 function CC_WRPC(chartIndex, interval) end
-
---- The optional parameters of CC_XTR.
---- @shape OptionalParametersOf_CC_XTR
---- @field type string | nil "average" for average true range, "maximum" for maximum true range, "median" for median true range, "minimum" for minimum true range.
---- @field period number | nil How many intervals to go back.
---- @field interval number | nil Time of each candle in minutes.
---- @field fullCandles boolean | nil If false, the currently open candle will not be included.
---- @field market string | nil Which market to look at.
---- @field hlcStyle boolean | nil When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.
---- @field index number | nil Which part to grab. Unlike a fraction numerator, previous parts are not included. In a fraction, 2 would mean 1st and 2nd parts combined. But here, 2 would mean the 2nd part without the 1st.
---- @field total number | nil How many parts to divide into. This is just like a fraction denominator.
-
---- Finds the average, maximum, median, or minimum true range. Supports specifying a fraction of the range to use. Supports any period there is price data for, not capped at 200.
---- @param type string Optional - "average" for average true range, "maximum" for maximum true range, "median" for median true range, "minimum" for minimum true range. Suggestions: Input
---- @param period number Optional - How many intervals to go back. Suggestions: Input
---- @param interval number Optional - Time of each candle in minutes. Suggestions: InputInterval
---- @param fullCandles boolean Optional - If false, the currently open candle will not be included. Suggestions: Input
---- @param market string Optional - Which market to look at. Suggestions: InputAccountMarket, InputMarket, PriceMarket
---- @param hlcStyle boolean Optional - When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change. Suggestions: Input
---- @param index number Optional - Which part to grab. Unlike a fraction numerator, previous parts are not included. In a fraction, 2 would mean 1st and 2nd parts combined. But here, 2 would mean the 2nd part without the 1st. Suggestions: Input
---- @param total number Optional - How many parts to divide into. This is just like a fraction denominator. Suggestions: Input
---- @return number The average, maximum, median, or minimum true range. Output Suggestions: Add, Sum, Sub
---- @overload fun(): number
---- @overload fun(type: string): number
---- @overload fun(type: string, period: number): number
---- @overload fun(type: string, period: number, interval: number): number
---- @overload fun(type: string, period: number, interval: number, fullCandles: boolean): number
---- @overload fun(type: string, period: number, interval: number, fullCandles: boolean, market: string): number
---- @overload fun(type: string, period: number, interval: number, fullCandles: boolean, market: string, hlcStyle: boolean): number
---- @overload fun(type: string, period: number, interval: number, fullCandles: boolean, market: string, hlcStyle: boolean, index: number): number
---- @overload fun(optionalParameters: OptionalParametersOf_CC_XTR): number
-function CC_XTR(type, period, interval, fullCandles, market, hlcStyle, index, total) end
 

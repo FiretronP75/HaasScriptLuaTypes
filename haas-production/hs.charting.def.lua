@@ -74,7 +74,8 @@ function ChartSetOptions(chartId, title, height, style) end
 --- @field side Enum | nil Axis side to snap on.
 --- @field id string | nil Unique identifier.
 --- @field behind boolean | nil If true, the line will be plotted behind the price chart, if enabled.
---- @field ignoreOnAxis boolean | nil If true, the line we not be taking in to consideration when calculating the range on the y-axis.
+--- @field ignoreOnAxis boolean | nil If true, the line will not be taken into consideration when calculating the range on the y-axis.
+--- @field drawTrailingLine boolean | nil If true, a dotted line will be drawn from the last data point to the y-axis.
 
 --- Creates a line options object to be used for Plot().
 --- @param color string | ColorEnum Optional - The color of the line. Suggestions: Aqua, Black, Blue, Cyan, DarkGray, DarkGreen, Fuchsia, Gold, Gray, Green, Maroon, Olive, Orange, Purple, Red, SkyBlue, Teal, White, Yellow, ChangeColorOpacity
@@ -85,7 +86,8 @@ function ChartSetOptions(chartId, title, height, style) end
 --- @param side Enum Optional - Axis side to snap on. Suggestions: RightAxis, LeftAxis
 --- @param id string Optional - Unique identifier. Suggestions: Load, NewGuid
 --- @param behind boolean Optional - If true, the line will be plotted behind the price chart, if enabled.
---- @param ignoreOnAxis boolean Optional - If true, the line we not be taking in to consideration when calculating the range on the y-axis.
+--- @param ignoreOnAxis boolean Optional - If true, the line will not be taken into consideration when calculating the range on the y-axis.
+--- @param drawTrailingLine boolean Optional - If true, a dotted line will be drawn from the last data point to the y-axis.
 --- @return any Creates a line options object. Output Suggestions: Plot
 --- @overload fun(): any
 --- @overload fun(color: string | ColorEnum): any
@@ -96,8 +98,9 @@ function ChartSetOptions(chartId, title, height, style) end
 --- @overload fun(color: string | ColorEnum, style: Enum, deco: Enum, width: number, offset: number, side: Enum): any
 --- @overload fun(color: string | ColorEnum, style: Enum, deco: Enum, width: number, offset: number, side: Enum, id: string): any
 --- @overload fun(color: string | ColorEnum, style: Enum, deco: Enum, width: number, offset: number, side: Enum, id: string, behind: boolean): any
+--- @overload fun(color: string | ColorEnum, style: Enum, deco: Enum, width: number, offset: number, side: Enum, id: string, behind: boolean, ignoreOnAxis: boolean): any
 --- @overload fun(optionalParameters: OptionalParametersOf_LineOptions): any
-function LineOptions(color, style, deco, width, offset, side, id, behind, ignoreOnAxis) end
+function LineOptions(color, style, deco, width, offset, side, id, behind, ignoreOnAxis, drawTrailingLine) end
 
 --- The optional parameters of MarkCandle.
 --- @shape OptionalParametersOf_MarkCandle
@@ -331,7 +334,7 @@ function PlotPrice(chartId, market, interval, style, upColor, upFill, downColor,
 
 --- Draws a shape above the candle or first line on the chart.
 --- @param chartId number Optional - Index on which to plot the line.
---- @param shape Enum Optional - The shape type. Suggestions: ShapeAdd, ShapeCircle, ShapeCross, ShapeDiamond, ShapeSquare, ShapeTriangleDown, ShapeTriangleUp, ShapeText
+--- @param shape Enum Optional - The shape type. Suggestions: ShapeAdd, ShapeCircle, ShapeCross, ShapeDiamond, ShapeDash, ShapeSquare, ShapeTriangleDown, ShapeTriangleUp, ShapeText
 --- @param color string | ColorEnum Optional - The color of the shape. Suggestions: Aqua, Black, Blue, Cyan, DarkGray, DarkGreen, Fuchsia, Gold, Gray, Green, Maroon, Olive, Orange, Purple, Red, SkyBlue, Teal, White, Yellow, ChangeColorOpacity
 --- @param size number Optional - Size of the shape.
 --- @param aboveCandle boolean Optional - If true, the shape will be drawn above the candle else below.
@@ -349,6 +352,19 @@ function PlotPrice(chartId, market, interval, style, upColor, upFill, downColor,
 --- @overload fun(chartId: number, shape: Enum, color: string | ColorEnum, size: number, aboveCandle: boolean, text: string, textColor: string | ColorEnum): void
 --- @overload fun(optionalParameters: OptionalParametersOf_PlotShape): void
 function PlotShape(chartId, shape, color, size, aboveCandle, text, textColor, offset) end
+
+--- The optional parameters of PlotShapes.
+--- @shape OptionalParametersOf_PlotShapes
+--- @field fillColor string | nil The inner color of the circles. Default is none.
+
+--- Changes the line into a specific shape.
+--- @param lineGuid string Line guid returned by Plot(). Suggestions: Plot
+--- @param shape Enum The shape type. Suggestions: ShapeAdd, ShapeCircle, ShapeCross, ShapeDiamond, ShapeDash, ShapeSquare, ShapeTriangleDown, ShapeTriangleUp, ShapeText
+--- @param fillColor string | ColorEnum Optional - The inner color of the circles. Default is none. Suggestions: Aqua, Black, Blue, Cyan, DarkGray, DarkGreen, Fuchsia, Gold, Gray, Green, Maroon, Olive, Orange, Purple, Red, SkyBlue, Teal, White, Yellow, ChangeColorOpacity
+--- @return void
+--- @overload fun(lineGuid: string, shape: Enum): void
+--- @overload fun(lineGuid: string, shape: Enum, optionalParameters: OptionalParametersOf_PlotShapes): void
+function PlotShapes(lineGuid, shape, fillColor) end
 
 --- Creates a small signal bar chart. A positive chartId will place the line below the main price chart. A negative index above.
 --- @param chartId number Index on which to plot the line.
@@ -375,7 +391,7 @@ function PlotStackedArea(lineGuids) end
 --- @param chartId number The chart index on which to plot the data.
 --- @param name string Name of the line. This needs to be unique per index.
 --- @param color string | ColorEnum The line color. Suggestions: Aqua, Black, Blue, Cyan, DarkGray, DarkGreen, Fuchsia, Gold, Gray, Green, Maroon, Olive, Orange, Purple, Red, SkyBlue, Teal, White, Yellow, ChangeColorOpacity
---- @param unix number The a-axis timestamp on which to place the line. Suggestions: Input
+--- @param unix number The x-axis timestamp on which to place the line. Suggestions: Input
 --- @param lineDecoration Enum Optional - Line decoration style. Default is Solid. Suggestions: Solid, Dashed, Dotted
 --- @return void
 --- @overload fun(chartId: number, name: string, color: string | ColorEnum, unix: number): void
@@ -386,8 +402,8 @@ function PlotVerticalLine(chartId, name, color, unix, lineDecoration) end
 --- @param chartId number The chart index on which to plot the data.
 --- @param name string Name of the zone. This needs to be unique per index.
 --- @param color string | ColorEnum The zone inner color. Suggestions: Aqua, Black, Blue, Cyan, DarkGray, DarkGreen, Fuchsia, Gold, Gray, Green, Maroon, Olive, Orange, Purple, Red, SkyBlue, Teal, White, Yellow, ChangeColorOpacity
---- @param start number The lowest value of the zone. Suggestions: Input
---- @param endValue number The highest value of the zone. Suggestions: Input
+--- @param start number The lowest value of the zone on the y-axis. Suggestions: Input
+--- @param endValue number The highest value of the zone on the y-axis. Suggestions: Input
 --- @return void
 function PlotVerticalZone(chartId, name, color, start, endValue) end
 
@@ -414,4 +430,10 @@ function PlotVerticalZone(chartId, name, color, start, endValue) end
 --- @overload fun(chartId: number, upColor: string | ColorEnum, downColor: string | ColorEnum, upFill: boolean, downFill: boolean): void
 --- @overload fun(chartId: number, optionalParameters: OptionalParametersOf_PlotVolume): void
 function PlotVolume(chartId, upColor, downColor, upFill, downFill, side) end
+
+--- Configures the opacity for stacked area chart. A values between
+--- @param chartId number Index on which to plot the line.
+--- @param opacity number Opacity level from 0 - 100.
+--- @return void
+function SetStackedAreaOpacity(chartId, opacity) end
 

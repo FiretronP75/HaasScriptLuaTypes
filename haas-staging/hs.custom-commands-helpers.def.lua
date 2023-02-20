@@ -14,9 +14,9 @@ function DefineEasyIndicatorOutput(result) end
 --- The object returned by DefineEasyIndicatorParameters.
 --- @class ResultOf_DefineEasyIndicatorParameters
 --- @field chartIndex number Index on which to plot. Suggestions: Plot
---- @field interval number The interval of the indicator. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, DefineIntervalOptimization
+--- @field interval number The interval of the indicator. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices, DefineIntervalOptimization
 --- @field [1] number Index on which to plot. Suggestions: Plot
---- @field [2] number The interval of the indicator. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, DefineIntervalOptimization
+--- @field [2] number The interval of the indicator. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices, DefineIntervalOptimization
 
 --- The optional parameters of DefineEasyIndicatorParameters.
 --- @shape OptionalParametersOf_DefineEasyIndicatorParameters

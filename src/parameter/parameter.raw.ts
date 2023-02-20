@@ -9,6 +9,7 @@ export interface ParameterRaw {
   IsHidden: boolean;
   IsRequired: boolean;
   Name: string;
+  ScriptType?: string | null;
   Suggestion: number[];
   Type: HaasDataType;
 

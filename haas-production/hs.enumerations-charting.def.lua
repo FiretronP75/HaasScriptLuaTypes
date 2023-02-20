@@ -69,6 +69,10 @@ ShapeCircle = {}
 ShapeCross = {}
 
 --- Enumeration, returns the a shape type enum. Used PlotShapes().
+--- @class ShapeDash : Enum
+ShapeDash = {}
+
+--- Enumeration, returns the a shape type enum. Used PlotShapes().
 --- @class ShapeDiamond : Enum
 ShapeDiamond = {}
 

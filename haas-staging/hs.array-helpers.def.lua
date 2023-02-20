@@ -13,7 +13,7 @@ function ArrayAdd(input, element) end
 --- Returns true if the array contains any element or an element matches a specific value.
 --- @param input any Source data.
 --- @param value any Optional - Optional value to match.
---- @return boolean Returns true if. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+--- @return boolean Returns true if the input has any elements or if 'value' is defined when any of the elements matches the value. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @overload fun(input: any): boolean
 --- @overload fun(input: any, optionalParameters: OptionalParametersOf_ArrayAny): boolean
 function ArrayAny(input, value) end
@@ -31,14 +31,14 @@ function ArrayConcat(array1, array2) end
 --- Returns true if the array contains any element or an element matches a specific value.
 --- @param input any Source data.
 --- @param value any Optional - Optional value to match.
---- @return boolean Returns true if. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+--- @return boolean Returns true if the input has any elements or if 'value' is defined when any of the elements matches the value. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @overload fun(input: any): boolean
 --- @overload fun(input: any, optionalParameters: OptionalParametersOf_ArrayContains): boolean
 function ArrayContains(input, value) end
 
 --- Returns a new list with only unique elements. In other words; removes all duplicates.
 --- @param input any Source data.
---- @return any Returns the list.
+--- @return any Returns the unique values of the input.
 function ArrayDistinct(input) end
 
 --- The optional parameters of ArrayFilter.
@@ -106,12 +106,12 @@ function ArrayRemove(input, index) end
 --- @param input any Source data.
 --- @param oldValue any The old value.
 --- @param newValue any The new value.
---- @return any Returns true if.
+--- @return any The input with replaced values.
 function ArrayReplace(input, oldValue, newValue) end
 
 --- Remove an item from the beginning of an array.
 --- @param input any Source data.
---- @return any Returns the input array.
+--- @return any The input without the first value
 function ArrayShift(input) end
 
 --- The optional parameters of ArraySort.
@@ -141,7 +141,7 @@ function ArraySum(input, key) end
 --- Adds an element to the beginning of an array.
 --- @param input any Source data.
 --- @param element any Element which to add to the array.
---- @return any Returns the input array.
+--- @return any The input with the element added in front of the array
 function ArrayUnshift(input, element) end
 
 --- The optional parameters of Count.
@@ -192,13 +192,13 @@ function Range(input, offset, count) end
 --- @shape OptionalParametersOf_SourceManager
 --- @field interval number | nil The interval on which the data is based. Default is the selected main interval.
 --- @field cap number | nil Maximum size of the collection.
---- @field initialValues number[] | nil 
+--- @field initialValues number[] | nil The initial values when source in initialized
 
 --- Stores numeric values in a collection. Only adds the new value when the candle on the specified interval closed. This results in interval based data.
 --- @param newValue number This value will be added in front of the collection when the candle closed.
 --- @param interval number Optional - The interval on which the data is based. Default is the selected main interval. Suggestions: InputInterval, CurrentInterval
 --- @param cap number Optional - Maximum size of the collection.
---- @param initialValues number[] Optional - 
+--- @param initialValues number[] Optional - The initial values when source in initialized
 --- @return number[] Returns the numeric collection. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(newValue: number): number[]
 --- @overload fun(newValue: number, interval: number): number[]

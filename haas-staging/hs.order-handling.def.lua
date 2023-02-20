@@ -38,6 +38,11 @@ function IsAnyOrderFinished(positionId) end
 --- @overload fun(optionalParameters: OptionalParametersOf_IsAnyOrderOpen): boolean
 function IsAnyOrderOpen(positionId) end
 
+--- Checks if the given order is a buy order.
+--- @param orderId string Unique order identifier provided by the PlaceOrder commands. Suggestions: Load
+--- @return boolean Returns true if the given order is on buy side. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+function IsBuyOrder(orderId) end
+
 --- Checks if the given order is filled.
 --- @param orderId string Unique order identifier provided by the PlaceOrder commands. Suggestions: Load
 --- @return boolean Returns true if the given order is filled. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
@@ -47,4 +52,9 @@ function IsOrderFilled(orderId) end
 --- @param orderId string Unique order identifier provided by the PlaceOrder commands. Suggestions: Load
 --- @return boolean Returns true if the given order is still open. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 function IsOrderOpen(orderId) end
+
+--- Checks if the given order is a sell order.
+--- @param orderId string Unique order identifier provided by the PlaceOrder commands. Suggestions: Load
+--- @return boolean Returns true if the given order is on sell side. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+function IsSellOrder(orderId) end
 

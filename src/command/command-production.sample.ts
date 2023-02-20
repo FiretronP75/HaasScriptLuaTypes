@@ -36,6 +36,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -46,7 +47,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -58,6 +61,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -68,7 +72,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -80,6 +86,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -90,7 +97,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -102,6 +111,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -124,6 +134,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Upper bands of the ABands.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -152,6 +163,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Middle bands of the ABands.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -180,6 +192,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lower bands of the ABands.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -226,6 +239,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -270,6 +284,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum absolute price change before the insurance agrees.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -285,6 +300,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The target price of the trade. Default is the current buy or sell price.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -300,6 +316,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -389,6 +406,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A number representing a cosine, that must be greater than or equal to -1, but less than or equal to 1.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -430,6 +448,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -440,7 +459,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -452,6 +473,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -462,7 +484,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -474,6 +498,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -484,7 +509,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -496,6 +523,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Market volume array.",
+        "ScriptType": null,
         "Suggestion": [
           5212
         ]
@@ -546,6 +574,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -560,6 +589,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -610,6 +640,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main value.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -621,6 +652,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The percentage to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -668,6 +700,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main value.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -679,6 +712,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The percentage to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -726,6 +760,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The unix timestamp, by default the current time..",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -741,6 +776,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of seconds to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -756,6 +792,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of minutes to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -771,6 +808,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of hours to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -786,6 +824,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of days to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -801,6 +840,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of months to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -816,6 +856,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of years to add.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -863,6 +904,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The close price of the position.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           7606
@@ -877,6 +919,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to adjust: negative value reduces, positive value adds.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           7606
@@ -891,6 +934,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique position identifier.",
+        "ScriptType": null,
         "Suggestion": [
           6200,
           4406,
@@ -920,6 +964,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -930,7 +975,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -942,6 +989,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -952,7 +1000,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -964,6 +1014,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -974,7 +1025,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -986,6 +1039,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Market volume array.",
+        "ScriptType": null,
         "Suggestion": [
           5212
         ]
@@ -999,6 +1053,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1014,6 +1069,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1088,6 +1144,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1098,7 +1155,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1110,6 +1169,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1120,7 +1180,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1132,6 +1194,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1142,7 +1205,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1154,6 +1219,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1205,6 +1271,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1215,7 +1282,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1227,6 +1296,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1237,7 +1307,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1249,6 +1321,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1259,7 +1332,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1271,6 +1346,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1322,6 +1398,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -1364,6 +1441,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -1380,6 +1458,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1427,6 +1506,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -1469,6 +1549,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -1522,6 +1603,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The boolean to compare.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -1584,6 +1666,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Middle prices array ([High + Low] / 2).",
+        "ScriptType": null,
         "Suggestion": [
           5204
         ]
@@ -1597,6 +1680,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Shorter period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1612,6 +1696,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Longer period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1663,6 +1748,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1673,7 +1759,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1685,6 +1773,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Faster period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1700,6 +1789,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slower period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1715,6 +1805,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MA type used in the calculation.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -1778,6 +1869,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1815,6 +1907,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1825,7 +1918,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1837,6 +1932,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1847,7 +1943,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1859,6 +1957,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -1881,6 +1980,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Aroon Down.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -1909,6 +2009,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Aroon Up.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -1952,6 +2053,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1962,7 +2064,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1974,6 +2078,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -1984,7 +2089,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -1996,6 +2103,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -2047,6 +2155,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2058,6 +2167,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Element which to add to the array.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2085,7 +2195,7 @@ export const commandProductionSample: CommandRaw[] = [
     "CommandType": 1,
     "Category": 0,
     "Description": "Returns true if the array contains any element or an element matches a specific value.",
-    "ReturnDescription": "Returns true if.",
+    "ReturnDescription": "Returns true if the input has any elements or if 'value' is defined when any of the elements matches the value.",
     "Parameters": [
       {
         "Index": 0,
@@ -2096,6 +2206,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2107,6 +2218,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Optional value to match.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2159,6 +2271,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "First array.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2170,6 +2283,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Second array.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2192,7 +2306,7 @@ export const commandProductionSample: CommandRaw[] = [
     "CommandType": 1,
     "Category": 0,
     "Description": "Returns true if the array contains any element or an element matches a specific value.",
-    "ReturnDescription": "Returns true if.",
+    "ReturnDescription": "Returns true if the input has any elements or if 'value' is defined when any of the elements matches the value.",
     "Parameters": [
       {
         "Index": 0,
@@ -2203,6 +2317,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2214,6 +2329,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Optional value to match.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2276,7 +2392,7 @@ export const commandProductionSample: CommandRaw[] = [
     "CommandType": 1,
     "Category": 0,
     "Description": "Returns a new list with only unique elements. In other words; removes all duplicates.",
-    "ReturnDescription": "Returns the list.",
+    "ReturnDescription": "Returns the unique values of the input.",
     "Parameters": [
       {
         "Index": 0,
@@ -2287,6 +2403,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2320,6 +2437,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2331,6 +2449,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Value to match.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2342,6 +2461,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of filter to use. Default is ArrayFilterInclusiveType.",
+        "ScriptType": null,
         "Suggestion": [
           8000,
           8001,
@@ -2460,6 +2580,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2471,6 +2592,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Value to match.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2482,6 +2604,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of filter to use. Default is ArrayFilterInclusiveType.",
+        "ScriptType": null,
         "Suggestion": [
           8000,
           8001,
@@ -2520,6 +2643,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2531,6 +2655,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index to get.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -2578,6 +2703,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2589,6 +2715,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index to get.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -2636,6 +2763,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2647,6 +2775,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The offset from the last index.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -2689,6 +2818,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2722,6 +2852,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2733,6 +2864,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index of the element to remove.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -2764,7 +2896,7 @@ export const commandProductionSample: CommandRaw[] = [
     "CommandType": 1,
     "Category": 0,
     "Description": "Replaces a specific value with another value.",
-    "ReturnDescription": "Returns true if.",
+    "ReturnDescription": "The input with replaced values.",
     "Parameters": [
       {
         "Index": 0,
@@ -2775,6 +2907,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2786,6 +2919,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The old value.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2797,6 +2931,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The new value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2825,6 +2960,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2832,7 +2968,7 @@ export const commandProductionSample: CommandRaw[] = [
     "CommandType": 1,
     "Category": 0,
     "Description": "Remove an item from the beginning of an array.",
-    "ReturnDescription": "Returns the input array.",
+    "ReturnDescription": "The input without the first value",
     "OutputIndex": [],
     "IsConstant": false,
     "IsPrimary": true,
@@ -2858,6 +2994,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2869,6 +3006,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order of the sort. If set to true, order will be descending. Otherwise ascending.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -2922,6 +3060,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2933,6 +3072,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The key of the data to be summed.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2971,6 +3111,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -2982,6 +3123,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Element which to add to the array.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -2989,7 +3131,7 @@ export const commandProductionSample: CommandRaw[] = [
     "CommandType": 1,
     "Category": 0,
     "Description": "Adds an element to the beginning of an array.",
-    "ReturnDescription": "Returns the input array.",
+    "ReturnDescription": "The input with the element added in front of the array",
     "OutputIndex": [],
     "IsConstant": false,
     "IsPrimary": true,
@@ -3017,6 +3159,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -3063,6 +3206,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -3078,6 +3222,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -3092,6 +3237,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -3108,6 +3254,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -3151,6 +3298,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A number representing a tangent.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -3194,6 +3342,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The y coordinate of a point.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -3205,6 +3354,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The x coordinate of a point.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -3246,6 +3396,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3256,7 +3407,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -3268,6 +3421,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3278,7 +3432,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -3290,6 +3446,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3300,7 +3457,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -3312,6 +3471,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -3365,6 +3525,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -3376,6 +3537,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -3419,6 +3581,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source values.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -3430,6 +3593,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -3471,6 +3635,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -3519,6 +3684,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -3532,6 +3698,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True for total position amount (default), false for only open amount.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -3590,6 +3757,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -3635,6 +3803,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -3683,6 +3852,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3693,7 +3863,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -3705,6 +3877,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -3752,6 +3925,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Open prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3762,7 +3936,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -3774,6 +3950,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3784,7 +3961,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -3796,6 +3975,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3806,7 +3986,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -3818,6 +4000,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -3828,7 +4011,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -3873,6 +4058,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount() or InputAccountMarket() for example. Can be left empty for default properties.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -3884,11 +4070,12 @@ export const commandProductionSample: CommandRaw[] = [
         "Index": 0,
         "Name": "coin",
         "Type": 0,
-        "IsRequired": true,
+        "IsRequired": false,
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
         "Description": "Coin of which to retrieve the wallet amount. Default value is the 'UnderlyingAsset' currency.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -3902,6 +4089,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional market parameter for exchanges with separates wallet for each market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -3924,6 +4112,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The available balance.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -3935,6 +4124,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The locked balance for orders and/or position margin among others.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -3946,6 +4136,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The total balance. Available and locked.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -3974,6 +4165,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount() or InputAccountMarket() for example. Can be left empty for default properties.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -3990,6 +4182,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Coin of which to retrieve the wallet amount. Default value is the 'UnderlyingAsset' currency.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -4003,6 +4196,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional market parameter for exchanges with separates wallet for each market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -4050,6 +4244,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -4092,6 +4287,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -4102,7 +4298,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -4114,6 +4312,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -4129,6 +4328,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Standard deviation above the middle bands.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -4144,6 +4344,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Standard deviation below the middle bands.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -4159,6 +4360,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MA type used in the calculation.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -4188,6 +4390,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Upper band of the BBands.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -4216,6 +4419,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Middle band of the BBands.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -4244,6 +4448,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lower band of the BBands.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -4311,6 +4516,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Asset's source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -4321,7 +4527,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -4333,6 +4541,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Market's source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -4343,7 +4552,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -4355,6 +4566,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lookback period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -4407,6 +4619,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -4422,6 +4635,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -4436,6 +4650,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -4452,6 +4667,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -4498,6 +4714,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -4540,6 +4757,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -4623,6 +4841,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When true, SignalLong will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -4637,6 +4856,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When true, SignalShort will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -4651,6 +4871,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When true, SignalExitPosition will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -4665,6 +4886,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When true, SignalNone will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -4712,6 +4934,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Open prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -4722,7 +4945,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -4734,6 +4959,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -4744,7 +4970,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -4756,6 +4984,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -4766,7 +4995,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -4778,6 +5009,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -4788,7 +5020,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -4899,6 +5133,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The content of the message",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -4934,6 +5169,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The content of the message",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -4974,6 +5210,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -4989,6 +5226,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -5003,6 +5241,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -5019,6 +5258,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -5082,6 +5322,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -5114,6 +5355,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -5195,6 +5437,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data for BBands.",
+        "ScriptType": null,
         "Suggestion": [
           5201,
           5204,
@@ -5211,6 +5454,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "BBands MA Period Length.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -5224,6 +5468,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Deviation Multiplier.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -5237,6 +5482,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "BBands MA Type.",
+        "ScriptType": null,
         "Suggestion": [
           3407
         ]
@@ -5250,6 +5496,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Optional position identifier",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -5289,6 +5536,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal",
+        "ScriptType": null,
         "Suggestion": [
           6019,
           6012,
@@ -5373,6 +5621,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of minutes to keep the signal continious",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3400
@@ -5433,6 +5682,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index coin",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -5449,6 +5699,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The base coin of the whole index. Usually BTC or USD(T)",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -5465,6 +5716,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Total allocated amount",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -5480,6 +5732,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The percentage the price needs to drop before more is bought.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -5495,6 +5748,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The percentage the price needs to raise before more is sold.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -5510,6 +5764,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Stop loss percentage. Once the stop loss has been reached the position will be solded fully.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -5525,6 +5780,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Trailing stop loss percentage. Once the stop loss has been reached the position will be solded fully.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -5540,6 +5796,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "If set on true, excessive balance will be sold.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -5587,6 +5844,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -5600,6 +5858,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -5651,6 +5910,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -5664,6 +5924,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -5715,6 +5976,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -5728,6 +5990,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -5779,6 +6042,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -5792,6 +6056,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -5843,6 +6108,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -5856,6 +6122,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -5907,6 +6174,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index on which to chart",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -5920,6 +6188,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -5933,6 +6202,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3404
@@ -5993,6 +6263,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index on which to chart",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6006,6 +6277,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -6019,6 +6291,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3404
@@ -6079,6 +6352,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6092,6 +6366,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6143,6 +6418,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6156,6 +6432,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum sequence length before a signal is valid",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6169,6 +6446,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The lookback count",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6182,6 +6460,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6233,6 +6512,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5201,
           5204,
@@ -6249,6 +6529,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The period length of the MA.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6262,6 +6543,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The type of MA to be used.",
+        "ScriptType": null,
         "Suggestion": [
           3407
         ]
@@ -6300,6 +6582,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index on which to chart",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6313,6 +6596,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -6326,6 +6610,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3404
@@ -6386,6 +6671,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index on which to chart",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6399,6 +6685,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -6412,6 +6699,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3404
@@ -6472,6 +6760,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6485,6 +6774,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6544,6 +6834,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Base price of the bot",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -6559,6 +6850,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slot index (Unique)",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -6574,6 +6866,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trade amount",
+        "ScriptType": null,
         "Suggestion": [
           3605
         ]
@@ -6587,6 +6880,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Spread between orders.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -6602,6 +6896,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Start with a buy order",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -6649,6 +6944,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Array, List, or Table to grab a fractional range from.",
+        "ScriptType": null,
         "Suggestion": [
           5201
         ]
@@ -6662,6 +6958,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Which part to grab. Unlike a fraction numerator, previous parts are not included. In a fraction, 2 would mean 1st and 2nd parts combined. But here, 2 would mean the 2nd part without the 1st.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6675,6 +6972,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "How many parts to divide into. This is just like a fraction denominator.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6688,6 +6986,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Set to true to sort before dividing into parts.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6722,6 +7021,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Length of the MA",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -6735,6 +7035,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The source data",
+        "ScriptType": null,
         "Suggestion": [
           3404
         ]
@@ -6793,6 +7094,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The character(s) to repeat to form the rule.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -6809,6 +7111,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "How many times to repeat the character(s).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -6824,6 +7127,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Color of the rule.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -6856,6 +7160,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index on which to chart",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6869,6 +7174,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -6882,6 +7188,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3404
@@ -6942,6 +7249,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index on which to chart",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -6955,6 +7263,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -6968,6 +7277,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3404
@@ -7028,6 +7338,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The index on which to chart",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -7041,6 +7352,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -7054,6 +7366,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3404
@@ -7114,6 +7427,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Set on true if slots needs to start with a buy/long order or false for sell/short order.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -7140,6 +7454,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Price offset from the current price",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -7155,6 +7470,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slot amount",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -7170,6 +7486,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Enter timeout",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -7185,6 +7502,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Exit timeout",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -7200,6 +7518,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Stop loss percentage. Only active when position if fully open",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -7215,6 +7534,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The cooldown after a stop loss as been breached and position is closed",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -7230,6 +7550,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "If set on true, the slot will reset its saved values.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -7256,6 +7577,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Optional note to distinguish slot orders.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -7297,6 +7619,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Table of values to find the median value of.",
+        "ScriptType": null,
         "Suggestion": [
           5201
         ]
@@ -7310,6 +7633,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Set to true if the table is already sorted.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -7357,6 +7681,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": [
           5205
         ]
@@ -7370,6 +7695,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": [
           5206
         ]
@@ -7383,6 +7709,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": [
           5201,
           5204,
@@ -7399,6 +7726,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": [
           5212
         ]
@@ -7412,6 +7740,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Fast Period",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -7426,6 +7755,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Fast MA Type",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           4406
@@ -7440,6 +7770,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Slow Period",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -7454,6 +7785,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Slow MA Type",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           4406
@@ -7468,6 +7800,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Fast %K Period",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -7482,6 +7815,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Slow %K Period",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -7496,6 +7830,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Slow %D Period",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -7537,6 +7872,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -7550,6 +7886,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7601,6 +7938,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Profit level (as percentage) where the trailing starts.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7614,6 +7952,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trailing distance (as percentage) from the highest recorded profit.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7627,6 +7966,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Trailing mode. Use one of the following: 'default', 'grow', or 'shrink'.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7640,6 +7980,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Maximum rebounds allowed. If not set, then rebound is not used. Default is 0 (disabled).",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7653,6 +7994,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique position ID.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -7693,6 +8035,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -7706,6 +8049,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7757,6 +8101,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -7770,6 +8115,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7811,6 +8157,313 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "ScriptId": "cc3e1b3b0cc84d2ba2781681889de66a",
+    "IsValid": true,
+    "CommandName": "CC_SQZMOM_LB_Ext",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Squeeze Momentum Indicator - LazyBear",
+    "ReturnDescription": "SQZMOM values",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "source",
+        "Type": 7,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Source prices for calculations",
+        "ScriptType": null,
+        "Suggestion": [
+          5200,
+          5211,
+          5201,
+          5213,
+          5215,
+          5216,
+          5212,
+          5208,
+          5202,
+          5205,
+          5203,
+          5204,
+          5206,
+          5207,
+          5209,
+          5214
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "length",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "BB Lenght",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          3401,
+          3402,
+          3423,
+          3413,
+          3420,
+          3414,
+          3404,
+          3405,
+          3406,
+          3407,
+          3408,
+          3409,
+          3410,
+          3411,
+          3422,
+          3418,
+          3424,
+          3415,
+          3417,
+          3416,
+          3600,
+          3601,
+          3602,
+          3603,
+          3604,
+          3605,
+          4403
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "mult",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "BB MultFactor",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          3401,
+          3402,
+          3423,
+          3413,
+          3420,
+          3414,
+          3404,
+          3405,
+          3406,
+          3407,
+          3408,
+          3409,
+          3410,
+          3411,
+          3422,
+          3418,
+          3424,
+          3415,
+          3417,
+          3416,
+          3600,
+          3601,
+          3602,
+          3603,
+          3604,
+          3605,
+          4403
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "length_kc",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "KC Length",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          3401,
+          3402,
+          3423,
+          3413,
+          3420,
+          3414,
+          3404,
+          3405,
+          3406,
+          3407,
+          3408,
+          3409,
+          3410,
+          3411,
+          3422,
+          3418,
+          3424,
+          3415,
+          3417,
+          3416,
+          3600,
+          3601,
+          3602,
+          3603,
+          3604,
+          3605,
+          4403
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "mult_kc",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "KC MultFactor",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          3401,
+          3402,
+          3423,
+          3413,
+          3420,
+          3414,
+          3404,
+          3405,
+          3406,
+          3407,
+          3408,
+          3409,
+          3410,
+          3411,
+          3422,
+          3418,
+          3424,
+          3415,
+          3417,
+          3416,
+          3600,
+          3601,
+          3602,
+          3603,
+          3604,
+          3605,
+          4403
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "ma_type",
+        "Type": 2,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "BB Moving Average Type",
+        "ScriptType": null,
+        "Suggestion": [
+          3407,
+          1800,
+          1801,
+          1802,
+          1803,
+          1804,
+          1805,
+          1806,
+          1807,
+          1808
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "ma_type_kc",
+        "Type": 2,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "KC Moving Average Type",
+        "ScriptType": null,
+        "Suggestion": [
+          3407,
+          1800,
+          1801,
+          1802,
+          1803,
+          1804,
+          1805,
+          1806,
+          1807,
+          1808
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "ma_type_r",
+        "Type": 2,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "Range Moving Average Type",
+        "ScriptType": null,
+        "Suggestion": [
+          3407,
+          1800,
+          1801,
+          1802,
+          1803,
+          1804,
+          1805,
+          1806,
+          1807,
+          1808
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 7,
+    "OutputSuggestions": [
+      6019,
+      6012,
+      6013,
+      6000,
+      6001,
+      6002,
+      6003,
+      6004,
+      6011,
+      6005,
+      6006,
+      6014,
+      6007,
+      6021,
+      6008,
+      6009,
+      6016,
+      6017,
+      6018,
+      6020,
+      6015,
+      6010,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
     "ScriptId": "1c5db1fe83319d2f842c1a6d2e5135da",
     "IsValid": true,
     "CommandName": "CC_STC",
@@ -7829,6 +8482,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data",
+        "ScriptType": null,
         "Suggestion": [
           5201
         ]
@@ -7842,6 +8496,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "STC Depth",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3400
@@ -7856,6 +8511,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The short length",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3400
@@ -7870,6 +8526,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The short length",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           3400
@@ -7908,6 +8565,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -7921,6 +8579,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Interval for the price data. By default the main interval",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7972,6 +8631,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "\"average\" for average true range, \"maximum\" for maximum true range, \"median\" for median true range, \"minimum\" for minimum true range.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7985,6 +8645,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "How many intervals to go back.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -7998,6 +8659,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Time of each candle in minutes.",
+        "ScriptType": null,
         "Suggestion": [
           3404
         ]
@@ -8011,6 +8673,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "If false, the currently open candle will not be included.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -8024,6 +8687,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Which market to look at.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -8039,6 +8703,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -8052,6 +8717,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Which part to grab. Unlike a fraction numerator, previous parts are not included. In a fraction, 2 would mean 1st and 2nd parts combined. But here, 2 would mean the 2nd part without the 1st.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -8065,6 +8731,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "How many parts to divide into. This is just like a fraction denominator.",
+        "ScriptType": null,
         "Suggestion": [
           3400
         ]
@@ -8095,6 +8762,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8105,7 +8773,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -8117,6 +8787,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8127,7 +8798,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -8139,6 +8812,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8149,7 +8823,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -8161,6 +8837,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -8212,6 +8889,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Open prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8222,7 +8900,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -8234,6 +8914,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8244,7 +8925,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -8256,6 +8939,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8266,7 +8950,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -8278,6 +8964,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8288,7 +8975,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -8300,6 +8989,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The Candle Pattern (CDL) type.",
+        "ScriptType": null,
         "Suggestion": [
           3413,
           7800,
@@ -8374,6 +9064,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Penetration threshold.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -8423,6 +9114,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -8464,6 +9156,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5205
         ]
@@ -8477,6 +9170,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5206
         ]
@@ -8490,6 +9184,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5201
         ]
@@ -8503,6 +9198,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Depth length. Default is 20.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -8518,6 +9214,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "ATR multiplier. Default is 3.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -8569,6 +9266,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5205
         ]
@@ -8582,6 +9280,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5206
         ]
@@ -8595,6 +9294,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5201
         ]
@@ -8608,6 +9308,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Depth length. Default is 20.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -8623,6 +9324,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "ATR multiplier. Default is 3.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -8674,6 +9376,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -8684,7 +9387,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -8728,6 +9433,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Color string in format: hex (#000000), rgba(r,g,b,a) or rgb(r,g,b)",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -8759,6 +9465,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Opacity level from 0 - 100.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -8795,6 +9502,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to add the label.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -8806,6 +9514,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The axis side on which to add the label.",
+        "ScriptType": null,
         "Suggestion": [
           1403,
           1400
@@ -8820,6 +9529,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The text on the label.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -8831,6 +9541,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The y-axis value on which to place the label.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -8846,6 +9557,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The label fill color.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -8878,6 +9590,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The text color.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -8929,6 +9642,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to apply the settings.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -8940,6 +9654,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The side of the chart on which to apply the settings.",
+        "ScriptType": null,
         "Suggestion": [
           1403,
           1400
@@ -8954,6 +9669,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -8965,6 +9681,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -8976,6 +9693,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Set axis visible/hidden.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -8990,6 +9708,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Set axis type.",
+        "ScriptType": null,
         "Suggestion": [
           1400,
           1403
@@ -9023,6 +9742,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to apply the options.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -9034,6 +9754,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart title.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -9045,6 +9766,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart height. Below 1 will be treated as percentage (0.5-50%).",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -9056,6 +9778,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Price plot style.",
+        "ScriptType": null,
         "Suggestion": [
           1412,
           1413,
@@ -9097,6 +9820,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -9107,7 +9831,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -9119,6 +9845,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -9129,7 +9856,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -9141,6 +9870,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -9151,7 +9881,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -9163,6 +9895,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -9215,6 +9948,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -9226,6 +9960,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum value.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -9237,6 +9972,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -9304,6 +10040,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -9319,6 +10056,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -9333,6 +10071,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -9349,6 +10088,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -9415,6 +10155,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The timestamp to round. Set on 0 for current.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -9430,6 +10171,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The interval on which the candle is build.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -9477,6 +10219,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The enter price of the position.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           7606
@@ -9491,6 +10234,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique position identifier.",
+        "ScriptType": null,
         "Suggestion": [
           6200,
           4406,
@@ -9543,6 +10287,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -9553,7 +10298,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -9565,6 +10312,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -9621,6 +10369,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The red component value for the new color. Valid values are 0 through 255.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -9636,6 +10385,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The green component value for the new color. Valid values are 0 through 255.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -9651,6 +10401,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The blue component value for the new color. Valid values are 0 through 255.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -9666,6 +10417,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The alpha component value for the new color. Valid values are 0 through 255.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -9728,6 +10480,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -9742,6 +10495,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -9758,6 +10512,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Is true when input1 is above input2.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -9791,6 +10546,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Is true when input1 is equals input2.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -9824,6 +10580,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Is true when input1 is below input2.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -9888,6 +10645,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -9949,6 +10707,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -9991,6 +10750,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -10042,6 +10802,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -10120,6 +10881,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal we want to convert.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -10136,6 +10898,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal we want to convert too.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -10185,6 +10948,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -10195,7 +10959,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -10207,6 +10973,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length of first ROC.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10222,6 +10989,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length of second ROC.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10237,6 +11005,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10288,6 +11057,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "First source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -10298,7 +11068,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -10310,6 +11082,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Second source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -10320,7 +11093,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -10332,6 +11107,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10381,6 +11157,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -10424,6 +11201,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -10470,6 +11248,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -10481,6 +11260,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Optional value to match.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -10542,6 +11322,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price source of the market. If empty the main bot price source is set.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -10558,6 +11339,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The base currency of the market. If empty the bots base currency price source is set.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -10574,6 +11356,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The quote currency of the market. If empty the bots main quote currency is set.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -10590,6 +11373,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The contract name of the market. If empty the bots main contract name is set.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -10637,6 +11421,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402
@@ -10651,6 +11436,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The enter price of the position.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           7606
@@ -10665,6 +11451,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The size of the position.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           7606,
@@ -10681,6 +11468,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the position.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -10697,6 +11485,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The leverage of the position. -1 for default.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10712,6 +11501,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique position identifier.",
+        "ScriptType": null,
         "Suggestion": [
           6200,
           4406,
@@ -10753,6 +11543,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The year of the timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10768,6 +11559,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The month of the timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10783,6 +11575,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The date of the timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10798,6 +11591,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The hour of the timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10813,6 +11607,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The minute of the timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10828,6 +11623,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The seconds of the timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -10892,6 +11688,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -10903,6 +11700,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -10955,6 +11753,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -10966,6 +11765,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -11009,6 +11809,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -11020,6 +11821,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -11072,6 +11874,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -11083,6 +11886,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -11126,6 +11930,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -11136,7 +11941,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -11148,6 +11955,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "RSI period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11163,6 +11971,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "UD period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11178,6 +11987,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11234,6 +12044,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11281,6 +12092,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11328,6 +12140,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11370,6 +12183,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -11419,6 +12233,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11466,6 +12281,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11508,6 +12324,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -11531,6 +12348,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The open price of the current candle.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -11545,6 +12363,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The high price of the current candle.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -11559,6 +12378,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The low price of the current candle.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -11573,6 +12393,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The close price of the current candle.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -11587,6 +12408,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The volume of the current candle.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -11601,6 +12423,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ask/buy price of the current candle.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -11615,6 +12438,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The bid/sell price of the current candle.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -11650,6 +12474,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11697,6 +12522,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11744,6 +12570,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "An unix timestamp, by default the current time.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11791,6 +12618,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The name of the item.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -11802,6 +12630,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value of the item.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -11813,6 +12642,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The name of the report. By default its 'Custom Report'.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -11824,6 +12654,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When set on true, this value will be visible on the bot list in the UI.'.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -11854,6 +12685,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11919,6 +12751,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -11961,6 +12794,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12023,6 +12857,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of position allowed before the check is preformed.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12067,6 +12902,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of position allowed before the check is preformed.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12111,6 +12947,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of positions allowed before the bot is deactivated.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12155,6 +12992,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of positions allowed before the bot is deactivated.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12199,6 +13037,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of orders allowed before the bot is deactivated.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12243,6 +13082,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of positions allowed before the bot is deactivated.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12289,6 +13129,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Reason for deactivation.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -12305,6 +13146,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If set, all open orders of the bot are being canceled.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -12348,6 +13190,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum allowed loss based on the ROI.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12392,6 +13235,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum profit based on the ROI.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12438,6 +13282,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The command name. Needs to be unique and a single word. No spaces or special characters are allowed beside number and '_'.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -12449,6 +13294,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The description of the command.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -12479,6 +13325,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The indicator result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -12576,6 +13423,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Default chart index. Default is 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -12593,6 +13441,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Index on which to plot.",
+        "ScriptType": null,
         "Suggestion": [
           408,
           4206
@@ -12607,6 +13456,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The interval of the indicator.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -12618,6 +13468,8 @@ export const commandProductionSample: CommandRaw[] = [
           5203,
           5207,
           5208,
+          5215,
+          5216,
           607
         ]
       }
@@ -12651,6 +13503,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The interval on which the result is based.",
+        "ScriptType": null,
         "Suggestion": [
           604,
           606
@@ -12684,6 +13537,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The parameter type enum.",
+        "ScriptType": null,
         "Suggestion": [
           2206,
           2205,
@@ -12704,6 +13558,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The output value. Only required if type is not a void.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -12715,6 +13570,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The output description. Only required if type is not a void.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -12726,6 +13582,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": true,
         "Description": "The output suggestions. Only required if type is not a void. Separated by , . ; or : and can take category definitions.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -12756,6 +13613,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The array index of this value/output.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -12767,6 +13625,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The parameter type enum.",
+        "ScriptType": null,
         "Suggestion": [
           2206,
           2205,
@@ -12787,6 +13646,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The output name.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -12798,6 +13658,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The output description.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -12809,6 +13670,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": true,
         "Description": "The output suggestions. Separated by , . ; or : and can take category definitions.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -12839,6 +13701,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The parameter type enum.",
+        "ScriptType": null,
         "Suggestion": [
           2206,
           2205,
@@ -12859,6 +13722,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The input parameter name.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -12870,6 +13734,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The input parameter description.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -12883,6 +13748,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "If true, the command requires the parameter to be defined.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -12897,6 +13763,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default and test parameter for the command. Try to use fake data if the parameter is required.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403,
@@ -12913,6 +13780,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": true,
         "Description": "The input suggestions. Commands separated by , . ; or : and can take category definitions.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -12944,6 +13812,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -13022,6 +13891,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The number of minutes of the delay.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -13059,6 +13929,37 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "Delete",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "key",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": true,
+        "AllowNull": false,
+        "Description": "Unique identifier.",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "Command": 4208,
+    "CommandType": 1,
+    "Category": 22,
+    "Description": "Deletes a value on a specific key.",
+    "ReturnDescription": null,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "Delta",
     "Description": "Calculates the percentage between input1 and input2 or the percentage change between the values of input1.",
     "ReturnDescription": "Returns the percentage between input1 and input2. When for example input1 is 5 and input2 is 6, 20 is returned.",
@@ -13072,6 +13973,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -13083,6 +13985,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -13124,6 +14027,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -13134,7 +14038,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -13146,6 +14052,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -13244,6 +14151,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -13258,6 +14166,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -13302,6 +14211,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -13318,6 +14228,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -13348,6 +14259,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -13364,6 +14276,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -13394,6 +14307,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -13542,6 +14456,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -13558,6 +14473,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -13588,6 +14504,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -13598,7 +14515,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -13610,6 +14529,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -13620,7 +14540,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -13632,6 +14554,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -13654,6 +14577,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Upper band of the channel.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -13682,6 +14606,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Middle band of the channel.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -13710,6 +14635,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lower band of the channel.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -13754,6 +14680,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -13770,6 +14697,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -13800,6 +14728,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -13816,6 +14745,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -13846,6 +14776,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal to process.",
+        "ScriptType": null,
         "Suggestion": [
           6002,
           6006,
@@ -13861,6 +14792,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -13985,6 +14917,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -13995,7 +14928,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -14007,6 +14942,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Shorter period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -14022,6 +14958,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Longer period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -14096,6 +15033,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -14106,7 +15044,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -14118,6 +15058,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -14128,7 +15069,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -14140,6 +15083,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -14150,7 +15094,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -14162,6 +15108,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -14216,6 +15163,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Price pump percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -14231,6 +15179,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Read depth. Default is 30 ticks.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -14246,6 +15195,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -14259,6 +15209,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -14303,6 +15254,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Price pump percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -14318,6 +15270,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Read depth. Default is 30 ticks.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -14333,6 +15286,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -14346,6 +15300,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -14414,6 +15369,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14425,6 +15381,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14436,6 +15393,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14487,6 +15445,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14498,6 +15457,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14509,6 +15469,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14560,6 +15521,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14611,6 +15573,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14622,6 +15585,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14633,6 +15597,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14684,6 +15649,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14695,6 +15661,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14706,6 +15673,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14757,6 +15725,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14768,6 +15737,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14779,6 +15749,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14830,6 +15801,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14841,6 +15813,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14852,6 +15825,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14903,6 +15877,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14914,6 +15889,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14925,6 +15901,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -14976,6 +15953,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14987,6 +15965,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -14998,6 +15977,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15049,6 +16029,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15060,6 +16041,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15071,6 +16053,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15122,6 +16105,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15133,6 +16117,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15144,6 +16129,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15195,6 +16181,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15206,6 +16193,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15217,6 +16205,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15268,6 +16257,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15279,6 +16269,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15290,6 +16281,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15341,6 +16333,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15352,6 +16345,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15363,6 +16357,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15414,6 +16409,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15425,6 +16421,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15436,6 +16433,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15487,6 +16485,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15498,6 +16497,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15509,6 +16509,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15560,6 +16561,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15571,6 +16573,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15582,6 +16585,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15633,6 +16637,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15644,6 +16649,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15655,6 +16661,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15706,6 +16713,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15717,6 +16725,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15728,6 +16737,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15779,6 +16789,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15790,6 +16801,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15801,6 +16813,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15852,6 +16865,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15863,6 +16877,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15874,6 +16889,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15925,6 +16941,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15936,6 +16953,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -15947,6 +16965,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -15998,6 +17017,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16009,6 +17029,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16020,6 +17041,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16071,6 +17093,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16082,6 +17105,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16093,6 +17117,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16144,6 +17169,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16155,6 +17181,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16166,6 +17193,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16217,6 +17245,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16228,6 +17257,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16239,6 +17269,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16290,6 +17321,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16301,6 +17333,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16312,6 +17345,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16363,6 +17397,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16374,6 +17409,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16385,6 +17421,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16436,6 +17473,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16447,6 +17485,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16458,6 +17497,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16509,6 +17549,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16520,6 +17561,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16531,6 +17573,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16582,6 +17625,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16593,6 +17637,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16604,6 +17649,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16655,6 +17701,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16666,6 +17713,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16677,6 +17725,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16728,6 +17777,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16739,6 +17789,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16750,6 +17801,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16801,6 +17853,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16812,6 +17865,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16823,6 +17877,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16874,6 +17929,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16885,6 +17941,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16896,6 +17953,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -16947,6 +18005,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16958,6 +18017,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -16969,6 +18029,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17020,6 +18081,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17031,6 +18093,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17042,6 +18105,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17093,6 +18157,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17104,6 +18169,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17115,6 +18181,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17166,6 +18233,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17177,6 +18245,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17188,6 +18257,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17239,6 +18309,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17250,6 +18321,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17261,6 +18333,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17312,6 +18385,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17323,6 +18397,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17334,6 +18409,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17385,6 +18461,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17396,6 +18473,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17407,6 +18485,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17458,6 +18537,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17469,6 +18549,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17480,6 +18561,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17531,6 +18613,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17542,6 +18625,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17553,6 +18637,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17604,6 +18689,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17615,6 +18701,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17626,6 +18713,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17677,6 +18765,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17688,6 +18777,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17699,6 +18789,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17750,6 +18841,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17761,6 +18853,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17772,6 +18865,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17823,6 +18917,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17834,6 +18929,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17845,6 +18941,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17896,6 +18993,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17907,6 +19005,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17918,6 +19017,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -17969,6 +19069,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17980,6 +19081,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique name of the indicator.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -17991,6 +19093,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Used interval for price data. Default is 0 and the main interval will be used.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -18037,6 +19140,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -18047,7 +19151,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -18059,6 +19165,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -18142,6 +19249,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Executes an update right after an order has finished (canceled or filled).",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -18269,6 +19377,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "First value to compare.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -18280,6 +19389,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Second value to compare.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -18375,6 +19485,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -18416,6 +19527,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -18426,7 +19538,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -18438,6 +19552,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -18453,6 +19568,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -18475,6 +19591,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Normal RSI result.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -18489,6 +19606,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast RSI result.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -18523,6 +19641,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -18576,6 +19695,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -18587,6 +19707,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The maximum threshold value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -18630,6 +19751,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -18641,6 +19763,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The old value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -18684,6 +19807,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The function to executed when a candle closes.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -18733,6 +19857,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -18779,6 +19904,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The unix datetime number to format.",
+        "ScriptType": null,
         "Suggestion": [
           6801
         ]
@@ -18792,6 +19918,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The characters between the year and month, and between the month and day.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -18805,6 +19932,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The characters between the date and time.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -18818,6 +19946,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The characters between the hour and minute, and between the minute and second.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -18831,6 +19960,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the seconds will be included in the formatted time.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -18845,6 +19975,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the formatted time will be included.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -18859,6 +19990,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the year will be included in the formatted date.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -18899,6 +20031,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -18983,6 +20116,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The 'faster' value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -18998,6 +20132,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The 'slower' value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19051,6 +20186,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. When set only orders related to that position are returned.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -19086,6 +20222,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. When set only orders related to that position are returned.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -19130,6 +20267,196 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "GetBodyHighPrices",
+    "Command": 5215,
+    "CommandType": 1,
+    "Category": 27,
+    "Description": "A collection with the highest price of the candle its body prices. Sorted from new to old.",
+    "ReturnDescription": "Returns a collection of the highest price of the candle its body prices.",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "interval",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The ticks interval.",
+        "ScriptType": null,
+        "Suggestion": [
+          3404,
+          4403,
+          3601
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "fullCandles",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hlcStyle",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 7,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "GetBodyLowPrices",
+    "Command": 5216,
+    "CommandType": 1,
+    "Category": 27,
+    "Description": "A collection with the lowest price of the candle its body prices. Sorted from new to old.",
+    "ReturnDescription": "Returns a collection of the lowest price of the candle its body prices.",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "interval",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The ticks interval.",
+        "ScriptType": null,
+        "Suggestion": [
+          3404,
+          4403,
+          3601
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "fullCandles",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hlcStyle",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 7,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "GetBotProfit",
     "Parameters": [
       {
@@ -19141,6 +20468,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -19157,6 +20485,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Set on true to include the unrealized profits. By default false.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -19203,6 +20532,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -19254,6 +20584,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19269,6 +20600,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Below this value, a DoLong() is executed.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19284,6 +20616,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Above this value, a DoShort() is executed.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19337,6 +20670,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The name of the command.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -19368,6 +20702,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Indicator signals collection. Takes a variable number of arguments.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -19482,6 +20817,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The 'faster' value.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -19492,7 +20828,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -19504,6 +20842,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The 'slower' value.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -19514,7 +20853,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -19559,6 +20900,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Bot position enum. PositionLong, PositionShort or NoPosition.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -19574,6 +20916,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -19622,6 +20965,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Bot position enum. PositionLong, PositionShort or NoPosition.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -19637,6 +20981,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -19685,6 +21030,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -19760,6 +21106,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -19770,7 +21117,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -19782,6 +21131,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of records to include.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19797,6 +21147,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of records to skip.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19844,6 +21195,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -19854,7 +21206,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -19866,6 +21220,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of records to include.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19912,6 +21267,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum number of records returned (can return less).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -19927,6 +21283,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -19966,6 +21323,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -19982,6 +21340,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -20030,6 +21389,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -20040,7 +21400,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -20052,6 +21414,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of records to include.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -20067,6 +21430,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of records to skip.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -20114,6 +21478,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -20124,7 +21489,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -20136,6 +21503,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of records to include.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -20183,6 +21551,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -20199,6 +21568,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -20237,6 +21607,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -20281,6 +21652,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -20303,6 +21675,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Ask/buy prices. Sorted from low to high.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -20327,6 +21700,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Ask/buy amounts. Sorted on price from low to high.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -20351,6 +21725,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Bid/sell prices. Sorted from low to high.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -20375,6 +21750,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Bid/sell amounts. Sorted on price from low to high.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -20426,6 +21802,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -20463,6 +21840,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -20501,6 +21879,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20546,6 +21925,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20559,6 +21939,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "If true, the fee cost are subtracted from the total amount if they are paid in the base currency.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -20605,6 +21986,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20618,6 +22000,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "If set on true, the timespan will be in seconds.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -20629,6 +22012,52 @@ export const commandProductionSample: CommandRaw[] = [
     "Category": 26,
     "Description": "Calculates how long an order is or has been open in minutes.",
     "ReturnDescription": "Returns the time the order is or has been open for in minutes.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "GetOrderProfit",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "orderId",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
+        "Suggestion": [
+          4200
+        ]
+      }
+    ],
+    "Command": 5007,
+    "CommandType": 1,
+    "Category": 26,
+    "Description": "Calculates the realized profits of the order.",
+    "ReturnDescription": "Returns gross profits of the order.",
     "OutputIndex": [],
     "IsConstant": false,
     "IsPrimary": true,
@@ -20685,6 +22114,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20729,6 +22159,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20762,6 +22193,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20775,6 +22207,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True for total position amount (default), false for only open amount.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -20838,6 +22271,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20881,11 +22315,29 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
           3406,
           3600
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
         ]
       }
     ],
@@ -20914,6 +22366,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20927,6 +22380,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional target price. Default is the best bid/ask.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -20937,7 +22391,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -20986,6 +22442,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -20999,6 +22456,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional target price. Default is the best bid/ask.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -21009,7 +22467,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -21048,6 +22508,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The unique identifier of the signal.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -21103,6 +22564,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The 'faster' or indicator value.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -21113,7 +22575,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -21125,6 +22589,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The 'slower' or signal value.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -21135,7 +22600,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -21147,6 +22614,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal type which defines how the inputs are interpreted.",
+        "ScriptType": null,
         "Suggestion": [
           3418
         ]
@@ -21160,6 +22628,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The center position for 'Zero Cross' signal types. 0 for indicators that oscillate below and above zero, 50 for indicators like RSI, MFI and STOCH.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21175,6 +22644,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The buy level for 'Threshold' signal types. Used for indicators like RSI, MFI and STOCH.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21190,6 +22660,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The sell level for 'Threshold' signal types. Used for indicators like RSI, MFI and STOCH.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21238,6 +22709,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -21249,6 +22721,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -21295,6 +22768,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21310,6 +22784,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Below this value, a SignalLong is returned. If its above a SignalShort.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21325,6 +22800,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum swing below or above the threshold before a signal is returned.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21378,6 +22854,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional key if using multiple timers.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -21421,6 +22898,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -21444,6 +22922,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Max. DrawDown in percentages.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21460,6 +22939,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Max. DrawDown in underlying asset.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21476,6 +22956,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Sharpe Ratio.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21492,6 +22973,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Sortino Ratio.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21508,6 +22990,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Win percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21524,6 +23007,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Profit Ratio.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21540,6 +23024,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Profit Factor.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21556,6 +23041,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "CPC Index.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21572,6 +23058,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Tail Ratio.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21588,6 +23075,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Common Sense Ratio.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21604,6 +23092,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Outlier Win Ratio.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21620,6 +23109,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Outlier Loss Ratio.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21636,6 +23126,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Profit Margin Ratio (Gain / Total Used Margin).",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21652,6 +23143,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Biggest Winner.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21668,6 +23160,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Biggest Loser.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21684,6 +23177,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Highest Point in total PNL.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21700,6 +23194,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lowest Point in total PNL.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21716,6 +23211,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Total Margin Used.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209,
@@ -21753,6 +23249,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The input value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -21784,6 +23281,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Indicator signals collection. Takes a variable number of arguments.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -21833,6 +23331,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -21848,6 +23347,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -21862,6 +23362,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -21878,6 +23379,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -21922,6 +23424,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The required sum of the long signals weight before the signal is valid.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21937,6 +23440,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The required sum of the short signals weight before the signal is valid.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21952,6 +23456,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The required sum of the exit signals weight before the signal is valid.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -21967,6 +23472,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Indicator signals collection. Takes a variable number of arguments.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -22083,6 +23589,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -22125,6 +23632,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -22136,6 +23644,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Offset from start.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -22151,6 +23660,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of items to grab.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -22211,6 +23721,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -22253,6 +23764,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -22293,6 +23805,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trailing stop loss percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -22308,6 +23821,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The grow percentage. 0.035 for example.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -22323,6 +23837,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -22336,6 +23851,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -22496,6 +24012,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -22511,6 +24028,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -22525,6 +24043,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -22541,6 +24060,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -22603,6 +24123,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -22618,6 +24139,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -22632,6 +24154,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -22721,6 +24244,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -22736,6 +24260,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -22750,6 +24275,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -22766,6 +24292,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -22922,6 +24449,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -22937,6 +24465,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -22951,6 +24480,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -22967,6 +24497,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -23033,6 +24564,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -23048,6 +24580,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -23062,6 +24595,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -23078,6 +24612,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -23144,6 +24679,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The size of the array. Default 0.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -23155,6 +24691,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The default value when size is set. Default is 0.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -23216,6 +24753,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -23226,7 +24764,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -23274,6 +24814,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -23284,7 +24825,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -23332,6 +24875,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -23342,7 +24886,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -23361,6 +24907,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "In-Phase component.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23389,6 +24936,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Quadrature component.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23432,6 +24980,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -23442,7 +24991,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -23461,6 +25012,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Sine of the DC Phase.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23489,6 +25041,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lead Sine of the DC Phase advanced by 45 degrees.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23532,6 +25085,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -23542,7 +25096,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -23590,6 +25146,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -23600,7 +25157,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -23644,6 +25203,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -23654,7 +25214,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -23666,6 +25228,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length for Tenkan-sen.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -23681,6 +25244,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length for Kijun-sen.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -23696,6 +25260,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length for Senkou Span B.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -23718,6 +25283,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The conversion line of the Ichimoku.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23746,6 +25312,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The base line of the Ichimoku.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23774,6 +25341,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The leading span  of the Ichimoku.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23802,6 +25370,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The leading span B of the Ichimoku.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -23873,6 +25442,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Input boolean to check.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -23899,6 +25469,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "If true, this value is passed on.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -23910,6 +25481,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "If false, this value is passed on.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -23953,6 +25525,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Statement one.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -23979,6 +25552,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Statement two.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -24005,6 +25579,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Value1, returns if statement1 is valid.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24016,6 +25591,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Value2, returns if statement2 is valid.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24027,6 +25603,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Value3, returns is statement 1 and 2 are invalid.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -24070,6 +25647,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -24083,6 +25661,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value when the value is not set.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -24126,6 +25705,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -24204,6 +25784,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal to ignore. SignalLong, SignalShort or SignalExitPosition.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -24315,6 +25896,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Open prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -24325,7 +25907,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -24337,6 +25921,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -24347,7 +25932,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -24359,6 +25946,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -24435,6 +26023,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Indicator signals. Takes a variable number of arguments.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -24514,6 +26103,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The unanimous signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -24538,6 +26128,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The consensus signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -24641,6 +26232,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24652,6 +26244,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           4406,
@@ -24668,6 +26261,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24681,6 +26275,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24716,6 +26311,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24727,6 +26323,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24740,6 +26337,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24775,6 +26373,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24786,6 +26385,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24799,6 +26399,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24841,6 +26442,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24852,6 +26454,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The callback which will be executed when the button is pressed.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24863,6 +26466,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24876,6 +26480,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -24908,6 +26513,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -24919,6 +26525,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           7800,
           7801,
@@ -24992,6 +26599,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25005,6 +26613,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25039,6 +26648,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25050,6 +26660,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           1804,
           1801,
@@ -25071,6 +26682,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25084,6 +26696,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25125,6 +26738,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The header label text.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -25155,6 +26769,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25166,6 +26781,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4403
         ]
@@ -25179,6 +26795,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25192,6 +26809,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25216,7 +26834,9 @@ export const commandProductionSample: CommandRaw[] = [
       5205,
       5206,
       5201,
-      5212
+      5212,
+      5215,
+      5216
     ],
     "ChangeTypes": []
   },
@@ -25232,6 +26852,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25243,6 +26864,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           3001,
           3000,
@@ -25259,6 +26881,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25272,6 +26895,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25306,6 +26930,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25317,6 +26942,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25330,6 +26956,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25343,6 +26970,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25385,6 +27013,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25396,6 +27025,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           1804,
           1801,
@@ -25417,6 +27047,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25430,6 +27061,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25471,6 +27103,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25482,6 +27115,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25493,6 +27127,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Options list/array.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25504,6 +27139,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25517,6 +27153,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25556,6 +27193,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25567,6 +27205,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           2000,
           2001,
@@ -25582,6 +27221,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25595,6 +27235,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25635,6 +27276,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25646,6 +27288,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25659,6 +27302,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25672,6 +27316,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25711,6 +27356,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25722,6 +27368,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25735,6 +27382,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional parameter to restrict market types.",
+        "ScriptType": null,
         "Suggestion": [
           2802,
           2801,
@@ -25750,6 +27398,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25763,6 +27412,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25799,6 +27449,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25810,6 +27461,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           3418,
           2604,
@@ -25830,6 +27482,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25843,6 +27496,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25892,6 +27546,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25903,6 +27558,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           3418,
           2604,
@@ -25923,6 +27579,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25936,6 +27593,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -25977,6 +27635,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The field label text.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -25988,6 +27647,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The default value for the field.",
+        "ScriptType": null,
         "Suggestion": [
           8203,
           8200,
@@ -26008,6 +27668,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The tooltip text for the field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -26021,6 +27682,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The group of the input field.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -26055,6 +27717,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "InputTableOptions() result or the title of the table as a string.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26066,6 +27729,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "InputTableColumn() or columns headers as string.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -26099,6 +27763,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Column name.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26110,6 +27775,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Default values.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -26143,6 +27809,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Name of the table.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26154,6 +27821,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Fixed number of rows. Overwrites maxRows.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26165,6 +27833,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Dynamic number of rows with a maximum.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26176,6 +27845,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Group of the table.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -26210,6 +27880,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Safety signals collection. Takes a variable number of arguments.",
+        "ScriptType": null,
         "Suggestion": [
           1009,
           1007,
@@ -26274,6 +27945,88 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "IsAbnormal",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "dataset",
+        "Type": 7,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Dataset",
+        "ScriptType": null,
+        "Suggestion": [
+          5200,
+          5211,
+          5209,
+          5205,
+          5206,
+          5201,
+          5204,
+          5203,
+          5207,
+          5208,
+          5215,
+          5216
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "multiplier",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Multiplier to control the sensitivity (1-3)",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      }
+    ],
+    "Command": 8300,
+    "CommandType": 1,
+    "Category": 47,
+    "Description": "Looks to a numberic array and tells if the last value is abnormal",
+    "ReturnDescription": null,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [
+      3211,
+      3210,
+      3206,
+      3300,
+      6019,
+      3303,
+      3302,
+      3301,
+      3801,
+      3802,
+      3800,
+      3804,
+      3803,
+      7400,
+      7406,
+      7404,
+      7405,
+      7401,
+      7403,
+      7402,
+      7407
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "IsAnyOrderFinished",
     "Parameters": [
       {
@@ -26285,6 +28038,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -26339,6 +28093,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -26349,6 +28104,91 @@ export const commandProductionSample: CommandRaw[] = [
     "Category": 25,
     "Description": "Checks if there are any open orders.",
     "ReturnDescription": "Returns true if there are any open orders.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [
+      3211,
+      3210,
+      3206,
+      3300,
+      6019,
+      3303,
+      3302,
+      3301,
+      3801,
+      3802,
+      3800,
+      3804,
+      3803,
+      7400,
+      7406,
+      7404,
+      7405,
+      7401,
+      7403,
+      7402,
+      7407
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "IsBiggerAndSmallerThan",
+    "Command": 3215,
+    "CommandType": 1,
+    "Category": 17,
+    "Description": "Checks if the value is bigger than lowValue and smaller then highValue.",
+    "ReturnDescription": "Returns true the value is bigger than lowValue and smaller then highValue.",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "value",
+        "Type": 6,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The value to compare.",
+        "ScriptType": null,
+        "Suggestion": []
+      },
+      {
+        "Index": 0,
+        "Name": "lowValue",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The lowest value.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "highValue",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The highest value.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      }
+    ],
     "OutputIndex": [],
     "IsConstant": false,
     "IsPrimary": true,
@@ -26398,6 +28238,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26409,6 +28250,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The highest value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -26424,6 +28266,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The lowest value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -26480,6 +28323,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26491,6 +28335,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to compare with.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -26571,6 +28416,61 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "IsBuyOrder",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "orderId",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
+        "Suggestion": [
+          4200
+        ]
+      }
+    ],
+    "Command": 4806,
+    "CommandType": 1,
+    "Category": 25,
+    "Description": "Checks if the given order is a buy order.",
+    "ReturnDescription": "Returns true if the given order is on buy side.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [
+      3211,
+      3210,
+      3206,
+      3300,
+      6019,
+      3303,
+      3302,
+      3301,
+      3801,
+      3802,
+      3800,
+      3804,
+      3803,
+      7400,
+      7406,
+      7404,
+      7405,
+      7401,
+      7403,
+      7402,
+      7407
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "IsEnterpriseVersion",
     "Parameters": [],
     "Command": 5826,
@@ -26622,6 +28522,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source values.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26633,6 +28534,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lookback value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -26689,6 +28591,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source values.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -26700,6 +28603,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lookback value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -26752,6 +28656,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The boolean to compare.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -26818,7 +28723,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "Request margin mode. CrossMarginMode or IsolatedMarginMode",
+        "ScriptType": null,
         "Suggestion": [
           2803,
           2804
@@ -26833,6 +28739,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -26890,6 +28797,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -26944,6 +28852,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -27015,6 +28924,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -27069,6 +28979,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -27123,6 +29034,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -27181,7 +29093,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "Request position mode. OneWayPositionMode or HedgePositionMode",
+        "ScriptType": null,
         "Suggestion": [
           2806,
           2805
@@ -27196,6 +29109,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -27248,6 +29162,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source values.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -27259,6 +29174,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lookback value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27315,6 +29231,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source values.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -27326,6 +29243,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lookback value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27362,6 +29280,61 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "IsSellOrder",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "orderId",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
+        "Suggestion": [
+          4200
+        ]
+      }
+    ],
+    "Command": 4807,
+    "CommandType": 1,
+    "Category": 25,
+    "Description": "Checks if the given order is a sell order.",
+    "ReturnDescription": "Returns true if the given order is on sell side.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [
+      3211,
+      3210,
+      3206,
+      3300,
+      6019,
+      3303,
+      3302,
+      3301,
+      3801,
+      3802,
+      3800,
+      3804,
+      3803,
+      7400,
+      7406,
+      7404,
+      7405,
+      7401,
+      7403,
+      7402,
+      7407
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "IsSmallerThan",
     "Command": 3209,
     "CommandType": 1,
@@ -27378,6 +29351,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to compare.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -27389,6 +29363,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to compare with.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27440,6 +29415,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -27456,6 +29432,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to check the trade amount.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -27466,7 +29443,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -27478,6 +29457,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to check.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -27489,6 +29469,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, a warning is logged.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -27546,6 +29527,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The boolean to compare.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -27608,6 +29590,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -27618,7 +29601,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -27630,6 +29615,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27645,6 +29631,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fastest smoothing period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27660,6 +29647,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slowest smoothing period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27711,6 +29699,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -27721,7 +29710,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -27733,6 +29724,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27748,6 +29740,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fastest smoothing period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27763,6 +29756,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slowest smoothing period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27841,6 +29835,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -27851,7 +29846,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -27863,6 +29860,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -27873,7 +29871,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -27885,6 +29885,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -27895,7 +29896,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -27907,6 +29910,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "EMA period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27922,6 +29926,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "ATR period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27937,6 +29942,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "ATR multiplier.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -27959,6 +29965,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Upper bands of the KELTNER.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -27987,6 +29994,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Middle bands of the KELTNER.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -28015,6 +30023,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lower bands of the KELTNER.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -28105,6 +30114,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -28115,7 +30125,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -28127,6 +30139,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28178,6 +30191,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -28188,7 +30202,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -28200,6 +30216,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "1st ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28215,6 +30232,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "1st SMA-of-ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28230,6 +30248,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "2nd ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28245,6 +30264,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "2nd SMA-of-ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28260,6 +30280,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "3rd ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28275,6 +30296,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "3rd SMA-of-ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28290,6 +30312,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "4th ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28305,6 +30328,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "4th SMA-of-ROC period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28320,6 +30344,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28342,6 +30367,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "KST result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -28369,6 +30395,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -28419,6 +30446,71 @@ export const commandProductionSample: CommandRaw[] = [
       3202,
       6490,
       3413
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "LastBuyTradesCommand",
+    "Command": 5411,
+    "CommandType": 1,
+    "Category": 28,
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "Seconds back",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
+        ]
+      }
+    ],
+    "Description": "Returns all last selling orders",
+    "ReturnDescription": "Returns the buying trading volume",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
     ],
     "ChangeTypes": []
   },
@@ -28558,6 +30650,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -28568,6 +30661,71 @@ export const commandProductionSample: CommandRaw[] = [
     "Category": 1,
     "Description": "Gets the profit of the last long exit or sell trade.",
     "ReturnDescription": "Returns the profit.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "LastSellTradesCommand",
+    "Command": 5410,
+    "CommandType": 1,
+    "Category": 28,
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "Seconds back",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
+        ]
+      }
+    ],
+    "Description": "Returns all last selling orders",
+    "ReturnDescription": "Returns the selling trading volume",
     "OutputIndex": [],
     "IsConstant": false,
     "IsPrimary": true,
@@ -28634,6 +30792,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -28682,6 +30841,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -28878,6 +31038,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -28888,7 +31049,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -28900,6 +31063,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -28915,6 +31079,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of the Linear Regression.",
+        "ScriptType": null,
         "Suggestion": [
           3000,
           3001,
@@ -28972,6 +31137,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The color of the line.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -29004,6 +31170,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The style of the line (Spiked, Smooth, Step and others).",
+        "ScriptType": null,
         "Suggestion": [
           1408,
           1407,
@@ -29021,6 +31188,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The line decoration (Solid, Dashed, Dotted).",
+        "ScriptType": null,
         "Suggestion": [
           1406,
           1404,
@@ -29036,6 +31204,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The width of the line.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -29047,6 +31216,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A positive offset will move the data points x number of candles. A negative number will move the data points back.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -29062,6 +31232,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Axis side to snap on.",
+        "ScriptType": null,
         "Suggestion": [
           1403,
           1400
@@ -29076,6 +31247,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique identifier.",
+        "ScriptType": null,
         "Suggestion": [
           4200,
           6200
@@ -29090,6 +31262,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the line will be plotted behind the price chart, if enabled.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -29103,7 +31276,23 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "If true, the line we not be taking in to consideration when calculating the range on the y-axis.",
+        "Description": "If true, the line will not be taken into consideration when calculating the range on the y-axis.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "drawTrailingLine",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "If true, a dotted line will be drawn from the last data point to the y-axis.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -29180,6 +31369,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -29191,6 +31381,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -29232,6 +31423,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique identifier.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -29243,6 +31435,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Default value for when no data is saved on the key. Default is nil.",
+        "ScriptType": null,
         "Suggestion": [
           4403,
           4406,
@@ -29281,6 +31474,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "Message to log.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -29294,6 +31488,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The color of the log message.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -29347,6 +31542,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -29388,6 +31584,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Error to log.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -29420,6 +31617,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Warning to log.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -29452,6 +31650,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Warning to log.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -29484,6 +31683,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -29583,6 +31783,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -29598,6 +31799,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -29612,6 +31814,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -29628,6 +31831,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -29769,6 +31973,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -29779,7 +31984,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -29791,6 +31998,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -29806,6 +32014,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of Moving Average.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -29864,6 +32073,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -29874,7 +32084,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -29886,6 +32098,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -29901,6 +32114,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -29916,6 +32130,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -29938,6 +32153,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MACD result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -29966,6 +32182,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -29994,6 +32211,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Histogram result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30037,6 +32255,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -30047,7 +32266,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -30059,6 +32280,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -30074,6 +32296,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast MA type.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -30096,6 +32319,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -30111,6 +32335,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow MA type.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -30133,6 +32358,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -30148,6 +32374,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal MA type.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -30177,6 +32404,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MACD result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30205,6 +32433,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30233,6 +32462,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Histogram result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30276,6 +32506,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -30286,7 +32517,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -30298,6 +32531,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -30320,6 +32554,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MACD result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30348,6 +32583,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30376,6 +32612,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Histogram result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30446,6 +32683,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -30494,6 +32732,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -30504,7 +32743,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -30516,6 +32757,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Limit for fastest speed (bigger = faster).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -30531,6 +32773,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Limit for slowest speed (smaller = slower).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -30553,6 +32796,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The MESA Adaptive Moving Average values.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30581,6 +32825,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The Following Adaptive Moving Average values.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -30654,6 +32899,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -30732,6 +32978,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal we want to convert.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -30748,6 +32995,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal we want to convert too.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -30818,6 +33066,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to mark the candle.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -30829,6 +33078,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Amount of candles to mark.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -30886,6 +33136,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -30932,6 +33183,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -31038,6 +33290,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31048,7 +33301,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31060,6 +33315,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Array of period lengths (must be equal length to source data!).",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31070,7 +33326,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31082,6 +33340,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum allowed period (fastest).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -31097,6 +33356,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum allowed period (slowest).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -31112,6 +33372,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Type of the Moving Average.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -31172,6 +33433,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -31214,6 +33476,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -31263,6 +33526,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -31311,6 +33575,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31321,7 +33586,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31333,6 +33600,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -31380,6 +33648,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -31431,6 +33700,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -31482,6 +33752,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31492,7 +33763,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31504,6 +33777,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31514,7 +33788,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -31558,6 +33834,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31568,7 +33845,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31580,6 +33859,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31590,7 +33870,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31602,6 +33884,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31612,7 +33895,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31624,6 +33909,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Market volume array.",
+        "ScriptType": null,
         "Suggestion": [
           5212
         ]
@@ -31637,6 +33923,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -31685,6 +33972,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31695,7 +33983,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31707,6 +33997,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -31754,6 +34045,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31764,7 +34056,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31776,6 +34070,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31786,7 +34081,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31798,6 +34095,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -31847,6 +34145,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -31888,6 +34187,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -31904,6 +34204,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to calculate the trade amount. By default the close price is used.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31914,7 +34215,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -31958,6 +34261,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -31968,7 +34272,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -31980,6 +34286,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32027,6 +34334,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32037,7 +34345,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32049,6 +34359,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32059,7 +34370,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32071,6 +34384,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32081,7 +34395,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32093,6 +34409,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32140,6 +34457,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32150,7 +34468,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32162,6 +34482,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32172,7 +34493,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32184,6 +34507,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32236,6 +34560,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Interval in minutes.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -32278,6 +34603,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32288,7 +34614,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32300,6 +34628,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32420,6 +34749,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -32434,6 +34764,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -32480,6 +34811,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -32494,6 +34826,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -32538,6 +34871,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32548,7 +34882,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32560,6 +34896,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32570,7 +34907,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32582,6 +34921,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -32592,7 +34932,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -32604,6 +34946,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32658,6 +35001,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The accepted loss in percentage. Default is 0. This also affects user-defined targetPrice.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32673,6 +35017,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The target price of the trade. Can be used when placing orders beforehand in unmanaged trading.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32730,6 +35075,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The accepted loss in percentage. Default is 0. This also affects user-defined targetPrice.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32745,6 +35091,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The target price of the trade. Can be used when placing orders beforehand in unmanaged trading.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -32760,6 +35107,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -32884,6 +35232,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The boolean to compare.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -32951,6 +35300,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "First value to compare.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -32962,6 +35312,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Second value to compare.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -33141,6 +35492,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -33151,7 +35503,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -33163,6 +35517,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Market volume array.",
+        "ScriptType": null,
         "Suggestion": [
           5212
         ]
@@ -33217,6 +35572,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -33232,6 +35588,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -33246,6 +35603,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -33262,6 +35620,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -33303,6 +35662,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -33314,6 +35674,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of record to remove.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -33377,6 +35738,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -33392,6 +35754,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -33406,6 +35769,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -33422,6 +35786,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -33488,6 +35853,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -33575,6 +35941,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -33590,6 +35957,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -33604,6 +35972,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -33620,6 +35989,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -33686,6 +36056,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The timestamp to round. Set on 0 for current",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -33701,6 +36072,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The interval on which the candle is build",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -33748,6 +36120,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The interval on which the execution is based. If set on 0, the main interval is used.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -33759,6 +36132,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The function to executed when a candle closes.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -33792,6 +36166,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The boolean to compare.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -33859,6 +36234,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -33896,6 +36272,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -33949,6 +36326,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique order identifier provided by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -33964,6 +36342,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which the order is filled or executed.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -33988,6 +36367,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The executed amount.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -34012,6 +36392,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The filled amount.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -34036,6 +36417,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the order is open.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -34069,6 +36451,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the order is filled 100%.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -34102,6 +36485,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the order is cancelled but might be filled partially.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -34135,6 +36519,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The total fee costs.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -34159,6 +36544,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The currency of the fee costs.",
+        "ScriptType": null,
         "Suggestion": [
           5409
         ]
@@ -34172,6 +36558,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The time the order is or has been open for in minutes.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -34196,6 +36583,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The position identifier related to the order.",
+        "ScriptType": null,
         "Suggestion": [
           7402,
           4607,
@@ -34216,6 +36604,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The unique order identifier.",
+        "ScriptType": null,
         "Suggestion": [
           4801
         ]
@@ -34229,6 +36618,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the order is an enter order.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -34262,6 +36652,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the order is an exit order.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -34295,6 +36686,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The trigger-price of a conditional order.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -34309,6 +36701,74 @@ export const commandProductionSample: CommandRaw[] = [
           4041,
           408
         ]
+      },
+      {
+        "Index": 0,
+        "Name": "isBuyOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "If true, the order is a buy order.",
+        "ScriptType": null,
+        "Suggestion": [
+          3211,
+          3210,
+          3206,
+          3300,
+          6019,
+          3303,
+          3302,
+          3301,
+          3801,
+          3802,
+          3800,
+          3804,
+          3803,
+          7400,
+          7406,
+          7404,
+          7405,
+          7401,
+          7403,
+          7402,
+          7407
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "isSellOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "If true, the order is a sell order.",
+        "ScriptType": null,
+        "Suggestion": [
+          3211,
+          3210,
+          3206,
+          3300,
+          6019,
+          3303,
+          3302,
+          3301,
+          3801,
+          3802,
+          3800,
+          3804,
+          3803,
+          7400,
+          7406,
+          7404,
+          7405,
+          7401,
+          7403,
+          7402,
+          7407
+        ]
       }
     ],
     "IsConstant": false,
@@ -34320,6 +36780,78 @@ export const commandProductionSample: CommandRaw[] = [
     "OutputSuggestions": [
       4406,
       4403
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "Command": 1013,
+    "Description": "Only allows a order to occur once per bar. Signals produced during a ordered bar are blocked.",
+    "CommandName": "OrderOncePerBar",
+    "ReturnDescription": "Returns true when new bar opens or no orders occurred during a bar.",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "interval",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Interval of the bar in minutes.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "positionId",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
+        "Suggestion": [
+          4200
+        ]
+      }
+    ],
+    "CommandType": 1,
+    "Category": 15,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [
+      3211,
+      3210,
+      3206,
+      3300,
+      6019,
+      3303,
+      3302,
+      3301,
+      3801,
+      3802,
+      3800,
+      3804,
+      3803,
+      7400,
+      7406,
+      7404,
+      7405,
+      7401,
+      7403,
+      7402,
+      7407,
+      7001
     ],
     "ChangeTypes": []
   },
@@ -34338,6 +36870,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The target price of the trade. Default is the current buy or sell price.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -34353,6 +36886,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -34408,6 +36942,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The target price of the trade. Default is the current buy or sell price.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -34423,6 +36958,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -34476,6 +37012,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The something.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -34487,6 +37024,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The parameter type enum.",
+        "ScriptType": null,
         "Suggestion": [
           2206,
           2205,
@@ -34525,6 +37063,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The CSV data string or URL to download CSV data from.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -34541,6 +37080,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Whether or not data contains headers (default: false)",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -34567,6 +37107,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Delimiter for columns (default: ';')",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -34583,6 +37124,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Delimiter for rows (default: '\\n')",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -34621,6 +37163,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The JSON data string or URL to download JSON data from.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -34658,6 +37201,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -34674,6 +37218,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to parse the trade amount.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -34684,7 +37229,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -34696,6 +37243,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to parse.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -34739,6 +37287,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -34755,6 +37304,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to check the trade amount.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -34765,7 +37315,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -34849,6 +37401,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -34860,6 +37413,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -34904,6 +37458,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum percentage change before the insurance agrees.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -34919,6 +37474,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The target price of the trade. Default is the current buy or sell price.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -34934,6 +37490,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -35041,6 +37598,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute the order. If the order is a market order, this field will be ignored.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -35051,7 +37609,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -35063,6 +37623,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to execute.",
+        "ScriptType": null,
         "Suggestion": [
           3605,
           4403,
@@ -35079,6 +37640,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -35095,12 +37657,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of order. Default is limit.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -35117,6 +37679,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -35133,6 +37696,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique internal identifier that can be used to maintain multiple separate positions.",
+        "ScriptType": null,
         "Suggestion": [
           4200,
           6200
@@ -35147,6 +37711,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order timeout in seconds. By default the timeout is 600 seconds / 10 minutes. Using a negative value will disable the timeout.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -35162,10 +37727,41 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trigger price, used for conditional orders. This parameter must only be set when using native order types that are supported by the exchange.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
           4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "reduceOnly",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Ensures that the executed order does not flip the opened position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hiddenOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The hidden order option ensures an order does not appear in the order book.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
         ]
       }
     ],
@@ -35207,6 +37803,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Unique order identifier. Returned by the PlaceOrder commands.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -35218,6 +37815,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute. Be defaults the best ask or bid price is used.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -35228,7 +37826,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -35262,6 +37862,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute the order. If the order is a market order, this field will be ignored.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -35272,7 +37873,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -35284,6 +37887,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to execute.",
+        "ScriptType": null,
         "Suggestion": [
           3605,
           4403,
@@ -35300,6 +37904,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -35316,12 +37921,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of order. Default is limit.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -35338,6 +37943,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -35354,6 +37960,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique internal identifier that can be used to maintain multiple separate positions.",
+        "ScriptType": null,
         "Suggestion": [
           4200,
           6200
@@ -35368,6 +37975,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order timeout in seconds. By default the timeout is 600 seconds / 10 minutes. Using a negative value will disable the timeout.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -35383,10 +37991,41 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trigger price, used for conditional orders. This parameter must only be set when using native order types that are supported by the exchange.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
           4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "reduceOnly",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Ensures that the executed order does not flip the opened position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hiddenOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The hidden order option ensures an order does not appear in the order book.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
         ]
       }
     ],
@@ -35428,6 +38067,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -35441,6 +38081,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute. Be defaults the best ask or bid price is used.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -35451,7 +38092,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -35463,12 +38106,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Order type used for the order.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -35485,6 +38128,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -35501,6 +38145,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order timeout in seconds. By default the timeout is 600 seconds / 10 minutes except for NoTimeOutOrderType.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -35538,6 +38183,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute the order. If the order is a market order, this field will be ignored.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -35548,7 +38194,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -35560,6 +38208,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to execute.",
+        "ScriptType": null,
         "Suggestion": [
           3605,
           4403,
@@ -35576,6 +38225,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -35592,12 +38242,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of order. Default is limit.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -35614,6 +38264,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -35630,6 +38281,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique internal identifier that can be used to maintain multiple separate positions.",
+        "ScriptType": null,
         "Suggestion": [
           4200,
           6200
@@ -35644,6 +38296,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order timeout in seconds. By default the timeout is 600 seconds / 10 minutes. Using a negative value will disable the timeout.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -35659,10 +38312,41 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trigger price, used for conditional orders. This parameter must only be set when using native order types that are supported by the exchange.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
           4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "reduceOnly",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Ensures that the executed order does not flip the opened position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hiddenOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The hidden order option ensures an order does not appear in the order book.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
         ]
       }
     ],
@@ -35700,6 +38384,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute the order. If the order is a market order, this field will be ignored.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -35710,7 +38395,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -35722,6 +38409,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to execute.",
+        "ScriptType": null,
         "Suggestion": [
           3605,
           4403,
@@ -35738,6 +38426,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -35754,12 +38443,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of order. Default is limit.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -35776,6 +38465,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -35792,6 +38482,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique internal identifier that can be used to maintain multiple separate positions.",
+        "ScriptType": null,
         "Suggestion": [
           4200,
           6200
@@ -35806,6 +38497,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order timeout in seconds. By default the timeout is 600 seconds / 10 minutes. Using a negative value will disable the timeout.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -35821,10 +38513,41 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trigger price, used for conditional orders. This parameter must only be set when using native order types that are supported by the exchange.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
           4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "reduceOnly",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Ensures that the executed order does not flip the opened position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hiddenOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The hidden order option ensures an order does not appear in the order book.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
         ]
       }
     ],
@@ -35862,6 +38585,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute the order. If the order is a market order, this field will be ignored.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -35872,7 +38596,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -35884,6 +38610,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to execute.",
+        "ScriptType": null,
         "Suggestion": [
           3605,
           4403,
@@ -35900,6 +38627,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -35916,12 +38644,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of order. Default is limit.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -35938,6 +38666,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -35954,6 +38683,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique internal identifier that can be used to maintain multiple separate positions.",
+        "ScriptType": null,
         "Suggestion": [
           4200,
           6200
@@ -35968,6 +38698,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order timeout in seconds. By default the timeout is 600 seconds / 10 minutes. Using a negative value will disable the timeout.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -35983,10 +38714,41 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trigger price, used for conditional orders. This parameter must only be set when using native order types that are supported by the exchange.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
           4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "reduceOnly",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Ensures that the executed order does not flip the opened position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hiddenOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The hidden order option ensures an order does not appear in the order book.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
         ]
       }
     ],
@@ -36024,6 +38786,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price on which to execute the order. If the order is a market order, this field will be ignored.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -36034,7 +38797,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -36046,6 +38811,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount to execute.",
+        "ScriptType": null,
         "Suggestion": [
           3605,
           4403,
@@ -36062,6 +38828,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -36078,12 +38845,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of order. Default is limit.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -36100,6 +38867,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "A note for the order. Visible in the open orders and history.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -36116,6 +38884,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique internal identifier that can be used to maintain multiple separate positions.",
+        "ScriptType": null,
         "Suggestion": [
           4200,
           6200
@@ -36130,6 +38899,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The order timeout in seconds. By default the timeout is 600 seconds / 10 minutes. Using a negative value will disable the timeout.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -36145,10 +38915,41 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trigger price, used for conditional orders. This parameter must only be set when using native order types that are supported by the exchange.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
           4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "reduceOnly",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Ensures that the executed order does not flip the opened position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "hiddenOrder",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The hidden order option ensures an order does not appear in the order book.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
         ]
       }
     ],
@@ -36186,6 +38987,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Index on which to plot the line.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -36197,6 +38999,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The name of the lines. This needs to be unique per index.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -36208,6 +39011,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Value of the data point.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -36219,6 +39023,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line options object or a color string.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -36285,6 +39090,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The upper line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36298,6 +39104,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The lower line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36311,6 +39118,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Inner color of the bands.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -36362,6 +39170,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36375,6 +39184,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The value from where the bars are drawn. Default is 0.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -36386,6 +39196,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color of the bars. Default is none.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -36441,6 +39252,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -36456,6 +39268,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Name of the line.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -36472,6 +39285,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Upper band data.",
+        "ScriptType": null,
         "Suggestion": [
           6400,
           6412,
@@ -36488,6 +39302,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Middle or lower band data.",
+        "ScriptType": null,
         "Suggestion": [
           6400,
           6412,
@@ -36504,6 +39319,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Lower band data. Optional, if not set only a band is plotted.",
+        "ScriptType": null,
         "Suggestion": [
           6400,
           6412,
@@ -36535,6 +39351,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to plot the data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -36546,6 +39363,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The lowest value of the zone.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -36561,6 +39379,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The highest value of the zone.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -36594,6 +39413,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36607,6 +39427,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color of the circles. Default is none.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -36658,6 +39479,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The first line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36671,6 +39493,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The second line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36684,6 +39507,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The opacity of the inner cloud color.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -36715,6 +39539,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36728,6 +39553,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The value where the line changes color.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -36739,6 +39565,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The color of the line below the base value.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -36771,6 +39598,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color between the line and the base value. Default is none.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -36821,6 +39649,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line guid returned by Plot().",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -36834,6 +39663,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The color of the negative bars.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -36866,6 +39696,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Fills the raising bars. Default is false.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -36904,6 +39735,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -36919,6 +39751,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Name of the line.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -36935,6 +39768,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Histogram data.",
+        "ScriptType": null,
         "Suggestion": [
           6441,
           6442,
@@ -36950,6 +39784,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional, short data line.",
+        "ScriptType": null,
         "Suggestion": [
           6441,
           6442,
@@ -36965,6 +39800,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional, long data line.",
+        "ScriptType": null,
         "Suggestion": [
           6441,
           6442,
@@ -36994,6 +39830,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to plot the data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37005,6 +39842,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Name of the line. This needs to be unique per index.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37016,6 +39854,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The line color.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37048,6 +39887,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The y-axis value on which to place the line.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37063,6 +39903,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line decoration style. Default is Solid.",
+        "ScriptType": null,
         "Suggestion": [
           1406,
           1404,
@@ -37078,6 +39919,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Axis side on which to snap the line. Default is RightAxis.",
+        "ScriptType": null,
         "Suggestion": [
           1403,
           1400
@@ -37092,6 +39934,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique identifier.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -37123,6 +39966,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to plot the data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37134,6 +39978,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Name of the zone. This needs to be unique per index.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37145,6 +39990,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The zone inner color.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37177,6 +40023,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The lowest value of the zone.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37192,6 +40039,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The highest value of the zone.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37207,6 +40055,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Axis side on which to snap the line. Default is RightAxis.",
+        "ScriptType": null,
         "Suggestion": [
           1403,
           1400
@@ -37244,6 +40093,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Chart index on which to plot.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37259,6 +40109,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Name of the line.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -37275,6 +40126,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Value to plot.",
+        "ScriptType": null,
         "Suggestion": [
           6461
         ]
@@ -37288,6 +40140,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The lowest value of the zone.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37303,6 +40156,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The highest value of the zone.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37332,6 +40186,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Amount of bars before the pivot point that must be lower(Pivot Low)/higher(Pivot High) than the pivot price.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37347,6 +40202,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Amount of bars after the pivot point that must be lower(Pivot Low)/higher(Pivot High) than the pivot price.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37381,6 +40237,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to plot the price data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37392,6 +40249,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -37408,6 +40266,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The interval which to plot.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -37423,6 +40282,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The price plot style.",
+        "ScriptType": null,
         "Suggestion": [
           1412,
           1413,
@@ -37445,6 +40305,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The outer color of the up candle.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37477,6 +40338,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color of the up candle.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -37491,6 +40353,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The outer color of the down candle.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37523,6 +40386,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color of the down candle.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -37537,6 +40401,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The outer color of the marked candle.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37569,6 +40434,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color of the marked candle.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -37602,6 +40468,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Index on which to plot the line.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37613,11 +40480,13 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The shape type.",
+        "ScriptType": null,
         "Suggestion": [
           1422,
           1424,
           1423,
           1428,
+          1430,
           1427,
           1426,
           1425,
@@ -37633,6 +40502,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The color of the shape.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37665,6 +40535,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Size of the shape.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37676,6 +40547,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the shape will be drawn above the candle else below.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -37690,6 +40562,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Text above or below the candle or shape.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -37706,6 +40579,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The color of the text.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37738,6 +40612,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "A positive offset will move the data points x number of candles. A negative number will move the data points back.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -37747,6 +40622,94 @@ export const commandProductionSample: CommandRaw[] = [
     ],
     "Command": 430,
     "Description": "Draws a shape above the candle or first line on the chart.",
+    "ReturnDescription": null,
+    "CommandType": 1,
+    "Category": 2,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "PlotShapes",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "lineGuid",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Line guid returned by Plot().",
+        "ScriptType": null,
+        "Suggestion": [
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "shape",
+        "Type": 2,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The shape type.",
+        "ScriptType": null,
+        "Suggestion": [
+          1422,
+          1424,
+          1423,
+          1428,
+          1430,
+          1427,
+          1426,
+          1425,
+          1429
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "fillColor",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The inner color of the circles. Default is none.",
+        "ScriptType": null,
+        "Suggestion": [
+          1600,
+          1601,
+          1602,
+          1603,
+          1604,
+          1605,
+          1606,
+          1607,
+          1608,
+          1609,
+          1610,
+          1611,
+          1612,
+          1613,
+          1614,
+          1615,
+          1616,
+          1617,
+          1618,
+          401
+        ]
+      }
+    ],
+    "Command": 433,
+    "Description": "Changes the line into a specific shape.",
     "ReturnDescription": null,
     "CommandType": 1,
     "Category": 2,
@@ -37772,6 +40735,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Index on which to plot the line.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37783,6 +40747,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The color of the signal block.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -37834,6 +40799,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Index on which to plot the line.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -37845,6 +40811,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal to plot.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -37960,6 +40927,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line guid collection returned by multiple Plot()'s.",
+        "ScriptType": null,
         "Suggestion": [
           408
         ]
@@ -37991,6 +40959,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to plot the data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -38002,6 +40971,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Name of the line. This needs to be unique per index.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -38013,6 +40983,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The line color.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -38044,7 +41015,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "The a-axis timestamp on which to place the line.",
+        "Description": "The x-axis timestamp on which to place the line.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -38060,6 +41032,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Line decoration style. Default is Solid.",
+        "ScriptType": null,
         "Suggestion": [
           1406,
           1404,
@@ -38094,6 +41067,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The chart index on which to plot the data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -38105,6 +41079,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Name of the zone. This needs to be unique per index.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -38116,6 +41091,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The zone inner color.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -38147,7 +41123,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "The lowest value of the zone.",
+        "Description": "The lowest value of the zone on the y-axis.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -38162,7 +41139,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "The highest value of the zone.",
+        "Description": "The highest value of the zone on the y-axis.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -38197,6 +41175,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Index on which to plot the line.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -38208,6 +41187,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The outer color of the up candle volume bars.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -38240,6 +41220,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The outer color of the down candle volume bars.",
+        "ScriptType": null,
         "Suggestion": [
           1600,
           1601,
@@ -38272,6 +41253,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color of the up candle volume bars.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -38286,6 +41268,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The inner color of the down candle volume bars.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -38300,6 +41283,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The axis side to snap.",
+        "ScriptType": null,
         "Suggestion": [
           1403,
           1400
@@ -38333,6 +41317,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -38343,7 +41328,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -38355,6 +41342,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -38365,7 +41353,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -38377,6 +41367,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -38387,7 +41378,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -38399,6 +41392,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -38446,6 +41440,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -38456,7 +41451,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -38468,6 +41465,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -38478,7 +41476,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -38490,6 +41490,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -38563,6 +41564,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -38576,6 +41578,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True for total position amount (default), false for only open amount. Affects enterPrice value in returned object.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -38604,6 +41607,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The position identifier.",
+        "ScriptType": null,
         "Suggestion": [
           7402
         ]
@@ -38617,6 +41621,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the position.",
+        "ScriptType": null,
         "Suggestion": [
           5201,
           5200,
@@ -38632,6 +41637,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Set on true when the direction is long.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -38665,6 +41671,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Set on true when the direction is short.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -38698,6 +41705,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The average enter price.",
+        "ScriptType": null,
         "Suggestion": [
           4000,
           4041,
@@ -38714,6 +41722,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount open in the position.",
+        "ScriptType": null,
         "Suggestion": [
           7401,
           7403,
@@ -38730,6 +41739,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The realized + unrealized profits.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209
@@ -38744,6 +41754,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ROI based on the used margin and realized + unrealized profits.",
+        "ScriptType": null,
         "Suggestion": [
           3205,
           3209
@@ -38840,6 +41851,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Bot position enum. PositionLong, PositionShort or NoPosition.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -38860,6 +41872,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True when the position is Long.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -38893,6 +41906,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True when the position is Short.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -38926,6 +41940,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True when the position is NoPosition.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -38991,6 +42006,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "First source value(s).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -39005,6 +42021,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Second source value(s).",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -39049,6 +42066,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -39059,7 +42077,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -39071,6 +42091,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -39086,6 +42107,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -39101,6 +42123,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of Moving Average used.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -39159,6 +42182,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39174,7 +42198,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "Specific price value. This can have an effect on the number of decimals.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -39185,7 +42210,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -39229,6 +42256,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -39239,7 +42267,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -39322,6 +42352,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -39337,6 +42368,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -39351,6 +42383,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39367,6 +42400,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -39408,6 +42442,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39456,6 +42491,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39498,6 +42534,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39545,6 +42582,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -39582,6 +42620,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39624,6 +42663,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39639,7 +42679,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "Specific price value. This can have an effect on the number of decimals.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -39650,7 +42691,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -39694,6 +42737,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -39744,6 +42788,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum value. Default is 0.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -39758,6 +42803,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Minimum value. Default is 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -39807,6 +42853,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -39818,6 +42865,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Offset from start.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -39833,6 +42881,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of items to grab.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -39870,6 +42919,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -39912,6 +42962,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -39923,6 +42974,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Values above this threshold will be replaced.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -39934,6 +42986,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The new value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -39977,6 +43030,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -39988,6 +43042,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Values below this threshold will be replaced.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -39999,6 +43054,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The new value.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -40058,6 +43114,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -40238,6 +43295,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40248,7 +43306,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40260,6 +43320,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40311,6 +43372,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40321,7 +43383,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40333,6 +43397,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40384,6 +43449,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40394,7 +43460,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40406,6 +43474,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40457,6 +43526,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40467,7 +43537,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40479,6 +43551,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40532,6 +43605,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -40543,6 +43617,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of digits after decimal point.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -40587,6 +43662,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40597,7 +43673,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40609,6 +43687,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40660,6 +43739,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40670,7 +43750,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40682,6 +43764,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40734,6 +43817,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Safety signals collection. Takes a variable number of arguments.",
+        "ScriptType": null,
         "Suggestion": [
           1200,
           1201,
@@ -40795,6 +43879,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40805,7 +43890,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40817,6 +43904,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40827,7 +43915,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40839,6 +43929,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Acceleration amount.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40854,6 +43945,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum speed.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40905,6 +43997,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40915,7 +44008,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40927,6 +44022,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -40937,7 +44033,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -40949,6 +44047,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Starting value.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40964,6 +44063,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Offset amount on reverse point.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40979,6 +44079,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Initial acceleration for Long position.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -40994,6 +44095,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Acceleration amount for Long position.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41009,6 +44111,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum acceleration for Long position.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41024,6 +44127,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Initial acceleration for Short position.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41039,6 +44143,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Acceleration amount for Short position.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41054,6 +44159,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum acceleration for Short position.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41136,6 +44242,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Unique identifier.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -41147,13 +44254,14 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value to store.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
     "Command": 4204,
     "CommandType": 1,
     "Category": 22,
-    "Description": "Saves a value on a specific key. This value can be retrieved with Load()",
+    "Description": "Saves a value on a specific key. This value can be retrieved with Load(). A maximum of 10.000 keys can be stored.",
     "ReturnDescription": null,
     "OutputIndex": [],
     "IsConstant": false,
@@ -41177,6 +44285,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The unique identifier of the signal.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -41193,6 +44302,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The secret key on which to save the signal.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -41209,6 +44319,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal enum to save.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -41245,6 +44356,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": [
           8,
           5201
@@ -41295,6 +44407,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -41310,6 +44423,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -41324,6 +44438,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -41340,6 +44455,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -41404,6 +44520,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The base value for the ROI calculation",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41419,6 +44536,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -41455,6 +44573,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fee percentage to store.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41470,6 +44589,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -41508,7 +44628,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "The amount of leverage to set.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -41524,6 +44645,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -41540,6 +44662,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -41596,7 +44719,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "Request margin mode. CrossMarginMode or IsolatedMarginMode",
+        "ScriptType": null,
         "Suggestion": [
           2804,
           2803
@@ -41611,6 +44735,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -41627,6 +44752,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -41679,12 +44805,12 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Order type enum.",
+        "ScriptType": null,
         "Suggestion": [
           2001,
           2000,
           2003,
           2002,
-          2003,
           2004,
           2005,
           2006,
@@ -41724,7 +44850,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "Request position mode. OneWayPositionMode or HedgePositionMode",
+        "ScriptType": null,
         "Suggestion": [
           2806,
           2805
@@ -41739,11 +44866,29 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
           3406,
           3600
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
         ]
       }
     ],
@@ -41777,6 +44922,49 @@ export const commandProductionSample: CommandRaw[] = [
       7402,
       7407
     ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "SetStackedAreaOpacity",
+    "ReturnDescription": null,
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "chartId",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": true,
+        "AllowNull": false,
+        "Description": "Index on which to plot the line.",
+        "ScriptType": null,
+        "Suggestion": []
+      },
+      {
+        "Index": 0,
+        "Name": "opacity",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": true,
+        "AllowNull": false,
+        "Description": "Opacity level from 0 - 100.",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "Command": 432,
+    "Description": "Configures the opacity for stacked area chart. A values between",
+    "CommandType": 1,
+    "Category": 2,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
     "ChangeTypes": []
   },
   {
@@ -41824,6 +45012,26 @@ export const commandProductionSample: CommandRaw[] = [
     "Command": 1423,
     "Description": "Enumeration, returns the a shape type enum. Used PlotShapes().",
     "ReturnDescription": "Returns the ShapeCross enum.",
+    "CommandType": 15,
+    "Category": 7,
+    "Parameters": [],
+    "IsConstant": true,
+    "OutputIndex": [],
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 2,
+    "OutputSuggestions": [
+      430
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "ShapeDash",
+    "Command": 1430,
+    "Description": "Enumeration, returns the a shape type enum. Used PlotShapes().",
+    "ReturnDescription": "Returns the ShapeDash enum.",
     "CommandType": 15,
     "Category": 7,
     "Parameters": [],
@@ -41974,6 +45182,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -42048,6 +45257,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trailing stop loss percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -42063,6 +45273,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "This percentage will be added to the stop every time the stop adjust. The percentage will raise exponentially on every adjustment.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -42078,6 +45289,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -42091,6 +45303,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -42134,6 +45347,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -42408,6 +45622,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -42486,6 +45701,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the signals are revered.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -42500,6 +45716,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The mapped long signal.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -42515,6 +45732,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The mapped short signal.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -42530,6 +45748,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The mapped exit signal.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -42545,6 +45764,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The mapped none signal.",
+        "ScriptType": null,
         "Suggestion": [
           2600,
           2603,
@@ -42631,6 +45851,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -42709,6 +45930,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When true, this signal is used for long decisions.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -42723,6 +45945,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When true, this signal is used for short decisions.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -42737,6 +45960,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When true, this signal is used for exit decisions.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -42751,6 +45975,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The weight of the signal. Minimum weight of 1 required.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -42766,6 +45991,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "Number of minutes the signal will be delayed.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -42977,6 +46203,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -43059,6 +46286,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True when the signal is SignalLong.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -43092,6 +46320,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True when the signal is SignalShort.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -43125,6 +46354,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True when the signal is SignalExitPosition.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -43158,6 +46388,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "True when the signal is SignalNone.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -43224,6 +46455,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signals to log.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -43338,6 +46570,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -43416,6 +46649,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The weight of the signal. Minimum weight of 1 required.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -43522,6 +46756,111 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "SimpleForecastBySsa",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "dataset",
+        "Type": 7,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Dataset",
+        "ScriptType": null,
+        "Suggestion": [
+          5200,
+          5211,
+          5209,
+          5205,
+          5206,
+          5201,
+          5204,
+          5203,
+          5207,
+          5208,
+          5215,
+          5216
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "L",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Length of the window on the series for building the trajectory matrix (L)",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "N",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Length of series that is kept in buffer for modeling (N)",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "forecastCount",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Amount of future data points",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      }
+    ],
+    "Command": 8301,
+    "CommandType": 1,
+    "Category": 47,
+    "Description": "Reads the given data and tries to give a forecast",
+    "ReturnDescription": null,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 7,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "SimpleUpCandleType",
     "Command": 7861,
     "Description": "Enumeration, returns an enum for SimpleUpCandleType type.",
@@ -43558,6 +46897,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -43601,6 +46941,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -43647,6 +46988,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -43684,6 +47026,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -43694,7 +47037,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -43706,6 +47051,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -43721,6 +47067,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Signal length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -43743,6 +47090,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Normal RSI result.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -43757,6 +47105,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow RSI result.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403
@@ -43791,6 +47140,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -43801,7 +47151,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -43813,6 +47165,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -43864,6 +47217,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -43874,7 +47228,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -43886,6 +47242,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44006,6 +47363,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "This value will be added in front of the collection when the candle closed.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -44017,6 +47375,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The interval on which the data is based. Default is the selected main interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -44032,6 +47391,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Maximum size of the collection.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -44042,7 +47402,8 @@ export const commandProductionSample: CommandRaw[] = [
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "",
+        "Description": "The initial values when source in initialized",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -44091,6 +47452,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source price type enum.",
+        "ScriptType": null,
         "Suggestion": [
           8203,
           8200,
@@ -44111,6 +47473,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -44126,6 +47489,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -44140,6 +47504,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -44156,6 +47521,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -44305,6 +47671,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -44346,6 +47713,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44356,7 +47724,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44368,6 +47738,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44447,6 +47818,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional key if using multiple timers.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -44477,6 +47849,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44487,7 +47860,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44499,6 +47874,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44514,6 +47890,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Amount of deviation.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44644,6 +48021,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44654,7 +48032,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44666,6 +48046,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44676,7 +48057,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44688,6 +48071,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44698,7 +48082,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44710,6 +48096,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast %K period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44725,6 +48112,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow %K period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44740,6 +48128,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow %D period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44762,6 +48151,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The %K line.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -44790,6 +48180,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The %D line.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -44833,6 +48224,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44843,7 +48235,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44855,6 +48249,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44865,7 +48260,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44877,6 +48274,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -44887,7 +48285,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -44899,6 +48299,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast %K period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44914,6 +48315,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast %D period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -44929,6 +48331,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MA type.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -44958,6 +48361,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The %K line.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -44986,6 +48390,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The %D line.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -45029,6 +48434,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -45039,7 +48445,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -45051,6 +48459,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -45066,6 +48475,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast %K period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -45081,6 +48491,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast %D period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -45096,6 +48507,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of Moving Average.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -45125,6 +48537,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The %K line.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -45153,6 +48566,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The %D line.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -45226,6 +48640,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Stop loss percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -45241,6 +48656,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -45254,6 +48670,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -45298,6 +48715,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of minutes to wait after the last order.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -45313,6 +48731,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -45368,6 +48787,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Stop loss ROI percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -45383,6 +48803,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -45396,6 +48817,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -45469,6 +48891,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional key if using multiple timers.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45513,6 +48936,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45529,6 +48953,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The substring to search.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45545,6 +48970,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Ignoring the case of the scripts being compared.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -45612,6 +49038,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45628,6 +49055,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The delimiter value.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45666,6 +49094,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45704,6 +49133,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45720,6 +49150,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The search value.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45736,6 +49167,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Ignoring the case of the scripts being compared.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -45794,6 +49226,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The first part of the string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403,
@@ -45810,6 +49243,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The second part of the string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           4403,
@@ -45826,6 +49260,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The string to use as a separator.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45868,6 +49303,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45884,6 +49320,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The delimiter value.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -45945,6 +49382,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -45959,6 +49397,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -46008,6 +49447,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main value.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -46019,6 +49459,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The percentage to subtract.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46066,6 +49507,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main value.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -46077,6 +49519,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The percentage to subtract.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46120,6 +49563,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The main string.",
+        "ScriptType": null,
         "Suggestion": [
           4406,
           3400,
@@ -46136,6 +49580,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Start index, zero based.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46151,6 +49596,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The length of the substring.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46192,6 +49638,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -46206,6 +49653,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s) 2.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -46256,6 +49704,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Input boolean to check.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3210,
@@ -46282,6 +49731,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "If true, this value is passed on.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -46293,6 +49743,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": true,
         "Description": "If false, this value is passed on.",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -46331,6 +49782,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -46341,7 +49793,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -46353,6 +49807,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46368,6 +49823,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Volume factor between 0 and 1.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46449,6 +49905,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Take profit percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46464,6 +49921,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -46477,6 +49935,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -46575,6 +50034,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Take profit ROI percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46590,6 +50050,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -46603,6 +50064,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -46645,6 +50107,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -46717,6 +50180,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -46760,6 +50224,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       }
     ],
@@ -46829,6 +50294,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -46866,6 +50332,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -46876,7 +50343,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -46888,6 +50357,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -47219,6 +50689,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Safety container result.",
+        "ScriptType": null,
         "Suggestion": [
           1200,
           1201,
@@ -47251,6 +50722,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Indicator container result.",
+        "ScriptType": null,
         "Suggestion": [
           7000
         ]
@@ -47264,6 +50736,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Insurance container result.",
+        "ScriptType": null,
         "Suggestion": [
           1009,
           1007,
@@ -47307,6 +50780,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -47330,6 +50804,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The base currency of the market. For reflection, in case we are on Bitstamp BTC/USD it will return 'BTC'.",
+        "ScriptType": null,
         "Suggestion": [
           6201,
           6202,
@@ -47348,6 +50823,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The quote currency of the market. For reflection, in case we are on Bitstamp BTC/USD it will return 'USD'.",
+        "ScriptType": null,
         "Suggestion": [
           6201,
           6202,
@@ -47366,6 +50842,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The contract name of the market. Empty on spot/margin markets.",
+        "ScriptType": null,
         "Suggestion": [
           6201,
           6202,
@@ -47384,6 +50861,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The value of a single contract, defined in their denomination.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -47408,6 +50886,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Makers fee of the market.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -47432,6 +50911,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Takers fee of the market.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -47456,6 +50936,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The underlying assets of the market. For reflection, in case we are on Bitstamp BTC/USD it will return 'BTC'. When we are on BitMEX XBT/USD (XBTUSD), it will return 'XBT'.",
+        "ScriptType": null,
         "Suggestion": [
           6201,
           6202,
@@ -47474,6 +50955,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The minimum trade amount on a the last price while keeping exchange specifications in consideration.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -47498,6 +50980,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The minimum trade volume. Denominated in the quote currency.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -47522,6 +51005,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The minimum trade amount on a the last price while keeping exchange specifications in consideration.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -47546,6 +51030,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The profit label of the market. For reflection, in case the market is Bitstamp BTC/USD it will return 'BTC'. When we are on BitMEX XBT/USD (XBTUSD), it will return 'XBT'.",
+        "ScriptType": null,
         "Suggestion": [
           6201,
           6202,
@@ -47564,6 +51049,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount label of the market. For reflection, in case the market is Bitstamp BTC/USD it will return 'BTC'. When we are on BitMEX XBT/USD (XBTUSD), it will return 'contract(s)'.",
+        "ScriptType": null,
         "Suggestion": [
           6201,
           6202,
@@ -47582,6 +51068,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market type enumeration of the market.",
+        "ScriptType": null,
         "Suggestion": [
           3303,
           3202,
@@ -47618,6 +51105,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Interval of the bar in minutes.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -47633,6 +51121,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -47688,6 +51177,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Sideways movement threshold.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -47703,6 +51193,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -47718,6 +51209,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -47732,6 +51224,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -47790,6 +51283,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trend strength threshold.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -47805,6 +51299,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ticks interval.",
+        "ScriptType": null,
         "Suggestion": [
           3404,
           4403,
@@ -47820,6 +51315,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "If true, the last closed candles will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           3212,
           3203
@@ -47834,6 +51330,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the tick. Default is the selected main market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -47892,6 +51389,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trailing stop loss percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -47907,6 +51405,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The Arm percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -47922,6 +51421,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -47935,6 +51435,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -47979,6 +51480,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Trailing stop loss percentage.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -47994,6 +51496,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -48007,6 +51510,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The direction of the position. PositionLong or PositionShort. By default both.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -48048,6 +51552,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48058,7 +51563,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48070,6 +51577,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48080,7 +51588,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48092,6 +51602,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48102,7 +51613,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -48150,6 +51663,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48160,7 +51674,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48172,6 +51688,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48273,6 +51790,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48283,7 +51801,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48295,6 +51815,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48348,6 +51869,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source value(s).",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -48359,6 +51881,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of digits after decimal point.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403
@@ -48403,6 +51926,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48413,7 +51937,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48425,6 +51951,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48476,6 +52003,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48486,7 +52014,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48498,6 +52028,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "First smoothing period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48513,6 +52044,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Second smoothing period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48608,6 +52140,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48618,7 +52151,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48630,6 +52165,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48640,7 +52176,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48652,6 +52190,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48662,7 +52201,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -48706,6 +52247,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48716,7 +52258,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48728,6 +52272,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48779,6 +52324,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48789,7 +52335,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48801,6 +52349,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48811,7 +52360,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48823,6 +52374,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -48833,7 +52385,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -48845,6 +52399,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Fast period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48860,6 +52415,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Mid period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48875,6 +52431,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Slow period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -48927,6 +52484,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -49040,6 +52598,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -49056,6 +52615,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Position price.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -49066,7 +52626,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -49078,6 +52640,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Position amount.",
+        "ScriptType": null,
         "Suggestion": []
       },
       {
@@ -49089,6 +52652,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Leverage ratio. Use 0 for cross-margin.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -49157,6 +52721,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -49173,6 +52738,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -49189,6 +52755,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Deprecated, Can be ignored.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -49204,6 +52771,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Direction of the position PositionLong or PositionShort. Empty for any. If there is both a long and short position, the long position will be returned.",
+        "ScriptType": null,
         "Suggestion": [
           2401,
           2402,
@@ -49221,6 +52789,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The market of the position.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -49237,6 +52806,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Set on true when the direction is long.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -49270,6 +52840,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Set on true when the direction is short.",
+        "ScriptType": null,
         "Suggestion": [
           3211,
           3210,
@@ -49303,6 +52874,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The average enter price.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -49327,6 +52899,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount open in the position.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -49357,6 +52930,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The realized + unrealized profits.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -49381,6 +52955,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The ROI based on the used margin and realized + unrealized profits.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -49424,6 +52999,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The original signal.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -49502,6 +53078,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The signal to ignore. SignalLong, SignalShort or SignalExitPosition.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3803,
@@ -49613,6 +53190,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -49623,7 +53201,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -49635,6 +53215,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -49650,6 +53231,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The amount of deviation.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -49754,7 +53336,7 @@ export const commandProductionSample: CommandRaw[] = [
   },
   {
     "Command": 1012,
-    "Description": "Blocks any signal until a certain number of minutes have passed since the last placed order.",
+    "Description": "Blocks any signal until a certain number of minutes have passed since the last placed order. This includes orders executed in an update cycle",
     "CommandName": "WaitAfterOrder",
     "ReturnDescription": "Returns true when the last placed order is a certain number of minutes ago.",
     "Parameters": [
@@ -49767,6 +53349,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of minutes to wait after the last order.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -49782,6 +53365,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -49837,6 +53421,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Number of minutes to wait after the last trade.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -49852,6 +53437,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional unique identifier. Required when the bot is trading multiple position at once.",
+        "ScriptType": null,
         "Suggestion": [
           4200
         ]
@@ -49905,6 +53491,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount() or InputAccountMarket() for example. Can be left empty for default properties.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -49921,6 +53508,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Coin of which to retrieve the wallet amount.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -49934,6 +53522,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Optional market parameter for exchanges with separates wallet for each market.",
+        "ScriptType": null,
         "Suggestion": [
           3402,
           3406,
@@ -49984,6 +53573,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The guid returned by AccountGuid(), InputAccount() or InputAccountMarket() for example. Can be left empty for default properties.",
+        "ScriptType": null,
         "Suggestion": [
           3401,
           3402,
@@ -50000,6 +53590,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Coin of which to retrieve the wallet amount.",
+        "ScriptType": null,
         "Suggestion": [
           4406
         ]
@@ -50013,6 +53604,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The minimum amount needed.",
+        "ScriptType": null,
         "Suggestion": [
           4025,
           4018
@@ -50067,6 +53659,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50077,7 +53670,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50089,6 +53684,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50099,7 +53695,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50111,6 +53709,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50121,7 +53720,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       }
     ],
@@ -50170,6 +53771,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50207,6 +53809,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "High prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50217,7 +53820,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50229,6 +53834,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Low prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50239,7 +53845,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50251,6 +53859,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Close prices array.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50261,7 +53870,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50273,6 +53884,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50324,6 +53936,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50334,7 +53947,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50346,6 +53961,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50397,6 +54013,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50407,7 +54024,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50419,6 +54038,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50497,6 +54117,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50507,7 +54128,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50519,6 +54142,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50598,6 +54222,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": true,
         "AllowNull": false,
         "Description": "The color opacity, 0-100. By default 100.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50635,6 +54260,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50645,7 +54271,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50657,6 +54285,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50708,6 +54337,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Source data.",
+        "ScriptType": null,
         "Suggestion": [
           5200,
           5211,
@@ -50718,7 +54348,9 @@ export const commandProductionSample: CommandRaw[] = [
           5204,
           5203,
           5207,
-          5208
+          5208,
+          5215,
+          5216
         ]
       },
       {
@@ -50730,6 +54362,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Period length.",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50745,6 +54378,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "The type of Moving Average.",
+        "ScriptType": null,
         "Suggestion": [
           3407,
           1804,
@@ -50767,6 +54401,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Additional parameter used with 'kama' and 'mama' types. (1)",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50782,6 +54417,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "Additional parameter used with 'kama' and 'mama' types. (2)",
+        "ScriptType": null,
         "Suggestion": [
           3400,
           4403,
@@ -50804,6 +54440,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MA1 result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,
@@ -50832,6 +54469,7 @@ export const commandProductionSample: CommandRaw[] = [
         "IsField": false,
         "AllowNull": false,
         "Description": "MA2 result.",
+        "ScriptType": null,
         "Suggestion": [
           3202,
           3204,

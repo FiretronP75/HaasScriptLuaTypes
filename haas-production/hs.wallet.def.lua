@@ -12,16 +12,18 @@
 --- The optional parameters of Balance.
 --- @shape OptionalParametersOf_Balance
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount() or InputAccountMarket() for example. Can be left empty for default properties.
+--- @field coin string | nil Coin of which to retrieve the wallet amount. Default value is the 'UnderlyingAsset' currency.
 --- @field market string | nil Optional market parameter for exchanges with separates wallet for each market.
 
 --- Total balance specifications of a specific currency. Available, locked and total balance. Does not work yet in backtests and for simulated accounts.
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount() or InputAccountMarket() for example. Can be left empty for default properties. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
---- @param coin string Coin of which to retrieve the wallet amount. Default value is the 'UnderlyingAsset' currency.
+--- @param coin string Optional - Coin of which to retrieve the wallet amount. Default value is the 'UnderlyingAsset' currency.
 --- @param market string Optional - Optional market parameter for exchanges with separates wallet for each market. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @return ResultOf_Balance Returns a result object with the available, locked and total balance.
---- @overload fun(coin: string): ResultOf_Balance
---- @overload fun(coin: string, accountId: string): ResultOf_Balance
---- @overload fun(coin: string, optionalParameters: OptionalParametersOf_Balance): ResultOf_Balance
+--- @overload fun(): ResultOf_Balance
+--- @overload fun(accountId: string): ResultOf_Balance
+--- @overload fun(accountId: string, coin: string): ResultOf_Balance
+--- @overload fun(optionalParameters: OptionalParametersOf_Balance): ResultOf_Balance
 function Balance(accountId, coin, market) end
 
 --- The optional parameters of BalanceAmount.

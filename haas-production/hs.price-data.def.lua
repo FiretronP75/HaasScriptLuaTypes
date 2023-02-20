@@ -108,6 +108,46 @@ function ClosePrices(interval, fullCandles, market, hlcStyle) end
 --- @overload fun(optionalParameters: OptionalParametersOf_CurrentPrice): ResultOf_CurrentPrice
 function CurrentPrice(market) end
 
+--- The optional parameters of GetBodyHighPrices.
+--- @shape OptionalParametersOf_GetBodyHighPrices
+--- @field interval number | nil The ticks interval.
+--- @field fullCandles boolean | nil If true, the last closed candles will be returned.
+--- @field market string | nil The market of the tick. Default is the selected main market.
+--- @field hlcStyle boolean | nil When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.
+
+--- A collection with the highest price of the candle its body prices. Sorted from new to old.
+--- @param interval number Optional - The ticks interval. Suggestions: InputInterval, CurrentInterval
+--- @param fullCandles boolean Optional - If true, the last closed candles will be returned.
+--- @param market string Optional - The market of the tick. Default is the selected main market. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @param hlcStyle boolean Optional - When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.
+--- @return number[] Returns a collection of the highest price of the candle its body prices. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @overload fun(): number[]
+--- @overload fun(interval: number): number[]
+--- @overload fun(interval: number, fullCandles: boolean): number[]
+--- @overload fun(interval: number, fullCandles: boolean, market: string): number[]
+--- @overload fun(optionalParameters: OptionalParametersOf_GetBodyHighPrices): number[]
+function GetBodyHighPrices(interval, fullCandles, market, hlcStyle) end
+
+--- The optional parameters of GetBodyLowPrices.
+--- @shape OptionalParametersOf_GetBodyLowPrices
+--- @field interval number | nil The ticks interval.
+--- @field fullCandles boolean | nil If true, the last closed candles will be returned.
+--- @field market string | nil The market of the tick. Default is the selected main market.
+--- @field hlcStyle boolean | nil When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.
+
+--- A collection with the lowest price of the candle its body prices. Sorted from new to old.
+--- @param interval number Optional - The ticks interval. Suggestions: InputInterval, CurrentInterval
+--- @param fullCandles boolean Optional - If true, the last closed candles will be returned.
+--- @param market string Optional - The market of the tick. Default is the selected main market. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @param hlcStyle boolean Optional - When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.
+--- @return number[] Returns a collection of the lowest price of the candle its body prices. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @overload fun(): number[]
+--- @overload fun(interval: number): number[]
+--- @overload fun(interval: number, fullCandles: boolean): number[]
+--- @overload fun(interval: number, fullCandles: boolean, market: string): number[]
+--- @overload fun(optionalParameters: OptionalParametersOf_GetBodyLowPrices): number[]
+function GetBodyLowPrices(interval, fullCandles, market, hlcStyle) end
+
 --- The optional parameters of GetVolume.
 --- @shape OptionalParametersOf_GetVolume
 --- @field interval number | nil The ticks interval.

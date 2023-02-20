@@ -32,6 +32,13 @@ function Equals(value1, value2) end
 --- @return any Returns the value of defaultValue when value is nil. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function IfNull(value, defaultValue) end
 
+--- Checks if the value is bigger than lowValue and smaller then highValue.
+--- @param value number | table The value to compare.
+--- @param lowValue number The lowest value. Suggestions: Input
+--- @param highValue number The highest value. Suggestions: Input
+--- @return boolean Returns true the value is bigger than lowValue and smaller then highValue. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+function IsBiggerAndSmallerThan(value, lowValue, highValue) end
+
 --- Checks if the value is bigger than highValue or smaller then lowValue.
 --- @param value number | table The value to compare.
 --- @param highValue number The highest value. Suggestions: Input
