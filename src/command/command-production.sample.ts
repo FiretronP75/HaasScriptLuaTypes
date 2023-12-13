@@ -5518,6 +5518,85 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "ScriptId": "dac9692ba28544e693e24094572cca8d",
+    "IsValid": true,
+    "CommandName": "CC_CompareScaledLast",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Compares the last price of two different assets by scaling them.",
+    "ReturnDescription": "true if last value of source1 is relatively greater when scaled compared to last value of source2 when scaled",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "source1",
+        "Type": 7,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The first source data to compare.",
+        "ScriptType": null,
+        "Suggestion": [
+          5201,
+          5200,
+          5211,
+          5213,
+          5215,
+          5216,
+          5212,
+          5208,
+          5202,
+          5205,
+          5203,
+          5204,
+          5206,
+          5207,
+          5209,
+          5214
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "source2",
+        "Type": 7,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The second source data to compare.",
+        "ScriptType": null,
+        "Suggestion": [
+          5201,
+          5200,
+          5211,
+          5213,
+          5215,
+          5216,
+          5212,
+          5208,
+          5202,
+          5205,
+          5203,
+          5204,
+          5206,
+          5207,
+          5209,
+          5214
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
     "ScriptId": "c5145ec90a6920c0dd95bf95852370e8",
     "IsValid": true,
     "CommandName": "CC_ContinuousSignal",
@@ -5661,6 +5740,42 @@ export const commandProductionSample: CommandRaw[] = [
       6015,
       6010
     ],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "25813c7a071142bea85f7d66f463b765",
+    "IsValid": true,
+    "CommandName": "CC_CountDecimals",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Returns the number of decimal places in a number.",
+    "ReturnDescription": "the number of decimal places in a number",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "value",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "something like 1.234",
+        "ScriptType": null,
+        "Suggestion": [
+          7215,
+          7209
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [],
     "ChangeTypes": []
   },
   {
@@ -6926,6 +7041,382 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "ScriptId": "e96b636bd83447798e9c27c9b14c40cc",
+    "IsValid": true,
+    "CommandName": "CC_FormatDateTime",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Formats a unix datetime number (to \"YYYY-MM-DD at HH:MM\" by default).",
+    "ReturnDescription": "The formatted unix datetime number.",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "unix",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The unix datetime number to format.",
+        "ScriptType": null,
+        "Suggestion": [
+          6801,
+          6811,
+          6816,
+          6810,
+          6806,
+          6805,
+          6804,
+          6803,
+          6808,
+          6802,
+          6807,
+          6809,
+          6813,
+          6800,
+          6815,
+          6812,
+          6814
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "dateDelimiter",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The characters between the year and month, and between the month and day.",
+        "ScriptType": null,
+        "Suggestion": [
+          4406
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "dateTimeDelimiter",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The characters between the date and time.",
+        "ScriptType": null,
+        "Suggestion": [
+          4406
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "timeDelimiter",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The characters between the hour and minute, and between the minute and second.",
+        "ScriptType": null,
+        "Suggestion": [
+          4406
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "includeSeconds",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "If true, the seconds will be included in the formatted time.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "includeTime",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "If true, the formatted time will be included.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "includeYear",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "If true, the year will be included in the formatted date.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 0,
+    "OutputSuggestions": [
+      4208,
+      4200,
+      4201,
+      4202,
+      4207,
+      4203,
+      4204,
+      4205,
+      4206
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "6a42e2af46c14ec5a8bcf24a16fc95ac",
+    "IsValid": true,
+    "CommandName": "CC_FormatRoundedPercent",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Formats a number to be rounded and have the percent symbol.",
+    "ReturnDescription": "The formatted value.",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "input",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The number to format.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "digits",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The digits to round to.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "symbol",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The symbol to append.",
+        "ScriptType": null,
+        "Suggestion": [
+          4406,
+          3400,
+          4205,
+          4200
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 0,
+    "OutputSuggestions": [
+      4201
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "4dbb99cd56214a1ca850a598042f7456",
+    "IsValid": true,
+    "CommandName": "CC_FormatRoundedQuoteCurrency",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Formats a number to be rounded and have the quote currency symbol.",
+    "ReturnDescription": "Formatted Value",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "Input",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The number to format",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "Digits",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The digits to round to",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "Symbol",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The symbol to append",
+        "ScriptType": null,
+        "Suggestion": [
+          4406,
+          3400,
+          4205,
+          4200
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 0,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "ed60c416350040bfb493d5e4b0cc55ce",
+    "IsValid": true,
+    "CommandName": "CC_FormatRoundedQuoteCurrency",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Formats a number to be rounded and have the quote currency symbol.",
+    "ReturnDescription": "Formatted Value",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "Input",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The number to format",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The currency market",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3604
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "Digits",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The digits to round to",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "Symbol",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The symbol to append",
+        "ScriptType": null,
+        "Suggestion": [
+          4406,
+          3400,
+          4205,
+          4200
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 0,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
     "ScriptId": "cee3de40cda14e59b6d2b27cd5e48c48",
     "IsValid": true,
     "CommandName": "CC_FractionGrab",
@@ -6999,6 +7490,97 @@ export const commandProductionSample: CommandRaw[] = [
     "Resizable": false,
     "OutputHidden": false,
     "OutputType": 8,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "b9a91095b35e4ba0a626a88366c780ca",
+    "IsValid": true,
+    "CommandName": "CC_HMA",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Hull Moving Average by pshai",
+    "ReturnDescription": "Hull Moving Average values array",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "source",
+        "Type": 7,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Source data",
+        "ScriptType": null,
+        "Suggestion": [
+          5201
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "period",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Period Length",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          3401,
+          3402,
+          3423,
+          3413,
+          3420,
+          3414,
+          3404,
+          3405,
+          3406,
+          3407,
+          3408,
+          3409,
+          3410,
+          3411,
+          3422,
+          3418,
+          3424,
+          3415,
+          3417,
+          3416,
+          3600,
+          3601,
+          3602,
+          3603,
+          3604,
+          3605,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "maType",
+        "Type": 2,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "Type of Moving Average",
+        "ScriptType": null,
+        "Suggestion": [
+          3407
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 7,
     "OutputSuggestions": [],
     "ChangeTypes": []
   },
@@ -8017,6 +8599,245 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "ScriptId": "acd97aeeb98448828e5d7243636f5c55",
+    "IsValid": true,
+    "CommandName": "CC_QuoteDecimals",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Returns the number of decimal places supported by the QuoteCurrency.",
+    "ReturnDescription": "the number of decimal places supported by the QuoteCurrency",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The market.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3604
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "28eb727366084af6a17f93ba92f4747c",
+    "IsValid": true,
+    "CommandName": "CC_ReportMaxRiskPoint",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Adds a custom report on your worst point of liquidation risk.",
+    "ReturnDescription": "",
+    "Parameters": [],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "79e699ff4e404bcc83ae70b8d86e6cb0",
+    "IsValid": true,
+    "CommandName": "CC_ReportMaxRiskPoint",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Adds a custom report on your worst point of liquidation risk.",
+    "ReturnDescription": "",
+    "Parameters": [],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "98d42a0f96a14c99afa5673269666023",
+    "IsValid": true,
+    "CommandName": "CC_ReportMaxRiskPointV2",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Adds a custom report on your worst point of liquidation risk.",
+    "ReturnDescription": "",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "walletAmount",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "The bot will start with this amount and adjust according to its profits. Set to -1 to use the real wallet balance.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          3401,
+          3402,
+          3423,
+          3413,
+          3420,
+          3414,
+          3404,
+          3405,
+          3406,
+          3407,
+          3408,
+          3409,
+          3410,
+          3411,
+          3422,
+          3418,
+          3424,
+          3415,
+          3417,
+          3416,
+          3600,
+          3601,
+          3602,
+          3603,
+          3604,
+          3605
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "willError",
+        "Type": 3,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": true,
+        "Description": "If true, will log an error when there is a probable liquidation, which also ends a backtest early.If false, will log a warning when there is a probable liquidation.",
+        "ScriptType": null,
+        "Suggestion": [
+          3212,
+          3203
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "9a3a36fe48ed414facde7601293d9e1d",
+    "IsValid": true,
+    "CommandName": "CC_ReportOpenPositions",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Adds a custom report on your open positions.",
+    "ReturnDescription": "",
+    "Parameters": [],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "9103df6520a54538be5dfc786e839632",
+    "IsValid": true,
+    "CommandName": "CC_Scale100",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Converts a value to a scale of 0 to 100.",
+    "ReturnDescription": "the value converted to the 0 to 100 scale",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "value",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The number to convert.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "source",
+        "Type": 7,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The source data the value belongs to.",
+        "ScriptType": null,
+        "Suggestion": [
+          5201,
+          5200,
+          5211,
+          5213,
+          5215,
+          5216,
+          5212,
+          5208,
+          5202,
+          5205,
+          5203,
+          5204,
+          5206,
+          5207,
+          5209,
+          5214
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [],
+    "ChangeTypes": []
+  },
+  {
     "ScriptId": "e80f2247aef27f8d5a7b6a9c689811ad",
     "IsValid": true,
     "CommandName": "CC_ScalperChannel_LB",
@@ -8544,6 +9365,41 @@ export const commandProductionSample: CommandRaw[] = [
       408,
       3204
     ],
+    "ChangeTypes": []
+  },
+  {
+    "ScriptId": "8e274a8e03974bdf9f294cf842c849be",
+    "IsValid": true,
+    "CommandName": "CC_TrueOnInterval",
+    "Command": 600,
+    "CommandType": 1,
+    "Category": 3,
+    "Description": "Returns true every interval and false in between intervals.",
+    "ReturnDescription": "true every interval and false in between intervals",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "interval",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The interval at which true should be returned instead of false.",
+        "ScriptType": null,
+        "Suggestion": [
+          3404
+        ]
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": false,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [],
     "ChangeTypes": []
   },
   {
@@ -11660,7 +12516,7 @@ export const commandProductionSample: CommandRaw[] = [
     "Description": "Enumeration, returns a cross-margin mode enum. Used with Get-/SetMarginMode() and IsMarginModeSupported()",
     "ReturnDescription": "Returns the cross-margin mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 49,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -23218,6 +24074,125 @@ export const commandProductionSample: CommandRaw[] = [
           4201,
           408
         ]
+      },
+      {
+        "Index": 0,
+        "Name": "averageMargin",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Average Margin used per position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "averageProfit",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Average Profit per position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "closedPositions",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Closed Positions count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "profitablePositions",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Profitable Positions count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "losingPositions",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Losing Positions count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "executedOrders",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Executed Orders count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "completedOrders",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Completed Orders count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
       }
     ],
     "IsConstant": false,
@@ -23979,7 +24954,7 @@ export const commandProductionSample: CommandRaw[] = [
     "Description": "Enumeration, returns a hedge position mode enum. Used with Get-/SetPositionMode() and IsPositionModeSupported()",
     "ReturnDescription": "Returns the hedge-position mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 48,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -26195,6 +27170,51 @@ export const commandProductionSample: CommandRaw[] = [
     "OutputSuggestions": [
       6011
     ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "InitExportData",
+    "Command": 8400,
+    "CommandType": 1,
+    "Category": 22,
+    "Description": "Initialize a file that can be exported later.",
+    "ReturnDescription": null,
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "name",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Unique name of the file",
+        "ScriptType": null,
+        "Suggestion": [
+          4406
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "headers",
+        "Type": 103,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Header definition",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
     "ChangeTypes": []
   },
   {
@@ -28896,7 +29916,7 @@ export const commandProductionSample: CommandRaw[] = [
     "Description": "Enumeration, returns isolated margin mode enum. Used with Get-/SetMarginMode() and IsMarginModeSupported()",
     "ReturnDescription": "Returns the isolated-margin mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 49,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -33034,6 +34054,106 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "MarginToTradeAmount",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "price",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The price used in the conversion from margin to trade amount.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "margin",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The margin used to calculate the trade amount",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "leverage",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Leverage ratio. Use 0 for cross-margin.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          3603
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
+        ]
+      }
+    ],
+    "Command": 7609,
+    "CommandType": 1,
+    "Category": 39,
+    "Description": "Convert margin to a trade amount. In spot markets, the margin is anticipated to be in the quote currency (e.g., USDT in BTC/USDT). For leverage markets, the margin is expected to be in the underlying currency.",
+    "ReturnDescription": "Returns the calculated trade amount based on the margin.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408,
+      7400,
+      7404,
+      7405
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "MarginTrading",
     "Command": 2801,
     "Description": "Enumeration, returns a market type enum. Used by MarketType()",
@@ -35174,6 +36294,37 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "NewsSentiment",
+    "Parameters": [],
+    "Command": 8302,
+    "CommandType": 1,
+    "Category": 47,
+    "Description": "Looks to the crypto trading news and returns the sentiment of it",
+    "ReturnDescription": null,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "NilDataType",
     "Command": 7901,
     "Description": "Enumeration, returns a data type enum.",
@@ -35885,7 +37036,7 @@ export const commandProductionSample: CommandRaw[] = [
     "Description": "Enumeration, returns a one-way position mode enum. Used with Get-/SetPositionMode() and IsPositionModeSupported()",
     "ReturnDescription": "Returns the one-way-position mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 48,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -41759,6 +42910,51 @@ export const commandProductionSample: CommandRaw[] = [
           3205,
           3209
         ]
+      },
+      {
+        "Index": 0,
+        "Name": "openTime",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Timestamp (in unix) when the position was opened.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "updatedTime",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Timestamp (in unix) when the position was last updated.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "closeTime",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Timestamp (in unix) when the position was closed. If position is still open, value will be 0",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209
+        ]
       }
     ],
     "IsConstant": false,
@@ -41999,13 +43195,13 @@ export const commandProductionSample: CommandRaw[] = [
     "Parameters": [
       {
         "Index": 0,
-        "Name": "input1",
+        "Name": "value",
         "Type": 6,
         "IsRequired": true,
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "First source value(s).",
+        "Description": "The base value",
         "ScriptType": null,
         "Suggestion": [
           3400,
@@ -42014,13 +43210,13 @@ export const commandProductionSample: CommandRaw[] = [
       },
       {
         "Index": 0,
-        "Name": "input2",
+        "Name": "power",
         "Type": 6,
         "IsRequired": true,
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "Second source value(s).",
+        "Description": "The power value",
         "ScriptType": null,
         "Suggestion": [
           3400,
@@ -54103,6 +55299,51 @@ export const commandProductionSample: CommandRaw[] = [
       6471,
       6470
     ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "WriteExportData",
+    "Command": 8401,
+    "CommandType": 1,
+    "Category": 22,
+    "Description": "Write data to a file that can be exported later. File size is unlimited, use with caution.",
+    "ReturnDescription": null,
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "name",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Name of the file to write the data to.",
+        "ScriptType": null,
+        "Suggestion": [
+          4406
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "values",
+        "Type": 103,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The values to write to the file. Needs to match the number of headers defined in InitExportData.",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
     "ChangeTypes": []
   },
   {

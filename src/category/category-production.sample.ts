@@ -48,5 +48,7 @@ export const categoryProductionSample: CategoryRaw = {
   "44": "Enumerations Array filter Types",
   "45": "Social Media",
   "46": "Enumerations Source Price Types",
-  "47": "MAchine Learning"
+  "47": "MAchine Learning",
+  "48": "Enumerations Position Mode",
+  "49": "Enumerations Margin Mode"
 };

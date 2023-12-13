@@ -229,6 +229,19 @@ function CC_EMAMA_LB(chartIndex, interval) end
 --- @return void
 function CC_FlashCrashSlot(basePrice, index, amount, spread, startWithBuy) end
 
+--- The optional parameters of CC_HMA.
+--- @shape OptionalParametersOf_CC_HMA
+--- @field maType Enum | nil Type of Moving Average
+
+--- Hull Moving Average by pshai
+--- @param source number[] Source data. Suggestions: ClosePrices, Prices
+--- @param period number Period Length. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
+--- @param maType Enum Optional - Type of Moving Average. Suggestions: InputMaTypes
+--- @return number[] Hull Moving Average values array
+--- @overload fun(source: number[], period: number): number[]
+--- @overload fun(source: number[], period: number, optionalParameters: OptionalParametersOf_CC_HMA): number[]
+function CC_HMA(source, period, maType) end
+
 --- The optional parameters of CC_HullMA.
 --- @shape OptionalParametersOf_CC_HullMA
 --- @field Source number[] | nil The source data
@@ -406,6 +419,28 @@ function CC_ScalperChannel_LB(chartIndex, interval) end
 --- @overload fun(chartIndex: number): Enum
 --- @overload fun(chartIndex: number, optionalParameters: OptionalParametersOf_CC_SQZMOM_LB): Enum
 function CC_SQZMOM_LB(chartIndex, interval) end
+
+--- The optional parameters of CC_SQZMOM_LB_Ext.
+--- @shape OptionalParametersOf_CC_SQZMOM_LB_Ext
+--- @field ma_type Enum | nil BB Moving Average Type
+--- @field ma_type_kc Enum | nil KC Moving Average Type
+--- @field ma_type_r Enum | nil Range Moving Average Type
+
+--- Squeeze Momentum Indicator - LazyBear
+--- @param source number[] Source prices for calculations. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, ClosePrices, Prices, CurrentPrice, GetBodyHighPrices, GetBodyLowPrices, GetVolume, HeikenClosePrices, OHLCPrices, HeikinOpenPrices, HighPrices, HLCPrices, HLPrices, LowPrices, OCPrices, OpenPrices, SourcePrices
+--- @param length number BB Lenght. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
+--- @param mult number BB MultFactor. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
+--- @param length_kc number KC Length. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
+--- @param mult_kc number KC MultFactor. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
+--- @param ma_type Enum Optional - BB Moving Average Type. Suggestions: InputMaTypes, DemaType, EmaType, KamaType, MamaType, SmaType, T3Type, TemaType, TrimaType, WmaType
+--- @param ma_type_kc Enum Optional - KC Moving Average Type. Suggestions: InputMaTypes, DemaType, EmaType, KamaType, MamaType, SmaType, T3Type, TemaType, TrimaType, WmaType
+--- @param ma_type_r Enum Optional - Range Moving Average Type. Suggestions: InputMaTypes, DemaType, EmaType, KamaType, MamaType, SmaType, T3Type, TemaType, TrimaType, WmaType
+--- @return number[] SQZMOM values. Output Suggestions: BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf, Plot
+--- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number): number[]
+--- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number, ma_type: Enum): number[]
+--- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number, ma_type: Enum, ma_type_kc: Enum): number[]
+--- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number, optionalParameters: OptionalParametersOf_CC_SQZMOM_LB_Ext): number[]
+function CC_SQZMOM_LB_Ext(source, length, mult, length_kc, mult_kc, ma_type, ma_type_kc, ma_type_r) end
 
 --- Schaff Trend Cycle
 --- @param data number[] Source data. Suggestions: ClosePrices, Prices

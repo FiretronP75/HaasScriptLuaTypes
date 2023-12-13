@@ -17208,7 +17208,7 @@ export const commandStagingSample: CommandRaw[] = [
     "Description": "Enumeration, returns a cross-margin mode enum. Used with Get-/SetMarginMode() and IsMarginModeSupported()",
     "ReturnDescription": "Returns the cross-margin mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 49,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -28766,6 +28766,125 @@ export const commandStagingSample: CommandRaw[] = [
           4201,
           408
         ]
+      },
+      {
+        "Index": 0,
+        "Name": "averageMargin",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Average Margin used per position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "averageProfit",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Average Profit per position.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "closedPositions",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Closed Positions count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "profitablePositions",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Profitable Positions count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "losingPositions",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Losing Positions count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "executedOrders",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Executed Orders count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "completedOrders",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Completed Orders count.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209,
+          4201,
+          408
+        ]
       }
     ],
     "IsConstant": false,
@@ -29527,7 +29646,7 @@ export const commandStagingSample: CommandRaw[] = [
     "Description": "Enumeration, returns a hedge position mode enum. Used with Get-/SetPositionMode() and IsPositionModeSupported()",
     "ReturnDescription": "Returns the hedge-position mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 48,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -31743,6 +31862,51 @@ export const commandStagingSample: CommandRaw[] = [
     "OutputSuggestions": [
       6011
     ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "InitExportData",
+    "Command": 8400,
+    "CommandType": 1,
+    "Category": 22,
+    "Description": "Initialize a file that can be exported later.",
+    "ReturnDescription": null,
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "name",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Unique name of the file",
+        "ScriptType": null,
+        "Suggestion": [
+          4406
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "headers",
+        "Type": 103,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Header definition",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
     "ChangeTypes": []
   },
   {
@@ -34444,7 +34608,7 @@ export const commandStagingSample: CommandRaw[] = [
     "Description": "Enumeration, returns isolated margin mode enum. Used with Get-/SetMarginMode() and IsMarginModeSupported()",
     "ReturnDescription": "Returns the isolated-margin mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 49,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -38582,6 +38746,106 @@ export const commandStagingSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "MarginToTradeAmount",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "price",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The price used in the conversion from margin to trade amount.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "margin",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The margin used to calculate the trade amount",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "leverage",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Leverage ratio. Use 0 for cross-margin.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          3603
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
+        ]
+      }
+    ],
+    "Command": 7609,
+    "CommandType": 1,
+    "Category": 39,
+    "Description": "Convert margin to a trade amount. In spot markets, the margin is anticipated to be in the quote currency (e.g., USDT in BTC/USDT). For leverage markets, the margin is expected to be in the underlying currency.",
+    "ReturnDescription": "Returns the calculated trade amount based on the margin.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408,
+      7400,
+      7404,
+      7405
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "MarginTrading",
     "Command": 2801,
     "Description": "Enumeration, returns a market type enum. Used by MarketType()",
@@ -40722,6 +40986,37 @@ export const commandStagingSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "NewsSentiment",
+    "Parameters": [],
+    "Command": 8302,
+    "CommandType": 1,
+    "Category": 47,
+    "Description": "Looks to the crypto trading news and returns the sentiment of it",
+    "ReturnDescription": null,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 1,
+    "OutputSuggestions": [
+      3202,
+      3204,
+      3209,
+      3205,
+      3201,
+      4008,
+      4033,
+      4025,
+      4018,
+      4000,
+      4041,
+      408
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "NilDataType",
     "Command": 7901,
     "Description": "Enumeration, returns a data type enum.",
@@ -41433,7 +41728,7 @@ export const commandStagingSample: CommandRaw[] = [
     "Description": "Enumeration, returns a one-way position mode enum. Used with Get-/SetPositionMode() and IsPositionModeSupported()",
     "ReturnDescription": "Returns the one-way-position mode enum.",
     "CommandType": 15,
-    "Category": 12,
+    "Category": 48,
     "Parameters": [],
     "IsConstant": true,
     "OutputIndex": [],
@@ -47307,6 +47602,51 @@ export const commandStagingSample: CommandRaw[] = [
           3205,
           3209
         ]
+      },
+      {
+        "Index": 0,
+        "Name": "openTime",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Timestamp (in unix) when the position was opened.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "updatedTime",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Timestamp (in unix) when the position was last updated.",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "closeTime",
+        "Type": 1,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Timestamp (in unix) when the position was closed. If position is still open, value will be 0",
+        "ScriptType": null,
+        "Suggestion": [
+          3205,
+          3209
+        ]
       }
     ],
     "IsConstant": false,
@@ -47547,13 +47887,13 @@ export const commandStagingSample: CommandRaw[] = [
     "Parameters": [
       {
         "Index": 0,
-        "Name": "input1",
+        "Name": "value",
         "Type": 6,
         "IsRequired": true,
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "First source value(s).",
+        "Description": "The base value",
         "ScriptType": null,
         "Suggestion": [
           3400,
@@ -47562,13 +47902,13 @@ export const commandStagingSample: CommandRaw[] = [
       },
       {
         "Index": 0,
-        "Name": "input2",
+        "Name": "power",
         "Type": 6,
         "IsRequired": true,
         "IsHidden": false,
         "IsField": false,
         "AllowNull": false,
-        "Description": "Second source value(s).",
+        "Description": "The power value",
         "ScriptType": null,
         "Suggestion": [
           3400,
@@ -59651,6 +59991,51 @@ export const commandStagingSample: CommandRaw[] = [
       6471,
       6470
     ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "WriteExportData",
+    "Command": 8401,
+    "CommandType": 1,
+    "Category": 22,
+    "Description": "Write data to a file that can be exported later. File size is unlimited, use with caution.",
+    "ReturnDescription": null,
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "name",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Name of the file to write the data to.",
+        "ScriptType": null,
+        "Suggestion": [
+          4406
+        ]
+      },
+      {
+        "Index": 0,
+        "Name": "values",
+        "Type": 103,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The values to write to the file. Needs to match the number of headers defined in InitExportData.",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 10,
+    "OutputSuggestions": [],
     "ChangeTypes": []
   },
   {

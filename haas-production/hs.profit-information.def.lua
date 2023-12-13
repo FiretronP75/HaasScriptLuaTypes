@@ -73,6 +73,13 @@ function GetCurrentROI(direction, market) end
 --- @field highestPointInProfit number Highest Point in total PNL. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 --- @field lowestPointInProfit number Lowest Point in total PNL. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 --- @field totalMarginUsed number Total Margin Used. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field averageMargin number Average Margin used per position. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field averageProfit number Average Profit per position. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field closedPositions number Closed Positions count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field profitablePositions number Profitable Positions count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field losingPositions number Losing Positions count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field executedOrders number Executed Orders count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field completedOrders number Completed Orders count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 --- @field [1] number Max. DrawDown in percentages. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 --- @field [2] number Max. DrawDown in underlying asset. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 --- @field [3] number Sharpe Ratio. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
@@ -91,6 +98,13 @@ function GetCurrentROI(direction, market) end
 --- @field [16] number Highest Point in total PNL. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 --- @field [17] number Lowest Point in total PNL. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 --- @field [18] number Total Margin Used. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field [19] number Average Margin used per position. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field [20] number Average Profit per position. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field [21] number Closed Positions count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field [22] number Profitable Positions count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field [23] number Losing Positions count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field [24] number Executed Orders count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
+--- @field [25] number Completed Orders count. Suggestions: IsBiggerThan, IsSmallerThan, Log, Plot
 
 --- The optional parameters of GetTradingReport.
 --- @shape OptionalParametersOf_GetTradingReport

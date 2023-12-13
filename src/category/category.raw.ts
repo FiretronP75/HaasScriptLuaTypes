@@ -48,5 +48,7 @@ export interface CategoryRaw {
   '45': string;
   '46': string;
   '47': string;
+  '48': string;
+  '49': string;
 
 }

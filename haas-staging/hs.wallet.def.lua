@@ -43,6 +43,20 @@ function Balance(accountId, coin, market) end
 --- @overload fun(optionalParameters: OptionalParametersOf_BalanceAmount): number
 function BalanceAmount(accountId, coin, market) end
 
+--- The optional parameters of MarginToTradeAmount.
+--- @shape OptionalParametersOf_MarginToTradeAmount
+--- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
+
+--- Convert margin to a trade amount. In spot markets, the margin is anticipated to be in the quote currency (e.g., USDT in BTC/USDT). For leverage markets, the margin is expected to be in the underlying currency.
+--- @param price number The price used in the conversion from margin to trade amount. Suggestions: Input
+--- @param margin number The margin used to calculate the trade amount. Suggestions: Input
+--- @param leverage number Leverage ratio. Use 0 for cross-margin. Suggestions: Input, Leverage
+--- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @return number Returns the calculated trade amount based on the margin. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot, PlaceBuyOrder, PlaceGoLongOrder, PlaceGoShortOrder
+--- @overload fun(price: number, margin: number, leverage: number): number
+--- @overload fun(price: number, margin: number, leverage: number, optionalParameters: OptionalParametersOf_MarginToTradeAmount): number
+function MarginToTradeAmount(price, margin, leverage, market) end
+
 --- The optional parameters of MaxExitLongAmount.
 --- @shape OptionalParametersOf_MaxExitLongAmount
 --- @field market string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.

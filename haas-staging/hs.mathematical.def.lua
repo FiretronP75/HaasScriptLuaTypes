@@ -252,10 +252,10 @@ function PercentageChange(input1, input2) end
 PI = {}
 
 --- Calculates a specified number/table raised to the specified power number/table.
---- @param input1 number | table First source value(s). Suggestions: Input
---- @param input2 number | table Second source value(s). Suggestions: Input
+--- @param value number | table The base value. Suggestions: Input
+--- @param power number | table The power value. Suggestions: Input
 --- @return number | table Returns a specified number/table raised to the specified power number/table. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
-function Pow(input1, input2) end
+function Pow(value, power) end
 
 --- The optional parameters of Random.
 --- @shape OptionalParametersOf_Random

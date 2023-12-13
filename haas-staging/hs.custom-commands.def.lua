@@ -229,6 +229,48 @@ function CC_EMAMA_LB(chartIndex, interval) end
 --- @return void
 function CC_FlashCrashSlot(basePrice, index, amount, spread, startWithBuy) end
 
+--- The object returned by CC_HSP.
+--- @class ResultOf_CC_HSP
+--- @field open number[] Open prices
+--- @field high number[] High prices
+--- @field low number[] Low prices
+--- @field close number[] Close prices
+--- @field volume number[] Volumes
+--- @field ask number[] Ask prices
+--- @field bid number[] Bid prices
+--- @field hl number[] Median prices
+--- @field hlc number[] Typical prices
+--- @field hlcc number[] Weighted Close prices
+--- @field ohlc number[] Average prices
+--- @field [1] number[] Open prices
+--- @field [2] number[] High prices
+--- @field [3] number[] Low prices
+--- @field [4] number[] Close prices
+--- @field [5] number[] Volumes
+--- @field [6] number[] Ask prices
+--- @field [7] number[] Bid prices
+--- @field [8] number[] Median prices
+--- @field [9] number[] Typical prices
+--- @field [10] number[] Weighted Close prices
+--- @field [11] number[] Average prices
+
+--- The optional parameters of CC_HSP.
+--- @shape OptionalParametersOf_CC_HSP
+--- @field interval number | nil Price data interval
+--- @field market string | nil Market for data
+--- @field hlcStyle boolean | nil When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.
+
+--- Returns o, h, l, c, v, a, b, hl, hlc, hlcc, ohlc data arrays with latest ticker data added. Based on Pshai's [HighSpeedPrices Returns OHLCV] Added: ask, bid (changed OutputIndex 1-7 so it matches included CurrentPrice: ohlcvab object key order) and Weighted Close Price to get All variations on price found in HTS
+--- @param interval number Optional - Price data interval. Suggestions: InputInterval
+--- @param market string Optional - Market for data. Suggestions: PriceMarket, InputMarket, InputAccountMarket
+--- @param hlcStyle boolean Optional - When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
+--- @return ResultOf_CC_HSP
+--- @overload fun(): ResultOf_CC_HSP
+--- @overload fun(interval: number): ResultOf_CC_HSP
+--- @overload fun(interval: number, market: string): ResultOf_CC_HSP
+--- @overload fun(optionalParameters: OptionalParametersOf_CC_HSP): ResultOf_CC_HSP
+function CC_HSP(interval, market, hlcStyle) end
+
 --- The optional parameters of CC_HullMA.
 --- @shape OptionalParametersOf_CC_HullMA
 --- @field Source number[] | nil The source data

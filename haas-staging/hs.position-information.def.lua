@@ -156,6 +156,9 @@ function LongAmount(market) end
 --- @field amount number The amount open in the position. Suggestions: PlaceExitLongOrder, PlaceExitShortOrder, PlaceSellOrder, PlaceBuyOrder
 --- @field profit number The realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field roi number The ROI based on the used margin and realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field openTime number Timestamp (in unix) when the position was opened. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field updatedTime number Timestamp (in unix) when the position was last updated. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field closeTime number Timestamp (in unix) when the position was closed. If position is still open, value will be 0. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field [1] string The position identifier. Suggestions: PlaceExitPositionOrder
 --- @field [2] string The market of the position. Suggestions: ClosePrices, Prices, AskPrices, BuyPrices, BidPrices, SellPrices
 --- @field [3] boolean Set on true when the direction is long. Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
@@ -164,6 +167,9 @@ function LongAmount(market) end
 --- @field [6] number The amount open in the position. Suggestions: PlaceExitLongOrder, PlaceExitShortOrder, PlaceSellOrder, PlaceBuyOrder
 --- @field [7] number The realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field [8] number The ROI based on the used margin and realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field [9] number Timestamp (in unix) when the position was opened. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field [10] number Timestamp (in unix) when the position was last updated. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field [11] number Timestamp (in unix) when the position was closed. If position is still open, value will be 0. Suggestions: IsBiggerThan, IsSmallerThan
 
 --- The optional parameters of PositionContainer.
 --- @shape OptionalParametersOf_PositionContainer

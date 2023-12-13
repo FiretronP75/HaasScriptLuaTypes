@@ -5,6 +5,12 @@
 --- @return void
 function Delete(key) end
 
+--- Initialize a file that can be exported later.
+--- @param name string Unique name of the file
+--- @param headers string[] Header definition
+--- @return void
+function InitExportData(name, headers) end
+
 --- The optional parameters of Load.
 --- @shape OptionalParametersOf_Load
 --- @field defaultValue any | nil Default value for when no data is saved on the key. Default is nil.
@@ -49,4 +55,10 @@ function LogWarning(message) end
 --- @param value any The value to store.
 --- @return void
 function Save(key, value) end
+
+--- Write data to a file that can be exported later. File size is unlimited, use with caution.
+--- @param name string Name of the file to write the data to.
+--- @param values string[] The values to write to the file. Needs to match the number of headers defined in InitExportData.
+--- @return void
+function WriteExportData(name, values) end
 
