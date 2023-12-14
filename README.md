@@ -30,7 +30,16 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
   >
   > Interface key and user id can be copied from a web browser session that has not expired yet.
   >
-  > Example: `yarn start prod lua 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48`
+  > Example: `yarn start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48`
+
+## About flex-num:
+Many of the number parameters of functions can also take a list of numbers.
+But it is not clear which do and which do not.
+Using "not-flex-num" keeps them all as `number`.
+This will give errors when you assign a list of numbers, even though it might be valid.
+Using "flex-num" changes them all to `number | number[]`.
+This will not error when you assign a list of numbers, even though it might be invalid.
+I'm not sure which is better or worse. So you have to decide for yourself which you prefer.
 
 ## To find your interface key and user id:
 1. Open Haas cloud server in your browser.
