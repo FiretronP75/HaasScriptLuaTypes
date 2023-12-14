@@ -1,6 +1,6 @@
-import { CategoryRaw } from './category.raw';
+import { CategoryRaw } from '../category.raw';
 
-export const categoryProductionSample: CategoryRaw = {
+export const categoryStagingSample: CategoryRaw = {
   "0": "Array Helpers",
   "1": "Position Prices",
   "2": "Charting",

@@ -1,9 +1,9 @@
 import axios, { AxiosResponse }    from 'axios';
 import { DocumentService }         from '../document/document.service';
-import { commandProductionSample } from './command-production.sample';
-import { commandStagingSample }    from './command-staging.sample';
 import { CommandWrapperRaw }       from './command-wrapper.raw';
 import { CommandModel }            from './command.model';
+import { commandProductionSample } from './sample/command-production.sample';
+import { commandStagingSample }    from './sample/command-staging.sample';
 
 export class CommandService {
 

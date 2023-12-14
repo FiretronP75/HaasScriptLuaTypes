@@ -1,9 +1,9 @@
 import axios, { AxiosResponse }     from 'axios';
 import { DocumentService }          from '../document/document.service';
-import { categoryProductionSample } from './category-production.sample';
-import { categoryStagingSample }    from './category-staging.sample';
 import { CategoryWrapperRaw }       from './category-wrapper.raw';
 import { CategoryRaw }              from './category.raw';
+import { categoryProductionSample } from './sample/category-production.sample';
+import { categoryStagingSample }    from './sample/category-staging.sample';
 
 export class CategoryService {
 

@@ -1,4 +1,4 @@
-import { CommandRaw } from './command.raw';
+import { CommandRaw } from '../command.raw';
 
 export const commandProductionSample: CommandRaw[] = [
   {

@@ -50,7 +50,7 @@ export class DocumentService {
   public setCategorySample(categoryRaw: CategoryRaw, isProduction: boolean): void {
     const name = isProduction ? 'categoryProductionSample' : 'categoryStagingSample';
 
-    this.categorySampleDocumentText += `import { CategoryRaw } from './category.raw';\n\n`;
+    this.categorySampleDocumentText += `import { CategoryRaw } from '../category.raw';\n\n`;
     this.categorySampleDocumentText += `export const ${name}: CategoryRaw = `;
     this.categorySampleDocumentText += JSON.stringify(categoryRaw, null, 2);
     this.categorySampleDocumentText += `;\n`;
@@ -59,7 +59,7 @@ export class DocumentService {
   public setCommandSample(commandRawList: CommandRaw[], isProduction: boolean): void {
     const name = isProduction ? 'commandProductionSample' : 'commandStagingSample';
 
-    this.commandSampleDocumentText += `import { CommandRaw } from './command.raw';\n\n`;
+    this.commandSampleDocumentText += `import { CommandRaw } from '../command.raw';\n\n`;
     this.commandSampleDocumentText += `export const ${name}: CommandRaw[] = `;
     this.commandSampleDocumentText += JSON.stringify(commandRawList, null, 2);
     this.commandSampleDocumentText += `;\n`;

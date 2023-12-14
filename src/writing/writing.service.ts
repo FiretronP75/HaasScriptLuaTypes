@@ -89,7 +89,7 @@ export class WritingService {
   protected writeCategorySample(): void {
 
     const startTime: Date = new Date();
-    const path: string    = `src/category/category-${this.sampleSuffix}.sample.ts`;
+    const path: string    = `src/category/sample/category-${this.sampleSuffix}.sample.ts`;
     const data: string    = this.documentService.categorySampleDocumentText;
     const options         = 'utf8';
 
@@ -105,7 +105,7 @@ export class WritingService {
   protected writeCommandSample(): void {
 
     const startTime: Date = new Date();
-    const path: string    = `src/command/command-${this.sampleSuffix}.sample.ts`;
+    const path: string    = `src/command/sample/command-${this.sampleSuffix}.sample.ts`;
     const data: string    = this.documentService.commandSampleDocumentText;
     const options         = 'utf8';
 
