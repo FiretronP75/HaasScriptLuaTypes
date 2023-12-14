@@ -2,7 +2,7 @@ import { HaasCommandCategory }      from '../haas/haas-command-category';
 import { HaasCommandParameterType } from '../haas/haas-command-parameter-type';
 import { HaasCommandSyntaxType }    from '../haas/haas-command-syntax-type';
 import { HaasCommandType }          from '../haas/haas-command-type';
-import { haasDataTypeMap }          from '../haas/haas-data-type-map';
+import { HaasDataTypeMapper }       from '../haas/haas-data-type-mapper';
 import { OutputIndexModel }         from '../outputIndex/output-index.model';
 import { ParameterModel }           from '../parameter/parameter.model';
 import { CommandRaw }               from './command.raw';
@@ -61,10 +61,9 @@ export class CommandModel {
     this.category                    = raw.Category;
     this.description                 = raw.Description;
     this.isEnumeration               = raw.IsConstant;
-    this.isValid                     =
-      raw.IsValid === undefined
-        ? true
-        : raw.IsValid;
+    this.isValid                     = raw.IsValid === undefined
+      ? true
+      : raw.IsValid;
     this.name                        = raw.CommandName;
     this.optionalParameterObjectName = this.getOptionalParameterObjectName(this.name);
     this.outputDescription           = raw.ReturnDescription || '';
@@ -86,7 +85,7 @@ export class CommandModel {
   protected getOutputTypeName(name: string, outputIndexListLength: number, outputType: number): string {
     return outputIndexListLength > 0
       ? `ResultOf_${name}`
-      : haasDataTypeMap.get(outputType) as string;
+      : HaasDataTypeMapper.map.get(outputType) as string;
   }
 
   protected filterOptional(parameterItem: ParameterModel): boolean {

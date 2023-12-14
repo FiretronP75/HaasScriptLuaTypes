@@ -1,5 +1,5 @@
 import { HaasCommandParameterType } from '../haas/haas-command-parameter-type';
-import { haasDataTypeMap }          from '../haas/haas-data-type-map';
+import { HaasDataTypeMapper }       from '../haas/haas-data-type-mapper';
 import { ParameterRaw }             from './parameter.raw';
 
 export class ParameterModel {
@@ -38,7 +38,7 @@ export class ParameterModel {
     this.isRequired  = raw.IsRequired;
     this.name        = this.cleanName(raw.Name);
     this.type        = raw.Type;
-    this.typeName    = haasDataTypeMap.get(raw.Type) as string;
+    this.typeName    = HaasDataTypeMapper.map.get(raw.Type) as string;
   }
 
   protected cleanName(name: string): string {

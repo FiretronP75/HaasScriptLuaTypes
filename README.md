@@ -20,11 +20,13 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 5. Run `yarn`.
 6. Run `yarn start`.
 7. Read and follow the help output in the console (pasted here for convenience):
-  > This script requires 4 parameters: environment, file extension, interface key, user id.
+  > This script requires 5 parameters: environment, file extension, flexible numbers, interface key, user id.
   >
   > Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".
   >
   > File extension may be anything, but "lua" or "hs" is recommended.
+  >
+  > Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".
   >
   > Interface key and user id can be copied from a web browser session that has not expired yet.
   >

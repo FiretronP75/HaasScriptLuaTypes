@@ -1,0 +1,429 @@
+--- Custom Commands
+
+--- The optional parameters of CC_BBandsStopLoss.
+--- @shape OptionalParametersOf_CC_BBandsStopLoss
+--- @field maPeriod number | number[] | nil BBands MA Period Length.
+--- @field devMult number | number[] | nil Deviation Multiplier.
+--- @field maType Enum | nil BBands MA Type.
+--- @field positionId string | nil Optional position identifier
+
+--- Stoploss based on the BBands.
+--- @param source number[] Source data for BBands. Suggestions: ClosePrices, Prices, HLPrices, HLCPrices, HeikenClosePrices, OHLCPrices
+--- @param maPeriod number | number[] Optional - BBands MA Period Length. Suggestions: Input
+--- @param devMult number | number[] Optional - Deviation Multiplier. Suggestions: Input
+--- @param maType Enum Optional - BBands MA Type. Suggestions: InputMaTypes
+--- @param positionId string Optional - Optional position identifier. Suggestions: Load
+--- @return boolean Safety result. Output Suggestions: SafetyContainer, And, IsTrue, IsFalse, Not, TradeBotContainer
+--- @overload fun(source: number[]): boolean
+--- @overload fun(source: number[], maPeriod: number | number[]): boolean
+--- @overload fun(source: number[], maPeriod: number | number[], devMult: number | number[]): boolean
+--- @overload fun(source: number[], maPeriod: number | number[], devMult: number | number[], maType: Enum): boolean
+--- @overload fun(source: number[], optionalParameters: OptionalParametersOf_CC_BBandsStopLoss): boolean
+function CC_BBandsStopLoss(source, maPeriod, devMult, maType, positionId) end
+
+--- Keeps the signal continuous for a number of minutes. Only switches when the signal changes from long to short.
+--- @param signal Enum The signal. Suggestions: BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf, EasyABANDS, EasyADOSC, EasyAlice, EasyAO, EasyAPO, EasyAROON, EasyAROONOSC, EasyBBANDS, EasyBBANDSB, EasyBBANDSW, EasyBOP, EasyCCI, EasyCDL, EasyCMO, EasyCOPPOCK, EasyCRSI, EasyDMI, EasyDONCHIAN, EasyDPO, EasyDX, EasyDynamicLongShortLevels, EasyFastRSI, EasyFIBONACCI, EasyFixedLongShortLevels, EasyICHIMOKU, EasyIMI, EasyKELTNER, EasyKRI, EasyKST, EasyLINEARREG, EasyMA, EasyMACD, EasyMFI, EasyMOM, EasyOBV, EasyPPO, EasyROC, EasyRSI, EasySAR, EasySlowRSI, EasySSTOCH, EasySTOCH, EasySTOCHF, EasySTOCHRSI, EasyTRIX, EasyTSI, EasyUDRSI, EasyULTOSC, EasyWILLR, EasyZLMA
+--- @param minutes number | number[] Number of minutes to keep the signal continious. Suggestions: Input
+--- @return Enum The continuous signal. Output Suggestions: IndicatorContainer, TradeBotContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+function CC_ContinuousSignal(signal, minutes) end
+
+--- The optional parameters of CC_CryptoIndexSlot.
+--- @shape OptionalParametersOf_CC_CryptoIndexSlot
+--- @field stopLoss number | number[] | nil Stop loss percentage. Once the stop loss has been reached the position will be solded fully.
+--- @field trailingStop number | number[] | nil Trailing stop loss percentage. Once the stop loss has been reached the position will be solded fully.
+--- @field takeOverWallet boolean | nil If set on true, excessive balance will be sold.
+
+--- The Crypto Index Slot maintains the wallet for a certain index.
+--- @param coin string The index coin. Suggestions: Input, Load
+--- @param baseCoin string The base coin of the whole index. Usually BTC or USD(T). Suggestions: Input, Load
+--- @param allocatedAmount number | number[] Total allocated amount. Suggestions: Input
+--- @param buyLevel number | number[] The percentage the price needs to drop before more is bought. Suggestions: Input
+--- @param sellLevel number | number[] The percentage the price needs to raise before more is sold. Suggestions: Input
+--- @param stopLoss number | number[] Optional - Stop loss percentage. Once the stop loss has been reached the position will be solded fully. Suggestions: Input
+--- @param trailingStop number | number[] Optional - Trailing stop loss percentage. Once the stop loss has been reached the position will be solded fully. Suggestions: Input
+--- @param takeOverWallet boolean Optional - If set on true, excessive balance will be sold. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
+--- @return string Returns a position id related to the index. Can be used to do profit calculations
+--- @overload fun(coin: string, baseCoin: string, allocatedAmount: number | number[], buyLevel: number | number[], sellLevel: number | number[]): string
+--- @overload fun(coin: string, baseCoin: string, allocatedAmount: number | number[], buyLevel: number | number[], sellLevel: number | number[], stopLoss: number | number[]): string
+--- @overload fun(coin: string, baseCoin: string, allocatedAmount: number | number[], buyLevel: number | number[], sellLevel: number | number[], stopLoss: number | number[], trailingStop: number | number[]): string
+--- @overload fun(coin: string, baseCoin: string, allocatedAmount: number | number[], buyLevel: number | number[], sellLevel: number | number[], optionalParameters: OptionalParametersOf_CC_CryptoIndexSlot): string
+function CC_CryptoIndexSlot(coin, baseCoin, allocatedAmount, buyLevel, sellLevel, stopLoss, trailingStop, takeOverWallet) end
+
+--- The optional parameters of CC_CVOLB_LB.
+--- @shape OptionalParametersOf_CC_CVOLB_LB
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Lazy Bear - Colored Volume Bars. Buy the green or blue volume bars, use a 1% trailing stop, and stand aside on red or orange bars. 
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_CVOLB_LB): Enum
+function CC_CVOLB_LB(chartIndex, interval) end
+
+--- The optional parameters of CC_EasyAdaptiveRSI.
+--- @shape OptionalParametersOf_CC_EasyAdaptiveRSI
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Adaptive RSI by Alex Orekhov
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasyAdaptiveRSI): Enum
+function CC_EasyAdaptiveRSI(chartIndex, interval) end
+
+--- The optional parameters of CC_EasyForceIndex.
+--- @shape OptionalParametersOf_CC_EasyForceIndex
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- The Force Index is an indicator that uses price and volume to assess the power behind a move or identify possible turning points. 
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasyForceIndex): Enum
+function CC_EasyForceIndex(chartIndex, interval) end
+
+--- The optional parameters of CC_EasyHullMA.
+--- @shape OptionalParametersOf_CC_EasyHullMA
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Double Hull MA
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return void
+--- @overload fun(chartIndex: number | number[]): void
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasyHullMA): void
+function CC_EasyHullMA(chartIndex, interval) end
+
+--- The optional parameters of CC_EasyMassIndex.
+--- @shape OptionalParametersOf_CC_EasyMassIndex
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- The Mass Index uses the high-low range to identify trend reversals based on range expansions
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasyMassIndex): Enum
+function CC_EasyMassIndex(chartIndex, interval) end
+
+--- The optional parameters of CC_EasyMVO.
+--- @shape OptionalParametersOf_CC_EasyMVO
+--- @field name string | nil Unique name of the indicator.
+--- @field interval number | number[] | nil Used interval for price data. Default is 0 and the main interval will be used.
+
+--- Easy Market Volume Oscillator
+--- @param chartIndex number | number[] The index on which to chart
+--- @param name string Optional - Unique name of the indicator.
+--- @param interval number | number[] Optional - Used interval for price data. Default is 0 and the main interval will be used. Suggestions: InputInterval
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], name: string): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasyMVO): Enum
+function CC_EasyMVO(chartIndex, name, interval) end
+
+--- The optional parameters of CC_EasySmoothRSI.
+--- @shape OptionalParametersOf_CC_EasySmoothRSI
+--- @field name string | nil Unique name of the indicator.
+--- @field interval number | number[] | nil Used interval for price data. Default is 0 and the main interval will be used.
+
+--- RSI smoothed with SMA.
+--- @param chartIndex number | number[] The index on which to chart
+--- @param name string Optional - Unique name of the indicator.
+--- @param interval number | number[] Optional - Used interval for price data. Default is 0 and the main interval will be used. Suggestions: InputInterval
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], name: string): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasySmoothRSI): Enum
+function CC_EasySmoothRSI(chartIndex, name, interval) end
+
+--- The optional parameters of CC_EasySTC.
+--- @shape OptionalParametersOf_CC_EasySTC
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Schaff Trend Cycle indicator
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasySTC): Enum
+function CC_EasySTC(chartIndex, interval) end
+
+--- The optional parameters of CC_EasyTD.
+--- @shape OptionalParametersOf_CC_EasyTD
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Tom Demark Sequential (TD) implementation
+--- @param chartIndex number | number[] Index on which to plot
+--- @param count number | number[] Minimum sequence length before a signal is valid
+--- @param lookback number | number[] The lookback count
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[], count: number | number[], lookback: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], count: number | number[], lookback: number | number[], optionalParameters: OptionalParametersOf_CC_EasyTD): Enum
+function CC_EasyTD(chartIndex, count, lookback, interval) end
+
+--- The optional parameters of CC_EasyTrendMA.
+--- @shape OptionalParametersOf_CC_EasyTrendMA
+--- @field maType Enum | nil The type of MA to be used.
+
+--- Easy TrendMA implementation by Pshai
+--- @param source number[] Source data. Suggestions: ClosePrices, Prices, HLPrices, HLCPrices, HeikenClosePrices, OHLCPrices
+--- @param maPeriod number | number[] The period length of the MA. Suggestions: Input
+--- @param maType Enum Optional - The type of MA to be used. Suggestions: InputMaTypes
+--- @return Enum The resulting signal from the source's and its MA's crossover. Output Suggestions: DoSignal, GetConsensusSignal, GetUnanimousSignal
+--- @overload fun(source: number[], maPeriod: number | number[]): Enum
+--- @overload fun(source: number[], maPeriod: number | number[], optionalParameters: OptionalParametersOf_CC_EasyTrendMA): Enum
+function CC_EasyTrendMA(source, maPeriod, maType) end
+
+--- The optional parameters of CC_EasyTSI.
+--- @shape OptionalParametersOf_CC_EasyTSI
+--- @field name string | nil Unique name of the indicator.
+--- @field interval number | number[] | nil Used interval for price data. Default is 0 and the main interval will be used.
+
+--- True Strength Index
+--- @param chartIndex number | number[] The index on which to chart
+--- @param name string Optional - Unique name of the indicator.
+--- @param interval number | number[] Optional - Used interval for price data. Default is 0 and the main interval will be used. Suggestions: InputInterval
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], name: string): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasyTSI): Enum
+function CC_EasyTSI(chartIndex, name, interval) end
+
+--- The optional parameters of CC_EasyVolumeRSI.
+--- @shape OptionalParametersOf_CC_EasyVolumeRSI
+--- @field name string | nil Unique name of the indicator.
+--- @field interval number | number[] | nil Used interval for price data. Default is 0 and the main interval will be used.
+
+--- RSI Calculated over volume and smoothed.
+--- @param chartIndex number | number[] The index on which to chart
+--- @param name string Optional - Unique name of the indicator.
+--- @param interval number | number[] Optional - Used interval for price data. Default is 0 and the main interval will be used. Suggestions: InputInterval
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], name: string): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EasyVolumeRSI): Enum
+function CC_EasyVolumeRSI(chartIndex, name, interval) end
+
+--- The optional parameters of CC_EMAMA_LB.
+--- @shape OptionalParametersOf_CC_EMAMA_LB
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Ehlers MESA Adaptive Moving Average
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_EMAMA_LB): Enum
+function CC_EMAMA_LB(chartIndex, interval) end
+
+--- A slot in the style of a Flash Crash Bot
+--- @param basePrice number | number[] Base price of the bot. Suggestions: Input
+--- @param index number | number[] Slot index (Unique). Suggestions: Input
+--- @param amount number | number[] Trade amount. Suggestions: TradeAmount
+--- @param spread number | number[] Spread between orders. Suggestions: Input
+--- @param startWithBuy boolean Start with a buy order. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
+--- @return void
+function CC_FlashCrashSlot(basePrice, index, amount, spread, startWithBuy) end
+
+--- The optional parameters of CC_HullMA.
+--- @shape OptionalParametersOf_CC_HullMA
+--- @field Source number[] | nil The source data
+
+--- HullMA Indicator
+--- @param Length number | number[] Length of the MA. Suggestions: Input
+--- @param Source number[] Optional - The source data. Suggestions: InputInterval
+--- @return number[] HullMA result. Output Suggestions: Plot, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(Length: number | number[]): number[]
+--- @overload fun(Length: number | number[], optionalParameters: OptionalParametersOf_CC_HullMA): number[]
+function CC_HullMA(Length, Source) end
+
+--- The optional parameters of CC_MadHatterBBands.
+--- @shape OptionalParametersOf_CC_MadHatterBBands
+--- @field name string | nil Unique name of the indicator.
+--- @field interval number | number[] | nil Used interval for price data. Default is 0 and the main interval will be used.
+
+--- Custom BBands signal implementation for MadHatter
+--- @param chartIndex number | number[] The index on which to chart
+--- @param name string Optional - Unique name of the indicator.
+--- @param interval number | number[] Optional - Used interval for price data. Default is 0 and the main interval will be used. Suggestions: InputInterval
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], name: string): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_MadHatterBBands): Enum
+function CC_MadHatterBBands(chartIndex, name, interval) end
+
+--- The optional parameters of CC_MadHatterMACD.
+--- @shape OptionalParametersOf_CC_MadHatterMACD
+--- @field name string | nil Unique name of the indicator.
+--- @field interval number | number[] | nil Used interval for price data. Default is 0 and the main interval will be used.
+
+--- Custom MACD signal implementation for MadHatter
+--- @param chartIndex number | number[] The index on which to chart
+--- @param name string Optional - Unique name of the indicator.
+--- @param interval number | number[] Optional - Used interval for price data. Default is 0 and the main interval will be used. Suggestions: InputInterval
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], name: string): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_MadHatterMACD): Enum
+function CC_MadHatterMACD(chartIndex, name, interval) end
+
+--- The optional parameters of CC_MadHatterRSI.
+--- @shape OptionalParametersOf_CC_MadHatterRSI
+--- @field name string | nil Unique name of the indicator.
+--- @field interval number | number[] | nil Used interval for price data. Default is 0 and the main interval will be used.
+
+--- Custom RSI signal implementation for MadHatter
+--- @param chartIndex number | number[] The index on which to chart
+--- @param name string Optional - Unique name of the indicator.
+--- @param interval number | number[] Optional - Used interval for price data. Default is 0 and the main interval will be used. Suggestions: InputInterval
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], name: string): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_MadHatterRSI): Enum
+function CC_MadHatterRSI(chartIndex, name, interval) end
+
+--- The optional parameters of CC_MarketMakingSlot.
+--- @shape OptionalParametersOf_CC_MarketMakingSlot
+--- @field stopLossPercentage number | number[] | nil Stop loss percentage. Only active when position if fully open
+--- @field stopLossCoolDown number | number[] | nil The cooldown after a stop loss as been breached and position is closed
+--- @field reset boolean | nil If set on true, the slot will reset its saved values.
+--- @field note string | nil Optional note to distinguish slot orders.
+
+--- Market making bot slot
+--- @param startLong boolean Set on true if slots needs to start with a buy/long order or false for sell/short order. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
+--- @param offset number | number[] Price offset from the current price. Suggestions: Input
+--- @param amount number | number[] Slot amount. Suggestions: Input
+--- @param enterTimeout number | number[] Enter timeout. Suggestions: Input
+--- @param exitTimeout number | number[] Exit timeout. Suggestions: Input
+--- @param stopLossPercentage number | number[] Optional - Stop loss percentage. Only active when position if fully open. Suggestions: Input
+--- @param stopLossCoolDown number | number[] Optional - The cooldown after a stop loss as been breached and position is closed. Suggestions: Input
+--- @param reset boolean Optional - If set on true, the slot will reset its saved values. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
+--- @param note string Optional - Optional note to distinguish slot orders. Suggestions: Input, Load
+--- @return string Open order id. Empty when slot hasn`t got open orders. Output Suggestions: Save, CancelOrder, GetOrderOpenTime
+--- @overload fun(startLong: boolean, offset: number | number[], amount: number | number[], enterTimeout: number | number[], exitTimeout: number | number[]): string
+--- @overload fun(startLong: boolean, offset: number | number[], amount: number | number[], enterTimeout: number | number[], exitTimeout: number | number[], stopLossPercentage: number | number[]): string
+--- @overload fun(startLong: boolean, offset: number | number[], amount: number | number[], enterTimeout: number | number[], exitTimeout: number | number[], stopLossPercentage: number | number[], stopLossCoolDown: number | number[]): string
+--- @overload fun(startLong: boolean, offset: number | number[], amount: number | number[], enterTimeout: number | number[], exitTimeout: number | number[], stopLossPercentage: number | number[], stopLossCoolDown: number | number[], reset: boolean): string
+--- @overload fun(startLong: boolean, offset: number | number[], amount: number | number[], enterTimeout: number | number[], exitTimeout: number | number[], optionalParameters: OptionalParametersOf_CC_MarketMakingSlot): string
+function CC_MarketMakingSlot(startLong, offset, amount, enterTimeout, exitTimeout, stopLossPercentage, stopLossCoolDown, reset, note) end
+
+--- The optional parameters of CC_MVO.
+--- @shape OptionalParametersOf_CC_MVO
+--- @field high number[] | nil 
+--- @field low number[] | nil 
+--- @field close number[] | nil 
+--- @field volume number[] | nil 
+--- @field fastPeriod number | number[] | nil Fast Period
+--- @field fastMaType number | number[] | nil Fast MA Type
+--- @field slowPeriod number | number[] | nil Slow Period
+--- @field slowMaType number | number[] | nil Slow MA Type
+--- @field stochFastK number | number[] | nil Fast %K Period
+--- @field stochSlowK number | number[] | nil Slow %K Period
+--- @field stochSlowD number | number[] | nil Slow %D Period
+
+--- Market Volume Oscillator
+--- @param high number[] Optional - . Suggestions: HighPrices
+--- @param low number[] Optional - . Suggestions: LowPrices
+--- @param close number[] Optional - . Suggestions: ClosePrices, Prices, HLPrices, HLCPrices, HeikenClosePrices, OHLCPrices
+--- @param volume number[] Optional - . Suggestions: GetVolume
+--- @param fastPeriod number | number[] Optional - Fast Period. Suggestions: Input
+--- @param fastMaType number | number[] Optional - Fast MA Type. Suggestions: InputMaTypes
+--- @param slowPeriod number | number[] Optional - Slow Period. Suggestions: Input
+--- @param slowMaType number | number[] Optional - Slow MA Type. Suggestions: InputMaTypes
+--- @param stochFastK number | number[] Optional - Fast %K Period. Suggestions: Input
+--- @param stochSlowK number | number[] Optional - Slow %K Period. Suggestions: Input
+--- @param stochSlowD number | number[] Optional - Slow %D Period. Suggestions: Input
+--- @return number[] MVO values. Output Suggestions: GetCrossOverUnderSignal, GetBuySellLevelSignal, GetThresholdSignal, IsBiggerThan, IsSmallerThan
+--- @overload fun(): number[]
+--- @overload fun(high: number[]): number[]
+--- @overload fun(high: number[], low: number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[], volume: number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[], volume: number[], fastPeriod: number | number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[], volume: number[], fastPeriod: number | number[], fastMaType: number | number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[], volume: number[], fastPeriod: number | number[], fastMaType: number | number[], slowPeriod: number | number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[], volume: number[], fastPeriod: number | number[], fastMaType: number | number[], slowPeriod: number | number[], slowMaType: number | number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[], volume: number[], fastPeriod: number | number[], fastMaType: number | number[], slowPeriod: number | number[], slowMaType: number | number[], stochFastK: number | number[]): number[]
+--- @overload fun(high: number[], low: number[], close: number[], volume: number[], fastPeriod: number | number[], fastMaType: number | number[], slowPeriod: number | number[], slowMaType: number | number[], stochFastK: number | number[], stochSlowK: number | number[]): number[]
+--- @overload fun(optionalParameters: OptionalParametersOf_CC_MVO): number[]
+function CC_MVO(high, low, close, volume, fastPeriod, fastMaType, slowPeriod, slowMaType, stochFastK, stochSlowK, stochSlowD) end
+
+--- The optional parameters of CC_PRO_LB.
+--- @shape OptionalParametersOf_CC_PRO_LB
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Lazy Bear - This is a modified form of PSO (original idea by Lee Leibfarth), to use RSI as the input. 
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_PRO_LB): Enum
+function CC_PRO_LB(chartIndex, interval) end
+
+--- The optional parameters of CC_ProfitTrailer.
+--- @shape OptionalParametersOf_CC_ProfitTrailer
+--- @field trailMode string | nil Trailing mode. Use one of the following: 'default', 'grow', or 'shrink'.
+--- @field maxRebounds number | number[] | nil Maximum rebounds allowed. If not set, then rebound is not used. Default is 0 (disabled).
+--- @field positionId string | nil Unique position ID.
+
+--- A ProfitTrailer implementation by Pshai. Works like a safety and returns true when active.
+--- @param trailStartPrc number | number[] Profit level (as percentage) where the trailing starts. Suggestions: Input
+--- @param trailDistPrc number | number[] Trailing distance (as percentage) from the highest recorded profit. Suggestions: Input
+--- @param trailMode string Optional - Trailing mode. Use one of the following: 'default', 'grow', or 'shrink'. Suggestions: Input
+--- @param maxRebounds number | number[] Optional - Maximum rebounds allowed. If not set, then rebound is not used. Default is 0 (disabled). Suggestions: Input
+--- @param positionId string Optional - Unique position ID. Suggestions: Load
+--- @return boolean True if safety has triggered, otherwise false. Output Suggestions: SafetyContainer, And, IsTrue, Or, IfElse, Switch, IfElseIf
+--- @overload fun(trailStartPrc: number | number[], trailDistPrc: number | number[]): boolean
+--- @overload fun(trailStartPrc: number | number[], trailDistPrc: number | number[], trailMode: string): boolean
+--- @overload fun(trailStartPrc: number | number[], trailDistPrc: number | number[], trailMode: string, maxRebounds: number | number[]): boolean
+--- @overload fun(trailStartPrc: number | number[], trailDistPrc: number | number[], optionalParameters: OptionalParametersOf_CC_ProfitTrailer): boolean
+function CC_ProfitTrailer(trailStartPrc, trailDistPrc, trailMode, maxRebounds, positionId) end
+
+--- The optional parameters of CC_ScalperChannel_LB.
+--- @shape OptionalParametersOf_CC_ScalperChannel_LB
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Lazy Bear - Scalper Channel
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_ScalperChannel_LB): Enum
+function CC_ScalperChannel_LB(chartIndex, interval) end
+
+--- The optional parameters of CC_SQZMOM_LB.
+--- @shape OptionalParametersOf_CC_SQZMOM_LB
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Squeeze Momentum Indicator - LazyBear
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Signal result. Output Suggestions: TradeBotContainer, IndicatorContainer, BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_SQZMOM_LB): Enum
+function CC_SQZMOM_LB(chartIndex, interval) end
+
+--- Schaff Trend Cycle
+--- @param data number[] Source data. Suggestions: ClosePrices, Prices
+--- @param depth number | number[] STC Depth. Suggestions: Input
+--- @param longLength number | number[] The short length. Suggestions: Input
+--- @param shortLength number | number[] The short length. Suggestions: Input
+--- @return number[] STC Result. Output Suggestions: Plot, IsBiggerOrSmallerThan
+function CC_STC(data, depth, longLength, shortLength) end
+
+--- The optional parameters of CC_WRPC.
+--- @shape OptionalParametersOf_CC_WRPC
+--- @field interval number | number[] | nil Interval for the price data. By default the main interval
+
+--- Wilson Relative Price Channel
+--- @param chartIndex number | number[] Index on which to plot
+--- @param interval number | number[] Optional - Interval for the price data. By default the main interval. Suggestions: Input
+--- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
+--- @overload fun(chartIndex: number | number[]): Enum
+--- @overload fun(chartIndex: number | number[], optionalParameters: OptionalParametersOf_CC_WRPC): Enum
+function CC_WRPC(chartIndex, interval) end
+

@@ -1,8 +1,9 @@
-import fs                  from 'fs';
-import { CategoryService } from '../category/category.service';
-import { DocumentModel }   from '../document/document.model';
-import { DocumentService } from '../document/document.service';
-import { commentPrefix }   from '../parsing/comment-prefix';
+import fs                     from 'fs';
+import { CategoryService }    from '../category/category.service';
+import { DocumentModel }      from '../document/document.model';
+import { DocumentService }    from '../document/document.service';
+import { HaasDataTypeMapper } from '../haas/haas-data-type-mapper';
+import { commentPrefix }      from '../parsing/comment-prefix';
 
 export class WritingService {
 
@@ -21,6 +22,8 @@ export class WritingService {
       isProduction
         ? 'haas-production'
         : 'haas-staging';
+
+    if (HaasDataTypeMapper.isFlexNumbers) this.directory += '-flex-numbers';
 
     this.sampleSuffix =
       isProduction

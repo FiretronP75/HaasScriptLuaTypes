@@ -3,6 +3,7 @@ import { CommandModel }                    from './command/command.model';
 import { CommandService }                  from './command/command.service';
 import { DocumentService }                 from './document/document.service';
 import { HaasCommandCategory }             from './haas/haas-command-category';
+import { HaasDataTypeMapper }              from './haas/haas-data-type-mapper';
 import { ColorParsingService }             from './parsing/color-parsing.service';
 import { CommonParsingService }            from './parsing/common-parsing.service';
 import { EnumerationParsingService }       from './parsing/enumeration-parsing.service';
@@ -37,14 +38,28 @@ export class Main {
 
     this.documentService                 = new DocumentService();
     this.categoryService                 = new CategoryService(this.documentService, this.isProduction);
-    this.writingService                  = new WritingService(this.categoryService, this.documentService, this.fileExtension, this.isProduction);
-    this.commandService                  = new CommandService(this.documentService, this.isProduction, this.interfaceKey, this.userId);
+    this.writingService                  = new WritingService(
+      this.categoryService,
+      this.documentService,
+      this.fileExtension,
+      this.isProduction,
+    );
+    this.commandService                  = new CommandService(
+      this.documentService,
+      this.isProduction,
+      this.interfaceKey,
+      this.userId,
+    );
     this.commonParsingService            = new CommonParsingService();
     this.functionParsingService          = new FunctionParsingService(this.commandService, this.commonParsingService);
-    this.colorParsingService             = new ColorParsingService(this.commonParsingService, this.functionParsingService);
+    this.colorParsingService             = new ColorParsingService(this.commonParsingService,
+      this.functionParsingService,
+    );
     this.enumerationParsingService       = new EnumerationParsingService(this.commonParsingService);
     this.optionalParameterParsingService = new OptionalParameterParsingService();
-    this.outputIndexParsingService       = new OutputIndexParsingService(this.commandService, this.commonParsingService);
+    this.outputIndexParsingService       = new OutputIndexParsingService(this.commandService,
+      this.commonParsingService,
+    );
 
     this.loadRemoteData();
   }
@@ -129,26 +144,33 @@ export class Main {
 
   protected validateArguments(): void {
 
-    if (process.argv.length < 6) {
-      console.error('This script requires 4 parameters: environment, file extension, interface key, user id.');
-      console.error('Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".');
+    if (process.argv.length < 7) {
+      console.error(
+        'This script requires 5 parameters: environment, file extension, flexible numbers, interface key, user id.');
+      console.error(
+        'Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".');
       console.error('File extension may be anything, but "lua" or "hs" is recommended.');
+      console.error(
+        'Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".');
       console.error('Interface key and user id can be copied from a web browser session that has not expired yet.');
-      console.error('Example: yarn start prod lua 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48');
+      console.error(
+        'Example: yarn start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48');
       process.exit(1);
     }
 
-    this.nodeBinPath   = process.argv.slice(0, 1)[0];
-    this.scriptPath    = process.argv.slice(1, 2)[0];
-    this.isProduction  = process.argv.slice(2, 3)[0].toLowerCase() !== 'staging';
-    this.fileExtension = process.argv.slice(3, 4)[0];
-    this.interfaceKey  = process.argv.slice(4, 5)[0];
-    this.userId        = process.argv.slice(5, 6)[0];
+    this.nodeBinPath                 = process.argv.slice(0, 1)[0];
+    this.scriptPath                  = process.argv.slice(1, 2)[0];
+    this.isProduction                = process.argv.slice(2, 3)[0].toLowerCase() !== 'staging';
+    this.fileExtension               = process.argv.slice(3, 4)[0];
+    HaasDataTypeMapper.isFlexNumbers = process.argv.slice(4, 5)[0].toLowerCase() === 'flex-num';
+    this.interfaceKey                = process.argv.slice(5, 6)[0];
+    this.userId                      = process.argv.slice(5, 7)[0];
 
     console.log('Node Bin Path:', this.nodeBinPath);
     console.log('Script Path:', this.scriptPath);
     console.log('Production:', `${this.isProduction}`);
     console.log('File Extension:', this.fileExtension);
+    console.log('Flexible Numbers:', `${HaasDataTypeMapper.isFlexNumbers}`);
     console.log('Interface Key:', this.interfaceKey);
     console.log('User ID:', this.userId);
     console.log('');
