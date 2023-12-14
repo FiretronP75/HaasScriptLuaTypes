@@ -9,7 +9,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 1. Install IntelliJ IDEA Community Edition or PyCharm Community from JetBrains. They are free. Or use any paid JetBrains product.
 2. In the settings, install the Luanalysis plugin.
 3. Open a folder containing your haas scripts.
-4. Copy the (unzipped) lua definitions into the same folder or a sub folder. Use either production or staging, not both.
+4. Copy the (unzipped) lua definitions into the same folder or a sub folder. *Use only one of the zip files.*
 5. The Luanalysis plugin should pick them up automatically. You will now see code hints and type errors in your scripts.
 
 ## To run the project:
