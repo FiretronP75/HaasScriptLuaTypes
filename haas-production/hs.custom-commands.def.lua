@@ -53,7 +53,7 @@ function CC_CryptoIndexSlot(coin, baseCoin, allocatedAmount, buyLevel, sellLevel
 --- @shape OptionalParametersOf_CC_CVOLB_LB
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- Lazy Bear - Colored Volume Bars. Buy the green or blue volume bars, use a 1% trailing stop, and stand aside on red or orange bars.
+--- Lazy Bear - Colored Volume Bars. Buy the green or blue volume bars, use a 1% trailing stop, and stand aside on red or orange bars. 
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -77,7 +77,7 @@ function CC_EasyAdaptiveRSI(chartIndex, interval) end
 --- @shape OptionalParametersOf_CC_EasyForceIndex
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- The Force Index is an indicator that uses price and volume to assess the power behind a move or identify possible turning points.
+--- The Force Index is an indicator that uses price and volume to assess the power behind a move or identify possible turning points. 
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -326,10 +326,10 @@ function CC_MarketMakingSlot(startLong, offset, amount, enterTimeout, exitTimeou
 
 --- The optional parameters of CC_MVO.
 --- @shape OptionalParametersOf_CC_MVO
---- @field high number[] | nil
---- @field low number[] | nil
---- @field close number[] | nil
---- @field volume number[] | nil
+--- @field high number[] | nil 
+--- @field low number[] | nil 
+--- @field close number[] | nil 
+--- @field volume number[] | nil 
 --- @field fastPeriod number | nil Fast Period
 --- @field fastMaType number | nil Fast MA Type
 --- @field slowPeriod number | nil Slow Period
@@ -369,7 +369,7 @@ function CC_MVO(high, low, close, volume, fastPeriod, fastMaType, slowPeriod, sl
 --- @shape OptionalParametersOf_CC_PRO_LB
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- Lazy Bear - This is a modified form of PSO (original idea by Lee Leibfarth), to use RSI as the input.
+--- Lazy Bear - This is a modified form of PSO (original idea by Lee Leibfarth), to use RSI as the input. 
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -419,28 +419,6 @@ function CC_ScalperChannel_LB(chartIndex, interval) end
 --- @overload fun(chartIndex: number): Enum
 --- @overload fun(chartIndex: number, optionalParameters: OptionalParametersOf_CC_SQZMOM_LB): Enum
 function CC_SQZMOM_LB(chartIndex, interval) end
-
---- The optional parameters of CC_SQZMOM_LB_Ext.
---- @shape OptionalParametersOf_CC_SQZMOM_LB_Ext
---- @field ma_type Enum | nil BB Moving Average Type
---- @field ma_type_kc Enum | nil KC Moving Average Type
---- @field ma_type_r Enum | nil Range Moving Average Type
-
---- Squeeze Momentum Indicator - LazyBear
---- @param source number[] Source prices for calculations. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, ClosePrices, Prices, CurrentPrice, GetBodyHighPrices, GetBodyLowPrices, GetVolume, HeikenClosePrices, OHLCPrices, HeikinOpenPrices, HighPrices, HLCPrices, HLPrices, LowPrices, OCPrices, OpenPrices, SourcePrices
---- @param length number BB Lenght. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
---- @param mult number BB MultFactor. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
---- @param length_kc number KC Length. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
---- @param mult_kc number KC MultFactor. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
---- @param ma_type Enum Optional - BB Moving Average Type. Suggestions: InputMaTypes, DemaType, EmaType, KamaType, MamaType, SmaType, T3Type, TemaType, TrimaType, WmaType
---- @param ma_type_kc Enum Optional - KC Moving Average Type. Suggestions: InputMaTypes, DemaType, EmaType, KamaType, MamaType, SmaType, T3Type, TemaType, TrimaType, WmaType
---- @param ma_type_r Enum Optional - Range Moving Average Type. Suggestions: InputMaTypes, DemaType, EmaType, KamaType, MamaType, SmaType, T3Type, TemaType, TrimaType, WmaType
---- @return number[] SQZMOM values. Output Suggestions: BoolToSignal, ConvertSignal, MapSignal, DelaySignal, GetAboveBelowSignal, GetBuySellLevelSignal, GetConsensusSignal, GetCrossOverUnderSignal, GetRemoteSignal, GetSuperSignal, GetThresholdSignal, GetUnanimousSignal, GetWeightedConsensusSignal, IgnoreSignalIf, PositionToBool, ReverseSignal, SaveRemoteSignal, SignalMapper, SignalProperties, SignalToBool, SignalToLog, SignalWeight, UseSignalIf, Plot
---- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number): number[]
---- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number, ma_type: Enum): number[]
---- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number, ma_type: Enum, ma_type_kc: Enum): number[]
---- @overload fun(source: number[], length: number, mult: number, length_kc: number, mult_kc: number, optionalParameters: OptionalParametersOf_CC_SQZMOM_LB_Ext): number[]
-function CC_SQZMOM_LB_Ext(source, length, mult, length_kc, mult_kc, ma_type, ma_type_kc, ma_type_r) end
 
 --- Schaff Trend Cycle
 --- @param data number[] Source data. Suggestions: ClosePrices, Prices

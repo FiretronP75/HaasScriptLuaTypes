@@ -53,7 +53,7 @@ function CC_CryptoIndexSlot(coin, baseCoin, allocatedAmount, buyLevel, sellLevel
 --- @shape OptionalParametersOf_CC_CVOLB_LB
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- Lazy Bear - Colored Volume Bars. Buy the green or blue volume bars, use a 1% trailing stop, and stand aside on red or orange bars.
+--- Lazy Bear - Colored Volume Bars. Buy the green or blue volume bars, use a 1% trailing stop, and stand aside on red or orange bars. 
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -77,7 +77,7 @@ function CC_EasyAdaptiveRSI(chartIndex, interval) end
 --- @shape OptionalParametersOf_CC_EasyForceIndex
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- The Force Index is an indicator that uses price and volume to assess the power behind a move or identify possible turning points.
+--- The Force Index is an indicator that uses price and volume to assess the power behind a move or identify possible turning points. 
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
@@ -229,48 +229,6 @@ function CC_EMAMA_LB(chartIndex, interval) end
 --- @return void
 function CC_FlashCrashSlot(basePrice, index, amount, spread, startWithBuy) end
 
---- The object returned by CC_HSP.
---- @class ResultOf_CC_HSP
---- @field open number[] Open prices
---- @field high number[] High prices
---- @field low number[] Low prices
---- @field close number[] Close prices
---- @field volume number[] Volumes
---- @field ask number[] Ask prices
---- @field bid number[] Bid prices
---- @field hl number[] Median prices
---- @field hlc number[] Typical prices
---- @field hlcc number[] Weighted Close prices
---- @field ohlc number[] Average prices
---- @field [1] number[] Open prices
---- @field [2] number[] High prices
---- @field [3] number[] Low prices
---- @field [4] number[] Close prices
---- @field [5] number[] Volumes
---- @field [6] number[] Ask prices
---- @field [7] number[] Bid prices
---- @field [8] number[] Median prices
---- @field [9] number[] Typical prices
---- @field [10] number[] Weighted Close prices
---- @field [11] number[] Average prices
-
---- The optional parameters of CC_HSP.
---- @shape OptionalParametersOf_CC_HSP
---- @field interval number | nil Price data interval
---- @field market string | nil Market for data
---- @field hlcStyle boolean | nil When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change.
-
---- Returns o, h, l, c, v, a, b, hl, hlc, hlcc, ohlc data arrays with latest ticker data added. Based on Pshai's [HighSpeedPrices Returns OHLCV] Added: ask, bid (changed OutputIndex 1-7 so it matches included CurrentPrice: ohlcvab object key order) and Weighted Close Price to get All variations on price found in HTS
---- @param interval number Optional - Price data interval. Suggestions: InputInterval
---- @param market string Optional - Market for data. Suggestions: PriceMarket, InputMarket, InputAccountMarket
---- @param hlcStyle boolean Optional - When enabled, the data returned will be adjusted for HLC instead of OHLC. Meaning that the OHL data can change. Suggestions: Input, InputAccount, InputAccountMarket, InputButton, InputCdlTypes, InputConstant, InputGroupHeader, InputInterval, InputLrTypes, InputMarket, InputMaTypes, InputOptions, InputOrderType, InputPriceSource, InputPriceSourceMarket, InputSignalManagement, InputSignalTypes, InputSourcePrice, InputTable, InputTableColumn, InputTableOptions, AccountGuid, CurrentInterval, Fee, Leverage, PriceMarket, TradeAmount
---- @return ResultOf_CC_HSP
---- @overload fun(): ResultOf_CC_HSP
---- @overload fun(interval: number): ResultOf_CC_HSP
---- @overload fun(interval: number, market: string): ResultOf_CC_HSP
---- @overload fun(optionalParameters: OptionalParametersOf_CC_HSP): ResultOf_CC_HSP
-function CC_HSP(interval, market, hlcStyle) end
-
 --- The optional parameters of CC_HullMA.
 --- @shape OptionalParametersOf_CC_HullMA
 --- @field Source number[] | nil The source data
@@ -355,10 +313,10 @@ function CC_MarketMakingSlot(startLong, offset, amount, enterTimeout, exitTimeou
 
 --- The optional parameters of CC_MVO.
 --- @shape OptionalParametersOf_CC_MVO
---- @field high number[] | nil
---- @field low number[] | nil
---- @field close number[] | nil
---- @field volume number[] | nil
+--- @field high number[] | nil 
+--- @field low number[] | nil 
+--- @field close number[] | nil 
+--- @field volume number[] | nil 
 --- @field fastPeriod number | nil Fast Period
 --- @field fastMaType number | nil Fast MA Type
 --- @field slowPeriod number | nil Slow Period
@@ -398,7 +356,7 @@ function CC_MVO(high, low, close, volume, fastPeriod, fastMaType, slowPeriod, sl
 --- @shape OptionalParametersOf_CC_PRO_LB
 --- @field interval number | nil Interval for the price data. By default the main interval
 
---- Lazy Bear - This is a modified form of PSO (original idea by Lee Leibfarth), to use RSI as the input.
+--- Lazy Bear - This is a modified form of PSO (original idea by Lee Leibfarth), to use RSI as the input. 
 --- @param chartIndex number Index on which to plot
 --- @param interval number Optional - Interval for the price data. By default the main interval. Suggestions: Input
 --- @return Enum Indicator Result. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
