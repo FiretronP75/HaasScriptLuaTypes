@@ -14,7 +14,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 
 ## To run the project:
 1. Clone the git repository.
-2. Install Node 10 or greater.
+2. Install Node 16 or greater.
 3. Install Yarn.
 4. Open a terminal in the project root.
 5. Run `yarn`.

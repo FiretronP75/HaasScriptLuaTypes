@@ -18,6 +18,7 @@ export enum HaasCommandCategory {
   EasyInsurances              = 15,
   EasyIndicators              = 16,
   Equations                   = 17,
+  FlowControl                 = 40,
   InputFields                 = 18,
   InputSettings               = 19,
   ManagedTradingSignals       = 20,
@@ -40,12 +41,14 @@ export enum HaasCommandCategory {
   TradeMarketInformation      = 37,
   UnmanagedTradingSignals     = 38,
   Wallet                      = 39,
-  FlowControl                 = 40,
   EnumerationsCandlePattern   = 41,
   EnumerationsSignalType      = 42,
   EnumerationsDataType        = 43,
   EnumerationsArrayFilterType = 44,
   SocialMedia                 = 45,
   EnumerationsSourcePriceType = 46,
+  MachineLearningType         = 47,
+  EnumerationsPositionMode    = 48,
+  EnumerationsMarginMode      = 49,
 
 }

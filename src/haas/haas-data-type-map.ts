@@ -1,24 +1,24 @@
-import { HaasDataType } from './haas-data-type';
+import { HaasCommandParameterType } from './haas-command-parameter-type';
 
 export const haasDataTypeMap = new Map<number, string>(
   [
-    [HaasDataType.String, 'string'],
-    [HaasDataType.Number, 'number'],
-    [HaasDataType.Enum, 'Enum'],
-    [HaasDataType.Boolean, 'boolean'],
-    [HaasDataType.Dynamic, 'any'],
-    [HaasDataType.NumberOrTable, 'number | table'],
-    [HaasDataType.ListNumbers, 'number[]'],
-    [HaasDataType.ListDynamic, 'any[]'],
-    [HaasDataType.Function, 'function'],
-    [HaasDataType.Void, 'void'],
-    [HaasDataType.Connector, 'any'], // (not used)
-    [HaasDataType.DynamicParams, 'any'], // (vararg)
-    [HaasDataType.EnumParams, 'Enum[]'],
-    [HaasDataType.BooleanParams, 'boolean[]'],
-    [HaasDataType.StringParams, 'string[]'], // (not used)
-    [HaasDataType.NumberParams, 'number[]'], // (not used)
-    [HaasDataType.ListNumberParams, 'number[][]'], // (not used)
-    [HaasDataType.NumberOrTableParams, 'number[] | table'],
+    [HaasCommandParameterType.String, 'string'],
+    [HaasCommandParameterType.Number, 'number'],
+    [HaasCommandParameterType.Enum, 'Enum'],
+    [HaasCommandParameterType.Boolean, 'boolean'],
+    [HaasCommandParameterType.Dynamic, 'any'],
+    [HaasCommandParameterType.NumberOrTable, 'number | table'],
+    [HaasCommandParameterType.ListNumbers, 'number[]'],
+    [HaasCommandParameterType.ListDynamic, 'any[]'],
+    [HaasCommandParameterType.Function, 'function'],
+    [HaasCommandParameterType.Void, 'void'],
+    [HaasCommandParameterType.Connector, 'any'], // (not used)
+    [HaasCommandParameterType.DynamicParams, 'any'], // (vararg)
+    [HaasCommandParameterType.EnumParams, 'Enum[]'],
+    [HaasCommandParameterType.BooleanParams, 'boolean[]'],
+    [HaasCommandParameterType.StringParams, 'string[]'], // (not used)
+    [HaasCommandParameterType.NumberParams, 'number[]'], // (not used)
+    [HaasCommandParameterType.ListNumberParams, 'number[][]'], // (not used)
+    [HaasCommandParameterType.NumberOrTableParams, 'number[] | table'],
   ],
 );

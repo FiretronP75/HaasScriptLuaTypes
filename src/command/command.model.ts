@@ -1,11 +1,11 @@
-import { HaasCommandCategory } from '../haas/haas-command-category';
-import { HaasCommandGroup }    from '../haas/haas-command-group';
-import { HaasCommandType }     from '../haas/haas-command-type';
-import { HaasDataType }        from '../haas/haas-data-type';
-import { haasDataTypeMap }     from '../haas/haas-data-type-map';
-import { OutputIndexModel }    from '../outputIndex/output-index.model';
-import { ParameterModel }      from '../parameter/parameter.model';
-import { CommandRaw }          from './command.raw';
+import { HaasCommandCategory }      from '../haas/haas-command-category';
+import { HaasCommandParameterType } from '../haas/haas-command-parameter-type';
+import { HaasCommandSyntaxType }    from '../haas/haas-command-syntax-type';
+import { HaasCommandType }          from '../haas/haas-command-type';
+import { haasDataTypeMap }          from '../haas/haas-data-type-map';
+import { OutputIndexModel }         from '../outputIndex/output-index.model';
+import { ParameterModel }           from '../parameter/parameter.model';
+import { CommandRaw }               from './command.raw';
 
 export class CommandModel {
 
@@ -21,7 +21,6 @@ export class CommandModel {
 
   public readonly category: HaasCommandCategory;
   public readonly description: string;
-  public readonly group: HaasCommandGroup;
   public readonly isEnumeration: boolean;
   public readonly isValid: boolean;
   public readonly name: string;
@@ -30,18 +29,18 @@ export class CommandModel {
   public readonly outputDescription: string;
   public readonly outputIndexList: OutputIndexModel[];
   public readonly outputGroupIdList: number[];
-  public readonly outputType: HaasDataType;
+  public readonly outputType: HaasCommandParameterType;
   public readonly outputTypeName: string;
   public readonly parameterList: ParameterModel[];
   public readonly requiredParameterList: ParameterModel[];
+  public readonly syntaxType: HaasCommandSyntaxType;
   public readonly type: HaasCommandType;
 
   constructor(raw?: CommandRaw) {
 
     if (raw === undefined) {
-      this.category                    = 0;
+      this.category                    = HaasCommandCategory.ArrayHelper;
       this.description                 = '';
-      this.group                       = 0;
       this.isEnumeration               = false;
       this.isValid                     = false;
       this.name                        = '';
@@ -50,17 +49,17 @@ export class CommandModel {
       this.outputDescription           = '';
       this.outputIndexList             = [];
       this.outputGroupIdList           = [];
-      this.outputType                  = 0;
+      this.outputType                  = HaasCommandParameterType.String;
       this.outputTypeName              = '';
       this.parameterList               = [];
       this.requiredParameterList       = [];
-      this.type                        = 0;
+      this.syntaxType                  = HaasCommandSyntaxType.Function;
+      this.type                        = HaasCommandType.ArrayAdd;
       return;
     }
 
     this.category                    = raw.Category;
     this.description                 = raw.Description;
-    this.group                       = raw.Command;
     this.isEnumeration               = raw.IsConstant;
     this.isValid                     =
       raw.IsValid === undefined
@@ -76,7 +75,8 @@ export class CommandModel {
     this.parameterList               = ParameterModel.mapAll(raw.Parameters);
     this.optionalParameterList       = this.parameterList.filter(this.filterOptional);
     this.requiredParameterList       = this.parameterList.filter(this.filterRequired);
-    this.type                        = raw.CommandType;
+    this.syntaxType                  = raw.CommandType;
+    this.type                        = raw.Command;
   }
 
   protected getOptionalParameterObjectName(name: string): string {
@@ -90,7 +90,7 @@ export class CommandModel {
   }
 
   protected filterOptional(parameterItem: ParameterModel): boolean {
-    return !parameterItem.isRequired && parameterItem.type !== HaasDataType.DynamicParams;
+    return !parameterItem.isRequired && parameterItem.type !== HaasCommandParameterType.DynamicParams;
   }
 
   protected filterRequired(parameterItem: ParameterModel): boolean {

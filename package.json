@@ -2,8 +2,8 @@
   "license": "GPL-3.0-or-later",
   "private": true,
   "engines": {
-    "node": ">=10.24.1",
-    "npm": ">=6.14.112"
+    "node": ">=16.19.1",
+    "npm": ">=9.6.3"
   },
   "scripts": {
     "compile": "tsc",
@@ -11,9 +11,9 @@
     "start": "tsc && node src/index.js"
   },
   "dependencies": {
-    "@tsconfig/node14": "^1.0.1",
-    "@types/node": "^16.9.4",
-    "axios": "^0.21.4",
-    "typescript": "^4.4.3"
+    "@tsconfig/node16": "^16.1.1",
+    "@types/node": "^16.18.68",
+    "axios": "^1.6.2",
+    "typescript": "^5.3.3"
   }
 }

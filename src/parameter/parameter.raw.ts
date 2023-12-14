@@ -1,4 +1,4 @@
-import { HaasDataType } from '../haas/haas-data-type';
+import { HaasCommandParameterType } from '../haas/haas-command-parameter-type';
 
 export interface ParameterRaw {
 
@@ -11,6 +11,6 @@ export interface ParameterRaw {
   Name: string;
   ScriptType?: string | null;
   Suggestion: number[];
-  Type: HaasDataType;
+  Type: HaasCommandParameterType;
 
 }

@@ -1,6 +1,6 @@
-import { HaasDataType }    from '../haas/haas-data-type';
-import { haasDataTypeMap } from '../haas/haas-data-type-map';
-import { OutputIndexRaw }  from './output-index.raw';
+import { HaasCommandParameterType } from '../haas/haas-command-parameter-type';
+import { haasDataTypeMap }          from '../haas/haas-data-type-map';
+import { OutputIndexRaw }           from './output-index.raw';
 
 export class OutputIndexModel {
 
@@ -18,7 +18,7 @@ export class OutputIndexModel {
   public readonly groupIdList: number[];
   public readonly isRequired: boolean;
   public readonly name: string;
-  public readonly type: HaasDataType;
+  public readonly type: HaasCommandParameterType;
   public readonly typeName: string;
 
   constructor(raw?: OutputIndexRaw) {

@@ -1,17 +1,17 @@
-import { HaasCommandCategory } from '../haas/haas-command-category';
-import { HaasCommandGroup }    from '../haas/haas-command-group';
-import { HaasCommandType }     from '../haas/haas-command-type';
-import { HaasDataType }        from '../haas/haas-data-type';
-import { OutputIndexRaw }      from '../outputIndex/output-index.raw';
-import { ParameterRaw }        from '../parameter/parameter.raw';
+import { HaasCommandCategory }      from '../haas/haas-command-category';
+import { HaasCommandParameterType } from '../haas/haas-command-parameter-type';
+import { HaasCommandSyntaxType }    from '../haas/haas-command-syntax-type';
+import { HaasCommandType }          from '../haas/haas-command-type';
+import { OutputIndexRaw }           from '../outputIndex/output-index.raw';
+import { ParameterRaw }             from '../parameter/parameter.raw';
 
 export interface CommandRaw {
 
   Category: HaasCommandCategory;
   ChangeTypes: null[];
-  Command: HaasCommandGroup;
+  Command: HaasCommandType;
   CommandName: string;
-  CommandType: HaasCommandType;
+  CommandType: HaasCommandSyntaxType;
   Description: string;
   IsConstant: boolean;
   IsPrimary: boolean;
@@ -19,7 +19,7 @@ export interface CommandRaw {
   OutputHidden: boolean;
   OutputIndex: OutputIndexRaw[];
   OutputSuggestions: number[] | null;
-  OutputType: HaasDataType;
+  OutputType: HaasCommandParameterType;
   Parameters: ParameterRaw[];
   RequiresCall: boolean;
   Resizable: boolean;

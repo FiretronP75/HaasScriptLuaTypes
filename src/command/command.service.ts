@@ -111,10 +111,10 @@ export class CommandService {
 
     this.commandList.forEach(
       (commandItem: CommandModel) => {
-        if (this.groupIdToNameListMap.has(commandItem.group)) {
-          this.groupIdToNameListMap.get(commandItem.group)!.push(commandItem.name);
+        if (this.groupIdToNameListMap.has(commandItem.type)) {
+          this.groupIdToNameListMap.get(commandItem.type)!.push(commandItem.name);
         } else {
-          this.groupIdToNameListMap.set(commandItem.group, [commandItem.name]);
+          this.groupIdToNameListMap.set(commandItem.type, [commandItem.name]);
         }
       },
     );

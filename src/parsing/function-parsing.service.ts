@@ -1,10 +1,10 @@
-import { CommandModel }         from '../command/command.model';
-import { CommandService }       from '../command/command.service';
-import { HaasCommandGroup }     from '../haas/haas-command-group';
-import { HaasDataType }         from '../haas/haas-data-type';
-import { ParameterModel }       from '../parameter/parameter.model';
-import { commentPrefix }        from './comment-prefix';
-import { CommonParsingService } from './common-parsing.service';
+import { CommandModel }             from '../command/command.model';
+import { CommandService }           from '../command/command.service';
+import { HaasCommandParameterType } from '../haas/haas-command-parameter-type';
+import { HaasCommandType }          from '../haas/haas-command-type';
+import { ParameterModel }           from '../parameter/parameter.model';
+import { commentPrefix }            from './comment-prefix';
+import { CommonParsingService }     from './common-parsing.service';
 
 export class FunctionParsingService {
 
@@ -63,7 +63,7 @@ export class FunctionParsingService {
 
     parameterList.forEach(
       (parameterItem: ParameterModel, index: number, array: ParameterModel[]) => {
-        if (parameterItem.type === HaasDataType.DynamicParams) {
+        if (parameterItem.type === HaasCommandParameterType.DynamicParams) {
           functionText += '...';
         } else {
           functionText += parameterItem.name;
@@ -84,7 +84,7 @@ export class FunctionParsingService {
 
     text += `${name}: ${typeName}`;
 
-    if (parameterItem.groupIdList.includes(HaasCommandGroup.ColorAqua)) text += ' | ColorEnum';
+    if (parameterItem.groupIdList.includes(HaasCommandType.ColorAqua)) text += ' | ColorEnum';
 
     if (index < lastIndex) text += ', ';
 
@@ -140,13 +140,13 @@ export class FunctionParsingService {
 
     let parameterText: string;
 
-    if (parameterItem.type === HaasDataType.DynamicParams) {
+    if (parameterItem.type === HaasCommandParameterType.DynamicParams) {
       parameterText = `${commentPrefix}@vararg ${typeName}`;
     } else {
       parameterText = `${commentPrefix}@param ${name} ${typeName}`;
     }
 
-    if (parameterItem.groupIdList.includes(HaasCommandGroup.ColorAqua)) parameterText += ' | ColorEnum';
+    if (parameterItem.groupIdList.includes(HaasCommandType.ColorAqua)) parameterText += ' | ColorEnum';
 
     const validCommandNameList: string[] = this.commandService.getNameListForGroupIdList(parameterItem.groupIdList);
     const suggestions: string            = this.commonParsingService.getSuggestions(validCommandNameList, 'Suggestions');
