@@ -13,6 +13,10 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 3. Open a folder containing your haas scripts.
 4. Copy the (unzipped) lua definitions into the same folder or a sub folder. *Use only one of the zip files.*
 5. The Luanalysis plugin should pick them up automatically. You will now see code hints and type errors in your scripts.
+6. If the JetBrains code editor freezes, force kill and increase its memory limit in its settings in JetBrains Toolbox.
+
+> Normally, JetBrains products will alert you that you need to give it more memory.
+> But it seems to not be able to track memory used by Luanalysis.
 
 ## To run the project:
 1. Clone the git repository.
