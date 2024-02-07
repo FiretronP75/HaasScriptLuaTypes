@@ -866,6 +866,7 @@ export enum HaasCommandType {
   IsAbnormal                        = 8300,
   SimpleForecastBySsa               = 8301,
   NewsSentiment                     = 8302,
+  HindSightSignal                   = 8303,
 
   // Files
   InitExportData                    = 8400,

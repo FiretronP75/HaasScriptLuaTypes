@@ -23864,6 +23864,58 @@ export const commandStagingSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "HindSightSignal",
+    "Command": 8303,
+    "Description": "Uses hindsight to tell if its the best moment to long or short",
+    "ReturnDescription": "Returns a trading signal",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "period",
+        "Type": 1,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Hindsight view period length.",
+        "ScriptType": null,
+        "Suggestion": [
+          3400,
+          4403,
+          4205
+        ]
+      }
+    ],
+    "CommandType": 1,
+    "Category": 31,
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 2,
+    "OutputSuggestions": [
+      3202,
+      3803,
+      424,
+      6012,
+      6007,
+      6010,
+      6008,
+      6015,
+      6018,
+      6016,
+      6017,
+      6014,
+      6006,
+      6002,
+      7000,
+      7003
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "HLC",
     "Command": 1416,
     "Description": "Enumeration, return a price plot enum. Used by PlotPrice() or ChartSetOptions()",
@@ -27280,6 +27332,64 @@ export const commandStagingSample: CommandRaw[] = [
     "CommandType": 1,
     "Category": 18,
     "Description": "Creates an table column options object for InputTable()",
+    "ReturnDescription": "Returns the options objects.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 4,
+    "OutputSuggestions": [
+      4406,
+      4403
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "InputTableColumnDropdown",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "name",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": true,
+        "AllowNull": false,
+        "Description": "Column name.",
+        "ScriptType": null,
+        "Suggestion": []
+      },
+      {
+        "Index": 0,
+        "Name": "options",
+        "Type": 4,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Dropdown options. For example { \"options-A\", \"options-B\" }",
+        "ScriptType": null,
+        "Suggestion": []
+      },
+      {
+        "Index": 0,
+        "Name": "values[]",
+        "Type": 100,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": true,
+        "AllowNull": false,
+        "Description": "Default values.",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "Command": 3419,
+    "CommandType": 1,
+    "Category": 18,
+    "Description": "Creates an table column options object for InputTable() with a dropdown",
     "ReturnDescription": "Returns the options objects.",
     "OutputIndex": [],
     "IsConstant": false,
@@ -34767,37 +34877,6 @@ export const commandStagingSample: CommandRaw[] = [
       6204,
       6205,
       6206
-    ],
-    "ChangeTypes": []
-  },
-  {
-    "CommandName": "NewsSentiment",
-    "Parameters": [],
-    "Command": 8302,
-    "CommandType": 1,
-    "Category": 47,
-    "Description": "Looks to the crypto trading news and returns the sentiment of it",
-    "ReturnDescription": null,
-    "OutputIndex": [],
-    "IsConstant": false,
-    "IsPrimary": true,
-    "RequiresCall": false,
-    "Resizable": false,
-    "OutputHidden": false,
-    "OutputType": 1,
-    "OutputSuggestions": [
-      3202,
-      3204,
-      3209,
-      3205,
-      3201,
-      4008,
-      4033,
-      4025,
-      4018,
-      4000,
-      4041,
-      408
     ],
     "ChangeTypes": []
   },

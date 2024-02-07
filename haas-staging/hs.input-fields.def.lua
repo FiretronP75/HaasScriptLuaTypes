@@ -305,6 +305,13 @@ function InputTable(options, ...) end
 --- @return any Returns the options objects.
 function InputTableColumn(name, ...) end
 
+--- Creates an table column options object for InputTable() with a dropdown
+--- @param name string Column name.
+--- @param options any Dropdown options. For example { "options-A", "options-B" }
+--- @vararg any Optional - Default values.
+--- @return any Returns the options objects.
+function InputTableColumnDropdown(name, options, ...) end
+
 --- The optional parameters of InputTableOptions.
 --- @shape OptionalParametersOf_InputTableOptions
 --- @field title string | nil Name of the table.
