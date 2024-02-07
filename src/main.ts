@@ -164,7 +164,7 @@ export class Main {
     this.fileExtension               = process.argv.slice(3, 4)[0];
     HaasDataTypeMapper.isFlexNumbers = process.argv.slice(4, 5)[0].toLowerCase() === 'flex-num';
     this.interfaceKey                = process.argv.slice(5, 6)[0];
-    this.userId                      = process.argv.slice(5, 7)[0];
+    this.userId                      = process.argv.slice(6, 7)[0];
 
     console.log('Node Bin Path:', this.nodeBinPath);
     console.log('Script Path:', this.scriptPath);
