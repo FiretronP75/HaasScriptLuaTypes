@@ -1,6 +1,7 @@
-import { CommandModel }   from '../command/command.model';
-import { ParameterModel } from '../parameter/parameter.model';
-import { commentPrefix }  from './comment-prefix';
+import { CommandModel }    from '../command/command.model';
+import { HaasCommandType } from '../haas/haas-command-type';
+import { ParameterModel }  from '../parameter/parameter.model';
+import { commentPrefix }   from './comment-prefix';
 
 export class OptionalParameterParsingService {
 
@@ -21,7 +22,9 @@ export class OptionalParameterParsingService {
 
   protected getOptionalField(parameterItem: ParameterModel): string {
 
-    const typeName: string = parameterItem.typeName;
+    let typeName: string = parameterItem.typeName;
+
+    if (parameterItem.groupIdList.includes(HaasCommandType.ColorAqua)) typeName += ' | ColorEnum';
 
     return `${commentPrefix}@field ${parameterItem.name} ${typeName} | nil ${parameterItem.description}\n`;
   }

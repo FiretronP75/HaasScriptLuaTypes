@@ -25,7 +25,7 @@ function Load(key, defaultValue) end
 
 --- The optional parameters of Log.
 --- @shape OptionalParametersOf_Log
---- @field color string | nil The color of the log message.
+--- @field color string | ColorEnum | nil The color of the log message.
 
 --- Create a message in the log.
 --- @param message any Message to log.

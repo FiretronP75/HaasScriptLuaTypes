@@ -8,8 +8,8 @@ function ChangeColorOpacity(color, opacity) end
 
 --- The optional parameters of ChartAddAxisLabel.
 --- @shape OptionalParametersOf_ChartAddAxisLabel
---- @field color string | nil The label fill color.
---- @field textColor string | nil The text color.
+--- @field color string | ColorEnum | nil The label fill color.
+--- @field textColor string | ColorEnum | nil The text color.
 
 --- Adds a label on the y-axis.
 --- @param chartId number | number[] The chart index on which to add the label.
@@ -66,7 +66,7 @@ function ChartSetOptions(chartId, title, height, style) end
 
 --- The optional parameters of LineOptions.
 --- @shape OptionalParametersOf_LineOptions
---- @field color string | nil The color of the line.
+--- @field color string | ColorEnum | nil The color of the line.
 --- @field style Enum | nil The style of the line (Spiked, Smooth, Step and others).
 --- @field deco Enum | nil The line decoration (Solid, Dashed, Dotted).
 --- @field width number | number[] | nil The width of the line.
@@ -116,7 +116,7 @@ function MarkCandle(chartId, depth) end
 
 --- The optional parameters of Plot.
 --- @shape OptionalParametersOf_Plot
---- @field colorOrOptions any | nil Line options object or a color string.
+--- @field colorOrOptions any | ColorEnum | nil Line options object or a color string.
 
 --- Creates a data line on the chart. The line can be styled accordingly. A positive chartId will place the line below the main price chart. A negative index above.
 --- @param chartId number | number[] Index on which to plot the line.
@@ -138,7 +138,7 @@ function PlotBands(lineGuid1, lineGuid2, fillColor) end
 --- The optional parameters of PlotBars.
 --- @shape OptionalParametersOf_PlotBars
 --- @field baseValue number | number[] | nil The value from where the bars are drawn. Default is 0.
---- @field fillColor string | nil The inner color of the bars. Default is none.
+--- @field fillColor string | ColorEnum | nil The inner color of the bars. Default is none.
 
 --- Changes a line to bars.
 --- @param lineGuid string Line guid returned by Plot(). Suggestions: Plot
@@ -174,7 +174,7 @@ function PlotBuySellZone(chartId, start, endValue) end
 
 --- The optional parameters of PlotCircle.
 --- @shape OptionalParametersOf_PlotCircle
---- @field fillColor string | nil The inner color of the circles. Default is none.
+--- @field fillColor string | ColorEnum | nil The inner color of the circles. Default is none.
 
 --- Changes the line into circles.
 --- @param lineGuid string Line guid returned by Plot(). Suggestions: Plot
@@ -193,7 +193,7 @@ function PlotCloud(lineGuid1, lineGuid2, opacity) end
 
 --- The optional parameters of PlotDoubleColor.
 --- @shape OptionalParametersOf_PlotDoubleColor
---- @field fillColor string | nil The inner color between the line and the base value. Default is none.
+--- @field fillColor string | ColorEnum | nil The inner color between the line and the base value. Default is none.
 
 --- Changes the color of the line based on a base value.
 --- @param lineGuid string Line guid returned by Plot(). Suggestions: Plot
@@ -291,11 +291,11 @@ function PlotPivot(leftStrength, rightStrength) end
 --- @shape OptionalParametersOf_PlotPrice
 --- @field interval number | number[] | nil The interval which to plot.
 --- @field style Enum | nil The price plot style.
---- @field upColor string | nil The outer color of the up candle.
+--- @field upColor string | ColorEnum | nil The outer color of the up candle.
 --- @field upFill boolean | nil The inner color of the up candle.
---- @field downColor string | nil The outer color of the down candle.
+--- @field downColor string | ColorEnum | nil The outer color of the down candle.
 --- @field downFill boolean | nil The inner color of the down candle.
---- @field markColor string | nil The outer color of the marked candle.
+--- @field markColor string | ColorEnum | nil The outer color of the marked candle.
 --- @field markFill boolean | nil The inner color of the marked candle.
 
 --- Creates a price plot. Candlestick by default.
@@ -325,11 +325,11 @@ function PlotPrice(chartId, market, interval, style, upColor, upFill, downColor,
 --- @shape OptionalParametersOf_PlotShape
 --- @field chartId number | number[] | nil Index on which to plot the line.
 --- @field shape Enum | nil The shape type.
---- @field color string | nil The color of the shape.
+--- @field color string | ColorEnum | nil The color of the shape.
 --- @field size number | number[] | nil Size of the shape.
 --- @field aboveCandle boolean | nil If true, the shape will be drawn above the candle else below.
 --- @field text string | nil Text above or below the candle or shape.
---- @field textColor string | nil The color of the text.
+--- @field textColor string | ColorEnum | nil The color of the text.
 --- @field offset number | number[] | nil A positive offset will move the data points x number of candles. A negative number will move the data points back.
 
 --- Draws a shape above the candle or first line on the chart.
@@ -355,7 +355,7 @@ function PlotShape(chartId, shape, color, size, aboveCandle, text, textColor, of
 
 --- The optional parameters of PlotShapes.
 --- @shape OptionalParametersOf_PlotShapes
---- @field fillColor string | nil The inner color of the circles. Default is none.
+--- @field fillColor string | ColorEnum | nil The inner color of the circles. Default is none.
 
 --- Changes the line into a specific shape.
 --- @param lineGuid string Line guid returned by Plot(). Suggestions: Plot
@@ -409,8 +409,8 @@ function PlotVerticalZone(chartId, name, color, start, endValue) end
 
 --- The optional parameters of PlotVolume.
 --- @shape OptionalParametersOf_PlotVolume
---- @field upColor string | nil The outer color of the up candle volume bars.
---- @field downColor string | nil The outer color of the down candle volume bars.
+--- @field upColor string | ColorEnum | nil The outer color of the up candle volume bars.
+--- @field downColor string | ColorEnum | nil The outer color of the down candle volume bars.
 --- @field upFill boolean | nil The inner color of the up candle volume bars.
 --- @field downFill boolean | nil The inner color of the down candle volume bars.
 --- @field side Enum | nil The axis side to snap.

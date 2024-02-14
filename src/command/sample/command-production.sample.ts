@@ -27455,6 +27455,64 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "InputTableColumnDropdown",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "name",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": true,
+        "AllowNull": false,
+        "Description": "Column name.",
+        "ScriptType": null,
+        "Suggestion": []
+      },
+      {
+        "Index": 0,
+        "Name": "options",
+        "Type": 4,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "Dropdown options. For example { \"options-A\", \"options-B\" }",
+        "ScriptType": null,
+        "Suggestion": []
+      },
+      {
+        "Index": 0,
+        "Name": "values[]",
+        "Type": 100,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": true,
+        "AllowNull": false,
+        "Description": "Default values.",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "Command": 3419,
+    "CommandType": 1,
+    "Category": 18,
+    "Description": "Creates an table column options object for InputTable() with a dropdown",
+    "ReturnDescription": "Returns the options objects.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 4,
+    "OutputSuggestions": [
+      4406,
+      4403
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "InputTableOptions",
     "Parameters": [
       {
