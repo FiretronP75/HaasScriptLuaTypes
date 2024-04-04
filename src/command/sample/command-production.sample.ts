@@ -19611,6 +19611,45 @@ export const commandProductionSample: CommandRaw[] = [
     "ChangeTypes": []
   },
   {
+    "CommandName": "GetAccountMarkets",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "accountId",
+        "Type": 0,
+        "IsRequired": false,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3401,
+          3402,
+          3406,
+          3600
+        ]
+      }
+    ],
+    "Command": 7223,
+    "CommandType": 1,
+    "Category": 37,
+    "Description": "An array of markets affiliated with a particular account.",
+    "ReturnDescription": "Returns an array with all the markets as a string.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 4,
+    "OutputSuggestions": [
+      4406,
+      4403
+    ],
+    "ChangeTypes": []
+  },
+  {
     "CommandName": "GetAllFilledOrders",
     "Command": 5005,
     "CommandType": 1,
@@ -20456,6 +20495,40 @@ export const commandProductionSample: CommandRaw[] = [
       4000,
       4041,
       408
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "GetExchangeMarkets",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "exchangeCode",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The exchange code affiliated with the exchange.",
+        "ScriptType": null,
+        "Suggestion": []
+      }
+    ],
+    "Command": 7222,
+    "CommandType": 1,
+    "Category": 37,
+    "Description": "An array of markets affiliated with a particular exchange.",
+    "ReturnDescription": "Returns an array with all the markets as a string.",
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 4,
+    "OutputSuggestions": [
+      4406,
+      4403
     ],
     "ChangeTypes": []
   },
@@ -29261,6 +29334,64 @@ export const commandProductionSample: CommandRaw[] = [
         ]
       }
     ],
+    "OutputIndex": [],
+    "IsConstant": false,
+    "IsPrimary": true,
+    "RequiresCall": false,
+    "Resizable": false,
+    "OutputHidden": false,
+    "OutputType": 3,
+    "OutputSuggestions": [
+      3211,
+      3210,
+      3206,
+      3300,
+      6019,
+      3303,
+      3302,
+      3301,
+      3801,
+      3802,
+      3800,
+      3804,
+      3803,
+      7400,
+      7406,
+      7404,
+      7405,
+      7401,
+      7403,
+      7402,
+      7407
+    ],
+    "ChangeTypes": []
+  },
+  {
+    "CommandName": "IsValidMarket",
+    "Parameters": [
+      {
+        "Index": 0,
+        "Name": "market",
+        "Type": 0,
+        "IsRequired": true,
+        "IsHidden": false,
+        "IsField": false,
+        "AllowNull": false,
+        "Description": "The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.",
+        "ScriptType": null,
+        "Suggestion": [
+          3402,
+          3406,
+          3411,
+          3604
+        ]
+      }
+    ],
+    "Command": 7221,
+    "CommandType": 1,
+    "Category": 37,
+    "Description": "Checks if the input is a valid market.",
+    "ReturnDescription": "Returns true if the market is valid.",
     "OutputIndex": [],
     "IsConstant": false,
     "IsPrimary": true,

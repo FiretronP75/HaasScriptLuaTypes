@@ -80,6 +80,22 @@ function ContractName(market) end
 --- @overload fun(optionalParameters: OptionalParametersOf_ContractValue): number
 function ContractValue(market) end
 
+--- The optional parameters of GetAccountMarkets.
+--- @shape OptionalParametersOf_GetAccountMarkets
+--- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
+
+--- An array of markets affiliated with a particular account.
+--- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
+--- @return any Returns an array with all the markets as a string.
+--- @overload fun(): any
+--- @overload fun(optionalParameters: OptionalParametersOf_GetAccountMarkets): any
+function GetAccountMarkets(accountId) end
+
+--- An array of markets affiliated with a particular exchange.
+--- @param exchangeCode string The exchange code affiliated with the exchange.
+--- @return any Returns an array with all the markets as a string.
+function GetExchangeMarkets(exchangeCode) end
+
 --- The optional parameters of IsTradeAmountEnough.
 --- @shape OptionalParametersOf_IsTradeAmountEnough
 --- @field logWarning boolean | nil If true, a warning is logged.
@@ -93,6 +109,11 @@ function ContractValue(market) end
 --- @overload fun(market: string, price: number, amount: number): boolean
 --- @overload fun(market: string, price: number, amount: number, optionalParameters: OptionalParametersOf_IsTradeAmountEnough): boolean
 function IsTradeAmountEnough(market, price, amount, logWarning) end
+
+--- Checks if the input is a valid market.
+--- @param market string The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @return boolean Returns true if the market is valid. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+function IsValidMarket(market) end
 
 --- The optional parameters of MakersFee.
 --- @shape OptionalParametersOf_MakersFee

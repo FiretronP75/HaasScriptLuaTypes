@@ -736,6 +736,9 @@ export enum HaasCommandType {
   AmountDecimals                    = 7218,
   PriceDecimals                     = 7219,
   AmountStep                        = 7220,
+  IsValidMarket                     = 7221,
+  GetExchangeMarkets                = 7222,
+  GetAccountMarkets                 = 7223,
 
   // UnmanagedTradingSignals
   PlaceBuyOrder                     = 7400,
