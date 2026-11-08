@@ -20,7 +20,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 
 ## To run the project:
 1. Clone the git repository.
-2. Install Node 18 or greater.
+2. Install Node 26 or greater.
 3. Install pnpm 12.18.0 or greater.
 4. Open a terminal in the project root.
 5. Run `pnpm install`.
