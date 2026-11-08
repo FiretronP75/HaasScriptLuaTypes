@@ -1,23 +1,15 @@
-import axios, { AxiosResponse }     from 'axios';
-import { DocumentService }          from '../document/document.service';
-import { CategoryWrapperRaw }       from './category-wrapper.raw';
-import { CategoryRaw }              from './category.raw';
-import { categoryProductionSample } from './sample/category-production.sample';
-import { categoryStagingSample }    from './sample/category-staging.sample';
+import { SavedResponseChannel } from '../saved-response/saved-response-channel';
+import { SavedResponseService } from '../saved-response/saved-response.service';
+import { CategoryRaw }          from './category.raw';
 
 export class CategoryService {
 
-  protected static readonly PRODUCTION_API_URL = 'https://api.haasbot.com/InterfaceAPI.php?channel=INIT_DATA';
-  protected static readonly STAGING_API_URL    = 'https://api.haasstage.com/InterfaceAPI.php?channel=INIT_DATA';
-
-  protected readonly documentService: DocumentService;
   protected readonly idToNameMap = new Map<number, string>();
-  protected readonly isProduction: boolean;
+  protected readonly savedResponseService: SavedResponseService;
 
-  constructor(documentService: DocumentService, isProduction: boolean) {
+  constructor(savedResponseService: SavedResponseService) {
 
-    this.documentService = documentService;
-    this.isProduction    = isProduction;
+    this.savedResponseService = savedResponseService;
   }
 
   public getName(id: number): string {
@@ -29,58 +21,43 @@ export class CategoryService {
       : name;
   }
 
-  public async loadCategories(): Promise<void> {
+  public loadCategories(): void {
 
     const startTime = new Date();
 
-    const url: string = this.isProduction
-      ? CategoryService.PRODUCTION_API_URL
-      : CategoryService.STAGING_API_URL;
+    console.log('Loading category map');
 
-    console.log('Loading category map from', url);
+    this.handleSuccess(this.extractCategories(this.savedResponseService.getData(SavedResponseChannel.Category)), startTime);
+  }
 
-    try {
-      const response: AxiosResponse<CategoryWrapperRaw> = await axios.post<CategoryWrapperRaw>(url);
+  protected extractCategories(data: any): CategoryRaw {
 
-      if (response.data.Success) {
-        this.handleSuccess(response.data, startTime);
-      } else {
-        this.handleFailure(response.data.Error, startTime);
-      }
+    const categoryRaw = data?.C?.C;
 
-    } catch (error) {
-
-      this.handleFailure(error, startTime);
+    if (!this.isCategoryRaw(categoryRaw)) {
+      throw this.savedResponseService.unexpectedDataMessage(SavedResponseChannel.Category);
     }
+
+    return categoryRaw;
   }
 
-  protected handleFailure(error: any, startTime): void {
-    console.error('Category API Error:', error);
-    console.warn('Using previously saved category data.');
+  protected isCategoryRaw(candidate: any): candidate is CategoryRaw {
 
-    const categorySample = this.isProduction
-      ? categoryProductionSample
-      : categoryStagingSample;
+    if (typeof candidate !== 'object' || candidate === null || Array.isArray(candidate)) return false;
 
-    this.handleSuccess(
-      {
-        Data   : {C: {C: categorySample}},
-        Error  : '',
-        Success: true,
-      },
-      startTime,
-    );
+    const nameList: unknown[] = Object.values(candidate);
+
+    return nameList.length > 0 && nameList.every((name: unknown) => typeof name === 'string');
   }
 
-  protected handleSuccess(data: CategoryWrapperRaw, startTime: Date): void {
+  protected handleSuccess(categoryRaw: CategoryRaw, startTime: Date): void {
 
     const endTime: Date    = new Date();
     const duration: number = endTime.getTime() - startTime.getTime();
 
     console.log(`Category map loaded. (${duration.toLocaleString()} ms)`);
 
-    this.documentService.setCategorySample(data.Data.C.C, this.isProduction);
-    this.setCategories(data.Data.C.C);
+    this.setCategories(categoryRaw);
   }
 
   protected setCategories(categoryRaw: CategoryRaw): void {

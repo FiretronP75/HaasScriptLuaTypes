@@ -1,29 +1,18 @@
-import axios, { AxiosResponse }    from 'axios';
-import { DocumentService }         from '../document/document.service';
-import { CommandWrapperRaw }       from './command-wrapper.raw';
-import { CommandModel }            from './command.model';
-import { commandProductionSample } from './sample/command-production.sample';
-import { commandStagingSample }    from './sample/command-staging.sample';
+import { SavedResponseChannel } from '../saved-response/saved-response-channel';
+import { SavedResponseService } from '../saved-response/saved-response.service';
+import { CommandModel }         from './command.model';
+import { CommandRaw }           from './command.raw';
 
 export class CommandService {
 
-  protected static readonly PRODUCTION_API_URL: string = 'https://api.haasbot.com/HaasScriptAPI.php?channel=GET_COMMANDS';
-  protected static readonly STAGING_API_URL: string    = 'https://api.haasstage.com/HaasScriptAPI.php?channel=GET_COMMANDS';
-
   public commandList: CommandModel[] = [];
 
-  protected readonly documentService: DocumentService;
   protected readonly groupIdToNameListMap = new Map<number, string[]>();
-  protected readonly interfaceKey: string;
-  protected readonly isProduction: boolean;
-  protected readonly userId: string;
+  protected readonly savedResponseService: SavedResponseService;
 
-  constructor(documentService: DocumentService, isProduction: boolean, interfaceKey: string, userId: string) {
+  constructor(savedResponseService: SavedResponseService) {
 
-    this.documentService = documentService;
-    this.interfaceKey    = interfaceKey;
-    this.isProduction    = isProduction;
-    this.userId          = userId;
+    this.savedResponseService = savedResponseService;
   }
 
   public getNameListForGroupIdList(groupIdList: number[]): string[] {
@@ -38,34 +27,22 @@ export class CommandService {
     return nameList;
   }
 
-  public async loadCommands(): Promise<void> {
+  public loadCommands(): void {
 
     const startTime = new Date();
 
-    const url: string = this.isProduction
-      ? CommandService.PRODUCTION_API_URL
-      : CommandService.STAGING_API_URL;
+    console.log('Loading command list');
 
-    const data: object = {
-      interfacekey: this.interfaceKey,
-      userid      : this.userId,
-    };
+    this.handleSuccess(this.extractCommands(this.savedResponseService.getData(SavedResponseChannel.Command)), startTime);
+  }
 
-    console.log('Loading command list from', url);
+  protected extractCommands(data: any): CommandRaw[] {
 
-    try {
-      const response: AxiosResponse<CommandWrapperRaw> = await axios.post<CommandWrapperRaw>(url, data);
-
-      if (response.data.Success) {
-        this.handleSuccess(response.data, startTime);
-      } else {
-        this.handleFailure(response.data.Error, startTime);
-      }
-
-    } catch (error) {
-
-      this.handleFailure(error, startTime);
+    if (!this.isCommandRawList(data)) {
+      throw this.savedResponseService.unexpectedDataMessage(SavedResponseChannel.Command);
     }
+
+    return data;
   }
 
   protected getNameListForGroupId(groupId: number): string[] {
@@ -77,33 +54,21 @@ export class CommandService {
       : nameList;
   }
 
-  protected handleFailure(error: any, startTime): void {
-    console.error('Command API Error:', error);
-    console.warn('Using previously saved command data.');
+  protected isCommandRawList(candidate: any): candidate is CommandRaw[] {
 
-    const commandSample = this.isProduction
-      ? commandProductionSample
-      : commandStagingSample;
-
-    this.handleSuccess(
-      {
-        Data   : commandSample,
-        Error  : '',
-        Success: true,
-      },
-      startTime,
-    );
+    return Array.isArray(candidate)
+      && candidate.length > 0
+      && candidate.every((item: any) => typeof item?.CommandName === 'string');
   }
 
-  protected handleSuccess(data: CommandWrapperRaw, startTime: Date): void {
+  protected handleSuccess(commandRawList: CommandRaw[], startTime: Date): void {
 
     const endTime: Date    = new Date();
     const duration: number = endTime.getTime() - startTime.getTime();
 
     console.log(`Command list loaded. (${duration.toLocaleString()} ms)`);
 
-    this.documentService.setCommandSample(data.Data, this.isProduction);
-    this.commandList = CommandModel.mapAll(data.Data);
+    this.commandList = CommandModel.mapAll(commandRawList);
     this.setGroups();
   }
 

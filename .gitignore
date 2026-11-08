@@ -4,6 +4,9 @@ node_modules/
 # Generated JavaScript
 *.js
 
+# Exported browser sessions
+*.har
+
 # IDEs and editors
 .idea/
 .project

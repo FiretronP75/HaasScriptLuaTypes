@@ -1,14 +1,10 @@
-import { CategoryRaw }     from '../category/category.raw';
 import { CategoryService } from '../category/category.service';
-import { CommandRaw }      from '../command/command.raw';
 import { commentPrefix }   from '../parsing/comment-prefix';
 import { DocumentModel }   from './document.model';
 
 export class DocumentService {
 
-  public baseDocumentText           = '';
-  public categorySampleDocumentText = '';
-  public commandSampleDocumentText  = '';
+  public baseDocumentText = '';
 
   protected readonly idToTextMap = new Map<number, string>();
 
@@ -45,24 +41,6 @@ export class DocumentService {
     );
 
     return documentList.sort(this.compareDocumentName);
-  }
-
-  public setCategorySample(categoryRaw: CategoryRaw, isProduction: boolean): void {
-    const name = isProduction ? 'categoryProductionSample' : 'categoryStagingSample';
-
-    this.categorySampleDocumentText += `import { CategoryRaw } from '../category.raw';\n\n`;
-    this.categorySampleDocumentText += `export const ${name}: CategoryRaw = `;
-    this.categorySampleDocumentText += JSON.stringify(categoryRaw, null, 2);
-    this.categorySampleDocumentText += `;\n`;
-  }
-
-  public setCommandSample(commandRawList: CommandRaw[], isProduction: boolean): void {
-    const name = isProduction ? 'commandProductionSample' : 'commandStagingSample';
-
-    this.commandSampleDocumentText += `import { CommandRaw } from '../command.raw';\n\n`;
-    this.commandSampleDocumentText += `export const ${name}: CommandRaw[] = `;
-    this.commandSampleDocumentText += JSON.stringify(commandRawList, null, 2);
-    this.commandSampleDocumentText += `;\n`;
   }
 
   protected compareDocumentName(a: DocumentModel, b: DocumentModel): number {
