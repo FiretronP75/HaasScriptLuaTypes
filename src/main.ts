@@ -1,31 +1,12 @@
-import { CategoryService }                 from './category/category.service';
-import { CommandModel }                    from './command/command.model';
-import { CommandService }                  from './command/command.service';
-import { DocumentService }                 from './document/document.service';
-import { HaasCommandCategory }             from './haas/haas-command-category';
-import { HaasDataTypeMapper }              from './haas/haas-data-type-mapper';
-import { ColorParsingService }             from './parsing/color-parsing.service';
-import { CommonParsingService }            from './parsing/common-parsing.service';
-import { EnumerationParsingService }       from './parsing/enumeration-parsing.service';
-import { FunctionParsingService }          from './parsing/function-parsing.service';
-import { OptionalParameterParsingService } from './parsing/optional-parameter-parsing.service';
-import { OutputIndexParsingService }       from './parsing/output-index-parsing.service';
-import { SavedResponseService }            from './saved-response/saved-response.service';
-import { WritingService }                  from './writing/writing.service';
+import { CategoryService }             from './category/category.service';
+import { DefinitionGenerationService } from './generation/definition-generation.service';
+import { HaasDataTypeMapper }          from './haas/haas-data-type-mapper';
+import { SavedResponseService }        from './saved-response/saved-response.service';
 
 export class Main {
 
   protected readonly categoryService: CategoryService;
-  protected readonly colorParsingService: ColorParsingService;
-  protected readonly commandService: CommandService;
-  protected readonly commonParsingService: CommonParsingService;
-  protected readonly documentService: DocumentService;
-  protected readonly enumerationParsingService: EnumerationParsingService;
-  protected readonly functionParsingService: FunctionParsingService;
-  protected readonly optionalParameterParsingService: OptionalParameterParsingService;
-  protected readonly outputIndexParsingService: OutputIndexParsingService;
   protected readonly savedResponseService: SavedResponseService;
-  protected readonly writingService: WritingService;
 
   protected fileExtension: string = '';
   protected harFilePath: string   = '';
@@ -36,121 +17,58 @@ export class Main {
   constructor() {
     this.validateArguments();
 
-    this.documentService                 = new DocumentService();
-    this.savedResponseService            = new SavedResponseService(this.harFilePath);
-    this.categoryService                 = new CategoryService(this.savedResponseService);
-    this.writingService                  = new WritingService(
-      this.categoryService,
-      this.documentService,
-      this.fileExtension,
-      this.isProduction,
-    );
-    this.commandService                  = new CommandService(this.savedResponseService);
-    this.commonParsingService            = new CommonParsingService();
-    this.functionParsingService          = new FunctionParsingService(this.commandService, this.commonParsingService);
-    this.colorParsingService             = new ColorParsingService(this.commonParsingService,
-      this.functionParsingService,
-    );
-    this.enumerationParsingService       = new EnumerationParsingService(this.commonParsingService);
-    this.optionalParameterParsingService = new OptionalParameterParsingService();
-    this.outputIndexParsingService       = new OutputIndexParsingService(this.commandService,
-      this.commonParsingService,
-    );
+    this.savedResponseService = new SavedResponseService(this.harFilePath);
+    this.categoryService      = new CategoryService(this.savedResponseService);
 
     this.generateDefinitions();
-  }
-
-  protected convertCommand(commandItem: CommandModel): void {
-
-    if (commandItem.outputIndexList.length > 0) {
-
-      const luaDefinition: string = this.outputIndexParsingService.toLuaDefinition(commandItem);
-
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
-    }
-
-    if (commandItem.optionalParameterList.length > 0) {
-
-      const luaDefinition: string = this.optionalParameterParsingService.toLuaDefinition(commandItem);
-
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
-    }
-
-    if (commandItem.isEnumeration && commandItem.category === HaasCommandCategory.EnumerationsColor) {
-
-      const luaDefinition: string = this.colorParsingService.toLuaDefinition(commandItem);
-
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
-
-    } else if (commandItem.isEnumeration) {
-
-      const luaDefinition: string = this.enumerationParsingService.toLuaDefinition(commandItem);
-
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
-
-    } else {
-
-      const luaDefinition: string = this.functionParsingService.toLuaDefinition(commandItem);
-
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
-
-    }
-  }
-
-  protected convertCommandList(commandList: CommandModel[]): void {
-    console.log('');
-    console.log('Parsing commands...');
-
-    const startTime = new Date();
-
-    commandList.forEach(
-      (commandItem: CommandModel) => {
-        this.convertCommand(commandItem);
-      },
-    );
-
-    const endTime: Date    = new Date();
-    const duration: number = endTime.getTime() - startTime.getTime();
-
-    console.log(`Commands parsed. (${duration.toLocaleString()} ms)`);
   }
 
   protected generateDefinitions(): void {
 
     this.savedResponseService.load();
     this.categoryService.loadCategories();
-    this.commandService.loadCommands();
 
-    this.convertCommandList(this.commandService.commandList);
-    this.writingService.writeAll();
+    this.generateDefinitionsForNumberMode(true);
+    this.generateDefinitionsForNumberMode(false);
+  }
+
+  protected generateDefinitionsForNumberMode(isFlexNumbers: boolean): void {
+
+    console.log('');
+    console.log('Flexible Numbers:', `${isFlexNumbers}`);
+
+    HaasDataTypeMapper.isFlexNumbers = isFlexNumbers;
+
+    new DefinitionGenerationService(
+      this.savedResponseService,
+      this.categoryService,
+      this.fileExtension,
+      this.isProduction,
+    ).generate();
   }
 
   protected validateArguments(): void {
 
-    if (process.argv.length < 6) {
-      console.error('This script requires 4 parameters: environment, file extension, flexible numbers, HAR file.');
+    if (process.argv.length < 5) {
+      console.error('This script requires 3 parameters: environment, file extension, HAR file.');
       console.error(
         'Environment may be "production" or "staging". It only changes where the output is saved. Anything other than "staging" (case-insensitive) assumes "production".');
       console.error('File extension may be anything, but "lua" or "hs" is recommended.');
-      console.error(
-        'Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".');
       console.error('The HAR file is exported from a logged-in web browser. The README explains how.');
-      console.error('Example: pnpm start prod lua flex-num "app.haasbot.com.har"');
+      console.error('Example: pnpm start prod lua "app.haasbot.com.har"');
       process.exit(1);
     }
 
-    this.nodeBinPath                 = process.argv.slice(0, 1)[0];
-    this.scriptPath                  = process.argv.slice(1, 2)[0];
-    this.isProduction                = process.argv.slice(2, 3)[0].toLowerCase() !== 'staging';
-    this.fileExtension               = process.argv.slice(3, 4)[0];
-    HaasDataTypeMapper.isFlexNumbers = process.argv.slice(4, 5)[0].toLowerCase() === 'flex-num';
-    this.harFilePath                 = process.argv.slice(5, 6)[0];
+    this.nodeBinPath   = process.argv.slice(0, 1)[0];
+    this.scriptPath    = process.argv.slice(1, 2)[0];
+    this.isProduction  = process.argv.slice(2, 3)[0].toLowerCase() !== 'staging';
+    this.fileExtension = process.argv.slice(3, 4)[0];
+    this.harFilePath   = process.argv.slice(4, 5)[0];
 
     console.log('Node Bin Path:', this.nodeBinPath);
     console.log('Script Path:', this.scriptPath);
     console.log('Production:', `${this.isProduction}`);
     console.log('File Extension:', this.fileExtension);
-    console.log('Flexible Numbers:', `${HaasDataTypeMapper.isFlexNumbers}`);
     console.log('HAR File:', this.harFilePath);
     console.log('');
   }
