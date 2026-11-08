@@ -26,7 +26,17 @@ export class WritingService {
   }
 
   public writeAll(): void {
+    this.createDirectory();
     this.writeBaseDocument();
+  }
+
+  protected createDirectory(): void {
+
+    try {
+      fs.mkdirSync(this.directory, {recursive: true});
+    } catch {
+      throw `Could not create the folder "${this.directory}". Check that you are allowed to make folders here and that no file has that name, then try again.`;
+    }
   }
 
   protected log(path: string, length: number, startTime: Date, needsBlankLine: boolean): void {
@@ -41,7 +51,7 @@ export class WritingService {
 
   protected writeFailureMessage(path: string): string {
 
-    return `Could not save the file "${path}". Check that the folder exists and that you are allowed to change it, then try again.`;
+    return `Could not save the file "${path}". Check that you are allowed to change that folder, then try again.`;
   }
 
   protected writeAllCategoryDocuments(): void {
