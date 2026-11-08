@@ -3,7 +3,9 @@
   "compilerOptions": {
     "noImplicitAny": false,
     "noImplicitReturns": true,
-    "preserveConstEnums": true
+    "outDir": "dist",
+    "preserveConstEnums": true,
+    "rootDir": "src"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]

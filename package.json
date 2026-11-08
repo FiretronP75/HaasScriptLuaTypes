@@ -8,8 +8,8 @@
   },
   "scripts": {
     "compile": "tsc",
-    "parse": "node src/index.js",
-    "start": "tsc && node src/index.js"
+    "parse": "node dist/index.js",
+    "start": "tsc && node dist/index.js"
   },
   "devDependencies": {
     "@tsconfig/node26": "^26.0.1",
