@@ -1,5 +1,5 @@
 import { DocumentService }         from '../document/document.service';
-import { SavedResponseReader }     from '../saved-response/saved-response.reader';
+import { SavedResponseService }    from '../saved-response/saved-response.service';
 import { CommandWrapperRaw }       from './command-wrapper.raw';
 import { CommandModel }            from './command.model';
 import { CommandRaw }              from './command.raw';
@@ -41,7 +41,7 @@ export class CommandService {
     console.log('Loading command list from', this.savedResponsePath);
 
     try {
-      const saved = SavedResponseReader.read<CommandWrapperRaw | CommandRaw[]>(this.savedResponsePath);
+      const saved = SavedResponseService.read<CommandWrapperRaw | CommandRaw[]>(this.savedResponsePath);
 
       if (Array.isArray(saved)) {
         this.handleSuccess({Data: saved, Error: '', Success: true}, startTime);

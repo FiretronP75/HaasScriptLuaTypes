@@ -1,5 +1,5 @@
 import { DocumentService }          from '../document/document.service';
-import { SavedResponseReader }      from '../saved-response/saved-response.reader';
+import { SavedResponseService }     from '../saved-response/saved-response.service';
 import { CategoryRaw }              from './category.raw';
 import { categoryProductionSample } from './sample/category-production.sample';
 import { categoryStagingSample }    from './sample/category-staging.sample';
@@ -34,7 +34,7 @@ export class CategoryService {
     console.log('Loading category map from', this.savedResponsePath);
 
     try {
-      const saved = SavedResponseReader.read<any>(this.savedResponsePath);
+      const saved = SavedResponseService.read<any>(this.savedResponsePath);
 
       if (saved.Success === false) {
         this.handleFailure(saved.Error, startTime);
