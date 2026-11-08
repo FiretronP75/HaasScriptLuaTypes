@@ -32,7 +32,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 > * File extension may be anything, but "lua" or "hs" is recommended.
 > * Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".
 > * The saved responses are JSON files saved from a logged-in web browser. The README explains how.
-> * Example: `pnpm start prod lua flex-num GET_COMMANDS.json INIT_DATA.json`
+> * Example: `pnpm start prod lua flex-num "GET_COMMANDS.json" "INIT_DATA.json"`
 
 ## About flex-num:
 Many of the number parameters of functions can also take a list of numbers.
@@ -55,7 +55,7 @@ The script does not connect to the Haas server. It reads two responses that you 
 7. Click on the network transaction and select the Response tab of the network details.
 8. Copy the whole response into a file named `GET_COMMANDS.json`.
 9. Filter on "INIT_DATA" and do the same, saving the response into a file named `INIT_DATA.json`.
-10. Pass the paths of the two files to `pnpm start`.
+10. Pass the paths of the two files to `pnpm start`, with double quotes around each path so that spaces work: `pnpm start prod lua flex-num "GET_COMMANDS.json" "INIT_DATA.json"`
 
 > * Save the files as UTF-8. Other encodings, such as UTF-16, cannot be read.
 > * If you need staging definitions, do these steps again on the staging server.

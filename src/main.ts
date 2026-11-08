@@ -141,7 +141,7 @@ export class Main {
       console.error(
         'Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".');
       console.error('The saved responses are JSON files saved from a logged-in web browser. The README explains how.');
-      console.error('Example: pnpm start prod lua flex-num GET_COMMANDS.json INIT_DATA.json');
+      console.error('Example: pnpm start prod lua flex-num "GET_COMMANDS.json" "INIT_DATA.json"');
       process.exit(1);
     }
 
