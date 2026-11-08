@@ -1,4 +1,6 @@
 # HaasScript Lua Type Definitions Generator
+> **Recommended:** Check out [Typed HaasScript](https://github.com/Haasonline/typed-haasscript), which brings type annotations, type checking, and code hints to HaasScript in VS Code and JetBrains editors. It should ideally make this project obsolete.
+
 This project generates Luanalysis Type Definitions for the HaasScript Language so code editors can autocomplete and type check your
 scripts. If you do not want to run the project, you can simply download the zip files of the output here:
 https://github.com/FiretronP75/HaasScriptLuaTypes/releases
