@@ -1,9 +1,10 @@
 {
   "license": "GPL-3.0-or-later",
   "private": true,
+  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3",
   "engines": {
-    "node": ">=16.19.1",
-    "npm": ">=9.6.3"
+    "node": ">=18",
+    "pnpm": ">=12.18.0"
   },
   "scripts": {
     "compile": "tsc",
@@ -11,8 +12,8 @@
     "start": "tsc && node src/index.js"
   },
   "dependencies": {
-    "@tsconfig/node16": "^16.1.1",
-    "@types/node": "^16.18.68",
+    "@tsconfig/node18": "^18.2.7",
+    "@types/node": "^18.19.130",
     "axios": "^1.6.2",
     "typescript": "^5.3.3"
   }

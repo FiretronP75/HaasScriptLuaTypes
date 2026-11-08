@@ -154,7 +154,7 @@ export class Main {
         'Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".');
       console.error('Interface key and user id can be copied from a web browser session that has not expired yet.');
       console.error(
-        'Example: yarn start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48');
+        'Example: pnpm start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48');
       process.exit(1);
     }
 
