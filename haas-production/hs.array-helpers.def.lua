@@ -116,15 +116,15 @@ function ArrayShift(input) end
 
 --- The optional parameters of ArraySort.
 --- @shape OptionalParametersOf_ArraySort
---- @field descendValueing boolean | nil The order of the sort. If set to true, order will be descending. Otherwise ascending.
+--- @field descending boolean | nil The order of the sort. If set to true, order will be descending. Otherwise ascending.
 
 --- Sorts the array values in ascending or descending order.
 --- @param input any Source data.
---- @param descendValueing boolean Optional - The order of the sort. If set to true, order will be descending. Otherwise ascending. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
+--- @param descending boolean Optional - The order of the sort. If set to true, order will be descending. Otherwise ascending. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
 --- @return any Returns the sorted array.
 --- @overload fun(input: any): any
 --- @overload fun(input: any, optionalParameters: OptionalParametersOf_ArraySort): any
-function ArraySort(input, descendValueing) end
+function ArraySort(input, descending) end
 
 --- The optional parameters of ArraySum.
 --- @shape OptionalParametersOf_ArraySum
