@@ -7,6 +7,8 @@ import { commentPrefix }      from '../parsing/comment-prefix';
 
 export class WritingService {
 
+  protected static readonly DEFINITION_FILE_PATTERN = /^hs\..*\.def\..+$/;
+
   protected readonly categoryService: CategoryService;
   protected readonly directory: string;
   protected readonly documentService: DocumentService;
@@ -27,7 +29,19 @@ export class WritingService {
 
   public writeAll(): void {
     this.createDirectory();
+    this.removeOldDefinitions();
     this.writeBaseDocument();
+  }
+
+  protected removeOldDefinitions(): void {
+
+    try {
+      fs.readdirSync(this.directory)
+        .filter((fileName: string) => WritingService.DEFINITION_FILE_PATTERN.test(fileName))
+        .forEach((fileName: string) => fs.rmSync(`${this.directory}/${fileName}`));
+    } catch {
+      throw `Could not remove the old definitions from the folder "${this.directory}". Check that you are allowed to change that folder, then try again.`;
+    }
   }
 
   protected createDirectory(): void {

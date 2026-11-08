@@ -4,14 +4,14 @@ import { ParameterRaw }             from './parameter.raw';
 
 export class ParameterModel {
 
-  public static mapAll(rawList?: ParameterRaw[]): ParameterModel[] {
+  public static mapAll(commandName: string, rawList?: ParameterRaw[]): ParameterModel[] {
     if (!rawList) return [];
 
-    return rawList.map(ParameterModel.mapOne);
+    return rawList.map((raw: ParameterRaw) => ParameterModel.mapOne(commandName, raw));
   }
 
-  public static mapOne(raw?: ParameterRaw): ParameterModel {
-    return new ParameterModel(raw);
+  public static mapOne(commandName: string, raw?: ParameterRaw): ParameterModel {
+    return new ParameterModel(commandName, raw);
   }
 
   public readonly description: string;
@@ -21,7 +21,7 @@ export class ParameterModel {
   public readonly type: HaasCommandParameterType;
   public readonly typeName: string;
 
-  constructor(raw?: ParameterRaw) {
+  constructor(commandName: string, raw?: ParameterRaw) {
 
     if (raw === undefined) {
       this.description = '';
@@ -38,7 +38,7 @@ export class ParameterModel {
     this.isRequired  = raw.IsRequired;
     this.name        = this.cleanName(raw.Name);
     this.type        = raw.Type;
-    this.typeName    = HaasDataTypeMapper.map.get(raw.Type) as string;
+    this.typeName    = HaasDataTypeMapper.getTypeName(raw.Type, commandName);
   }
 
   protected cleanName(name: string): string {

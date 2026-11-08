@@ -4,14 +4,14 @@ import { OutputIndexRaw }           from './output-index.raw';
 
 export class OutputIndexModel {
 
-  public static mapAll(rawList?: OutputIndexRaw[]): OutputIndexModel[] {
+  public static mapAll(commandName: string, rawList?: OutputIndexRaw[]): OutputIndexModel[] {
     if (!rawList) return [];
 
-    return rawList.map(OutputIndexModel.mapOne);
+    return rawList.map((raw: OutputIndexRaw) => OutputIndexModel.mapOne(commandName, raw));
   }
 
-  public static mapOne(raw?: OutputIndexRaw): OutputIndexModel {
-    return new OutputIndexModel(raw);
+  public static mapOne(commandName: string, raw?: OutputIndexRaw): OutputIndexModel {
+    return new OutputIndexModel(commandName, raw);
   }
 
   public readonly description: string;
@@ -21,7 +21,7 @@ export class OutputIndexModel {
   public readonly type: HaasCommandParameterType;
   public readonly typeName: string;
 
-  constructor(raw?: OutputIndexRaw) {
+  constructor(commandName: string, raw?: OutputIndexRaw) {
 
     if (raw === undefined) {
       this.description = '';
@@ -38,7 +38,7 @@ export class OutputIndexModel {
     this.isRequired  = raw.IsRequired;
     this.name        = raw.Name;
     this.type        = raw.Type;
-    this.typeName    = HaasDataTypeMapper.map.get(raw.Type) as string;
+    this.typeName    = HaasDataTypeMapper.getTypeName(raw.Type, commandName);
   }
 
 }

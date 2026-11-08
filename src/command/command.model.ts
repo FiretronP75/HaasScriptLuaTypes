@@ -67,11 +67,11 @@ export class CommandModel {
     this.name                        = raw.CommandName;
     this.optionalParameterObjectName = this.getOptionalParameterObjectName(this.name);
     this.outputDescription           = raw.ReturnDescription || '';
-    this.outputIndexList             = OutputIndexModel.mapAll(raw.OutputIndex);
+    this.outputIndexList             = OutputIndexModel.mapAll(this.name, raw.OutputIndex);
     this.outputGroupIdList           = raw.OutputSuggestions || [];
     this.outputType                  = raw.OutputType;
     this.outputTypeName              = this.getOutputTypeName(this.name, this.outputIndexList.length, this.outputType);
-    this.parameterList               = ParameterModel.mapAll(raw.Parameters);
+    this.parameterList               = ParameterModel.mapAll(this.name, raw.Parameters);
     this.optionalParameterList       = this.parameterList.filter(this.filterOptional);
     this.requiredParameterList       = this.parameterList.filter(this.filterRequired);
     this.syntaxType                  = raw.CommandType;
@@ -85,7 +85,7 @@ export class CommandModel {
   protected getOutputTypeName(name: string, outputIndexListLength: number, outputType: number): string {
     return outputIndexListLength > 0
       ? `ResultOf_${name}`
-      : HaasDataTypeMapper.map.get(outputType) as string;
+      : HaasDataTypeMapper.getTypeName(outputType, name);
   }
 
   protected filterOptional(parameterItem: ParameterModel): boolean {
