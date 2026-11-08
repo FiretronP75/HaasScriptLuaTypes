@@ -75,3 +75,6 @@ Many of the number parameters of functions can also take a list of numbers. But 
 | With `flex-numbers` | `number \| number[]` | Does not error, even though it might be invalid |
 
 I'm not sure which is better or worse. So you have to decide for yourself which you prefer.
+
+> [!TIP]
+> [Typed HaasScript](https://github.com/Haasonline/typed-haasscript) has only one version of its definitions. It types number parameters based on behavior verified on a TradeServer.
