@@ -28,7 +28,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 7. Read and follow the help output in the console (pasted here for convenience):
 
 > * This script requires 5 parameters: environment, file extension, flexible numbers, saved GET_COMMANDS response, saved INIT_DATA response.
-> * Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".
+> * Environment may be "production" or "staging". It only changes where the output is saved. Anything other than "staging" (case-insensitive) assumes "production".
 > * File extension may be anything, but "lua" or "hs" is recommended.
 > * Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".
 > * The saved responses are JSON files saved from a logged-in web browser. The README explains how.
@@ -60,4 +60,3 @@ The script does not connect to the Haas server. It reads two responses that you 
 > * Save the files as UTF-8. Other encodings, such as UTF-16, cannot be read.
 > * If you need staging definitions, do these steps again on the staging server.
 > * Keep the saved files out of version control. They come from your own session.
-> * If a saved file cannot be read, the script warns and uses the sample data committed in this repository instead.

@@ -11,7 +11,6 @@ export class WritingService {
   protected readonly directory: string;
   protected readonly documentService: DocumentService;
   protected readonly fileExtension: string;
-  protected readonly sampleSuffix: string;
 
   constructor(categoryService: CategoryService, documentService: DocumentService, fileExtension: string, isProduction: boolean) {
     this.categoryService = categoryService;
@@ -24,15 +23,10 @@ export class WritingService {
         : 'haas-staging';
 
     if (HaasDataTypeMapper.isFlexNumbers) this.directory += '-flex-numbers';
-
-    this.sampleSuffix =
-      isProduction
-        ? 'production'
-        : 'staging';
   }
 
   public writeAll(): void {
-    this.writeCategorySample();
+    this.writeBaseDocument();
   }
 
   protected log(path: string, length: number, startTime: Date, needsBlankLine: boolean): void {
@@ -43,6 +37,11 @@ export class WritingService {
     if (needsBlankLine) console.log('');
 
     console.log(`Wrote ${path} (${length.toLocaleString()} characters) (${duration.toLocaleString()} ms)`);
+  }
+
+  protected writeFailureMessage(path: string): string {
+
+    return `Could not save the file "${path}". Check that the folder exists and that you are allowed to change it, then try again.`;
   }
 
   protected writeAllCategoryDocuments(): void {
@@ -64,7 +63,7 @@ export class WritingService {
     const options         = 'utf8';
 
     const callback = (error: NodeJS.ErrnoException | null) => {
-      if (error) throw error;
+      if (error) throw this.writeFailureMessage(path);
       this.log(path, data.length, startTime, true);
       this.writeAllCategoryDocuments();
     };
@@ -82,40 +81,8 @@ export class WritingService {
     const options         = 'utf8';
 
     const callback = (error: NodeJS.ErrnoException | null) => {
-      if (error) throw error;
+      if (error) throw this.writeFailureMessage(path);
       this.log(path, data.length, startTime, false);
-    };
-
-    fs.writeFile(path, data, options, callback);
-  }
-
-  protected writeCategorySample(): void {
-
-    const startTime: Date = new Date();
-    const path: string    = `src/category/sample/category-${this.sampleSuffix}.sample.ts`;
-    const data: string    = this.documentService.categorySampleDocumentText;
-    const options         = 'utf8';
-
-    const callback = (error: NodeJS.ErrnoException | null) => {
-      if (error) throw error;
-      this.log(path, data.length, startTime, true);
-      this.writeCommandSample();
-    };
-
-    fs.writeFile(path, data, options, callback);
-  }
-
-  protected writeCommandSample(): void {
-
-    const startTime: Date = new Date();
-    const path: string    = `src/command/sample/command-${this.sampleSuffix}.sample.ts`;
-    const data: string    = this.documentService.commandSampleDocumentText;
-    const options         = 'utf8';
-
-    const callback = (error: NodeJS.ErrnoException | null) => {
-      if (error) throw error;
-      this.log(path, data.length, startTime, false);
-      this.writeBaseDocument();
     };
 
     fs.writeFile(path, data, options, callback);

@@ -1,20 +1,13 @@
-import { DocumentService }          from '../document/document.service';
-import { SavedResponseService }     from '../saved-response/saved-response.service';
-import { CategoryRaw }              from './category.raw';
-import { categoryProductionSample } from './sample/category-production.sample';
-import { categoryStagingSample }    from './sample/category-staging.sample';
+import { SavedResponseService } from '../saved-response/saved-response.service';
+import { CategoryRaw }          from './category.raw';
 
 export class CategoryService {
 
-  protected readonly documentService: DocumentService;
   protected readonly idToNameMap = new Map<number, string>();
-  protected readonly isProduction: boolean;
   protected readonly savedResponsePath: string;
 
-  constructor(documentService: DocumentService, isProduction: boolean, savedResponsePath: string) {
+  constructor(savedResponsePath: string) {
 
-    this.documentService   = documentService;
-    this.isProduction      = isProduction;
     this.savedResponsePath = savedResponsePath;
   }
 
@@ -33,40 +26,34 @@ export class CategoryService {
 
     console.log('Loading category map from', this.savedResponsePath);
 
-    try {
-      const saved = SavedResponseService.read<any>(this.savedResponsePath);
-
-      if (saved.Success === false) {
-        this.handleFailure(saved.Error, startTime);
-      } else {
-        this.handleSuccess(this.extractCategories(saved), startTime);
-      }
-
-    } catch (error) {
-
-      this.handleFailure(error, startTime);
-    }
+    this.handleSuccess(this.extractCategories(SavedResponseService.read(this.savedResponsePath)), startTime);
   }
 
   /** Accepts the whole INIT_DATA response, its `C` object, or the bare map of category numbers to names. */
   protected extractCategories(saved: any): CategoryRaw {
 
-    let categories = saved.Data ?? saved;
+    if (saved?.Success === false) {
+      throw SavedResponseService.failedResponseMessage(this.savedResponsePath);
+    }
 
-    while (categories.C) categories = categories.C;
+    let categories = saved?.Data ?? saved;
+
+    while (categories?.C) categories = categories.C;
+
+    if (!this.isCategoryRaw(categories)) {
+      throw `The file "${this.savedResponsePath}" is not the INIT_DATA response. Check that you saved the right response in the right file, then try again.`;
+    }
 
     return categories;
   }
 
-  protected handleFailure(error: any, startTime): void {
-    console.error('Saved category response error:', error);
-    console.warn('Using previously saved category data.');
+  protected isCategoryRaw(candidate: any): candidate is CategoryRaw {
 
-    const categorySample = this.isProduction
-      ? categoryProductionSample
-      : categoryStagingSample;
+    if (typeof candidate !== 'object' || candidate === null || Array.isArray(candidate)) return false;
 
-    this.handleSuccess(categorySample, startTime);
+    const nameList: unknown[] = Object.values(candidate);
+
+    return nameList.length > 0 && nameList.every((name: unknown) => typeof name === 'string');
   }
 
   protected handleSuccess(categoryRaw: CategoryRaw, startTime: Date): void {
@@ -76,7 +63,6 @@ export class CategoryService {
 
     console.log(`Category map loaded. (${duration.toLocaleString()} ms)`);
 
-    this.documentService.setCategorySample(categoryRaw, this.isProduction);
     this.setCategories(categoryRaw);
   }
 

@@ -36,22 +36,14 @@ export class Main {
     this.validateArguments();
 
     this.documentService                 = new DocumentService();
-    this.categoryService                 = new CategoryService(
-      this.documentService,
-      this.isProduction,
-      this.categoriesResponsePath,
-    );
+    this.categoryService                 = new CategoryService(this.categoriesResponsePath);
     this.writingService                  = new WritingService(
       this.categoryService,
       this.documentService,
       this.fileExtension,
       this.isProduction,
     );
-    this.commandService                  = new CommandService(
-      this.documentService,
-      this.isProduction,
-      this.commandsResponsePath,
-    );
+    this.commandService                  = new CommandService(this.commandsResponsePath);
     this.commonParsingService            = new CommonParsingService();
     this.functionParsingService          = new FunctionParsingService(this.commandService, this.commonParsingService);
     this.colorParsingService             = new ColorParsingService(this.commonParsingService,
@@ -136,7 +128,7 @@ export class Main {
       console.error(
         'This script requires 5 parameters: environment, file extension, flexible numbers, saved GET_COMMANDS response, saved INIT_DATA response.');
       console.error(
-        'Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".');
+        'Environment may be "production" or "staging". It only changes where the output is saved. Anything other than "staging" (case-insensitive) assumes "production".');
       console.error('File extension may be anything, but "lua" or "hs" is recommended.');
       console.error(
         'Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".');
