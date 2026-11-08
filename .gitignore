@@ -1,8 +1,8 @@
 # Dependencies
 node_modules/
 
-# Generated JavaScript
-*.js
+# Compiled output
+dist/
 
 # Exported browser sessions
 *.har
