@@ -5,9 +5,6 @@
 
 This project generates Luanalysis Type Definitions for the HaasScript Language so code editors can autocomplete and type check your scripts. If you do not want to run the project, you can simply [download the zip files of the output](https://github.com/FiretronP75/HaasScriptLuaTypes/releases).
 
-* Most people should use production definitions.
-* You do not want staging definitions unless you test on the Haas Cloud staging server.
-
 > [!WARNING]
 > Only use 1 of the zip files of lua definitions, or Luanalysis will error about duplicates.
 
