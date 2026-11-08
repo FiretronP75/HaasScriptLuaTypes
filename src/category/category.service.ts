@@ -29,22 +29,21 @@ export class CategoryService {
     this.handleSuccess(this.extractCategories(SavedResponseService.read(this.savedResponsePath)), startTime);
   }
 
-  /** Accepts the whole INIT_DATA response, its `C` object, or the bare map of category numbers to names. */
   protected extractCategories(saved: any): CategoryRaw {
 
     if (saved?.Success === false) {
       throw SavedResponseService.failedResponseMessage(this.savedResponsePath);
     }
 
-    let categories = saved?.Data ?? saved;
+    let categoryRaw = saved?.Data ?? saved;
 
-    while (categories?.C) categories = categories.C;
+    while (categoryRaw?.C) categoryRaw = categoryRaw.C;
 
-    if (!this.isCategoryRaw(categories)) {
+    if (!this.isCategoryRaw(categoryRaw)) {
       throw `The file "${this.savedResponsePath}" is not the INIT_DATA response. Check that you saved the right response in the right file, then try again.`;
     }
 
-    return categories;
+    return categoryRaw;
   }
 
   protected isCategoryRaw(candidate: any): candidate is CategoryRaw {

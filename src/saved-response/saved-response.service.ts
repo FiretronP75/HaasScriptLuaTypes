@@ -25,15 +25,15 @@ export class SavedResponseService {
     );
   }
 
-  protected static decode(bytes: Buffer, path: string): string {
+  protected static decode(buffer: Buffer, path: string): string {
 
     const notUtf8Message = `The file "${path}" is saved in the wrong text format. Save it again as UTF-8, then try again.`;
 
     // UTF-16 without a byte order mark can be valid UTF-8, but valid JSON never contains a zero byte.
-    if (bytes.includes(SavedResponseService.ZERO_BYTE)) throw notUtf8Message;
+    if (buffer.includes(SavedResponseService.ZERO_BYTE)) throw notUtf8Message;
 
     try {
-      return new TextDecoder(SavedResponseService.ENCODING, {fatal: true}).decode(bytes);
+      return new TextDecoder(SavedResponseService.ENCODING, {fatal: true}).decode(buffer);
     } catch {
       throw notUtf8Message;
     }

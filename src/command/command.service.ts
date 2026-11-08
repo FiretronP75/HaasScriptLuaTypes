@@ -35,7 +35,6 @@ export class CommandService {
     this.handleSuccess(this.extractCommands(SavedResponseService.read(this.savedResponsePath)), startTime);
   }
 
-  /** Accepts the whole GET_COMMANDS response or the bare list of commands. */
   protected extractCommands(saved: any): CommandRaw[] {
 
     if (saved?.Success === false) {

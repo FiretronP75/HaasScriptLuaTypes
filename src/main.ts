@@ -25,25 +25,25 @@ export class Main {
   protected readonly outputIndexParsingService: OutputIndexParsingService;
   protected readonly writingService: WritingService;
 
-  protected categoriesResponsePath: string = '';
-  protected commandsResponsePath: string   = '';
-  protected fileExtension: string          = '';
-  protected isProduction: boolean          = true;
-  protected nodeBinPath: string            = '';
-  protected scriptPath: string             = '';
+  protected categoryResponsePath: string = '';
+  protected commandResponsePath: string  = '';
+  protected fileExtension: string        = '';
+  protected isProduction: boolean        = true;
+  protected nodeBinPath: string          = '';
+  protected scriptPath: string           = '';
 
   constructor() {
     this.validateArguments();
 
     this.documentService                 = new DocumentService();
-    this.categoryService                 = new CategoryService(this.categoriesResponsePath);
+    this.categoryService                 = new CategoryService(this.categoryResponsePath);
     this.writingService                  = new WritingService(
       this.categoryService,
       this.documentService,
       this.fileExtension,
       this.isProduction,
     );
-    this.commandService                  = new CommandService(this.commandsResponsePath);
+    this.commandService                  = new CommandService(this.commandResponsePath);
     this.commonParsingService            = new CommonParsingService();
     this.functionParsingService          = new FunctionParsingService(this.commandService, this.commonParsingService);
     this.colorParsingService             = new ColorParsingService(this.commonParsingService,
@@ -142,16 +142,16 @@ export class Main {
     this.isProduction                = process.argv.slice(2, 3)[0].toLowerCase() !== 'staging';
     this.fileExtension               = process.argv.slice(3, 4)[0];
     HaasDataTypeMapper.isFlexNumbers = process.argv.slice(4, 5)[0].toLowerCase() === 'flex-num';
-    this.commandsResponsePath        = process.argv.slice(5, 6)[0];
-    this.categoriesResponsePath      = process.argv.slice(6, 7)[0];
+    this.commandResponsePath         = process.argv.slice(5, 6)[0];
+    this.categoryResponsePath        = process.argv.slice(6, 7)[0];
 
     console.log('Node Bin Path:', this.nodeBinPath);
     console.log('Script Path:', this.scriptPath);
     console.log('Production:', `${this.isProduction}`);
     console.log('File Extension:', this.fileExtension);
     console.log('Flexible Numbers:', `${HaasDataTypeMapper.isFlexNumbers}`);
-    console.log('Saved GET_COMMANDS Response:', this.commandsResponsePath);
-    console.log('Saved INIT_DATA Response:', this.categoriesResponsePath);
+    console.log('Saved GET_COMMANDS Response:', this.commandResponsePath);
+    console.log('Saved INIT_DATA Response:', this.categoryResponsePath);
     console.log('');
   }
 
