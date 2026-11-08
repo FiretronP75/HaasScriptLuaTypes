@@ -4,7 +4,7 @@
 --- @shape OptionalParametersOf_AdjustVPosition
 --- @field positionId string | nil Unique position identifier.
 
---- Adjusts a virtual bot position by processing a simulated order using the defined specifications. Works similarly to PlaceExitLongOrder/PlaceExitShortOrder, but will NOT create a real order; only simulated!
+--- Adjusts a virtual bot position by processing a simulated order using the defined specifications. Works similarly to PlaceExitLongOrder/PlaceExitShortOrder, but will NOT create a real order; it is only simulated.
 --- @param price number The close price of the position. Suggestions: UserPositionContainer
 --- @param amount number The amount to adjust: negative value reduces, positive value adds. Suggestions: UserPositionContainer
 --- @param positionId string Optional - Unique position identifier. Suggestions: NewGuid, Load
@@ -113,11 +113,11 @@ function GetPositionProfit(positionId, targetPrice) end
 --- The optional parameters of GetPositionROI.
 --- @shape OptionalParametersOf_GetPositionROI
 --- @field positionId string | nil Optional unique identifier. Required when the bot is trading multiple position at once.
---- @field targetPrice number | nil Optional target price. Default is the best bid/ask.
+--- @field targetPrice number | nil Optional target price. When set, returns the ROI the whole position would have if closed at this price: realized profits, fees and earlier partial exits included, over the margin of all enter orders. Without it, returns the current ROI of the open part, so the two can differ even at the current price.
 
 --- Calculates the ROI based on used margin and unrealized + realized profits.
 --- @param positionId string Optional - Optional unique identifier. Required when the bot is trading multiple position at once. Suggestions: Load
---- @param targetPrice number Optional - Optional target price. Default is the best bid/ask. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
+--- @param targetPrice number Optional - Optional target price. When set, returns the ROI the whole position would have if closed at this price: realized profits, fees and earlier partial exits included, over the margin of all enter orders. Without it, returns the current ROI of the open part, so the two can differ even at the current price. Suggestions: AskPrices, BuyPrices, BidPrices, SellPrices, OpenPrices, HighPrices, LowPrices, ClosePrices, Prices, HLPrices, HLCPrices, OCPrices, HeikenClosePrices, OHLCPrices, GetBodyHighPrices, GetBodyLowPrices
 --- @return number Returns the ROI as a percentage. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number
 --- @overload fun(positionId: string): number
@@ -149,36 +149,38 @@ function LongAmount(market) end
 --- The object returned by PositionContainer.
 --- @class ResultOf_PositionContainer
 --- @field positionId string The position identifier. Suggestions: PlaceExitPositionOrder
---- @field market string The market of the position. Suggestions: ClosePrices, Prices, AskPrices, BuyPrices, BidPrices, SellPrices
+--- @field market string The market of the position, as a composite `<accountId>_<market>_<leverage>` string. Not comparable to PriceMarket(). Suggestions: ClosePrices, Prices, AskPrices, BuyPrices, BidPrices, SellPrices
 --- @field isLong boolean Set on true when the direction is long. Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @field isShort boolean Set on true when the direction is short. Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @field enterPrice number The average enter price. Suggestions: AddPerc, AddPercentage, SubPerc, SubPercentage, IsBiggerThan, IsSmallerThan
 --- @field amount number The amount open in the position. Suggestions: PlaceExitLongOrder, PlaceExitShortOrder, PlaceSellOrder, PlaceBuyOrder
---- @field profit number The realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field profit number The realized + unrealized profits of this bot position. Note UserPositionContainer.profit and GetAllUserPositions.profit are unrealized only; the fields share a name but not a meaning. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field roi number The ROI based on the used margin and realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field openTime number Timestamp (in unix) when the position was opened. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field updatedTime number Timestamp (in unix) when the position was last updated. Suggestions: IsBiggerThan, IsSmallerThan
---- @field closeTime number Timestamp (in unix) when the position was closed. If position is still open, value will be 0. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field closeTime number Timestamp (in unix) when the position was closed. If the position is still open, the value is 0. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field direction Enum The direction of the position. Returns PositionLong, PositionShort or NoPosition. Suggestions: PositionBought, PositionLong, PositionShort, PositionSold, NoPosition
 --- @field [1] string The position identifier. Suggestions: PlaceExitPositionOrder
---- @field [2] string The market of the position. Suggestions: ClosePrices, Prices, AskPrices, BuyPrices, BidPrices, SellPrices
+--- @field [2] string The market of the position, as a composite `<accountId>_<market>_<leverage>` string. Not comparable to PriceMarket(). Suggestions: ClosePrices, Prices, AskPrices, BuyPrices, BidPrices, SellPrices
 --- @field [3] boolean Set on true when the direction is long. Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @field [4] boolean Set on true when the direction is short. Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @field [5] number The average enter price. Suggestions: AddPerc, AddPercentage, SubPerc, SubPercentage, IsBiggerThan, IsSmallerThan
 --- @field [6] number The amount open in the position. Suggestions: PlaceExitLongOrder, PlaceExitShortOrder, PlaceSellOrder, PlaceBuyOrder
---- @field [7] number The realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field [7] number The realized + unrealized profits of this bot position. Note UserPositionContainer.profit and GetAllUserPositions.profit are unrealized only; the fields share a name but not a meaning. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field [8] number The ROI based on the used margin and realized + unrealized profits. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field [9] number Timestamp (in unix) when the position was opened. Suggestions: IsBiggerThan, IsSmallerThan
 --- @field [10] number Timestamp (in unix) when the position was last updated. Suggestions: IsBiggerThan, IsSmallerThan
---- @field [11] number Timestamp (in unix) when the position was closed. If position is still open, value will be 0. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field [11] number Timestamp (in unix) when the position was closed. If the position is still open, the value is 0. Suggestions: IsBiggerThan, IsSmallerThan
+--- @field [12] Enum The direction of the position. Returns PositionLong, PositionShort or NoPosition. Suggestions: PositionBought, PositionLong, PositionShort, PositionSold, NoPosition
 
 --- The optional parameters of PositionContainer.
 --- @shape OptionalParametersOf_PositionContainer
 --- @field positionId string | nil Optional unique identifier. Required when the bot is trading multiple position at once.
---- @field includeClosed boolean | nil True for total position amount (default), false for only open amount. Affects enterPrice value in returned object.
+--- @field includeClosed boolean | nil Ignored; kept for compatibility. amount is always the open amount and enterPrice the average enter price of it.
 
 --- Gets all the information from the open bot position.
 --- @param positionId string Optional - Optional unique identifier. Required when the bot is trading multiple position at once. Suggestions: Load
---- @param includeClosed boolean Optional - True for total position amount (default), false for only open amount. Affects enterPrice value in returned object. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
+--- @param includeClosed boolean Optional - Ignored; kept for compatibility. amount is always the open amount and enterPrice the average enter price of it. Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
 --- @return ResultOf_PositionContainer Returns an array with position information.
 --- @overload fun(): ResultOf_PositionContainer
 --- @overload fun(positionId: string): ResultOf_PositionContainer

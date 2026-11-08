@@ -103,7 +103,7 @@ function ClosePrices(interval, fullCandles, market, hlcStyle) end
 
 --- Gets all the price data from the current candle.
 --- @param market string Optional - The market of the tick. Default is the selected main market. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
---- @return ResultOf_CurrentPrice Returns the price data in an array.
+--- @return ResultOf_CurrentPrice Returns a container with named fields (also accessible by 1-based index).
 --- @overload fun(): ResultOf_CurrentPrice
 --- @overload fun(optionalParameters: OptionalParametersOf_CurrentPrice): ResultOf_CurrentPrice
 function CurrentPrice(market) end
@@ -264,6 +264,20 @@ function HLCPrices(interval, fullCandles, market, hlcStyle) end
 --- @overload fun(interval: number, fullCandles: boolean, market: string): number[]
 --- @overload fun(optionalParameters: OptionalParametersOf_HLPrices): number[]
 function HLPrices(interval, fullCandles, market, hlcStyle) end
+
+--- The optional parameters of IsClosedCandleFinal.
+--- @shape OptionalParametersOf_IsClosedCandleFinal
+--- @field interval number | nil The candle interval. Default is the main interval.
+--- @field market string | nil The market. Default is the selected main market.
+
+--- Checks whether the candle that closed last is complete in the prices this update reads. Right after a candle closes, a bot with high-speed updates can run before the exchange's last minute of that candle is stored. Until then the closed candle's close and volume can still change. The answer matches the price commands in the same update, so check it first in the update, before acting on fullCandles data at a candle boundary. Built-in indicators keep their result for the candle only once it is complete, so they follow this answer. OptimizedForInterval callbacks, custom commands and SourceManager still run once per candle, so skip them for that interval while this returns false. Always true in backtests. Also true 45 seconds after the boundary, because a minute without trades is never stored. Waits for that timeout on weekly and monthly intervals, on very deep price histories, and on markets with no trade in the candle's last minute.
+--- @param interval number Optional - The candle interval. Default is the main interval. Suggestions: InputInterval, CurrentInterval
+--- @param market string Optional - The market. Default is the selected main market. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @return boolean Returns true when the closed candle is complete, false while its last minute is not stored yet. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+--- @overload fun(): boolean
+--- @overload fun(interval: number): boolean
+--- @overload fun(optionalParameters: OptionalParametersOf_IsClosedCandleFinal): boolean
+function IsClosedCandleFinal(interval, market) end
 
 --- The optional parameters of LowPrices.
 --- @shape OptionalParametersOf_LowPrices

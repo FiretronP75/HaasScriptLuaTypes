@@ -53,7 +53,7 @@ function NeverExitWithLoss(acceptedLoss, targetPrice, positionId) end
 --- @field interval number | nil Interval of the bar in minutes.
 --- @field positionId string | nil Optional unique identifier. Required when the bot is trading multiple position at once.
 
---- Only allows a order to occur once per bar. Signals produced during a ordered bar are blocked.
+--- Only allows an order to occur once per bar. Signals produced during an ordered bar are blocked.
 --- @param interval number Optional - Interval of the bar in minutes. Suggestions: Input
 --- @param positionId string Optional - Optional unique identifier. Required when the bot is trading multiple position at once. Suggestions: Load
 --- @return boolean Returns true when new bar opens or no orders occurred during a bar. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder, InsuranceContainer
@@ -177,7 +177,7 @@ function TradeOnlyTrending(threshold, interval, fullCandles, market) end
 --- @shape OptionalParametersOf_WaitAfterOrder
 --- @field positionId string | nil Optional unique identifier. Required when the bot is trading multiple position at once.
 
---- Blocks any signal until a certain number of minutes have passed since the last placed order. This includes orders executed in an update cycle
+--- Blocks any signal until a certain number of minutes have passed since the last placed order. This includes orders executed in an update cycle.
 --- @param timeout number Number of minutes to wait after the last order. Suggestions: Input
 --- @param positionId string Optional - Optional unique identifier. Required when the bot is trading multiple position at once. Suggestions: Load
 --- @return boolean Returns true when the last placed order is a certain number of minutes ago. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder, InsuranceContainer

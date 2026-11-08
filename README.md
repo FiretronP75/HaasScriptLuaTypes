@@ -5,7 +5,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 
 > * Most people should use production definitions.
 > * You do not want staging definitions unless you test on the Haas Cloud staging server.
-> * Only use 1 of the 4 zip files of lua definitions, or Luanalysis will error about duplicates.
+> * Only use 1 of the zip files of lua definitions, or Luanalysis will error about duplicates.
 
 ## To use the lua definitions output:
 1. Install IntelliJ IDEA or PyCharm from JetBrains. Their core features are free. Or use any paid JetBrains product.

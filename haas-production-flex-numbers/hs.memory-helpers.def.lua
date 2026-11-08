@@ -5,9 +5,9 @@
 --- @return void
 function Delete(key) end
 
---- Initialize a file that can be exported later.
---- @param name string Unique name of the file
---- @param headers string[] Header definition
+--- Initialize a file that can be exported later. Rows are written with WriteExportData, which only records during a backtest. Cloud servers allow up to 25 export files per script.
+--- @param name string Unique name of the file.
+--- @param headers string[] Header definition.
 --- @return void
 function InitExportData(name, headers) end
 
@@ -15,7 +15,7 @@ function InitExportData(name, headers) end
 --- @shape OptionalParametersOf_Load
 --- @field defaultValue any | nil Default value for when no data is saved on the key. Default is nil.
 
---- Loads a value saved on the specified key.
+--- Loads a value saved on the specified key. When nothing is saved on the key, the default value is returned and saved on it; when the saved value cannot be read (e.g. the read timed out), the run ends and the next run tries again.
 --- @param key string Unique identifier.
 --- @param defaultValue any Optional - Default value for when no data is saved on the key. Default is nil.
 --- @return any Returns the saved value or nil.
@@ -40,7 +40,7 @@ function Log(message, color) end
 --- @return void
 function LogError(message) end
 
---- Create a warning message in the log and activates the trade amount error.
+--- Logs a warning and shows the bot as Insufficient funds for this update.
 --- @param message any Warning to log.
 --- @return void
 function LogWalletError(message) end
@@ -56,9 +56,9 @@ function LogWarning(message) end
 --- @return void
 function Save(key, value) end
 
---- Write data to a file that can be exported later. File size is unlimited, use with caution.
+--- Write data to a file that can be exported later. Only records during a backtest. Self-hosted file size is unlimited, use with caution; cloud servers cap a file at 250,000 rows.
 --- @param name string Name of the file to write the data to.
---- @param values string[] The values to write to the file. Needs to match the number of headers defined in InitExportData.
+--- @vararg any The values to write to the file, converted to text. Needs to match the number of headers defined in InitExportData.
 --- @return void
-function WriteExportData(name, values) end
+function WriteExportData(name, ...) end
 

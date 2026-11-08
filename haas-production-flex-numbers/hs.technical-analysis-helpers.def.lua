@@ -9,7 +9,7 @@ function CrossOver(value1, value2) end
 --- Calculates the number of ticks since the last crossover.
 --- @param value1 number | number[] | table Source value(s) 1.
 --- @param value2 number | number[] | table Source value(s) 2.
---- @return number | number[] Returns the number of ticks since the last crossover. Return value of 1 represents the crossunder happening 'now'. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @return number | number[] Returns the number of ticks since the last crossover, using the same rule as CrossOver (the older bar may touch the other value, <=). A return value of 1 represents the crossover happening 'now'. Returns 999 when no crossover is found. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function CrossOverSince(value1, value2) end
 
 --- Checks if a crossunder occurs between value1 and value2.
@@ -21,7 +21,7 @@ function CrossUnder(value1, value2) end
 --- Calculates the number of ticks since the last crossunder.
 --- @param value1 number | number[] | table Source value(s) 1.
 --- @param value2 number | number[] | table Source value(s) 2.
---- @return number | number[] Returns the number of ticks since the last crossunder. Return value of 1 represents the crossunder happening 'now'. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @return number | number[] Returns the number of ticks since the last crossunder, using the same rule as CrossUnder (the older bar may touch the other value, >=). A return value of 1 represents the crossunder happening 'now'. Returns 999 when no crossunder is found. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function CrossUnderSince(value1, value2) end
 
 --- Calculates the amount of swing in percentages.

@@ -6,8 +6,8 @@
 --- @field addSeconds number | number[] | nil Number of seconds to add.
 --- @field addMinutes number | number[] | nil Number of minutes to add.
 --- @field addHours number | number[] | nil Number of hours to add.
---- @field addDays number | number[] | nil Number of days to add.
 --- @field addMonths number | number[] | nil Number of months to add.
+--- @field addDays number | number[] | nil Number of days to add.
 --- @field addYears number | number[] | nil Number of years to add.
 
 --- Adjusts an Unix timestamp.
@@ -15,8 +15,8 @@
 --- @param addSeconds number | number[] Optional - Number of seconds to add. Suggestions: Input
 --- @param addMinutes number | number[] Optional - Number of minutes to add. Suggestions: Input
 --- @param addHours number | number[] Optional - Number of hours to add. Suggestions: Input
---- @param addDays number | number[] Optional - Number of days to add. Suggestions: Input
 --- @param addMonths number | number[] Optional - Number of months to add. Suggestions: Input
+--- @param addDays number | number[] Optional - Number of days to add. Suggestions: Input
 --- @param addYears number | number[] Optional - Number of years to add. Suggestions: Input
 --- @return number | number[] Returns the new Unix timestamp. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number | number[]
@@ -24,10 +24,10 @@
 --- @overload fun(unix: number | number[], addSeconds: number | number[]): number | number[]
 --- @overload fun(unix: number | number[], addSeconds: number | number[], addMinutes: number | number[]): number | number[]
 --- @overload fun(unix: number | number[], addSeconds: number | number[], addMinutes: number | number[], addHours: number | number[]): number | number[]
---- @overload fun(unix: number | number[], addSeconds: number | number[], addMinutes: number | number[], addHours: number | number[], addDays: number | number[]): number | number[]
---- @overload fun(unix: number | number[], addSeconds: number | number[], addMinutes: number | number[], addHours: number | number[], addDays: number | number[], addMonths: number | number[]): number | number[]
+--- @overload fun(unix: number | number[], addSeconds: number | number[], addMinutes: number | number[], addHours: number | number[], addMonths: number | number[]): number | number[]
+--- @overload fun(unix: number | number[], addSeconds: number | number[], addMinutes: number | number[], addHours: number | number[], addMonths: number | number[], addDays: number | number[]): number | number[]
 --- @overload fun(optionalParameters: OptionalParametersOf_AdjustTimestamp): number | number[]
-function AdjustTimestamp(unix, addSeconds, addMinutes, addHours, addDays, addMonths, addYears) end
+function AdjustTimestamp(unix, addSeconds, addMinutes, addHours, addMonths, addDays, addYears) end
 
 --- Converts a timestamps to the close timestamp of the candle.
 --- @param unix number | number[] The timestamp to round. Set on 0 for current. Suggestions: Input
@@ -160,7 +160,7 @@ function CurrentYear(unix) end
 --- @field includeYear boolean | nil If true, the year will be included in the formatted date.
 
 --- Formats a unix datetime number (to "YYYY-MM-DD at HH:MM" by default).
---- @param unix number | number[] Optional - The unix datetime number to format. Suggestions: FormatDateTime, Time
+--- @param unix number | number[] Optional - The unix datetime number to format. Suggestions: Time
 --- @param dateDelimiter string Optional - The characters between the year and month, and between the month and day.
 --- @param dateTimeDelimiter string Optional - The characters between the date and time.
 --- @param timeDelimiter string Optional - The characters between the hour and minute, and between the minute and second.
@@ -194,11 +194,16 @@ function GetTimer(key) end
 --- @return number | number[] Returns the number of minutes before a new candle opens. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function MinutesTillCandleClose(interval) end
 
---- Converts a timestamps to the open timestamp of the candle
---- @param unix number | number[] The timestamp to round. Set on 0 for current. Suggestions: Input
---- @param interval number | number[] The interval on which the candle is build. Suggestions: InputInterval, CurrentInterval
+--- Converts a timestamp to the open timestamp of its candle.
+--- @param unix number | number[] The timestamp to round. Set to 0 for the current timestamp. Suggestions: Input
+--- @param interval number | number[] The interval on which the candle is built. Suggestions: InputInterval, CurrentInterval
 --- @return number | number[] Returns the open timestamp of the candle. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function OpenTime(unix, interval) end
+
+--- Pauses script execution for a specified number of milliseconds. Useful for adding random delays to avoid predictable order timing patterns.
+--- @param milliseconds number | number[] Number of milliseconds to sleep (e.g., 100 = 100ms, 5000 = 5 seconds). Maximum 10000ms (10 seconds) recommended. Suggestions: Input
+--- @return number | number[] Returns the actual time slept in milliseconds. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+function Sleep(milliseconds) end
 
 --- The optional parameters of StartTimer.
 --- @shape OptionalParametersOf_StartTimer

@@ -20,10 +20,10 @@ function IndicatorContainer(signals) end
 
 --- The optional parameters of InsuranceContainer.
 --- @shape OptionalParametersOf_InsuranceContainer
---- @field signals boolean[] | nil Safety signals collection. Takes a variable number of arguments.
+--- @field signals boolean[] | nil Safety signals collection. Takes a variable number of arguments. Pass each value as a separate argument: a table counts only its first element.
 
 --- Validates if all the signals agree.
---- @param signals boolean[] Optional - Safety signals collection. Takes a variable number of arguments. Suggestions: AbsolutePriceChange, NeverExitWithLoss, OvercomeDoubleFeeCosts, OvercomeFeeCosts, PercentagePriceChange, StopLossCooldown, TradeOncePerBar, TradeOnlySideways, TradeOnlyTrending, WaitAfterTrade, NeverEnterWithALoss
+--- @param signals boolean[] Optional - Safety signals collection. Takes a variable number of arguments. Pass each value as a separate argument: a table counts only its first element. Suggestions: AbsolutePriceChange, NeverExitWithLoss, OvercomeDoubleFeeCosts, OvercomeFeeCosts, PercentagePriceChange, StopLossCooldown, TradeOncePerBar, TradeOnlySideways, TradeOnlyTrending, WaitAfterTrade, NeverEnterWithALoss, OrderOncePerBar, WaitAfterOrder
 --- @return boolean Returns true if all the signals in the collection are true. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, TradeBotContainer
 --- @overload fun(): boolean
 --- @overload fun(optionalParameters: OptionalParametersOf_InsuranceContainer): boolean
@@ -31,10 +31,10 @@ function InsuranceContainer(signals) end
 
 --- The optional parameters of SafetyContainer.
 --- @shape OptionalParametersOf_SafetyContainer
---- @field signals boolean[] | nil Safety signals collection. Takes a variable number of arguments.
+--- @field signals boolean[] | nil Safety signals collection. Takes a variable number of arguments. Pass each value as a separate argument: a table counts only its first element.
 
 --- Checks a collection for active safety signals.
---- @param signals boolean[] Optional - Safety signals collection. Takes a variable number of arguments. Suggestions: DynamicStopLoss, DynamicTakeProfit, StopLoss, TakeProfit, TrailingArmStopLoss, TrailingStopLoss, ShrinkingTrailingStopLoss, StopLossROI, TakeProfitROI, GrowingTrailingStopLoss, DeactivateAfterEnterOrder, DeactivateAfterExitOrder, DeactivateAfterXOrders, DeactivateAfterXPositions, DeactivateAfterXIdleMinutes, DeactivateAfterXActiveMinutes, DeactivateOnLoss, DeactivateOnProfit
+--- @param signals boolean[] Optional - Safety signals collection. Takes a variable number of arguments. Pass each value as a separate argument: a table counts only its first element. Suggestions: DynamicStopLoss, DynamicTakeProfit, StopLoss, TakeProfit, TrailingArmStopLoss, TrailingStopLoss, ShrinkingTrailingStopLoss, StopLossROI, TakeProfitROI, GrowingTrailingStopLoss, DeactivateAfterEnterOrder, DeactivateAfterExitOrder, DeactivateAfterXOrders, DeactivateAfterXPositions, DeactivateAfterXIdleMinutes, DeactivateAfterXActiveMinutes, DeactivateOnLoss, DeactivateOnProfit
 --- @return boolean Returns true if any of the signals is active. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, TradeBotContainer, DoExitPosition, DoFlipPosition
 --- @overload fun(): boolean
 --- @overload fun(optionalParameters: OptionalParametersOf_SafetyContainer): boolean
@@ -43,13 +43,13 @@ function SafetyContainer(signals) end
 --- The optional parameters of TradeBotContainer.
 --- @shape OptionalParametersOf_TradeBotContainer
 --- @field safetySignal boolean | nil Safety container result.
---- @field indicatorSignal Enum | nil Indicator container result.
+--- @field indicatorSignal Enum | nil Indicator container result. SignalLong, SignalShort, SignalExitLong, SignalExitShort and SignalExitPosition are executed when the insurances agree. SignalNone, SignalError, SignalReservedA and SignalReservedB are ignored.
 --- @field insuranceSignal boolean | nil Insurance container result.
 
 --- Checks the safety, indicator & insurance signal. If a safety is active, DoExitPosition() will be executed. When there are no safeties active, the indicator signal will be executed if the insurances agree.
 --- @param safetySignal boolean Optional - Safety container result. Suggestions: DynamicStopLoss, DynamicTakeProfit, StopLoss, TakeProfit, TrailingArmStopLoss, TrailingStopLoss, ShrinkingTrailingStopLoss, StopLossROI, TakeProfitROI, GrowingTrailingStopLoss, DeactivateAfterEnterOrder, DeactivateAfterExitOrder, DeactivateAfterXOrders, DeactivateAfterXPositions, DeactivateAfterXIdleMinutes, DeactivateAfterXActiveMinutes, DeactivateOnLoss, DeactivateOnProfit, SafetyContainer
---- @param indicatorSignal Enum Optional - Indicator container result. Suggestions: IndicatorContainer
---- @param insuranceSignal boolean Optional - Insurance container result. Suggestions: AbsolutePriceChange, NeverExitWithLoss, OvercomeDoubleFeeCosts, OvercomeFeeCosts, PercentagePriceChange, StopLossCooldown, TradeOncePerBar, TradeOnlySideways, TradeOnlyTrending, WaitAfterTrade, NeverEnterWithALoss, InsuranceContainer
+--- @param indicatorSignal Enum Optional - Indicator container result. SignalLong, SignalShort, SignalExitLong, SignalExitShort and SignalExitPosition are executed when the insurances agree. SignalNone, SignalError, SignalReservedA and SignalReservedB are ignored. Suggestions: IndicatorContainer
+--- @param insuranceSignal boolean Optional - Insurance container result. Suggestions: AbsolutePriceChange, NeverExitWithLoss, OvercomeDoubleFeeCosts, OvercomeFeeCosts, PercentagePriceChange, StopLossCooldown, TradeOncePerBar, TradeOnlySideways, TradeOnlyTrending, WaitAfterTrade, NeverEnterWithALoss, OrderOncePerBar, WaitAfterOrder, InsuranceContainer
 --- @return void
 --- @overload fun(): void
 --- @overload fun(safetySignal: boolean): void

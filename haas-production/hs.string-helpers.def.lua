@@ -16,8 +16,8 @@ function Parse(value, type) end
 --- @field columnDelimiter string | nil Delimiter for columns (default: ';')
 --- @field rowDelimiter string | nil Delimiter for rows (default: '\n')
 
---- Parses CSV data string and returns it as an object. URLs are also supported.
---- @param csv string The CSV data string or URL to download CSV data from. Suggestions: Input, Load
+--- Parses CSV data string and returns it as an object. Downloading from a URL is only supported on self-hosted servers.
+--- @param csv string The CSV data string. On self-hosted servers this can also be an http(s) URL to download CSV data from; on HaasOnline Cloud a URL logs an error and returns nil. Suggestions: Input, Load
 --- @param hasHeaders boolean Optional - Whether or not data contains headers (default: false). Suggestions: And, IsTrue, IsFalse, Not, Or, Equals, IsBiggerThan, IsSmallerThan, IsBiggerOrSmallerThan, IsAnyOrderOpen, IsOrderFilled, IsOrderOpen, IsTradeAmountEnough
 --- @param columnDelimiter string Optional - Delimiter for columns (default: ';'). Suggestions: Input, Load
 --- @param rowDelimiter string Optional - Delimiter for rows (default: '\n'). Suggestions: Input, Load
@@ -28,9 +28,9 @@ function Parse(value, type) end
 --- @overload fun(csv: string, optionalParameters: OptionalParametersOf_ParseCsv): any
 function ParseCsv(csv, hasHeaders, columnDelimiter, rowDelimiter) end
 
---- Parses JSON data string and returns it as an object. URLs are also supported.
---- @param json string The JSON data string or URL to download JSON data from. Suggestions: Input, Load
---- @return any Object containing the parsed information.
+--- Parses a JSON data string (an object, an array or a single value) and returns it as an object. Downloading from a URL is only supported on self-hosted servers. Invalid JSON logs a warning and returns nil.
+--- @param json string The JSON data string. On self-hosted servers this can also be an http(s) URL to download JSON data from; on HaasOnline Cloud a URL logs a warning and returns nil. Suggestions: Input, Load
+--- @return any Object containing the parsed information, or nil if the data could not be loaded or parsed.
 function ParseJson(json) end
 
 --- The optional parameters of StringContains.

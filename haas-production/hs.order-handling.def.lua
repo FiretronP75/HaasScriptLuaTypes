@@ -45,7 +45,7 @@ function IsBuyOrder(orderId) end
 
 --- Checks if the given order is filled.
 --- @param orderId string Unique order identifier provided by the PlaceOrder commands. Suggestions: Load
---- @return boolean Returns true if the given order is filled. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
+--- @return boolean Returns true if the given order is filled. A market-type order (market, stop-market, take-profit-market or trailing-stop) that closes with only part of its amount filled also counts as filled, unless it was cancelled, timed out, failed or was rejected. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 function IsOrderFilled(orderId) end
 
 --- Checks if the given order is still open.
