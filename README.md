@@ -8,7 +8,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 > * Only use 1 of the 4 zip files of lua definitions, or Luanalysis will error about duplicates.
 
 ## To use the lua definitions output:
-1. Install IntelliJ IDEA Community Edition or PyCharm Community from JetBrains. They are free. Or use any paid JetBrains product.
+1. Install IntelliJ IDEA or PyCharm from JetBrains. Their core features are free. Or use any paid JetBrains product.
 2. In the settings, install the Luanalysis plugin.
 3. Open a folder containing your haas scripts.
 4. Copy the (unzipped) lua definitions into the same folder or a sub folder. *Use only one of the zip files.*
@@ -20,11 +20,11 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 
 ## To run the project:
 1. Clone the git repository.
-2. Install Node 16 or greater.
-3. Install Yarn.
+2. Install Node 18 or greater.
+3. Install pnpm 12.18.0 or greater.
 4. Open a terminal in the project root.
-5. Run `yarn`.
-6. Run `yarn start`.
+5. Run `pnpm install`.
+6. Run `pnpm start`.
 7. Read and follow the help output in the console (pasted here for convenience):
 
 > * This script requires 5 parameters: environment, file extension, flexible numbers, interface key, user id.
@@ -32,7 +32,7 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 > * File extension may be anything, but "lua" or "hs" is recommended.
 > * Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".
 > * Interface key and user id can be copied from a web browser session that has not expired yet.
-> * Example: `yarn start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48`
+> * Example: `pnpm start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48`
 
 ## About flex-num:
 Many of the number parameters of functions can also take a list of numbers.
