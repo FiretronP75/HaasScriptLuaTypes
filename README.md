@@ -27,19 +27,19 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 6. Run `pnpm start`.
 7. Read and follow the help output in the console (pasted here for convenience):
 
-> * This script requires 4 parameters: environment, file extension, flexible numbers, HAR file.
+> * This script requires 3 parameters: environment, file extension, HAR file.
 > * Environment may be "production" or "staging". It only changes where the output is saved. Anything other than "staging" (case-insensitive) assumes "production".
 > * File extension may be anything, but "lua" or "hs" is recommended.
-> * Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".
 > * The HAR file is exported from a logged-in web browser. The README explains how.
-> * Example: `pnpm start prod lua flex-num "app.haasbot.com.har"`
+> * Example: `pnpm start prod lua "app.haasbot.com.har"`
 
-## About flex-num:
+## About flex-numbers:
 Many of the number parameters of functions can also take a list of numbers.
 But it is not clear which do and which do not.
-Using "not-flex-num" keeps them all as `number`.
+So each run generates two versions of the definitions.
+The version without "flex-numbers" in its name keeps them all as `number`.
 This will give errors when you assign a list of numbers, even though it might be valid.
-Using "flex-num" changes them all to `number | number[]`.
+The version with "flex-numbers" in its name changes them all to `number | number[]`.
 This will not error when you assign a list of numbers, even though it might be invalid.
 I'm not sure which is better or worse. So you have to decide for yourself which you prefer.
 
@@ -54,6 +54,6 @@ These steps should work in Chromium-based browsers, including Google Chrome, Mic
 4. In the filter box of the Network tab, enter `/GET_COMMANDS|INIT_DATA/` so that only the two needed requests are listed.
 5. In Haas cloud server, open the Web Editor. *(or reload the page if the Web Editor is already open)*
 6. Click the Export HAR icon, a small down arrow at the top of the Network tab, and save the file.
-7. Pass the path of the file to `pnpm start`, with double quotes around the path so that spaces work: `pnpm start prod lua flex-num "app.haasbot.com.har"`
+7. Pass the path of the file to `pnpm start`, with double quotes around the path so that spaces work: `pnpm start prod lua "app.haasbot.com.har"`
 
 > * If you need staging definitions, do these steps again on the staging server.
