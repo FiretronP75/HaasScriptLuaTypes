@@ -229,6 +229,21 @@ function CC_EMAMA_LB(chartIndex, interval) end
 --- @return void
 function CC_FlashCrashSlot(basePrice, index, amount, spread, startWithBuy) end
 
+--- The optional parameters of CC_FormatRoundedQuoteCurrency.
+--- @shape OptionalParametersOf_CC_FormatRoundedQuoteCurrency
+--- @field Digits number | nil The digits to round to
+--- @field Symbol string | nil The symbol to append
+
+--- Formats a number to be rounded and have the quote currency symbol.
+--- @param Input number The number to format. Suggestions: Input
+--- @param Digits number Optional - The digits to round to. Suggestions: Input
+--- @param Symbol string Optional - The symbol to append. Suggestions: Input, Load
+--- @return string Formatted Value
+--- @overload fun(Input: number): string
+--- @overload fun(Input: number, Digits: number): string
+--- @overload fun(Input: number, optionalParameters: OptionalParametersOf_CC_FormatRoundedQuoteCurrency): string
+function CC_FormatRoundedQuoteCurrency(Input, Digits, Symbol) end
+
 --- The optional parameters of CC_HMA.
 --- @shape OptionalParametersOf_CC_HMA
 --- @field maType Enum | nil Type of Moving Average
@@ -395,6 +410,10 @@ function CC_PRO_LB(chartIndex, interval) end
 --- @overload fun(trailStartPrc: number, trailDistPrc: number, trailMode: string, maxRebounds: number): boolean
 --- @overload fun(trailStartPrc: number, trailDistPrc: number, optionalParameters: OptionalParametersOf_CC_ProfitTrailer): boolean
 function CC_ProfitTrailer(trailStartPrc, trailDistPrc, trailMode, maxRebounds, positionId) end
+
+--- Adds a custom report on your worst point of liquidation risk.
+--- @return void
+function CC_ReportMaxRiskPoint() end
 
 --- The optional parameters of CC_ScalperChannel_LB.
 --- @shape OptionalParametersOf_CC_ScalperChannel_LB

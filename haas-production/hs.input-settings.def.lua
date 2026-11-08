@@ -25,7 +25,7 @@ function Fee(market) end
 function Leverage() end
 
 --- Gets the main market of the bot.
---- @return string Returns a market string. For example: BITFINEX_BTC_USD_ or BITMEX_XBT_USD_XBTUSD. Output Suggestions: StringContains, StringExplode, StringSplit, StringFromQuery, StringIndexOf, StringJoin, SubString, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, TradeMarketContainer, ClosePrices, Prices
+--- @return string Returns a market string. For example: BITFINEX_BTC_USD_ or BYBITUSDT_BTC_USDT_PERPETUAL. Output Suggestions: StringContains, StringExplode, StringSplit, StringFromQuery, StringIndexOf, StringJoin, SubString, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, TradeMarketContainer, ClosePrices, Prices
 function PriceMarket() end
 
 --- Gets the trade amount setting.

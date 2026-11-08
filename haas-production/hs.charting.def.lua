@@ -431,7 +431,7 @@ function PlotVerticalZone(chartId, name, color, start, endValue) end
 --- @overload fun(chartId: number, optionalParameters: OptionalParametersOf_PlotVolume): void
 function PlotVolume(chartId, upColor, downColor, upFill, downFill, side) end
 
---- Configures the opacity for stacked area chart. A values between
+--- Configures the opacity for the stacked areas of a chart, as a value between 0 and 100.
 --- @param chartId number Index on which to plot the line.
 --- @param opacity number Opacity level from 0 - 100.
 --- @return void

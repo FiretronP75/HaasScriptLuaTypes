@@ -58,11 +58,11 @@ function ArrayFilter(input, value, filterType) end
 --- @shape OptionalParametersOf_ArrayFind
 --- @field filterType Enum | nil The type of filter to use. Default is ArrayFilterInclusiveType.
 
---- Returns a new list of indices of the matching values. Matching-rules specified by filterType.
---- @param input any Source data.
+--- Returns a new list of the positions of the matching values. Matching rules are set by filterType. The positions depend on the input type. On a Lua table they are 1-based, so they can be used directly as an index (t[i]). On a series (a price source or HNC) they are 0-based: the newest bar is position 0, so add 1 before using one as an index (close[i + 1]). Using a series result directly as an index reads the next newer bar (one bar closer to the newest), and a match on the newest bar (0) stops the script with an out-of-range error.
+--- @param input any Source data: a Lua table (1-based result) or a series (0-based result, newest bar = 0).
 --- @param value any Value to match.
 --- @param filterType Enum Optional - The type of filter to use. Default is ArrayFilterInclusiveType. Suggestions: ArrayFilterInclusiveType, ArrayFilterExclusiveType, ArrayFilterLessThanType, ArrayFilterGreaterThanType
---- @return any Returns the list.
+--- @return any Returns the list of positions: 1-based for a Lua table input, 0-based for a series input (newest bar = 0; add 1 before indexing the series).
 --- @overload fun(input: any, value: any): any
 --- @overload fun(input: any, value: any, optionalParameters: OptionalParametersOf_ArrayFind): any
 function ArrayFind(input, value, filterType) end
@@ -70,13 +70,13 @@ function ArrayFind(input, value, filterType) end
 --- Gets the value on a specific index. A negative index will take from the end of the array.
 --- @param input any Source data.
 --- @param index number | number[] The index to get. Suggestions: Input
---- @return any Return the value on that index. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @return any Return the value on that index, of any type. A negative index is counted from the end first (-1 is the last value); returns nil when the index is still outside 1..#input, for tables, series and result containers alike. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function ArrayGet(input, index) end
 
 --- Gets the value on a specific index. A negative index will take from the end of the array.
 --- @param input any Source data.
 --- @param index number | number[] The index to get. Suggestions: Input
---- @return any Return the value on that index. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
+--- @return any Return the value on that index, of any type. A negative index is counted from the end first (-1 is the last value); returns nil when the index is still outside 1..#input, for tables, series and result containers alike. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 function ArrayIndex(input, index) end
 
 --- The optional parameters of ArrayLast.
@@ -97,7 +97,7 @@ function ArrayLast(input, offset) end
 function ArrayPop(input) end
 
 --- Removes an element from a specified index.
---- @param input any Source data.
+--- @param input any Source data. A table or a number series (HNC, price data).
 --- @param index number | number[] Index of the element to remove. Suggestions: Input
 --- @return any Returns the input array.
 function ArrayRemove(input, index) end
@@ -111,7 +111,7 @@ function ArrayReplace(input, oldValue, newValue) end
 
 --- Remove an item from the beginning of an array.
 --- @param input any Source data.
---- @return any The input without the first value
+--- @return any The input without the first value.
 function ArrayShift(input) end
 
 --- The optional parameters of ArraySort.
@@ -130,7 +130,7 @@ function ArraySort(input, descendValueing) end
 --- @shape OptionalParametersOf_ArraySum
 --- @field key string | nil The key of the data to be summed.
 
---- Computes the sum of the array. Can be used in combination with a list of numbers or container results like GetAllOpenOrders() or GetAllFinishedOrders().
+--- Computes the sum of the array. Can be used in combination with a list of numbers or container results like GetAllOpenOrders() or GetAllFilledOrders().
 --- @param input any Source data.
 --- @param key string Optional - The key of the data to be summed.
 --- @return number | number[] Returns the sum of the array. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
@@ -141,7 +141,7 @@ function ArraySum(input, key) end
 --- Adds an element to the beginning of an array.
 --- @param input any Source data.
 --- @param element any Element which to add to the array.
---- @return any The input with the element added in front of the array
+--- @return any The input with the element added in front of the array.
 function ArrayUnshift(input, element) end
 
 --- The optional parameters of Count.
@@ -192,13 +192,13 @@ function Range(input, offset, count) end
 --- @shape OptionalParametersOf_SourceManager
 --- @field interval number | number[] | nil The interval on which the data is based. Default is the selected main interval.
 --- @field cap number | number[] | nil Maximum size of the collection.
---- @field initialValues number[] | nil The initial values when source in initialized
+--- @field initialValues number[] | nil The initial values when the source is initialized.
 
 --- Stores numeric values in a collection. Only adds the new value when the candle on the specified interval closed. This results in interval based data.
 --- @param newValue number | number[] This value will be added in front of the collection when the candle closed.
 --- @param interval number | number[] Optional - The interval on which the data is based. Default is the selected main interval. Suggestions: InputInterval, CurrentInterval
 --- @param cap number | number[] Optional - Maximum size of the collection.
---- @param initialValues number[] Optional - The initial values when source in initialized
+--- @param initialValues number[] Optional - The initial values when the source is initialized.
 --- @return number[] Returns the numeric collection. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(newValue: number | number[]): number[]
 --- @overload fun(newValue: number | number[], interval: number | number[]): number[]

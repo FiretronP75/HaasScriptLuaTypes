@@ -21,13 +21,16 @@ function DisableIndicatorContainerLogs() end
 --- The optional parameters of EnableHighSpeedUpdates.
 --- @shape OptionalParametersOf_EnableHighSpeedUpdates
 --- @field updateOnFilledOrders boolean | nil Executes an update right after an order has finished (canceled or filled).
+--- @field guaranteeInterval boolean | nil Guarantees execution at least once every 10 seconds even if no price ticks arrive.
 
---- Enables high-speed script execution.
+--- Enables high-speed script execution, running the script on every price tick instead of once per minute. With guaranteeInterval enabled, the script will execute at least once every 10 seconds even if no price ticks arrive.
 --- @param updateOnFilledOrders boolean Optional - Executes an update right after an order has finished (canceled or filled).
+--- @param guaranteeInterval boolean Optional - Guarantees execution at least once every 10 seconds even if no price ticks arrive.
 --- @return void
 --- @overload fun(): void
+--- @overload fun(updateOnFilledOrders: boolean): void
 --- @overload fun(optionalParameters: OptionalParametersOf_EnableHighSpeedUpdates): void
-function EnableHighSpeedUpdates(updateOnFilledOrders) end
+function EnableHighSpeedUpdates(updateOnFilledOrders, guaranteeInterval) end
 
 --- Enables order persistence for managed trading.
 --- @return void
@@ -79,13 +82,16 @@ function GetMarginMode(market, accountId) end
 --- The optional parameters of GetMaxLeverage.
 --- @shape OptionalParametersOf_GetMaxLeverage
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
+--- @field notional number | number[] | nil Optional position value in the margin currency. 0 or omitted returns the maximum for the smallest position.
 
---- Gets the maximum leverage for current or specified market.
+--- Gets the maximum leverage for current or specified market. Pass a notional to get the maximum for a position of that size: exchanges lower the allowed leverage as a position grows (leverage brackets / risk limits). Notional is the position value in the contract's margin currency: the quote currency (USDT) for linear contracts, the base coin (BTC) for inverse ones. Exchanges without published brackets return the plain maximum.
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
+--- @param notional number | number[] Optional - Optional position value in the margin currency. 0 or omitted returns the maximum for the smallest position. Suggestions: Input
 --- @return number | number[] Returns the maximum leverage value or -1 if request failed. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number | number[]
+--- @overload fun(market: string): number | number[]
 --- @overload fun(optionalParameters: OptionalParametersOf_GetMaxLeverage): number | number[]
-function GetMaxLeverage(market) end
+function GetMaxLeverage(market, notional) end
 
 --- Returns the current main order type.
 --- @return Enum Returns the order type enum. Output Suggestions: Equals
@@ -96,7 +102,7 @@ function GetOrderType() end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
 
---- Gets the current position mode for current or specified market.
+--- Gets the current position mode for current or specified market. The account comes first: GetPositionMode(accountId, market). A market passed as the only argument, GetPositionMode(market), is also accepted.
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @return Enum Returns the position mode enum. Output Suggestions: Equals
@@ -126,7 +132,7 @@ function IsEnterpriseVersion() end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 
 --- Checks if the specified margin mode is supported on current or specified market.
---- @param marginMode Enum Request margin mode. CrossMarginMode or IsolatedMarginMode. Suggestions: CrossMarginMode, IsolatedMarginMode
+--- @param marginMode Enum Requested margin mode: CrossMarginMode or IsolatedMarginMode. Suggestions: CrossMarginMode, IsolatedMarginMode
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @return boolean Returns true if supported, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @overload fun(marginMode: Enum): boolean
@@ -138,7 +144,7 @@ function IsMarginModeSupported(marginMode, accountId) end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 
 --- Checks if specified position mode is supported on current or specified market.
---- @param positionMode Enum Request position mode. OneWayPositionMode or HedgePositionMode. Suggestions: OneWayPositionMode, HedgePositionMode
+--- @param positionMode Enum Requested position mode: OneWayPositionMode or HedgePositionMode. Suggestions: OneWayPositionMode, HedgePositionMode
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @return boolean Returns true if supported, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
 --- @overload fun(positionMode: Enum): boolean
@@ -155,7 +161,7 @@ function OptimizedForInterval(interval, callback) end
 --- @return void
 function PauseBot() end
 
---- Disables the pause flag. Use in combination with IsBotPaused() to read the value
+--- Disables the pause flag. Use in combination with IsBotPaused() to read the value.
 --- @return void
 function ResumeBot() end
 
@@ -180,7 +186,7 @@ function SetLeverage(leverage, market, accountId) end
 --- @field accountId string | nil The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example.
 
 --- Sets the margin mode for current or specific market. It is NOT possible to change margin mode while having an open position.
---- @param marginMode Enum Request margin mode. CrossMarginMode or IsolatedMarginMode. Suggestions: IsolatedMarginMode, CrossMarginMode
+--- @param marginMode Enum Requested margin mode: CrossMarginMode or IsolatedMarginMode. Suggestions: IsolatedMarginMode, CrossMarginMode
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @return boolean Returns true if successfully set, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder
@@ -189,7 +195,7 @@ function SetLeverage(leverage, market, accountId) end
 --- @overload fun(marginMode: Enum, optionalParameters: OptionalParametersOf_SetMarginMode): boolean
 function SetMarginMode(marginMode, market, accountId) end
 
---- Overwrites the order type with the given type. This can be used to execute different order types on managed trading.
+--- Overwrites the order type with the given type. This can be used to execute different order types on managed trading. Only LimitOrderType, MarketOrderType, NoTimeOutOrderType and MakerOrCancelOrderType are accepted. The conditional types (StopLimitOrderType, StopMarketOrderType, TakeProfitLimitOrderType, TakeProfitMarketOrderType, and the 'Trailing stop market order' choice of InputOrderType) need a triggerPrice, so use them with the Place*Order commands instead: SetOrderType() refuses them with a warning and keeps the current order type.
 --- @param type Enum Order type enum. Suggestions: MarketOrderType, LimitOrderType, MakerOrCancelOrderType, NoTimeOutOrderType, StopLimitOrderType, StopMarketOrderType, TakeProfitLimitOrderType, TakeProfitMarketOrderType
 --- @return void
 function SetOrderType(type) end
@@ -200,7 +206,7 @@ function SetOrderType(type) end
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
 
 --- Sets the position mode for current or specified market. It is NOT possible to change position mode while having an open position.
---- @param positionMode Enum Request position mode. OneWayPositionMode or HedgePositionMode. Suggestions: OneWayPositionMode, HedgePositionMode
+--- @param positionMode Enum Requested position mode: OneWayPositionMode or HedgePositionMode. Suggestions: OneWayPositionMode, HedgePositionMode
 --- @param accountId string Optional - The guid returned by AccountGuid(), InputAccount or InputAccountMarket for example. Suggestions: InputAccount, InputAccountMarket, InputMarket, AccountGuid
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @return boolean Returns true if successfully set, otherwise false. Output Suggestions: Or, And, IsTrue, IsFalse, Not, BoolToSignal, IfElse, Switch, IfElseIf, DoBuy, DoLong, DoSell, DoShort, DoExitPosition, DoFlipPosition, DoSignal, PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, PlaceExitPositionOrder, PlaceCancelledOrder

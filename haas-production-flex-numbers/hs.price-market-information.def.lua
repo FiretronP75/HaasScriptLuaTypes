@@ -102,31 +102,31 @@ function GetOrderbookBid(market) end
 
 --- The optional parameters of LastBuyTradesCommand.
 --- @shape OptionalParametersOf_LastBuyTradesCommand
---- @field Seconds_back number | number[] | nil 
+--- @field secondsBack number | number[] | nil How many seconds to look back. 0 looks back 9999 seconds.
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
 
---- Returns all last selling orders
---- @param Seconds_back number | number[] Optional - . Suggestions: Input
+--- Returns the volume of the last buy trades.
+--- @param secondsBack number | number[] Optional - How many seconds to look back. 0 looks back 9999 seconds. Suggestions: Input
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @return number | number[] Returns the buying trading volume. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number | number[]
---- @overload fun(Seconds_back: number | number[]): number | number[]
+--- @overload fun(secondsBack: number | number[]): number | number[]
 --- @overload fun(optionalParameters: OptionalParametersOf_LastBuyTradesCommand): number | number[]
-function LastBuyTradesCommand(Seconds_back, market) end
+function LastBuyTradesCommand(secondsBack, market) end
 
 --- The optional parameters of LastSellTradesCommand.
 --- @shape OptionalParametersOf_LastSellTradesCommand
---- @field Seconds_back number | number[] | nil 
+--- @field secondsBack number | number[] | nil How many seconds to look back. 0 looks back 9999 seconds.
 --- @field market string | nil The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example.
 
---- Returns all last selling orders
---- @param Seconds_back number | number[] Optional - . Suggestions: Input
+--- Returns the volume of the last sell trades.
+--- @param secondsBack number | number[] Optional - How many seconds to look back. 0 looks back 9999 seconds. Suggestions: Input
 --- @param market string Optional - The market returned by PriceMarket(), InputAccountMarket() or InputMarket() for example. Suggestions: InputAccountMarket, InputMarket, InputPriceSourceMarket, PriceMarket
 --- @return number | number[] Returns the selling trading volume. Output Suggestions: Equals, IsBiggerOrSmallerThan, IsSmallerThan, IsBiggerThan, Compare, Add, Sum, Sub, Mul, Mult, Div, AddPerc, AddPercentage, SubPerc, SubPercentage, Plot
 --- @overload fun(): number | number[]
---- @overload fun(Seconds_back: number | number[]): number | number[]
+--- @overload fun(secondsBack: number | number[]): number | number[]
 --- @overload fun(optionalParameters: OptionalParametersOf_LastSellTradesCommand): number | number[]
-function LastSellTradesCommand(Seconds_back, market) end
+function LastSellTradesCommand(secondsBack, market) end
 
 --- The optional parameters of LastTradesSentiment.
 --- @shape OptionalParametersOf_LastTradesSentiment

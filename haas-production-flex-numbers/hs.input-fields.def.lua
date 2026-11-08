@@ -38,7 +38,7 @@ function InputAccount(label, tooltip, group) end
 --- @field tooltip string | nil The tooltip text for the field.
 --- @field group string | nil The group of the input field.
 
---- Creates an account, market & leverage dropdown.
+--- Creates an account drop-down and a market drop-down for that account.
 --- @param label string The field label text.
 --- @param tooltip string Optional - The tooltip text for the field.
 --- @param group string Optional - The group of the input field.
@@ -148,7 +148,7 @@ function InputLrTypes(label, defaultValue, tooltip, group) end
 --- @param defaultValue string Optional - The default value for the field.
 --- @param tooltip string Optional - The tooltip text for the field.
 --- @param group string Optional - The group of the input field.
---- @return string Returns the selected market. For example BITMEX_XBT_USD_XBTUSD. Output Suggestions: PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, GetBotProfit, GetCurrentProfit
+--- @return string Returns the selected market. For example BYBITUSDT_BTC_USDT_PERPETUAL. Output Suggestions: PlaceBuyOrder, PlaceSellOrder, PlaceGoLongOrder, PlaceGoShortOrder, PlaceExitLongOrder, PlaceExitShortOrder, GetBotProfit, GetCurrentProfit
 --- @overload fun(label: string): string
 --- @overload fun(label: string, defaultValue: string): string
 --- @overload fun(label: string, defaultValue: string, tooltip: string): string
@@ -217,7 +217,7 @@ function InputOrderType(label, defaultValue, tooltip, group) end
 --- @param defaultValue string Optional - The default value for the field.
 --- @param tooltip string Optional - The tooltip text for the field.
 --- @param group string Optional - The group of the input field.
---- @return string Returns the selected price source as string. For example BITSTAMP. Output Suggestions: StringContains, StringExplode, StringSplit, StringFromQuery, StringIndexOf, StringJoin, SubString
+--- @return string Returns the selected price source as string. For example KRAKEN. Output Suggestions: StringContains, StringExplode, StringSplit, StringFromQuery, StringIndexOf, StringJoin, SubString
 --- @overload fun(label: string): string
 --- @overload fun(label: string, defaultValue: string): string
 --- @overload fun(label: string, defaultValue: string, tooltip: string): string
@@ -237,7 +237,7 @@ function InputPriceSource(label, defaultValue, tooltip, group) end
 --- @param type Enum Optional - Optional parameter to restrict market types. Suggestions: SpotTrading, MarginTrading, LeverageTrading
 --- @param tooltip string Optional - The tooltip text for the field.
 --- @param group string Optional - The group of the input field.
---- @return string Returns the selected market as string. For example BITSTAMP_BTC_USD_. Output Suggestions: ClosePrices, Prices, PlotPrice
+--- @return string Returns the selected market as string. For example KRAKEN_BTC_USD_. Output Suggestions: ClosePrices, Prices, PlotPrice
 --- @overload fun(label: string): string
 --- @overload fun(label: string, defaultValue: string): string
 --- @overload fun(label: string, defaultValue: string, type: Enum): string
@@ -305,9 +305,9 @@ function InputTable(options, ...) end
 --- @return any Returns the options objects.
 function InputTableColumn(name, ...) end
 
---- Creates an table column options object for InputTable() with a dropdown
+--- Creates a table column options object for InputTable() with a dropdown.
 --- @param name string Column name.
---- @param options any Dropdown options. For example { "options-A", "options-B" }
+--- @param options any Dropdown options. For example { "options-A", "options-B" }.
 --- @vararg any Optional - Default values.
 --- @return any Returns the options objects.
 function InputTableColumnDropdown(name, options, ...) end

@@ -57,7 +57,7 @@ function GetConsensusSignal(signals) end
 --- @return Enum Returns SignalLong when the a crossover occurs, SignalShort when a crossunder occurs and SignalNone when non one those happened. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
 function GetCrossOverUnderSignal(fast, slow) end
 
---- Gets the remote signal which is published by SaveRemoteSignal()
+--- Gets the remote signal which is published by SaveRemoteSignal() or the STORE_SIGNAL webhook. An incoming webhook signal triggers an immediate script execution, bypassing the normal tick interval.
 --- @param id string The unique identifier of the signal. Suggestions: Input, Load
 --- @return Enum Returns a trade signal enumeration. For example SignalLong(), SignalShort(), SignalExitPosition(), SignalNone() or SignalError(). Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
 function GetRemoteSignal(id) end
@@ -100,6 +100,11 @@ function GetThresholdSignal(value, threshold, swing) end
 --- @return Enum Returns SignalLong, SignalShort or SignalNone when there is unanimous decision and SignalNone when there is not. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
 function GetUnanimousSignal(signals) end
 
+--- Gets the latest incoming webhook signal by ID. Triggers immediate script execution when a webhook arrives, bypassing the normal minute tick interval — use this for high-performance signal-based trading.
+--- @param id string The webhook signal ID to listen for. Must match the key used in the incoming PUSH_SIGNAL webhook request. Suggestions: Input, Load
+--- @return any Returns the latest signal payload stored by the incoming webhook, or nil if no signal has been received. The returned object always contains `webhook_received_at` (a Unix timestamp set by the server when the signal was received). All other fields are whatever was included in the incoming webhook payload. Output Suggestions: IfNull, Log
+function GetWebHookSignal(id) end
+
 --- Calculates and determines the weighted consensus signal.
 --- @param longWeight number The required sum of the long signals weight before the signal is valid. Suggestions: Input
 --- @param shortWeight number The required sum of the short signals weight before the signal is valid. Suggestions: Input
@@ -107,11 +112,6 @@ function GetUnanimousSignal(signals) end
 --- @param signals Enum[] Indicator signals collection. Takes a variable number of arguments. Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer, EasyABANDS, EasyADOSC, EasyAO, EasyAPO, EasyAROON, EasyAROONOSC, EasyBBANDS, EasyBOP, EasyCCI, EasyCMO, EasyCOPPOCK, EasyCRSI, EasyDMI, EasyDONCHIAN, EasyDPO, EasyDX, EasyICHIMOKU, EasyIMI, EasyKELTNER, EasyKRI, EasyLINEARREG, EasyMA, EasyMACD, EasyMFI, EasyMOM, EasyOBV, EasyPPO, EasyROC, EasyRSI, EasySSTOCH, EasySTOCH, EasySTOCHF, EasyTRIX, EasyTSI, EasyUDRSI, EasyWILLR, EasyZLMA, EasyAlice, EasyCDL, EasySlowRSI, EasyFastRSI, EasyBBANDSB, EasyBBANDSW, EasySTOCHRSI, EasyFIBONACCI, EasyKST, EasySAR, EasyDynamicLongShortLevels, EasyFixedLongShortLevels, EasyULTOSC
 --- @return Enum Returns SignalLong, SignalShort, SignalExitPosition or SignalNone when there is a consensus or SignalNone when there is not. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
 function GetWeightedConsensusSignal(longWeight, shortWeight, exitWeight, signals) end
-
---- Uses hindsight to tell if its the best moment to long or short
---- @param period number Hindsight view period length. Suggestions: Input
---- @return Enum Returns a trading signal. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
-function HindSightSignal(period) end
 
 --- Marks the signal to be ignored when it matches a certain signal.
 --- @param signal Enum The original signal. Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer, EasyABANDS, EasyADOSC, EasyAO, EasyAPO, EasyAROON, EasyAROONOSC, EasyBBANDS, EasyBOP, EasyCCI, EasyCMO, EasyCOPPOCK, EasyCRSI, EasyDMI, EasyDONCHIAN, EasyDPO, EasyDX, EasyICHIMOKU, EasyIMI, EasyKELTNER, EasyKRI, EasyLINEARREG, EasyMA, EasyMACD, EasyMFI, EasyMOM, EasyOBV, EasyPPO, EasyROC, EasyRSI, EasySSTOCH, EasySTOCH, EasySTOCHF, EasyTRIX, EasyTSI, EasyUDRSI, EasyWILLR, EasyZLMA, EasyAlice, EasyCDL, EasySlowRSI, EasyFastRSI, EasyBBANDSB, EasyBBANDSW, EasySTOCHRSI, EasyFIBONACCI, EasyKST, EasySAR, EasyDynamicLongShortLevels, EasyFixedLongShortLevels, EasyULTOSC
@@ -145,7 +145,7 @@ function PositionToBool(position) end
 --- @return Enum Returns the reversed signal. Output Suggestions: Equals, DoSignal, PlotSignalEnum, ConvertSignal, MapSignal, IgnoreSignalIf, UseSignalIf, ReverseSignal, SignalWeight, SignalToBool, SignalMapper, SignalProperties, GetWeightedConsensusSignal, GetUnanimousSignal, GetConsensusSignal, IndicatorContainer, TradeBotContainer
 function ReverseSignal(signal) end
 
---- This command can save and distribute a trading signal over the HaasCloud. This can be used in combination with trade signal enumeration. For example SignalLong(), SignalShort(), SignalExitPosition() or SignalNone().
+--- This command can save and distribute a trading signal over the HaasCloud. This can be used in combination with trade signal enumeration. For example SignalLong(), SignalShort(), SignalExitPosition() or SignalNone(). Only publishes from a running bot. In backtests, labs and the editor's compile pass it does nothing.
 --- @param id string The unique identifier of the signal. Suggestions: Input, Load
 --- @param secret string The secret key on which to save the signal. Suggestions: Input, Load
 --- @param signal Enum The signal enum to save. Suggestions: SignalBuy, SignalLong, SignalSell, SignalShort, SignalExitPosition, SignalNone
