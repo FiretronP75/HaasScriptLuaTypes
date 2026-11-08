@@ -50,7 +50,7 @@ export class ParameterModel {
     replaceValue = 'colorOrOptions';
     cleanedName  = cleanedName.replace(searchValue, replaceValue);
 
-    searchValue  = 'end';
+    searchValue  = /^end$/;
     replaceValue = 'endValue';
     cleanedName  = cleanedName.replace(searchValue, replaceValue);
 
