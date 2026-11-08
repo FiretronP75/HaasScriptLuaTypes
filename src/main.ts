@@ -25,19 +25,22 @@ export class Main {
   protected readonly outputIndexParsingService: OutputIndexParsingService;
   protected readonly writingService: WritingService;
 
-  protected dataCount: number     = 0;
-  protected fileExtension: string = '';
-  protected isProduction: boolean = true;
-  protected interfaceKey: string  = '';
-  protected nodeBinPath: string   = '';
-  protected scriptPath: string    = '';
-  protected userId: string        = '';
+  protected categoriesResponsePath: string = '';
+  protected commandsResponsePath: string   = '';
+  protected fileExtension: string          = '';
+  protected isProduction: boolean          = true;
+  protected nodeBinPath: string            = '';
+  protected scriptPath: string             = '';
 
   constructor() {
     this.validateArguments();
 
     this.documentService                 = new DocumentService();
-    this.categoryService                 = new CategoryService(this.documentService, this.isProduction);
+    this.categoryService                 = new CategoryService(
+      this.documentService,
+      this.isProduction,
+      this.categoriesResponsePath,
+    );
     this.writingService                  = new WritingService(
       this.categoryService,
       this.documentService,
@@ -47,8 +50,7 @@ export class Main {
     this.commandService                  = new CommandService(
       this.documentService,
       this.isProduction,
-      this.interfaceKey,
-      this.userId,
+      this.commandsResponsePath,
     );
     this.commonParsingService            = new CommonParsingService();
     this.functionParsingService          = new FunctionParsingService(this.commandService, this.commonParsingService);
@@ -61,7 +63,7 @@ export class Main {
       this.commonParsingService,
     );
 
-    this.loadRemoteData();
+    this.generateDefinitions();
   }
 
   protected convertCommand(commandItem: CommandModel): void {
@@ -119,24 +121,10 @@ export class Main {
     console.log(`Commands parsed. (${duration.toLocaleString()} ms)`);
   }
 
-  protected loadRemoteData() {
+  protected generateDefinitions(): void {
 
-    this.categoryService.loadCategories().then(
-      () => this.onRemoteData(),
-    );
-
-    this.commandService.loadCommands().then(
-      () => this.onRemoteData(),
-    );
-
-    console.log('');
-  }
-
-  protected onRemoteData(): void {
-
-    this.dataCount++;
-
-    if (this.dataCount < 2) return;
+    this.categoryService.loadCategories();
+    this.commandService.loadCommands();
 
     this.convertCommandList(this.commandService.commandList);
     this.writingService.writeAll();
@@ -146,15 +134,14 @@ export class Main {
 
     if (process.argv.length < 7) {
       console.error(
-        'This script requires 5 parameters: environment, file extension, flexible numbers, interface key, user id.');
+        'This script requires 5 parameters: environment, file extension, flexible numbers, saved GET_COMMANDS response, saved INIT_DATA response.');
       console.error(
         'Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".');
       console.error('File extension may be anything, but "lua" or "hs" is recommended.');
       console.error(
         'Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".');
-      console.error('Interface key and user id can be copied from a web browser session that has not expired yet.');
-      console.error(
-        'Example: pnpm start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48');
+      console.error('The saved responses are JSON files saved from a logged-in web browser. The README explains how.');
+      console.error('Example: pnpm start prod lua flex-num GET_COMMANDS.json INIT_DATA.json');
       process.exit(1);
     }
 
@@ -163,16 +150,16 @@ export class Main {
     this.isProduction                = process.argv.slice(2, 3)[0].toLowerCase() !== 'staging';
     this.fileExtension               = process.argv.slice(3, 4)[0];
     HaasDataTypeMapper.isFlexNumbers = process.argv.slice(4, 5)[0].toLowerCase() === 'flex-num';
-    this.interfaceKey                = process.argv.slice(5, 6)[0];
-    this.userId                      = process.argv.slice(6, 7)[0];
+    this.commandsResponsePath        = process.argv.slice(5, 6)[0];
+    this.categoriesResponsePath      = process.argv.slice(6, 7)[0];
 
     console.log('Node Bin Path:', this.nodeBinPath);
     console.log('Script Path:', this.scriptPath);
     console.log('Production:', `${this.isProduction}`);
     console.log('File Extension:', this.fileExtension);
     console.log('Flexible Numbers:', `${HaasDataTypeMapper.isFlexNumbers}`);
-    console.log('Interface Key:', this.interfaceKey);
-    console.log('User ID:', this.userId);
+    console.log('Saved GET_COMMANDS Response:', this.commandsResponsePath);
+    console.log('Saved INIT_DATA Response:', this.categoriesResponsePath);
     console.log('');
   }
 

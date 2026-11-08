@@ -27,12 +27,12 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 6. Run `pnpm start`.
 7. Read and follow the help output in the console (pasted here for convenience):
 
-> * This script requires 5 parameters: environment, file extension, flexible numbers, interface key, user id.
+> * This script requires 5 parameters: environment, file extension, flexible numbers, saved GET_COMMANDS response, saved INIT_DATA response.
 > * Environment may be "production" or "staging". Anything other than "staging" (case-insensitive) assumes "production".
 > * File extension may be anything, but "lua" or "hs" is recommended.
 > * Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".
-> * Interface key and user id can be copied from a web browser session that has not expired yet.
-> * Example: `pnpm start prod lua flex-num 30w3jrv4pa-fj209-qj0934-295cn-qv9r0cev fm02q9rf0q2fqr2cv98r4v8q9tv8rq48`
+> * The saved responses are JSON files saved from a logged-in web browser. The README explains how.
+> * Example: `pnpm start prod lua flex-num GET_COMMANDS.json INIT_DATA.json`
 
 ## About flex-num:
 Many of the number parameters of functions can also take a list of numbers.
@@ -43,20 +43,20 @@ Using "flex-num" changes them all to `number | number[]`.
 This will not error when you assign a list of numbers, even though it might be invalid.
 I'm not sure which is better or worse. So you have to decide for yourself which you prefer.
 
-## To find your interface key and user id:
-1. Open Haas cloud server in your browser.
-2. Hard refresh with ctrl+F5 to ensure you have the latest version.
-3. Open your browser's developer tools.
-4. Select the Network tab of the developer tools.
-5. Clear any filters on the network transactions list.
-6. In Haas cloud server, open the Web Editor. *(or reload the page if the Web Editor is already open)*
-7. In Haas cloud server, open any one of your saved scripts.
-8. In the Network tab of your browser's developer tools, filter on "command".
-9. Click on the only remaining network transaction.
-10. Select the Payload tab of the network details.
-11. Your `interfacekey` and `userid` should be in the Payload panel.
-12. Right click on each and choose "Copy value".
+## To save the server responses:
+The script does not connect to the Haas server. It reads two responses that you save from your own logged-in browser.
 
-> * Note that they will expire when logged out.
-> * Note that they are different in production and staging.
+1. Open Haas cloud server in your browser and log in.
+2. Open your browser's developer tools.
+3. Select the Network tab of the developer tools.
+4. Clear any filters on the network transactions list.
+5. In Haas cloud server, open the Web Editor. *(or reload the page if the Web Editor is already open)*
+6. In the Network tab of your browser's developer tools, filter on "GET_COMMANDS".
+7. Click on the network transaction and select the Response tab of the network details.
+8. Copy the whole response into a file named `GET_COMMANDS.json`.
+9. Filter on "INIT_DATA" and do the same, saving the response into a file named `INIT_DATA.json`.
+10. Pass the paths of the two files to `pnpm start`.
+
 > * If you need staging definitions, do these steps again on the staging server.
+> * Keep the saved files out of version control. They come from your own session.
+> * If a saved file cannot be read, the script warns and uses the sample data committed in this repository instead.

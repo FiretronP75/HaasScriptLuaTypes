@@ -1,29 +1,25 @@
-import axios, { AxiosResponse }    from 'axios';
 import { DocumentService }         from '../document/document.service';
+import { SavedResponseReader }     from '../saved-response/saved-response.reader';
 import { CommandWrapperRaw }       from './command-wrapper.raw';
 import { CommandModel }            from './command.model';
+import { CommandRaw }              from './command.raw';
 import { commandProductionSample } from './sample/command-production.sample';
 import { commandStagingSample }    from './sample/command-staging.sample';
 
 export class CommandService {
 
-  protected static readonly PRODUCTION_API_URL: string = 'https://api.haasbot.com/HaasScriptAPI.php?channel=GET_COMMANDS';
-  protected static readonly STAGING_API_URL: string    = 'https://api.haasstage.com/HaasScriptAPI.php?channel=GET_COMMANDS';
-
   public commandList: CommandModel[] = [];
 
   protected readonly documentService: DocumentService;
   protected readonly groupIdToNameListMap = new Map<number, string[]>();
-  protected readonly interfaceKey: string;
   protected readonly isProduction: boolean;
-  protected readonly userId: string;
+  protected readonly savedResponsePath: string;
 
-  constructor(documentService: DocumentService, isProduction: boolean, interfaceKey: string, userId: string) {
+  constructor(documentService: DocumentService, isProduction: boolean, savedResponsePath: string) {
 
-    this.documentService = documentService;
-    this.interfaceKey    = interfaceKey;
-    this.isProduction    = isProduction;
-    this.userId          = userId;
+    this.documentService   = documentService;
+    this.isProduction      = isProduction;
+    this.savedResponsePath = savedResponsePath;
   }
 
   public getNameListForGroupIdList(groupIdList: number[]): string[] {
@@ -38,28 +34,21 @@ export class CommandService {
     return nameList;
   }
 
-  public async loadCommands(): Promise<void> {
+  public loadCommands(): void {
 
     const startTime = new Date();
 
-    const url: string = this.isProduction
-      ? CommandService.PRODUCTION_API_URL
-      : CommandService.STAGING_API_URL;
-
-    const data: object = {
-      interfacekey: this.interfaceKey,
-      userid      : this.userId,
-    };
-
-    console.log('Loading command list from', url);
+    console.log('Loading command list from', this.savedResponsePath);
 
     try {
-      const response: AxiosResponse<CommandWrapperRaw> = await axios.post<CommandWrapperRaw>(url, data);
+      const saved = SavedResponseReader.read<CommandWrapperRaw | CommandRaw[]>(this.savedResponsePath);
 
-      if (response.data.Success) {
-        this.handleSuccess(response.data, startTime);
+      if (Array.isArray(saved)) {
+        this.handleSuccess({Data: saved, Error: '', Success: true}, startTime);
+      } else if (saved.Success) {
+        this.handleSuccess(saved, startTime);
       } else {
-        this.handleFailure(response.data.Error, startTime);
+        this.handleFailure(saved.Error, startTime);
       }
 
     } catch (error) {
@@ -78,7 +67,7 @@ export class CommandService {
   }
 
   protected handleFailure(error: any, startTime): void {
-    console.error('Command API Error:', error);
+    console.error('Saved command response error:', error);
     console.warn('Using previously saved command data.');
 
     const commandSample = this.isProduction
