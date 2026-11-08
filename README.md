@@ -57,6 +57,7 @@ The script does not connect to the Haas server. It reads two responses that you 
 9. Filter on "INIT_DATA" and do the same, saving the response into a file named `INIT_DATA.json`.
 10. Pass the paths of the two files to `pnpm start`.
 
+> * Save the files as UTF-8. Other encodings, such as UTF-16, cannot be read.
 > * If you need staging definitions, do these steps again on the staging server.
 > * Keep the saved files out of version control. They come from your own session.
 > * If a saved file cannot be read, the script warns and uses the sample data committed in this repository instead.
