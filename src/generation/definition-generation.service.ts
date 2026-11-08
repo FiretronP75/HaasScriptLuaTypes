@@ -14,6 +14,7 @@ import { WritingService }                  from '../writing/writing.service';
 
 export class DefinitionGenerationService {
 
+  protected readonly categoryService: CategoryService;
   protected readonly colorParsingService: ColorParsingService;
   protected readonly commandService: CommandService;
   protected readonly commonParsingService: CommonParsingService;
@@ -30,6 +31,7 @@ export class DefinitionGenerationService {
     fileExtension: string,
     isProduction: boolean,
   ) {
+    this.categoryService                 = categoryService;
     this.documentService                 = new DocumentService();
     this.writingService                  = new WritingService(
       categoryService,
@@ -60,37 +62,39 @@ export class DefinitionGenerationService {
 
   protected convertCommand(commandItem: CommandModel): void {
 
+    const documentId: number = this.categoryService.getDocumentId(commandItem.category, commandItem.name);
+
     if (commandItem.outputIndexList.length > 0) {
 
       const luaDefinition: string = this.outputIndexParsingService.toLuaDefinition(commandItem);
 
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
+      this.documentService.appendToDocument(documentId, luaDefinition);
     }
 
     if (commandItem.optionalParameterList.length > 0) {
 
       const luaDefinition: string = this.optionalParameterParsingService.toLuaDefinition(commandItem);
 
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
+      this.documentService.appendToDocument(documentId, luaDefinition);
     }
 
     if (commandItem.isEnumeration && commandItem.category === HaasCommandCategory.EnumerationsColor) {
 
       const luaDefinition: string = this.colorParsingService.toLuaDefinition(commandItem);
 
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
+      this.documentService.appendToDocument(documentId, luaDefinition);
 
     } else if (commandItem.isEnumeration) {
 
       const luaDefinition: string = this.enumerationParsingService.toLuaDefinition(commandItem);
 
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
+      this.documentService.appendToDocument(documentId, luaDefinition);
 
     } else {
 
       const luaDefinition: string = this.functionParsingService.toLuaDefinition(commandItem);
 
-      this.documentService.appendToDocument(commandItem.category, luaDefinition);
+      this.documentService.appendToDocument(documentId, luaDefinition);
 
     }
   }

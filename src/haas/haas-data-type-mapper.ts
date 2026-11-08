@@ -1,13 +1,29 @@
+import { GenerationWarningService } from '../generation-warning/generation-warning.service';
 import { HaasCommandParameterType } from './haas-command-parameter-type';
 
 export class HaasDataTypeMapper {
 
+  protected static readonly FALLBACK_TYPE_NAME = 'any';
+
   public static isFlexNumbers: boolean = true;
 
-  public static get map(): Map<number, string> {
+  protected static get map(): Map<number, string> {
     return HaasDataTypeMapper.isFlexNumbers
       ? HaasDataTypeMapper.haasDataTypeFlexNumbersMap
       : HaasDataTypeMapper.haasDataTypeNotFlexNumbersMap;
+  }
+
+  public static getTypeName(type: number, commandName: string): string {
+
+    const typeName = HaasDataTypeMapper.map.get(type);
+
+    if (typeName !== undefined) return typeName;
+
+    GenerationWarningService.add(
+      `"${commandName}" uses a data type this script does not recognize (number ${type}), so it was treated as "${HaasDataTypeMapper.FALLBACK_TYPE_NAME}". The other definitions were created normally.`,
+    );
+
+    return HaasDataTypeMapper.FALLBACK_TYPE_NAME;
   }
 
   protected static readonly haasDataTypeFlexNumbersMap = new Map<number, string>(

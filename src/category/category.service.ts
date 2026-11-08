@@ -1,8 +1,12 @@
-import { SavedResponseChannel } from '../saved-response/saved-response-channel';
-import { SavedResponseService } from '../saved-response/saved-response.service';
-import { CategoryRaw }          from './category.raw';
+import { GenerationWarningService } from '../generation-warning/generation-warning.service';
+import { SavedResponseChannel }     from '../saved-response/saved-response-channel';
+import { SavedResponseService }     from '../saved-response/saved-response.service';
+import { CategoryRaw }              from './category.raw';
 
 export class CategoryService {
+
+  protected static readonly UNCATEGORIZED_ID   = -1;
+  protected static readonly UNCATEGORIZED_NAME = 'Uncategorized';
 
   protected readonly idToNameMap = new Map<number, string>();
   protected readonly savedResponseService: SavedResponseService;
@@ -10,6 +14,18 @@ export class CategoryService {
   constructor(savedResponseService: SavedResponseService) {
 
     this.savedResponseService = savedResponseService;
+    this.idToNameMap.set(CategoryService.UNCATEGORIZED_ID, CategoryService.UNCATEGORIZED_NAME);
+  }
+
+  public getDocumentId(categoryId: number, commandName: string): number {
+
+    if (this.getName(categoryId)) return categoryId;
+
+    GenerationWarningService.add(
+      `"${commandName}" is in a category this script does not recognize (number ${categoryId}), so it was added to "${CategoryService.UNCATEGORIZED_NAME}". The other definitions were created normally.`,
+    );
+
+    return CategoryService.UNCATEGORIZED_ID;
   }
 
   public getName(id: number): string {
