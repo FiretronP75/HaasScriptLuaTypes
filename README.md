@@ -77,4 +77,4 @@ Many of the number parameters of functions can also take a list of numbers. But 
 I'm not sure which is better or worse. So you have to decide for yourself which you prefer.
 
 > [!TIP]
-> [Typed HaasScript](https://github.com/Haasonline/typed-haasscript) has only one version of its definitions. It types number parameters based on behavior verified on a TradeServer.
+> Typing HaasScript's numbers correctly takes special handling in the parser, and this project relies on the Luanalysis parser, which we do not control. [Typed HaasScript](https://github.com/Haasonline/typed-haasscript) has its own parser with that handling built in, so it needs only one version of its definitions, with number parameters typed based on behavior verified on the TradeServer.
