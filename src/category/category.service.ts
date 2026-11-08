@@ -1,14 +1,15 @@
+import { SavedResponseChannel } from '../saved-response/saved-response-channel';
 import { SavedResponseService } from '../saved-response/saved-response.service';
 import { CategoryRaw }          from './category.raw';
 
 export class CategoryService {
 
   protected readonly idToNameMap = new Map<number, string>();
-  protected readonly savedResponsePath: string;
+  protected readonly savedResponseService: SavedResponseService;
 
-  constructor(savedResponsePath: string) {
+  constructor(savedResponseService: SavedResponseService) {
 
-    this.savedResponsePath = savedResponsePath;
+    this.savedResponseService = savedResponseService;
   }
 
   public getName(id: number): string {
@@ -24,23 +25,17 @@ export class CategoryService {
 
     const startTime = new Date();
 
-    console.log('Loading category map from', this.savedResponsePath);
+    console.log('Loading category map');
 
-    this.handleSuccess(this.extractCategories(SavedResponseService.read(this.savedResponsePath)), startTime);
+    this.handleSuccess(this.extractCategories(this.savedResponseService.getData(SavedResponseChannel.Category)), startTime);
   }
 
-  protected extractCategories(saved: any): CategoryRaw {
+  protected extractCategories(data: any): CategoryRaw {
 
-    if (saved?.Success === false) {
-      throw SavedResponseService.failedResponseMessage(this.savedResponsePath);
-    }
-
-    let categoryRaw = saved?.Data ?? saved;
-
-    while (categoryRaw?.C) categoryRaw = categoryRaw.C;
+    const categoryRaw = data?.C?.C;
 
     if (!this.isCategoryRaw(categoryRaw)) {
-      throw `The file "${this.savedResponsePath}" is not the INIT_DATA response. Check that you saved the right response in the right file, then try again.`;
+      throw this.savedResponseService.unexpectedDataMessage(SavedResponseChannel.Category);
     }
 
     return categoryRaw;

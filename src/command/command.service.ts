@@ -1,3 +1,4 @@
+import { SavedResponseChannel } from '../saved-response/saved-response-channel';
 import { SavedResponseService } from '../saved-response/saved-response.service';
 import { CommandModel }         from './command.model';
 import { CommandRaw }           from './command.raw';
@@ -7,11 +8,11 @@ export class CommandService {
   public commandList: CommandModel[] = [];
 
   protected readonly groupIdToNameListMap = new Map<number, string[]>();
-  protected readonly savedResponsePath: string;
+  protected readonly savedResponseService: SavedResponseService;
 
-  constructor(savedResponsePath: string) {
+  constructor(savedResponseService: SavedResponseService) {
 
-    this.savedResponsePath = savedResponsePath;
+    this.savedResponseService = savedResponseService;
   }
 
   public getNameListForGroupIdList(groupIdList: number[]): string[] {
@@ -30,24 +31,18 @@ export class CommandService {
 
     const startTime = new Date();
 
-    console.log('Loading command list from', this.savedResponsePath);
+    console.log('Loading command list');
 
-    this.handleSuccess(this.extractCommands(SavedResponseService.read(this.savedResponsePath)), startTime);
+    this.handleSuccess(this.extractCommands(this.savedResponseService.getData(SavedResponseChannel.Command)), startTime);
   }
 
-  protected extractCommands(saved: any): CommandRaw[] {
+  protected extractCommands(data: any): CommandRaw[] {
 
-    if (saved?.Success === false) {
-      throw SavedResponseService.failedResponseMessage(this.savedResponsePath);
+    if (!this.isCommandRawList(data)) {
+      throw this.savedResponseService.unexpectedDataMessage(SavedResponseChannel.Command);
     }
 
-    const commandRawList = saved?.Data ?? saved;
-
-    if (!this.isCommandRawList(commandRawList)) {
-      throw `The file "${this.savedResponsePath}" is not the GET_COMMANDS response. Check that you saved the right response in the right file, then try again.`;
-    }
-
-    return commandRawList;
+    return data;
   }
 
   protected getNameListForGroupId(groupId: number): string[] {

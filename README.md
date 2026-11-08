@@ -27,12 +27,12 @@ https://github.com/FiretronP75/HaasScriptLuaTypes/releases
 6. Run `pnpm start`.
 7. Read and follow the help output in the console (pasted here for convenience):
 
-> * This script requires 5 parameters: environment, file extension, flexible numbers, saved GET_COMMANDS response, saved INIT_DATA response.
+> * This script requires 4 parameters: environment, file extension, flexible numbers, HAR file.
 > * Environment may be "production" or "staging". It only changes where the output is saved. Anything other than "staging" (case-insensitive) assumes "production".
 > * File extension may be anything, but "lua" or "hs" is recommended.
 > * Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".
-> * The saved responses are JSON files saved from a logged-in web browser. The README explains how.
-> * Example: `pnpm start prod lua flex-num "GET_COMMANDS.json" "INIT_DATA.json"`
+> * The HAR file is exported from a logged-in web browser. The README explains how.
+> * Example: `pnpm start prod lua flex-num "app.haasbot.com.har"`
 
 ## About flex-num:
 Many of the number parameters of functions can also take a list of numbers.
@@ -43,20 +43,18 @@ Using "flex-num" changes them all to `number | number[]`.
 This will not error when you assign a list of numbers, even though it might be invalid.
 I'm not sure which is better or worse. So you have to decide for yourself which you prefer.
 
-## To save the server responses:
-The script does not connect to the Haas server. It reads two responses that you save from your own logged-in browser.
+## To export the HAR file:
+The script does not connect to the Haas server. It reads a HAR file, which is a record of network traffic that you export from your own logged-in browser.
+
+These steps should work in Chromium-based browsers, including Google Chrome, Microsoft Edge, Brave, Opera, and Vivaldi. Mozilla Firefox and Apple Safari should have a similar feature in the Network tab of their developer tools, but the exact steps will differ.
 
 1. Open Haas cloud server in your browser and log in.
 2. Open your browser's developer tools.
 3. Select the Network tab of the developer tools.
-4. Clear any filters on the network transactions list.
+4. In the filter box of the Network tab, enter `/GET_COMMANDS|INIT_DATA/` so that only the two needed requests are listed.
 5. In Haas cloud server, open the Web Editor. *(or reload the page if the Web Editor is already open)*
-6. In the Network tab of your browser's developer tools, filter on "GET_COMMANDS".
-7. Click on the network transaction and select the Response tab of the network details.
-8. Copy the whole response into a file named `GET_COMMANDS.json`.
-9. Filter on "INIT_DATA" and do the same, saving the response into a file named `INIT_DATA.json`.
-10. Pass the paths of the two files to `pnpm start`, with double quotes around each path so that spaces work: `pnpm start prod lua flex-num "GET_COMMANDS.json" "INIT_DATA.json"`
+6. Click the Export HAR icon, a small down arrow at the top of the Network tab, and save the file.
+7. Pass the path of the file to `pnpm start`, with double quotes around the path so that spaces work: `pnpm start prod lua flex-num "app.haasbot.com.har"`
 
-> * Save the files as UTF-8. Other encodings, such as UTF-16, cannot be read.
 > * If you need staging definitions, do these steps again on the staging server.
-> * Keep the saved files out of version control. They come from your own session.
+> * Keep the HAR file private and out of version control. It comes from your own session.

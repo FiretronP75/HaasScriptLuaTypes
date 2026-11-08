@@ -1,4 +1,5 @@
-import fs from 'fs';
+import fs                       from 'fs';
+import { SavedResponseChannel } from './saved-response-channel';
 
 enum FileSystemErrorCode {
   AccessDenied = 'EACCES',
@@ -9,66 +10,124 @@ enum FileSystemErrorCode {
 
 export class SavedResponseService {
 
-  protected static readonly ENCODING  = 'utf-8';
-  protected static readonly ZERO_BYTE = 0;
+  protected static readonly BASE64_ENCODING = 'base64';
+  protected static readonly CHANNEL_PREFIX  = 'channel=';
+  protected static readonly TEXT_ENCODING   = 'utf-8';
+  protected static readonly ZERO_BYTE       = 0;
 
-  public static failedResponseMessage(path: string): string {
+  protected entryList: any[] = [];
 
-    return `The file "${path}" contains an error message from Haas instead of the data. Log in, save the response again, then try again.`;
+  protected readonly harFilePath: string;
+
+  constructor(harFilePath: string) {
+
+    this.harFilePath = harFilePath;
   }
 
-  public static read(path: string): any {
+  public getData(channel: SavedResponseChannel): any {
 
-    return SavedResponseService.parse(
-      SavedResponseService.decode(SavedResponseService.readBytes(path), path),
-      path,
-    );
+    const response = this.parseResponse(this.findResponseText(channel), channel);
+
+    if (response?.Success !== true) {
+      throw `The ${channel} response in the file "${this.harFilePath}" is an error from Haas instead of the data. Log in, export the file again, then try again.`;
+    }
+
+    return response.Data;
   }
 
-  protected static decode(buffer: Buffer, path: string): string {
+  public load(): void {
 
-    const notUtf8Message = `The file "${path}" is saved in the wrong text format. Save it again as UTF-8, then try again.`;
+    console.log('Loading saved responses from', this.harFilePath);
+
+    const har = this.parseHar(this.decode(this.readBuffer()));
+
+    if (!Array.isArray(har?.log?.entries)) {
+      throw this.notHarFileMessage();
+    }
+
+    this.entryList = har.log.entries;
+  }
+
+  public unexpectedDataMessage(channel: SavedResponseChannel): string {
+
+    return `The ${channel} response in the file "${this.harFilePath}" does not contain what was expected. Export the file again, then try again.`;
+  }
+
+  protected decode(buffer: Buffer): string {
 
     // UTF-16 without a byte order mark can be valid UTF-8, but valid JSON never contains a zero byte.
-    if (buffer.includes(SavedResponseService.ZERO_BYTE)) throw notUtf8Message;
+    if (buffer.includes(SavedResponseService.ZERO_BYTE)) throw this.notHarFileMessage();
 
     try {
-      return new TextDecoder(SavedResponseService.ENCODING, {fatal: true}).decode(buffer);
+      return new TextDecoder(SavedResponseService.TEXT_ENCODING, {fatal: true}).decode(buffer);
     } catch {
-      throw notUtf8Message;
+      throw this.notHarFileMessage();
     }
   }
 
-  protected static parse(text: string, path: string): any {
+  protected findResponseText(channel: SavedResponseChannel): string {
+
+    const channelParameter: string = `${SavedResponseService.CHANNEL_PREFIX}${channel}`;
+
+    // A request can be listed twice, and only one of the two holds the response.
+    const content = this.entryList
+      .filter((entry: any) => entry?.request?.url?.includes(channelParameter) && entry?.response?.content?.text)
+      .map((entry: any) => entry.response.content)
+      .pop();
+
+    if (content === undefined) {
+      throw `The file "${this.harFilePath}" does not include the ${channel} response. Reload the Web Editor before exporting, then try again.`;
+    }
+
+    return content.encoding === SavedResponseService.BASE64_ENCODING
+      ? Buffer.from(content.text, SavedResponseService.BASE64_ENCODING).toString()
+      : content.text;
+  }
+
+  protected notHarFileMessage(): string {
+
+    return `The file "${this.harFilePath}" is not a HAR file from your browser. Export it again from the Network tab, then try again.`;
+  }
+
+  protected parseHar(text: string): any {
 
     try {
       return JSON.parse(text);
     } catch {
-      throw `The file "${path}" is damaged or incomplete. Copy the whole response into it again, then try again.`;
+      throw this.notHarFileMessage();
     }
   }
 
-  protected static readBytes(path: string): Buffer {
+  protected parseResponse(text: string, channel: SavedResponseChannel): any {
 
     try {
-      return fs.readFileSync(path);
-    } catch (error) {
-      throw SavedResponseService.readFailureMessage(path, error);
+      return JSON.parse(text);
+    } catch {
+      throw this.unexpectedDataMessage(channel);
     }
   }
 
-  protected static readFailureMessage(path: string, error: any): string {
+  protected readBuffer(): Buffer {
+
+    try {
+      return fs.readFileSync(this.harFilePath);
+    } catch (error) {
+      throw this.readFailureMessage(error);
+    }
+  }
+
+  protected readFailureMessage(error: any): string {
 
     switch (error.code) {
       case FileSystemErrorCode.NotFound:
-        return `Could not find the file "${path}". Check that the file name and folder are correct, then try again.`;
+        return `Could not find the file "${this.harFilePath}". Check that the file name and folder are correct, then try again.`;
       case FileSystemErrorCode.IsDirectory:
-        return `"${path}" is a folder, not a file. Give the location of your saved file, then try again.`;
+        return `"${this.harFilePath}" is a folder, not a file. Give the location of your HAR file, then try again.`;
       case FileSystemErrorCode.AccessDenied:
       case FileSystemErrorCode.NotPermitted:
-        return `Your computer would not allow the file "${path}" to be opened. Make sure you have access to it, then try again.`;
+        return `Your computer would not allow the file "${this.harFilePath}" to be opened. Make sure you have access to it, then try again.`;
       default:
-        return `Could not open the file "${path}". Make sure it is a normal saved file, then try again.`;
+        return `Could not open the file "${this.harFilePath}". Make sure it is a normal saved file, then try again.`;
     }
   }
 

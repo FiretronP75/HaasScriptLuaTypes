@@ -10,6 +10,7 @@ import { EnumerationParsingService }       from './parsing/enumeration-parsing.s
 import { FunctionParsingService }          from './parsing/function-parsing.service';
 import { OptionalParameterParsingService } from './parsing/optional-parameter-parsing.service';
 import { OutputIndexParsingService }       from './parsing/output-index-parsing.service';
+import { SavedResponseService }            from './saved-response/saved-response.service';
 import { WritingService }                  from './writing/writing.service';
 
 export class Main {
@@ -23,27 +24,28 @@ export class Main {
   protected readonly functionParsingService: FunctionParsingService;
   protected readonly optionalParameterParsingService: OptionalParameterParsingService;
   protected readonly outputIndexParsingService: OutputIndexParsingService;
+  protected readonly savedResponseService: SavedResponseService;
   protected readonly writingService: WritingService;
 
-  protected categoryResponsePath: string = '';
-  protected commandResponsePath: string  = '';
-  protected fileExtension: string        = '';
-  protected isProduction: boolean        = true;
-  protected nodeBinPath: string          = '';
-  protected scriptPath: string           = '';
+  protected fileExtension: string = '';
+  protected harFilePath: string   = '';
+  protected isProduction: boolean = true;
+  protected nodeBinPath: string   = '';
+  protected scriptPath: string    = '';
 
   constructor() {
     this.validateArguments();
 
     this.documentService                 = new DocumentService();
-    this.categoryService                 = new CategoryService(this.categoryResponsePath);
+    this.savedResponseService            = new SavedResponseService(this.harFilePath);
+    this.categoryService                 = new CategoryService(this.savedResponseService);
     this.writingService                  = new WritingService(
       this.categoryService,
       this.documentService,
       this.fileExtension,
       this.isProduction,
     );
-    this.commandService                  = new CommandService(this.commandResponsePath);
+    this.commandService                  = new CommandService(this.savedResponseService);
     this.commonParsingService            = new CommonParsingService();
     this.functionParsingService          = new FunctionParsingService(this.commandService, this.commonParsingService);
     this.colorParsingService             = new ColorParsingService(this.commonParsingService,
@@ -115,6 +117,7 @@ export class Main {
 
   protected generateDefinitions(): void {
 
+    this.savedResponseService.load();
     this.categoryService.loadCategories();
     this.commandService.loadCommands();
 
@@ -124,16 +127,15 @@ export class Main {
 
   protected validateArguments(): void {
 
-    if (process.argv.length < 7) {
-      console.error(
-        'This script requires 5 parameters: environment, file extension, flexible numbers, saved GET_COMMANDS response, saved INIT_DATA response.');
+    if (process.argv.length < 6) {
+      console.error('This script requires 4 parameters: environment, file extension, flexible numbers, HAR file.');
       console.error(
         'Environment may be "production" or "staging". It only changes where the output is saved. Anything other than "staging" (case-insensitive) assumes "production".');
       console.error('File extension may be anything, but "lua" or "hs" is recommended.');
       console.error(
         'Flexible numbers may be "flex-num" or "not-flex-num". Anything other than "flex-num" (case-insensitive) assumes "not-flex-num".');
-      console.error('The saved responses are JSON files saved from a logged-in web browser. The README explains how.');
-      console.error('Example: pnpm start prod lua flex-num "GET_COMMANDS.json" "INIT_DATA.json"');
+      console.error('The HAR file is exported from a logged-in web browser. The README explains how.');
+      console.error('Example: pnpm start prod lua flex-num "app.haasbot.com.har"');
       process.exit(1);
     }
 
@@ -142,16 +144,14 @@ export class Main {
     this.isProduction                = process.argv.slice(2, 3)[0].toLowerCase() !== 'staging';
     this.fileExtension               = process.argv.slice(3, 4)[0];
     HaasDataTypeMapper.isFlexNumbers = process.argv.slice(4, 5)[0].toLowerCase() === 'flex-num';
-    this.commandResponsePath         = process.argv.slice(5, 6)[0];
-    this.categoryResponsePath        = process.argv.slice(6, 7)[0];
+    this.harFilePath                 = process.argv.slice(5, 6)[0];
 
     console.log('Node Bin Path:', this.nodeBinPath);
     console.log('Script Path:', this.scriptPath);
     console.log('Production:', `${this.isProduction}`);
     console.log('File Extension:', this.fileExtension);
     console.log('Flexible Numbers:', `${HaasDataTypeMapper.isFlexNumbers}`);
-    console.log('Saved GET_COMMANDS Response:', this.commandResponsePath);
-    console.log('Saved INIT_DATA Response:', this.categoryResponsePath);
+    console.log('HAR File:', this.harFilePath);
     console.log('');
   }
 
